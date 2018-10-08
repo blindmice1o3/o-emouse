@@ -1,0 +1,10 @@
+pg. 99 Head First - Design Patterns
+
+Q. Can decorators know about the other decorations in the chain? Say, I wanted my getDescription() method to print
+"Whip, Double Mocha" instead of "Mocha, Whip, Mocha"? That would require that my outermost decorator know all the
+decorators it is wrapping.
+
+A. Decorators are meant to add behavior to the object they wrap. When you need to peek at multiple layers into the
+decorator chain, you are starting to push the decorator beyond its true intent. Nevertheless, such things are possible.
+Imagine a CondimentPrettyPrint decorator that parses the final description and can print "Mocha, Whip, Mocha" as "Whip,
+Double Mocha." Note that getDescription() could return an ArrayList of descriptions to make this easier.
