@@ -1,0 +1,12 @@
+package HeadFirst.DesignPatterns.Ch06CommandPattern;
+
+public class NoCommand implements Command {
+    @Override
+    public void execute() {
+
+    }
+    @Override
+    public void undo() {
+
+    }
+}

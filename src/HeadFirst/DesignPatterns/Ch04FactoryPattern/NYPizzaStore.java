@@ -9,7 +9,7 @@ public class NYPizzaStore extends PizzaStore {
         if (item.equals("cheese")) {
             pizza = new CheesePizza(ingredientFactory);
             pizza.setName("New York Style Cheese Pizza");
-        //    return new NYStyleCheesePizza();
+            return new NYStyleCheesePizza();
         }/* else if (item.equals("veggie")) {
             return new NYStyleVeggiePizza();
         } else if (item.equals("clam")) {
