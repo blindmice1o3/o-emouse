@@ -28,9 +28,11 @@ package HeadFirst.DesignPatterns.Ch01StrategyPattern;
         48 places to change code.
 
     *****
-    Try creating Interface QuackBehavior, FlyBehavior; instead of subclasses of Duck implementing these interfaces, they are compose of
-        QuackBehavior quackBehavior, FlyBehavior flyBehavior instance variables to delegate its flying and quacking behavior;
-        each subclasses of Duck will have constructor that will set the concrete subclass of QuackBehavior, FlyBehavior interfaces.
+    Try creating Interface QuackBehavior, FlyBehavior; instead of subclasses of Duck implementing these interfaces, they
+        will be compose with QuackBehavior quackBehavior (a set of classes that implement the QuackBehavior interface)
+        and FlyBehavior flyBehavior (a set of classes that implement the FlyBehavior interface) instance variables to
+        delegate its flying and quacking behavior; each subclasses of Duck will have constructor that will set the
+        concrete subclass of QuackBehavior, FlyBehavior interfaces.
     Problem: we're still programming to an implementation in the constructors (making new() instance of concrete Quack implementation class).
     *****
 
