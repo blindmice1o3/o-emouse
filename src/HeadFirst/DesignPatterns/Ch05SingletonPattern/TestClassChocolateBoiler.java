@@ -11,7 +11,7 @@ package HeadFirst.DesignPatterns.Ch05SingletonPattern;
 
     Q. Why use Singleton pattern instead of "instantiation-once" by convention or instead of using a global variable?
     A. In many ways, it is a convention (for ensuring one and only one object is instantiated for a given class). The
-        Singleton pattern also gives us a global poitn of access, just like a global variable, but without the downsides
+        Singleton pattern also gives us a global point of access, just like a global variable, but without the downsides
         (global variable, the object might be created when the application begins... what if the application never ends
         up using it? With Singleton pattern, we can create our objects only when they are needed.
     Q. How do I prevent more than one object from being instantiated?

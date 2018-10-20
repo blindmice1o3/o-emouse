@@ -14,8 +14,8 @@ package HeadFirst.DesignPatterns.Ch03DecoratorPattern.DecoratorOurs;
     -Problem: maintenance nightmare, each of the hundreds of concrete subclass has to calculate its own unique cost!
     -Then they tried adding boolean instance variables for Beverage (eg. milk, soy, mocha, whip), and making cost() not abstract.
         So Beverage's cost() will calculate the cost of the condiments, and the concrete subclasses of Beverage will override
-        cost() (invoke the super version so that they can calculate the total cost of the basic beverage plus the cost
-        of the added condiments.
+        cost() (invoke the super's version so that they can calculate the total cost of the condiments plus the cost of
+        the basic beverage).
     -Problem: Price change for condiment will force us to alter existing code, new condiments will force us to add new methods
         and alter the cost method in the superclass, we may have a new beverage (like iced tea) where the condiments may
         not be appropriate yet the Tea subclass will still inherit methods like hasWhip(), and what if customer wanted double mocha?
@@ -28,28 +28,28 @@ package HeadFirst.DesignPatterns.Ch03DecoratorPattern.DecoratorOurs;
     *A hint: think of decorator objects as "wrappers".
     (1) Take a DarkRoast object
     (2) Decorate it with a Mocha object*   // The Mocha object is a decorator, its type mirrors the object it is decorating.
-    (3) Decorate it with a Whip object*    // By "mirror", they mean it is the same type.
+    (3) Decorate it with a Whip object*    // By "mirrors", they mean it is the same type.
     (4) Call the cost() method and rely on DELEGATION to add on the condiment costs
-             // We call the cost() method on the outermost decorator, Whip, and Whip is going to delegate computing the cost
-             // to the objects it decorates. Once it gets a cost, it will add on the cost of the Whip.
+             // We call the cost() method on the outermost decorator, Whip, and Whip is going to delegate computing the
+             // cost to the beverage (object) it decorates. Once it gets that cost, it will add on the cost of the Whip.
     -Decorators have the same supertype as the objects they decorate.
     -You can use one or more decorator to wrap an object.
-    -Given that the decorator has the same supertype as the object it decorates, we can pass around a decorated object
-        in place of the original (wrapped) object.
-    *-The decorator adds its own behavior either before and/or after delegating to the object it decorates to do the
-    *    rest of the job.
+    -Given that the decorator has the same supertype as the object it decorates, we can pass around a decorated (wrapped)
+        object in place of the original (non-wrapped) object.
+    -***The decorator adds its own behavior either before and/or after delegating to the object it decorates to do the
+        rest of the job.***
     -Objects can be decorated at any time, so we can decorate objects dynamically at runtime with as many decorators
         as we like.
 
 
     Component: Each component can be used on its own, or wrapped by a decorator.
     ConcreteComponent: The ConcreteComponent is the object we're going to dynamically add new behavior to. It extends Component.
-    Decorator: Each decorator HAS-A (wraps) a component, which means the decorator has an instance variable that holds a
+    Decorator: Each decorator HAS-A (wraps a) component, which means the decorator has an instance variable that holds a
         reference to a component. Decorators implement the same interface or abstract class as the component they are
         going to decorate.
-    ConcreteDecorator: The ConcreteDecorator has an instance variable for the thing it decorate (the Component the
-        Decorator wraps). Decorators can add new methods; however, new behavior is typically added by doing computation
-        before or after an existing method in the component. Decorators can extend the state of the component.
+    ConcreteDecorator: The ConcreteDecorator has an instance variable for the thing it decorate (the Component). Decorators
+        can add new methods; however, ***new behavior is typically added by doing computation before or after an existing
+        method in the component***. Decorators can extend the state of the component.
 
 
     Inheritance versus Composition:

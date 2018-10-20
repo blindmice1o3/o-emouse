@@ -67,11 +67,12 @@ package HeadFirst.DesignPatterns.Ch04FactoryPattern;
     "It sounds like "Program to an interface, not an implementation," however, the Dependency Inversion Principle makes
         an even stronger statement about abstraction. It suggests that our high-level components should not depend
         on our low-level components; rather, they should BOTH depend on abstractions."
+    *****   *****   *****
     Guidelines to help you follow the Dependency Inversion Principle:
         -No variable should hold a reference to a concrete class.
         -No class should derive from a concrete class.
         -No method should override an implemented method of any of its base classes.
-
+    *****   *****   *****
 
     PizzaStoreFranchise now wants to ensure consistency in quality of ingredients across their stores (some stores were
         starting to use inferior ingredients to lower costs and increase their profit margins, so we're going to have
@@ -89,12 +90,12 @@ package HeadFirst.DesignPatterns.Ch04FactoryPattern;
     CODE UP CLOSE:
         The Pizza code uses the factory it has been composed with to produce the ingredients used in the pizza. The
         ingredients produced depend on which factory we're using. The Pizza class doesn't care; it knows how to make
-        pizzas. Now, it's decoupkled from the differences in regional ingredients and can be easily reused when there
+        pizzas. Now, it's decoupled from the differences in regional ingredients and can be easily reused when there
         are factories in the Rockies, the Pacific Northwest, and beyond.
 
             sauce = ingredientFactory.createSauce();
 
-        -We're setting the Pizza instance variable to refer to the specific sauce used in this pizza.
+        -We're setting the Pizza's instance variable (sauce) to refer to the specific sauce used in this pizza.
         -This is our ingredient factory. The Pizza doesn't care which factory is used as long as it is an ingredient factory.
         -The createSauce() method returns the sauce that is used in its region. If this is a NY ingredient factory, then
             we get marinara sauce.
@@ -124,7 +125,7 @@ package HeadFirst.DesignPatterns.Ch04FactoryPattern;
     -Both good at decoupling applications from specific implementations; do so in different ways.
         -Factory Method use classes to create (through inheritance) (need to extend a class and override a factory method)
             (used to create one product)
-        -Abstract Factory use objects to create (through object composition) (its interface has to change if need products
+        -Abstract Factory use objects to create (through object composition) (its interface has to change if new products
             are added) (used to create entire families of products)
     -Both encapsulate object creation to keep applications loosely coupled and less dependent on implementations.
 

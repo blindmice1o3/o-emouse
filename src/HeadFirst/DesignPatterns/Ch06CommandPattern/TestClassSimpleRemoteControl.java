@@ -19,7 +19,7 @@ package HeadFirst.DesignPatterns.Ch06CommandPattern;
         // The Waitress takes the Order, and when she gets around to it, she calls its orderUp() method to begin the
         //     Order's preparation.
             waitress1.takeOrder();
-            waitress1.order.orderUp();
+            waitress1.orderUp();
 
         // The Order has all the instructions needed to prepare the meal. The Order directs the Short Order Cook with
         //     methods like makeBurger();
@@ -29,7 +29,7 @@ package HeadFirst.DesignPatterns.Ch06CommandPattern;
 
     Command pattern:
         // The Client is responsible for creating the command object. The command object consists of a set of actions on a
-        //     receiver.
+        //     Receiver.
         // The actions and Receiver are bound together in the command object.
         // The command object provides one method, execute(), that encapsulates the actions and can be called to invoke the
         //     actions on the Receiver.
@@ -38,12 +38,12 @@ package HeadFirst.DesignPatterns.Ch06CommandPattern;
         // The client calls setCommand() on an Invoker object and passes it the command object, where it gets stored until
         //     it is needed.
         // At some point in the future the Invoker calls the command object's execute() method...
-            invoker1.setCommand();
-            invoker1.command.execute();
+            invoker1.setCommand(Command command);
+            command.execute();
 
         // ... which results in the actions being invoked on the Receiver.
-            command.action1();
-            command.action2();
+            receiver.action1();
+            receiver.action2();
 
     Diner vs Command pattern:
         Customer            <-------->    Client
@@ -64,14 +64,14 @@ package HeadFirst.DesignPatterns.Ch06CommandPattern;
         are command objects. The ConcreteCommand defines a binding/bundling between an action and a Receiver.
 
     The Invoker (e.g. Waitress from the diner example, the Remote Control from the home-automation scenario) has a
-        method for setting its Command instance variable (e.g. public void setCommand(Command command)). This could be
+        method for setting its Command instance variables (e.g. public void setCommand(Command command)). This could be
         called multiple times if the client of this code wanted to change the behavior of the remote control's button.
         It also has a method to call its command object's execute() (e.g. public void buttonWasPressed(); when that
         method is called, the command object's execute() method is called [the command object is bundled as a set of
         actions to perform and a Receiver], which calls methods [the set of actions to perform] on its Receiver).
 
 
-    Next, assigning commands (command objects) to each slot (button) of the remote control...
+    Next, assigning commands (command objects) to each slot (buttons/Command instance variables) of the remote control...
     // See class RemoteControl (oppose to SimpleRemoteControl which just had one slot/button) and TestClassRemoteLoader
 
 

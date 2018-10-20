@@ -51,10 +51,10 @@ package HeadFirst.DesignPatterns.Ch07AdapterPattern;
     *** Object and class adapters ***
     -Class adapter need multiple inheritance to implement it, which isn't possible in Java.
     -We've only talked about object adapters and the class diagram we saw is a diagram of an object adapter (composition).
-    -Class adapter uses a different mean of adapting the adaptee, inheritance. Instead of using composition to adapt
+    -Class adapter uses a different mean of adapting the Adaptee, inheritance. Instead of using composition to adapt
         the Adaptee, the Adapter now subclasses both the Adaptee and the Target classes.
     -With class adapter we subclass the Target and the Adaptee, while with object adapter we use composition to pass
-        requests to an Adaptee (which can not only adapt an adaptee class, but any of its subclasses).
+        requests to an Adaptee (which can not only adapt an Adaptee class, but any of its subclasses).
 
 
     Ex. real world adapters (Old world Enumerators, New world Iterators, And today...)
@@ -76,7 +76,7 @@ package HeadFirst.DesignPatterns.Ch07AdapterPattern;
     Decorator vs Adapter:
         -Decorator wraps an object to add new behaviors and responsibilities.
         -Adapter wraps an object to change its interface.
-        -Facade "wraps" a set of objects to simplify.
+        -Facade "wraps" a set of objects to simplify.  // composes a subsystem
 
 
 

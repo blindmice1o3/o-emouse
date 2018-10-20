@@ -40,12 +40,13 @@ package HeadFirst.DesignPatterns.Ch02ObserverPattern.ObserverOurs;
     *****
     Problem: The Weather-O-Rama's CEO now wants to add a Heat Index display element.
 
-    Things-to-know: multiple ways to implement the observer pattern; "push" state data OR "pull" state data
+    Things-to-know: multiple ways to implement the observer pattern; ***push*** state data OR ***pull*** state data
     Things-to-know: Java has "built-in" observer pattern. Main differences compared to what we created are (1) our
         subject (WeatherData) will extend a CLASS (Observable) instead of implementing an INTERFACE and (2) now it's a 2
-        step process where you have to call the setChanged() method to signify that the state has changed in our object
-        and then call one of two notifyObservers() methods (notifyObservers() OR notifyObservers(Object arg)). Observers
-        still implement update() method, but the signature is a bit different: update(Observable obs, Object arg).
+        step process where you have to call the ***setChanged()*** method to signify that the state has changed in our
+        subject/publisher/observable and then call ***one of two notifyObservers() methods*** (***notifyObservers()***
+        OR ***notifyObservers(Object arg)***). Observers still implement update() method, but the signature is a bit
+        different: update(Observable obs, Object arg).
             -"Object arg" is just an arbitrary data object that gets passed to each Observer when it is notified.
             -"setChanged()" method: sets a changed flag to true (behind the scenes). If notifyObservers() is called without
                 first calling setChanged(), the observers will NOT be notified. This method gives us more flexibility in
