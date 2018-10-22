@@ -6,10 +6,11 @@ package HeadFirst.DesignPatterns.Ch08TemplatePattern;
         Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure.
     -----     -----     -----
 
-    -Started with Coffee class and Tea class that had very similar methods. We abstract the commonality into a base class.
-
-    -Both coffee and tea follow the same algorithm for their recipe.
-    -So next, we abstract an algorithm from each subclass prepareRecipe():
+    -Started with Coffee class and Tea class that had very similar methods.
+    -Both coffee and tea follow the same algorithm for their recipe. We can abstract the algorithm (the template),
+        a method with a structure or set of steps, to a common superclass (base class), CaffeineBeverage.
+    -So next, we abstract prepareRecipe() from each subclass by generalizing step 2 and step 4, they will be abstract and
+        each concrete subclass (Coffee and Tea) will provide their specific implementations of brew() and addCondiments():
         (1) Boil some water.                                --->    (1) boilWater();
         (2) Use the hot water to extract the coffee or tea. --->    (2) brew();
         (3) Pour the resulting beverage into a cup.         --->    (3) pourInCup();
@@ -17,7 +18,7 @@ package HeadFirst.DesignPatterns.Ch08TemplatePattern;
     -See CaffeineBeverageWithHook class.
 
     This pattern is all about creating a template for an algorithm. What's a template? As you've seen it's just a method;
-        moer specifically, it's a method that defines an algorithm as a set of steps. One or more of these steps is defined
+        more specifically, it's a method that defines an algorithm as a set of steps. One or more of these steps is defined
         to be abstract and implemented by a subclass. This ensures the algorithm's structure stays unchanged, while subclasses
         provide some part of the implementation.
 
@@ -64,14 +65,16 @@ package HeadFirst.DesignPatterns.Ch08TemplatePattern;
 
     Q. What are hooks really supposed to be used for?
     A. There are a few uses of hooks. As we just said, a hook may provide a way for a subclass to implement an optional
-    part of an algorithm, or if it isn't important to the subclass's implementation, it can skip it. Another use is to
-    to give the subclass a chance to react to some step in the template method that is about to happen, or just happened.
-    For instance, a hook method like justReOrderedList() allows the subclass to perform some activity (such as redisplaying
-    an onscreen representation) after an internal list is reordered. As you've seen a hook can also provide a subclass
-    with the ability to make a decision for the abstract class.
+    part of an algorithm, or if it isn't important to the subclass's implementation, it can skip it.
+
+    Another use is to give the subclass a chance to react to some step in the template method that is about to happen,
+    or just happened. For instance, a hook method like justReOrderedList() allows the subclass to perform some activity
+    (such as redisplaying an onscreen representation) after an internal list is reordered.
+
+    As you've seen a hook can also provide a subclass with the ability to make a decision for the abstract class.
 
 
-    The Hollywood Principle - Don't call us, we'll call you.
+    The Hollywood Principle (Design Principle): Don't call us, we'll call you.
         -Gives us a way to prevent "dependency rot." Dependency rot happens when you have high-level components depending
             on low-level components depending on high-level components depending on sideways components depending on low-
             level components, and so on. When rot sets in, no one can easily understand the way a system is designed.
@@ -94,9 +97,9 @@ package HeadFirst.DesignPatterns.Ch08TemplatePattern;
     possible with abstractions. The Hollywood Principle is a technique for building frameworks or components so that lower-
     level components can be hooked into the computation, but without creating dependencies between the lower-level
     components and the higher-level layers. So, they both have the goal of decoupling, but the Dependency Inversion
-    Principle makes a much stonger and general statement about how to avoid dependencies in design. The Hollywood
-    Principle gives us a technique for creating designs that allow low-level structures to interoperate while preventing
-    other classes fromm becoming too dependent on them.
+    Principle makes a much stronger and general statement about how to avoid dependencies in design. The Hollywood
+    Principle gives us a technique for creating designs that allow low-level structures to inter-operate while preventing
+    other classes from becoming too dependent on them.
 
 
     TEMPLATE METHODS IN THE WILD (Java API):
@@ -108,7 +111,7 @@ package HeadFirst.DesignPatterns.Ch08TemplatePattern;
         // to start at the first element.
         public static void sort(Object[] a) {
             Object aux[] = (Object[])a.clone();
-            mergeSort(aux, 0, a.length, 0);
+            mergeSort(aux, a, 0, a.length, 0);
         }
         // The mergeSort() method contains the sort algorithm, and relies on an implementation of the compareTo() method
         // to complete the algorithm.
