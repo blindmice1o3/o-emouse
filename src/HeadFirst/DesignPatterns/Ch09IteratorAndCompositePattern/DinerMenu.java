@@ -8,6 +8,7 @@ public class DinerMenu implements Menu {
     static final int MAX_ITEMS = 6;
     int numberOfItems = 0;
     MenuItem[] menuItems;
+    String name = "Diner Menu";
 
     public DinerMenu() {
         // Mel takes a different approach; he's using an Array so he can control the max size of the menu and retrieve
@@ -73,4 +74,8 @@ public class DinerMenu implements Menu {
     // Like Lou, Mel has a bunch of code that depends on the implementation of his menu being an Array. He's too busy
     //     cooking to rewrite all of this.
     // other menu methods here
+
+    public String getName() {
+        return this.name;
+    }
 }

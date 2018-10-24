@@ -4,20 +4,36 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class Waitress {
+    ArrayList menus;
+    /*
     Menu pancakeHouseMenu;
     Menu dinerMenu;
     Menu cafeMenu;
+    */
 
     // In the constructor the Waitress takes the two menus
     // The Cafe menu is passed into the Waitress in the constructor with the other menus, and we stash it in an instance variable.
-    public Waitress(Menu pancakeHouseMenu, Menu dinerMenu, Menu cafeMenu) {
+    // We refactored the Waitress to use an ArrayList to store multiple menus.
+    public Waitress(ArrayList menus) {
+        this.menus = menus;
+        /*
         this.pancakeHouseMenu = pancakeHouseMenu;
         this.dinerMenu = dinerMenu;
         this.cafeMenu = cafeMenu;
+        */
     }
 
     // The printMenu() method now creates two iterators, one for each menu.
     public void printMenu() {
+        Iterator menuIterator = menus.iterator();
+        while(menuIterator.hasNext()) {
+            Menu menu = (Menu)menuIterator.next();
+            System.out.println(menu.getName());
+            printMenu(menu.createIterator());
+            System.out.println("\n");
+        }
+
+        /* We're changing the implementation to use an ArrayList to store all 3 menus.
         Iterator pancakeIterator = pancakeHouseMenu.createIterator();
         Iterator dinerIterator = dinerMenu.createIterator();
         // We're using the Cafe's menu for our dinner menu. All we have to do to print it is create the iterator, and
@@ -31,6 +47,7 @@ public class Waitress {
         printMenu(dinerIterator);
         System.out.println("\nDINNER");
         printMenu(cafeIterator);
+        */
 
         /* We're changing the implementation to use Iterator instead.
         // The implementation is showing through, breakfast items are in an ArrayList, lunch items are in an Array.

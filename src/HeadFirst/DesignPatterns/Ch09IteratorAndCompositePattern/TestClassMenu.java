@@ -10,7 +10,7 @@ package HeadFirst.DesignPatterns.Ch09IteratorAndCompositePattern;
         lets clients treat individual objects and compositions of objects uniformly.
     -----     -----     -----
 
-    -Objectville Diner and Objectville Panecake House are merging businesses. The owners agreed on the implementation for
+    -Objectville Diner and Objectville Pancake House are merging businesses. The owners agreed on the implementation for
         the menu items, but can't agree on how to implement the menus. One used an ArrayList to hold menu items while the
         other used an Array. Neither are will to change their implementations, they both have too much code written that
         depends on them.
@@ -30,7 +30,7 @@ package HeadFirst.DesignPatterns.Ch09IteratorAndCompositePattern;
     -Now what if we create an object, let's call it an Iterator, that encapsulates the way we iterate through a collection
         of objects?
 
-    Meet the ITERATOR pattern:
+    MEET THE ITERATOR PATTERN:
         <<interface>>               Concrete implementation of Iterator         Concrete implementation of Iterator
            Iterator                           DinerMenuIterator                       PancakeHouseMenuIterator
         -hasNext()                  -hasNext()                                  -hasNext()
@@ -59,7 +59,7 @@ package HeadFirst.DesignPatterns.Ch09IteratorAndCompositePattern;
     Once we gave the Objectville cooks a PancakeHouseMenuIterator and a DinerMenuIterator, all they had to do was add a
         createIterator() method to their Menu class and they were finished.
 
-    What have we done so far?
+    WHAT HAVE WE DONE SO FAR?
     Hard to Maintain Waitress Implementation:
         -The Menus are not well encapsulated; we can see the Diner is using an ArrayList and the Pancake House an Array.
         -We need two loops to iterate through the MenuItems.
@@ -81,7 +81,7 @@ package HeadFirst.DesignPatterns.Ch09IteratorAndCompositePattern;
     implementation of the iterator to live outside of the aggregate; in other words, we've encapsulated the interaction.
 
 
-    The java.util.Iterator interface:
+    THE java.util.Iterator INTERFACE:
     We're going to switch from using our own home grown Iterator interface to the Java Iterator interface (we created one
     from scratch just so we could see HOW to build an iterator from scratch).
 
@@ -146,17 +146,18 @@ package HeadFirst.DesignPatterns.Ch09IteratorAndCompositePattern;
         next element. An internal iterator is controlled by the iterator itself.
 
 
-    Single Responsibility (Design Principle): A class should have only one reason to change.
+    SINGLE RESPONSIBILITY (Design Principle): A class should have only one reason to change.
         Q. Why is it bad if we had a class take on multiple responsibility?
         A. If we allow a class to not only take care of its own business (managing some kind of aggregate) but also take
         on more responsibilities (like iteration) then we've given the class two reasons to change. It can change if the
         collection changes in some way, and it can change if the way we iterate changes.
-    Cohesion: a measure of how closely a class or a module supports a single purpose or responsibility.
+    COHESION: a measure of how closely a class or a module supports a single purpose or responsibility.
     Cohesion is a more general concept than the Single Responsibility Principle, but the two are closely related. Classes
         that adhere to the principle tend to have high cohesion and are more maintainable than classes that take on
         multiple responsibilities and have low cohesion.
 
 
+    NEW REQUIREMENT: HANDLE A THIRD MENU OBJECT.
     Objectville Cafe is also joining the team, the Cafe is merging and adopting the dinner menu.
         -See CafeMenu class.
         -See Waitress class. Now updated with the third menu. As well as this test class to take 3 menus.
@@ -171,7 +172,7 @@ package HeadFirst.DesignPatterns.Ch09IteratorAndCompositePattern;
                         return menuItems.values().iterator();
                     }
 
-    What did we do?
+    WHAT DID WE DO?
     We decoupled the Waitress...
         -We wanted to give the Waitress an easy way to iterate over menu items...
         -...and we didn't want her to know about how the menu items are implemented.
@@ -195,8 +196,97 @@ package HeadFirst.DesignPatterns.Ch09IteratorAndCompositePattern;
             don't support Iterator, that's ok, because now you know how to build your own.
 
 
-    Iterators and Collections:
+    ITERATORS and COLLECTIONS:
+        -Java Collections Framework is a set of classes and interfaces (including ArrayList, Vector, LinkedList, Stack,
+            and PriorityQueue). Each of these classes implements the java.util.Collection interface (which contains a
+            bunch of useful methods for manipulating groups of objects).
+        -Each Collection object knows how to create its own Iterator. Calling iterator() on an ArrayList returns a concrete
+            Iterator made for ArrayLists, but you never need to see or worry about the concrete class it uses. Hashtable
+            indirectly supports Iterator, first retrieve its collection of values and then obtain the iterator.
+        -Java 5 added support for iterating over Collections so we don't even have to ask for an iterator. It's a new form
+            of the for statement, called "for/in":
+                for (Object obj: collection) {                  for (MenuItem item: items) {
+                    ...                                             System.out.println("Breakfast item: " + item);
+                }                                               }
 
+
+    WAITRESS STORES THREE IMPLEMENTATIONS of Menu into an ArrayList:
+        -The Waitress has come a long way, but we're still calling printMenu() three times (one for each menu), and every
+            time we add a new menu we have to open up the Waitress implementation and add more code (violating the
+            "Open Closed Principle".
+        -We are still handling the menus with separate, independent objects - we need a way to manage them together. We
+            need one Iterator to pass to the Waitress to iterate over all the menus.
+        -We can package all the menus stored in the Waitress into an ArrayList and then get the ArrayList's iterator to
+            iterate through each menu, passing each menu's iterator to the overloaded printMenu() method.
+
+
+    NEW CHANGE: ADD dessert SUBMENU to DinerMenu.
+        -Not only support multiple menus, but not we need to support menus within menus.
+        -But we can't put a Menu object into an Array that only hold MenuItem objects.
+        -We'll refactor the chef's implementation so it's general enough to work over all the menus (and sub menus).
+        -We need a TREE SHAPED STRUCTURE that will accommodate menus, submenus, and menu items.
+
+
+    The COMPOSITE PATTERN allows us to build structures of objects in the form of trees that contain both compositions of
+        objects and individual objects as nodes.
+    -Using a composite structure, we can apply the same operations (like printing) over both composites and individual
+        objects. In other words, we can ignore the differences between compositions of objects and individual objects.
+    -By putting menus and items in the same structure we create a part-whole hierarchy; that is, a tree of objects that
+        is made of parts (menus and menu items) but can be treated as a whole, like one big uber menu.
+    -We can create a tree structure that can handle a nested group of menus AND menu items in the same structure. Menus
+        are nodes, and MenuItems are leaves.
+
+    COMPOSITE PATTERN class diagram:
+        -The Client uses the Component interface to manipulate the objects in the composition.
+        -The Component define an interface for all objects in the composition; both the composite and the leaf nodes.
+        -The Composite's role is to define the behavior of the components having children and to store child components.
+            The Composite also implements the Leaf-related operations. Note that some of these may not make sense on a
+            Composite, so in that case an exception might be generated.
+        -A Leaf has no children. A Leaf defines the behavior for the elements in the composition. It does this by
+            implementing the operations the Composite supports. Note that a Leaf also inherits methods like add(), remove(),
+            and getChild(), which don't necessarily make a lot of sense for a leaf node.
+    DESIGNING MENU WITH COMPOSITE:
+        -The Waitress is going to use the MenuComponent interface to access both Menus and MenuItems.
+        -MenuComponent represents the interface for both MenuItem and Menu. We've used an abstract class here because we
+            want to provide default implementations for these methods.
+        -Menu overrides the methods that make sense, like a way to add and remove menu items (or other menus!) from its
+            menuComponents. In addition, we'll use the getName() and getDescription() methods to return the name and
+            description of the menu.
+        -MenuItem overrides the methods that make sense, and uses the default implementations in MenuComponent for those
+            that don't make sense (like add() - it doesn't make sense to add a component to a MenuItem... we can only
+            add components to a Menu).
+    -See CompositePatternMenuComponent package.
+        -All components must implement the MenuComponent interface; however, because leaves and nodes have different roles
+            we can't always define a default implementation for each method that makes sense. Sometimes the best you can
+            do is throw a runtime exception.
+        -We start with the MenuComponent abstract class; remember, the role of the menu component is to provide an interface
+            for the leaf nodes and the composite nodes. Now you might be asking, "Isn't the MenuComponent playing two roles?"
+            It might well be and we'll come back to that point. However, for now we're going to provide a default implementation
+            of the methods so that if the MenuItem (the leaf) or the Menu (the composite) doesn't want to implement some
+            of the methods (like getChild() for a leaf node) they can fall back on some basic behavior.
+    -TWO RESPONSIBILITIES IN ONE CLASS: manages a hierarchy AND performs operations related to Menus.
+        -The Composite Pattern takes the Single Responsibility design principle and trades it for transparency (a client
+            can treat both composites and leaf nodes uniformly, so whether an element is a composite or a leaf node becomes
+            transparent to the client).
+        -The Component interface contain the child management operations AND the leaf operations.
+        -We lose a bit of safety because a client might try to do something inappropriate or meaningless on an element
+            (like try to add a menu to a menu item). This is a design decision; we could take the design in the other
+            direction and separate out the responsibilities into interfaces. This would make our design safe, in the sense
+            that any inappropriate calls on elements would be caught at compile time or runtime, but we'd lose
+            transparency and our code would have to use conditionals an the isntanceof operator.
+        -This is a classic case of tradeoff. Sometimes we purposely do things in a way that seems to violate the principle.
+        -In some cases it is a matter of perspective. It might seem incorrect to have child management operations in the
+            leaf nodes (like add(), remove() and getChild()), but then again you can always shift your perspective and
+            see a leaf as a node with zero children.
+
+    FLASHBACK TO ITERATOR:
+        -We are already using Iterator in our internal implementation of the print() method, but we can also allow the
+            Waitress to iterate over an entire composite if she needs to, for instance, if she wants to go through the
+            entire menu and pull out vegetarian items.
+        -To implement a Composite iterator, let's add a createIterator() method in every component. We'll start with the
+            abstract MenuComponent class.
+        -THE COMPOSITE ITERATOR - see CompositeIterator class in CompositePatternMenuComponent package.
+        -THE NULL ITERATOR - see NullIterator class in CompositePatternMenuComponent package.
 
     -----     -----     -----
     ITERATOR pattern: provides a way to access the elements of an aggregate object sequentially without exposing its
@@ -209,6 +299,8 @@ package HeadFirst.DesignPatterns.Ch09IteratorAndCompositePattern;
     -----     -----     -----
 */
 
+import java.util.ArrayList;
+
 public class TestClassMenu {
     public static void main(String[] args) {
         // First we create the new menus.
@@ -216,8 +308,16 @@ public class TestClassMenu {
         DinerMenu dinerMenu = new DinerMenu();
         CafeMenu cafeMenu = new CafeMenu();
 
+        ArrayList menus = new ArrayList();
+        menus.add(pancakeHouseMenu);
+        menus.add(dinerMenu);
+        menus.add(cafeMenu);
+
+        Waitress waitress = new Waitress(menus);
+        /* We're switching to the Waitress holding all 3 menus in an ArrayList instance variable.
         // Then we create a Waitress and pass her the menus.
         Waitress waitress = new Waitress(pancakeHouseMenu, dinerMenu, cafeMenu);
+        */
 
         // Then we print them.
         waitress.printMenu();

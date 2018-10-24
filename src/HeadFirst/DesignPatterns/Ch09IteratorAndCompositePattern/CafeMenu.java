@@ -9,6 +9,7 @@ public class CafeMenu implements Menu {
     // The Cafe is storing their menu items in a Hashtable. Does that support Iterator? We'll see shortly...
     // We're using Hashtable because it's a common data structure for storing values; you could also use the newer HashMap.
     Hashtable menuItems = new Hashtable();
+    String name = "Cafe Menu";
 
     public CafeMenu() {
         // Like the other Menus, the menu items are initialized in the constructor.
@@ -46,4 +47,7 @@ public class CafeMenu implements Menu {
         return menuItems;
     }
     */
+    public String getName() {
+        return this.name;
+    }
 }

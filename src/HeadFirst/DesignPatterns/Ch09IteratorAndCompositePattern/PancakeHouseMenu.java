@@ -7,6 +7,7 @@ import java.util.Iterator;
 // I used an ArrayList so I can easily expand my menu.
 public class PancakeHouseMenu implements Menu {
     ArrayList menuItems;
+    String name = "Pancake House Menu";
 
     public PancakeHouseMenu() {
         // Lou's using an ArrayList to store his menu items.
@@ -56,4 +57,8 @@ public class PancakeHouseMenu implements Menu {
     // Lous has a bunch of other menu code that depends on the ArrayList implementation. he doesn't want to have to
     //     rewrite all that code!
     // other menu methods here
+
+    public String getName() {
+        return this.name;
+    }
 }
