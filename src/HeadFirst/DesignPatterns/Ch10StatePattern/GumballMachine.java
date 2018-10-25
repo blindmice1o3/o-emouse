@@ -11,7 +11,7 @@ public class GumballMachine {
     //int state = SOLD_OUT;
     */
 
-    // Here are all the states again... and the State instance variable.
+    // Here are all the State instance variable.
     State soldOutState;
     State noQuarterState;
     State hasQuarterState;
@@ -145,6 +145,13 @@ public class GumballMachine {
         System.out.println("A gumball comes rolling out the slot...");
         if (count != 0) {
            count = count -1;
+        }
+    }
+
+    public void refill(int numOfGumballs) {
+        this.count = numOfGumballs;
+        if (count > 0) {
+            state = noQuarterState;
         }
     }
 
