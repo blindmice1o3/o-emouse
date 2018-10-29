@@ -1,8 +1,6 @@
 package CountZeroInit.model.items;
 
-public class Lootable extends Item {
+public interface Lootable {
 
-    public Lootable(String name) {
-        this.name = name;
-    }
+
 }
