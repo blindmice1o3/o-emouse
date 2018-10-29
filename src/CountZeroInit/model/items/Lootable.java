@@ -1,4 +1,4 @@
-package CountZeroInit.items;
+package CountZeroInit.model.items;
 
 public class Lootable extends Item {
 

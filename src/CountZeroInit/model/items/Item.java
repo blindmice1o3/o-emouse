@@ -1,4 +1,4 @@
-package CountZeroInit.items;
+package CountZeroInit.model.items;
 
 public abstract class Item {
     String name;

@@ -1,4 +1,4 @@
-package CountZeroInit.creatures;
+package CountZeroInit.model.creatures;
 
 public abstract class LifeForm {
     String name;
