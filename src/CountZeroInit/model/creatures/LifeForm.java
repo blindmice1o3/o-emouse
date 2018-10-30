@@ -42,4 +42,6 @@ public abstract class LifeForm {
     public void setRow(int row) {
         this.row = row;
     }
+
+
 }

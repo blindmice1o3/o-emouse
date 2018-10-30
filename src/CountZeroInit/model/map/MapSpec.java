@@ -7,8 +7,6 @@ import CountZeroInit.model.surroundings.Tile;
 import java.util.List;
 
 public abstract class MapSpec {
-
-    Tile[][] gameBoard;
     List<LifeForm> lifeFormsOnBoard;
     List<Monster> monstersOnBoard;
 

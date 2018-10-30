@@ -1,6 +1,7 @@
 package CountZeroInit.model.creatures;
 
-public class Humanoid extends LifeForm implements Playable {
+public class Humanoid extends LifeForm
+        implements Playable {
 
     public Humanoid(String type) {
         this.type = type;

@@ -2,6 +2,7 @@ package CountZeroInit.controller;
 
 import CountZeroInit.model.creatures.Humanoid;
 import CountZeroInit.model.creatures.Monster;
+import CountZeroInit.model.creatures.ThunderMouse;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,7 +11,7 @@ import java.io.InputStreamReader;
 public class CountZeroInit {
     public static void main (String[] args) {
         Humanoid player1 = new Humanoid("Player1");
-        Monster monster1 = new Monster("Fun-Guy Fungus", "Fungi");
+        Monster monster1 = new ThunderMouse("Fun-Guy Fungus", "Fungi");
 
         System.out.println("Hello player1\nWhat is your name?\n");
 
