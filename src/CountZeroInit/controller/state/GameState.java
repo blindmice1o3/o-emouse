@@ -1,6 +1,8 @@
 package CountZeroInit.controller.state;
 
 public class GameState implements State {
+
+
     @Override
     public void aButtonPressed() {
         System.out.println("Pressed button: A");
