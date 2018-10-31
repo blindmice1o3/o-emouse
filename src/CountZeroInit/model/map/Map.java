@@ -35,6 +35,11 @@ public class Map {
             mapSpec.lifeFormsOnBoard.get(0).setCol(0);
             mapSpec.lifeFormsOnBoard.get(0).setRow(4);
         }
+
+        if (gameBoard[19][4] instanceof Walkable) {
+            mapSpec.lifeFormsOnBoard.get(1).setCol(19);
+            mapSpec.lifeFormsOnBoard.get(1).setRow(4);
+        }
     }
 
     public Tile[][] getGameBoard() {

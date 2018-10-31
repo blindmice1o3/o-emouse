@@ -9,15 +9,5 @@ public class ThunderMouse extends Monster {
         super(name, type);
     }
 
-    public void setWeapon(Weapon weapon) {
-        super.setWeapon(weapon);
-    }
 
-    public void setArmor(Armor armor) {
-        super.setArmor(armor);
-    }
-
-    public void setItems(Item[] items) {
-        super.setItems(items);
-    }
 }

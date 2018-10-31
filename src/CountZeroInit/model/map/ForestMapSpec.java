@@ -1,9 +1,6 @@
 package CountZeroInit.model.map;
 
-import CountZeroInit.model.creatures.LifeForm;
-import CountZeroInit.model.creatures.Monster;
-import CountZeroInit.model.creatures.MonsterFactory;
-import CountZeroInit.model.creatures.ThunderMouse;
+import CountZeroInit.model.creatures.*;
 import CountZeroInit.model.surroundings.Grass;
 import CountZeroInit.model.surroundings.Tile;
 
@@ -22,6 +19,7 @@ public class ForestMapSpec extends MapSpec {
             }
         }
 
-        lifeFormsOnBoard.add(new ThunderMouse("pooh", "bear"));
+        lifeFormsOnBoard.add(MonsterFactory.orderMonster("Winnie", "pooh"));
+        lifeFormsOnBoard.add(new Humanoid("Quiet Riot", "humanoid"));
     }
 }

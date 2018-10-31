@@ -4,15 +4,19 @@ import CountZeroInit.model.items.Armor;
 import CountZeroInit.model.items.Item;
 import CountZeroInit.model.items.Weapon;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public abstract class Monster extends LifeForm {
     Weapon weapon;
     Armor armor;
-    Item[] items;
+    List<Item> items;
 
 
     public Monster(String name, String type) {
         this.name = name;
         this.type = type;
+        items = new ArrayList<Item>();
     }
 
     public void setWeapon(Weapon weapon) {
@@ -23,12 +27,19 @@ public abstract class Monster extends LifeForm {
         this.armor = armor;
     }
 
-    public void setItems(Item[] items){
-        this.items = items;
+    public void addItem(Item item){
+        items.add(item);
     }
 
-    public void equipMonster() {
-
+    public Weapon getWeapon() {
+        return weapon;
     }
 
+    public Armor getArmor() {
+        return armor;
+    }
+
+    public List<Item> getItems() {
+        return items;
+    }
 }

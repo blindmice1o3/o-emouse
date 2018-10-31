@@ -2,8 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4264d6a-6746-43ef-b695-128d92c400ed" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/items/CardboardShoulderPads.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/items/LightningShockWeapon.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/items/PlasticSpork.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/controller/CountZeroInit.class" afterPath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/controller/CountZeroInit.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/model/creatures/Monster.class" afterPath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/model/creatures/Monster.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/model/creatures/MonsterFactory.class" afterPath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/model/creatures/MonsterFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/model/creatures/ThunderMouse.class" afterPath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/model/creatures/ThunderMouse.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/model/map/ForestMapSpec.class" afterPath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/model/map/ForestMapSpec.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/model/map/Map.class" afterPath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/model/map/Map.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CountZeroInit/controller/CountZeroInit.java" afterPath="$PROJECT_DIR$/src/CountZeroInit/controller/CountZeroInit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CountZeroInit/model/surroundings/Grass.java" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/surroundings/Grass.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CountZeroInit/model/creatures/Monster.java" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/creatures/Monster.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CountZeroInit/model/creatures/MonsterFactory.java" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/creatures/MonsterFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CountZeroInit/model/creatures/ThunderMouse.java" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/creatures/ThunderMouse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CountZeroInit/model/items/Item.java" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/items/Item.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CountZeroInit/model/map/ForestMapSpec.java" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/map/ForestMapSpec.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CountZeroInit/model/map/Map.java" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/map/Map.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,31 +33,11 @@
       <file leaf-file-name="ForestMapSpec.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/map/ForestMapSpec.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="63" lean-forward="false" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
+            <state relative-caret-position="374">
+              <caret line="22" column="69" lean-forward="true" selection-start-line="22" selection-start-column="69" selection-end-line="22" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LifeForm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/creatures/LifeForm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Monster.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/creatures/Monster.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -50,37 +45,18 @@
       <file leaf-file-name="MonsterFactory.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/creatures/MonsterFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+            <state relative-caret-position="459">
+              <caret line="35" column="17" lean-forward="false" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Tile.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/surroundings/Tile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-              <folding>
-                <element signature="e#364#365#0" expanded="true" />
-                <element signature="e#395#396#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Map.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/map/Map.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="37" column="5" lean-forward="false" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1005#1006#0" expanded="true" />
-                <element signature="e#1037#1038#0" expanded="true" />
+                <element signature="e#400#401#0" expanded="true" />
+                <element signature="e#451#452#0" expanded="true" />
+                <element signature="e#678#679#0" expanded="true" />
+                <element signature="e#752#753#0" expanded="true" />
+                <element signature="e#792#793#0" expanded="true" />
+                <element signature="e#868#869#0" expanded="true" />
+                <element signature="e#906#907#0" expanded="true" />
+                <element signature="e#961#962#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,29 +65,41 @@
       <file leaf-file-name="CountZeroInit.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CountZeroInit/controller/CountZeroInit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="79" column="28" lean-forward="true" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="28" />
+            <state relative-caret-position="18">
+              <caret line="74" column="68" lean-forward="false" selection-start-line="74" selection-start-column="68" selection-end-line="74" selection-end-column="68" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameState.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CountZeroInit/controller/state/GameState.java">
+      <file leaf-file-name="Item.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/items/Item.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+            <state relative-caret-position="204">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Grass.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/surroundings/Grass.java">
+      <file leaf-file-name="Humanoid.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/creatures/Humanoid.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+            <state relative-caret-position="51">
+              <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Map.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/map/Map.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="40" column="54" lean-forward="false" selection-start-line="40" selection-start-column="54" selection-end-line="40" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -119,12 +107,10 @@
       <file leaf-file-name="MapSpec.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/map/MapSpec.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="255">
               <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#323#324#0" expanded="true" />
-                <element signature="e#351#352#0" expanded="true" />
                 <element signature="e#402#403#0" expanded="true" />
                 <element signature="e#441#442#0" expanded="true" />
               </folding>
@@ -137,8 +123,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -158,10 +144,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/CompositePatternMenuComponent/CompositeIterator.java" />
-        <option value="$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/TestClassMenu.java" />
-        <option value="$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/CompositePatternMenuComponent/NullIterator.java" />
-        <option value="$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/CompositePatternMenuComponent/Waitress.java" />
         <option value="$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/CompositePatternMenuComponent/TestClassMenuCompositePattern.java" />
         <option value="$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch10StatePattern/State.java" />
         <option value="$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch10StatePattern/NoQuarterState.java" />
@@ -191,24 +173,28 @@
         <option value="$PROJECT_DIR$/src/CountZeroInit/model/map/ForestMap.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/model/creatures/Playable.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/model/creatures/Humanoid.java" />
-        <option value="$PROJECT_DIR$/src/CountZeroInit/model/items/Armor.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/model/items/Weapon.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/model/creatures/LifeForm.java" />
-        <option value="$PROJECT_DIR$/src/CountZeroInit/model/creatures/ThunderMouse.java" />
-        <option value="$PROJECT_DIR$/src/CountZeroInit/model/creatures/MonsterFactory.java" />
-        <option value="$PROJECT_DIR$/src/CountZeroInit/model/creatures/Monster.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/model/map/MapMaker.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/model/surroundings/House.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/model/surroundings/Door.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/model/surroundings/Tree.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/model/surroundings/Wall.java" />
-        <option value="$PROJECT_DIR$/src/CountZeroInit/model/map/ForestMapSpec.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/controller/state/GameState.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/model/surroundings/Tile.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/model/map/MapSpec.java" />
-        <option value="$PROJECT_DIR$/src/CountZeroInit/model/map/Map.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/model/surroundings/Grass.java" />
+        <option value="$PROJECT_DIR$/src/CountZeroInit/model/items/Armor.java" />
+        <option value="$PROJECT_DIR$/src/CountZeroInit/model/map/Map.java" />
+        <option value="$PROJECT_DIR$/src/CountZeroInit/model/creatures/Monster.java" />
+        <option value="$PROJECT_DIR$/src/CountZeroInit/model/items/LightingShockWeapon.java" />
+        <option value="$PROJECT_DIR$/src/CountZeroInit/model/items/CardboardShoulderPads.java" />
+        <option value="$PROJECT_DIR$/src/CountZeroInit/model/items/PlasticSpork.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/controller/CountZeroInit.java" />
+        <option value="$PROJECT_DIR$/src/CountZeroInit/model/creatures/ThunderMouse.java" />
+        <option value="$PROJECT_DIR$/src/CountZeroInit/model/creatures/MonsterFactory.java" />
+        <option value="$PROJECT_DIR$/src/CountZeroInit/model/map/ForestMapSpec.java" />
+        <option value="$PROJECT_DIR$/src/CountZeroInit/model/items/Item.java" />
       </list>
     </option>
   </component>
@@ -576,6 +562,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27941176" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24130106" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39932886" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -585,7 +572,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -623,27 +609,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/OOAD/Ch04Analysis/TestClassCh04.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/OOAD/Ch05GoodDesign/TestClassCh05.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/OOAD/Ch01WellDesignedAppsRock/Guitar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/HeadFirst/OOAD/Ch01WellDesignedAppsRock/Inventory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -822,62 +787,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/items/Lootable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/items/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/items/Armor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-          <folding>
-            <element signature="e#125#126#0" expanded="false" />
-            <element signature="e#155#156#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/items/Weapon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-          <folding>
-            <element signature="e#124#125#0" expanded="false" />
-            <element signature="e#153#154#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/creatures/ThunderMouse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#255#256#0" expanded="false" />
-            <element signature="e#288#289#0" expanded="false" />
-            <element signature="e#332#333#0" expanded="false" />
-            <element signature="e#371#372#0" expanded="false" />
-            <element signature="e#412#413#0" expanded="false" />
-            <element signature="e#449#450#0" expanded="false" />
-            <element signature="e#491#492#0" expanded="false" />
-            <element signature="e#528#529#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch11ProxyPattern/TestClassGumballMonitor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="39">
@@ -890,14 +799,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="8" column="51" lean-forward="false" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/creatures/Humanoid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -962,21 +863,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/creatures/MonsterFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/surroundings/Grass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        <state relative-caret-position="68">
+          <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/items/Lootable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/items/Weapon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#124#125#0" expanded="true" />
+            <element signature="e#153#154#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/creatures/Monster.java">
+    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/items/LightningShockWeapon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state relative-caret-position="102">
+          <caret line="6" column="5" lean-forward="false" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/items/Armor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/items/CardboardShoulderPads.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/items/PlasticSpork.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+          <folding>
+            <element signature="e#114#115#0" expanded="true" />
+            <element signature="e#146#147#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -988,54 +933,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/map/Map.java">
+    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/creatures/Monster.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="37" column="5" lean-forward="false" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+        <state relative-caret-position="255">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/creatures/ThunderMouse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/creatures/MonsterFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="35" column="17" lean-forward="false" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1005#1006#0" expanded="true" />
-            <element signature="e#1037#1038#0" expanded="true" />
+            <element signature="e#400#401#0" expanded="true" />
+            <element signature="e#451#452#0" expanded="true" />
+            <element signature="e#678#679#0" expanded="true" />
+            <element signature="e#752#753#0" expanded="true" />
+            <element signature="e#792#793#0" expanded="true" />
+            <element signature="e#868#869#0" expanded="true" />
+            <element signature="e#906#907#0" expanded="true" />
+            <element signature="e#961#962#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/items/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/creatures/Humanoid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/map/MapSpec.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="255">
           <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#323#324#0" expanded="true" />
-            <element signature="e#351#352#0" expanded="true" />
             <element signature="e#402#403#0" expanded="true" />
             <element signature="e#441#442#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/map/ForestMapSpec.java">
+    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/map/Map.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="63" lean-forward="false" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
+        <state relative-caret-position="527">
+          <caret line="40" column="54" lean-forward="false" selection-start-line="40" selection-start-column="54" selection-end-line="40" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/surroundings/Grass.java">
+    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/map/ForestMapSpec.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-          <folding />
+        <state relative-caret-position="374">
+          <caret line="22" column="69" lean-forward="true" selection-start-line="22" selection-start-column="69" selection-end-line="22" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CountZeroInit/controller/CountZeroInit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="79" column="28" lean-forward="true" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="28" />
+        <state relative-caret-position="18">
+          <caret line="74" column="68" lean-forward="false" selection-start-line="74" selection-start-column="68" selection-end-line="74" selection-end-column="68" />
           <folding />
         </state>
       </provider>

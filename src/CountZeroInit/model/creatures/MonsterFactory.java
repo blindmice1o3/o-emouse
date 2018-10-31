@@ -1,28 +1,40 @@
 package CountZeroInit.model.creatures;
 
-import CountZeroInit.model.items.Armor;
-import CountZeroInit.model.items.Item;
-import CountZeroInit.model.items.Weapon;
+import CountZeroInit.model.items.*;
 
-public abstract class MonsterFactory {
+import java.util.List;
+
+public class MonsterFactory {
 
 
-    public Monster orderMonster(String name, String type) {
+    public static Monster orderMonster(String name, String type) {
         Monster monster;
 
         monster = createMonster(name, type);
-
-        monster.equipMonster();
+        equipMonster(monster);
 
         return monster;
     }
 
-    public abstract Monster createMonster(String name, String type);
+    public static Monster createMonster(String name, String type) {
+        return new ThunderMouse(name, type);
+    }
 
+    public static void equipMonster(Monster monster) {
+        monster.weapon = createWeapon();
+        monster.armor = createArmor();
+        monster.items.add(createItem());
 
+    }
 
-    public abstract Weapon createWeapon();
-    public abstract Armor createArmor();
-    public abstract Item[] createItems();
+    public static Weapon createWeapon() {
+        return new LightningShockWeapon("lightningshockweapon", 1);
+    }
+    public static Armor createArmor() {
+        return new CardboardShoulderPads("cardboardshoulderpads", 2);
+    }
+    public static Item createItem() {
+        return new PlasticSpork("plasticspork");
+    }
 
 }

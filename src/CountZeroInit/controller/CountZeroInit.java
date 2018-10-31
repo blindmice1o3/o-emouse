@@ -88,6 +88,8 @@ public class CountZeroInit {
         System.out.println("***Monster from ForestMapSpec: \n" +
                             lifeFormsOnBoard.get(0) + "\n" +
                             "***Location: (" + lifeFormsOnBoard.get(0).getCol() + ", " + lifeFormsOnBoard.get(0).getRow() + ")");
+        ThunderMouse tm = (ThunderMouse)lifeFormsOnBoard.get(0);
+        System.out.println("***Monster is wearing: " + tm.getWeapon() + ", " + tm.getWeapon() + ", " + tm.getItems());
     }
 
     public static boolean hasMonsterOnThisTile(List<LifeForm> lifeFormsOnBoard, int col, int row) {
