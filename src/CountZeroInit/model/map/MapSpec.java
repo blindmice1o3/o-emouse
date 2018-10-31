@@ -10,4 +10,11 @@ public abstract class MapSpec {
     List<LifeForm> lifeFormsOnBoard;
     List<Tile> tiles;
 
+    public List<Tile> getTiles() {
+        return tiles;
+    }
+
+    public List<LifeForm> getLifeFormsOnBoard() {
+        return lifeFormsOnBoard;
+    }
 }

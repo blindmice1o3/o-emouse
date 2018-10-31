@@ -4,6 +4,8 @@ import CountZeroInit.model.surroundings.Grass;
 import CountZeroInit.model.surroundings.Tile;
 import CountZeroInit.model.surroundings.Walkable;
 
+import java.util.List;
+
 public class Map {
     private Tile[][] gameBoard;
     private MapSpec mapSpec;
@@ -18,9 +20,11 @@ public class Map {
 
     public void setGameBoard() {
         int i = 0;
+        List<Tile> floorPlan = mapSpec.getTiles();
+
         for (int col = 0; col < 20; col++) {
             for (int row = 0; row < 20; row++) {
-                gameBoard[col][row] = mapSpec.tiles.get(i);
+                gameBoard[col][row] = floorPlan.get(i);
                 i++;
             }
         }
