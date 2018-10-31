@@ -3,6 +3,10 @@ package CountZeroInit.controller;
 import CountZeroInit.model.creatures.Humanoid;
 import CountZeroInit.model.creatures.Monster;
 import CountZeroInit.model.creatures.ThunderMouse;
+import CountZeroInit.model.map.ForestMapSpec;
+import CountZeroInit.model.map.Map;
+import CountZeroInit.model.map.MapSpec;
+import CountZeroInit.model.surroundings.Tile;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -43,6 +47,17 @@ public class CountZeroInit {
             System.out.println("I don't understand your command.");
         }
 
+        MapSpec forestMapSpec = new ForestMapSpec();
+        Map act1Forest = new Map(forestMapSpec);
+
+
+        for (int col = 0; col < 20; col++) {
+            for (int row = 0; row < 20; row++) {
+                System.out.print(act1Forest.getGameBoard()[col][row].getPix() + "  ");
+
+            }
+            System.out.println("");
+        }
     }
 }
 

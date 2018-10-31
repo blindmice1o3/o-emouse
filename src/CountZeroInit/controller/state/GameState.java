@@ -23,7 +23,7 @@ public class GameState implements State {
 
     @Override
     public void upButtonPressed() {
-        if (player1.getLocation())
+       // if (player1.getLocation())
     }
 
     @Override

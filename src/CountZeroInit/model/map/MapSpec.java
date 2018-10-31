@@ -8,6 +8,6 @@ import java.util.List;
 
 public abstract class MapSpec {
     List<LifeForm> lifeFormsOnBoard;
-    List<Monster> monstersOnBoard;
+    List<Tile> tiles;
 
 }
