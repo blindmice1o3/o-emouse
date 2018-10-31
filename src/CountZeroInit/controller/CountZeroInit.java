@@ -56,6 +56,7 @@ public class CountZeroInit {
         Tile[][] gameBoard = act1Forest.getGameBoard();
         List<LifeForm> lifeFormsOnBoard = forestMapSpec.getLifeFormsOnBoard();
 
+        /*
         for (int col = 0; col < 20; col++) {
             for (int row = 0; row < 20; row++) {
                 if (row != 19) {
@@ -68,11 +69,36 @@ public class CountZeroInit {
                 }
             }
         }
+        */
+        for (int col = 0; col < 20; col++) {
+            for (int row = 0; row < 20; row++) {
+                if (hasMonsterOnThisTile(lifeFormsOnBoard, col, row)) {
+                    System.out.print("O" + " ");
+                } else {
+                    if (row == 19) {
+                        System.out.println(gameBoard[col][row].getPix());
+                    } else {
+                        System.out.print(gameBoard[col][row].getPix() + " ");
+                    }
+                }
+            }
+        }
 
         System.out.println("");
         System.out.println("***Monster from ForestMapSpec: \n" +
                             lifeFormsOnBoard.get(0) + "\n" +
                             "***Location: (" + lifeFormsOnBoard.get(0).getCol() + ", " + lifeFormsOnBoard.get(0).getRow() + ")");
     }
+
+    public static boolean hasMonsterOnThisTile(List<LifeForm> lifeFormsOnBoard, int col, int row) {
+        for (LifeForm lf: lifeFormsOnBoard) {
+            if (lf.getCol() == col && lf.getRow() == row) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
+
+
 

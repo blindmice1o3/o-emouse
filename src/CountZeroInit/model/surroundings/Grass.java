@@ -2,7 +2,7 @@ package CountZeroInit.model.surroundings;
 
 public class Grass extends Tile
     implements Walkable {
-    String pix = "G";
+    String pix = "-";
 
     public Grass(int col, int row) {
         this.col = col;
