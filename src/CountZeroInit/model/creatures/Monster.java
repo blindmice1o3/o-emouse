@@ -11,7 +11,7 @@ public abstract class Monster extends LifeForm {
     Weapon weapon;
     Armor armor;
     List<Item> items;
-
+    String imageAddress;
 
     public Monster(String name, String type) {
         this.name = name;
@@ -31,6 +31,10 @@ public abstract class Monster extends LifeForm {
         items.add(item);
     }
 
+    public void setImageAddress(String imageAddress) {
+        this.imageAddress = imageAddress;
+    }
+
     public Weapon getWeapon() {
         return weapon;
     }
@@ -41,5 +45,9 @@ public abstract class Monster extends LifeForm {
 
     public List<Item> getItems() {
         return items;
+    }
+
+    public String getImageAddress() {
+        return imageAddress;
     }
 }
