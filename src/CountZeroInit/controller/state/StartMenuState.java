@@ -11,24 +11,23 @@ public class StartMenuState implements State {
 
     public StartMenuState(GameboyColor gb) {
         this.gb = gb;
+        loadStartMenuCommands();
+    }
+
+    public void loadStartMenuCommands() {
+        startMenuCommands = new Command[] { new MonsterListStateCommand(gb),
+                                new MyMonsterListStateCommand(gb),
+                                new ItemListStateCommand(gb),
+                                new ExitKeyCommand(gb) };
+
         startMenuCommandsIndex = 0;
-
-        startMenuCommands[0] = new MonsterListStateCommand(gb);
-        startMenuCommands[1] = new MyMonsterListStateCommand(gb);
-        startMenuCommands[2] = new ItemListStateCommand(gb);
-        startMenuCommands[3] = new ExitKeyCommand(gb);
-
         startMenuCommandsSize = startMenuCommands.length;
     }
 
     @Override
     public void aButtonPressed() {
-        Command currentCommand = selectCommand(startMenuCommandsIndex);
+        Command currentCommand = startMenuCommands[startMenuCommandsIndex];
         currentCommand.execute();
-    }
-
-    public Command selectCommand(int startMenuCommandsIndex) {
-        return startMenuCommands[startMenuCommandsIndex];
     }
 
     @Override

@@ -1,6 +1,7 @@
 package CountZeroInit.controller;
 
 import CountZeroInit.controller.state.*;
+import CountZeroInit.model.map.Map;
 
 public class GameboyColor {
     State battleState;
@@ -11,8 +12,9 @@ public class GameboyColor {
     State startMenuState;
 
     State currentState;
+    Map currentMap;
 
-    public GameboyColor() {
+    public GameboyColor(Map map) {
         battleState = new BattleState(this);
         gameState = new GameState(this);
         itemListState = new ItemListState(this);
@@ -20,7 +22,16 @@ public class GameboyColor {
         myMonsterListState = new MyMonsterListState(this);
         startMenuState = new StartMenuState(this);
 
-        currentState = startMenuState;
+        setCurrentState(startMenuState);
+        setCurrentMap(map);
+    }
+
+    public void setCurrentMap(Map map) {
+        this.currentMap = map;
+    }
+
+    public Map getCurrentMap() {
+        return currentMap;
     }
 
     public void setCurrentState(State newState) {

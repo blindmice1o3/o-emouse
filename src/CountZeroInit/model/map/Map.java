@@ -45,4 +45,5 @@ public class Map {
     public Tile[][] getGameBoard() {
         return gameBoard;
     }
+    public MapSpec getMapSpec() { return mapSpec; }
 }
