@@ -2,10 +2,10 @@ package CountZeroInit.controller.state;
 
 import CountZeroInit.controller.GameboyColor;
 
-public class ItemListState implements State {
+public class MyMonsterListState implements State {
     private GameboyColor gb;
 
-    public ItemListState(GameboyColor gb) {
+    public MyMonsterListState(GameboyColor gb) {
         this.gb = gb;
     }
 

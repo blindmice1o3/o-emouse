@@ -1,7 +1,13 @@
 package CountZeroInit.controller.state;
 
-public class GameState implements State {
+import CountZeroInit.controller.GameboyColor;
 
+public class GameState implements State {
+    private GameboyColor gb;
+
+    public GameState(GameboyColor gb) {
+        this.gb = gb;
+    }
 
     @Override
     public void aButtonPressed() {

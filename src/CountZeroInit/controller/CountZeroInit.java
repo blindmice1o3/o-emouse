@@ -15,6 +15,7 @@ import java.io.InputStreamReader;
 import java.util.List;
 
 public class CountZeroInit {
+
     public static void main (String[] args) {
         Humanoid player1 = new Humanoid("Player1");
         Monster monster1 = new ThunderMouse("Fun-Guy Fungus", "Fungi");
@@ -89,7 +90,7 @@ public class CountZeroInit {
                             lifeFormsOnBoard.get(0) + "\n" +
                             "***Location: (" + lifeFormsOnBoard.get(0).getCol() + ", " + lifeFormsOnBoard.get(0).getRow() + ")");
         ThunderMouse tm = (ThunderMouse)lifeFormsOnBoard.get(0);
-        System.out.println("***Monster is wearing: " + tm.getWeapon() + ", " + tm.getWeapon() + ", " + tm.getItems());
+        System.out.println("***Monster is wearing: " + tm.getWeapon() + ", " + tm.getArmor() + ", " + tm.getItems());
     }
 
     public static boolean hasMonsterOnThisTile(List<LifeForm> lifeFormsOnBoard, int col, int row) {
