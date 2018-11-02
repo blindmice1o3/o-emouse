@@ -10,6 +10,7 @@ public class Humanoid extends LifeForm
     public Humanoid(String name, String type) {
         this.name = name;
         this.type = type;
+        setImageAddress("src/CountZeroInit/view/butters.jpg");
     }
 
     public void keepMonster(Monster monster) {

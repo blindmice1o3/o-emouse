@@ -5,6 +5,7 @@ public abstract class LifeForm {
     String type;
     int col;
     int row;
+    String imageAddress;
 
     @Override
     public String toString() {
@@ -43,5 +44,10 @@ public abstract class LifeForm {
         this.row = row;
     }
 
-
+    public void setImageAddress(String imageAddress) {
+        this.imageAddress = imageAddress;
+    }
+    public String getImageAddress() {
+        return imageAddress;
+    }
 }
