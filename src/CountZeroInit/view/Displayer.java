@@ -1,16 +1,24 @@
 package CountZeroInit.view;
 
+import CountZeroInit.controller.GameboyColor;
+import CountZeroInit.model.map.Map;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Displayer {
+    GameboyColor gb;
+    Map map;
 
+    public Displayer(GameboyColor gb, Map map) {
+        this.gb = gb;
+        this.map = map;
+    }
 
     public void initiate() {
         JFrame frame = new JFrame();
-
         frame.setSize(400, 600);
 
         MyDrawPanel panel = new MyDrawPanel();

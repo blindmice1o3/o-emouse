@@ -16,7 +16,7 @@ public class GameboyColor {
     Map currentMap;
     Displayer displayer;
 
-    public GameboyColor(Map map, Displayer displayer) {
+    public GameboyColor(Map map) {
         battleState = new BattleState(this);
         gameState = new GameState(this);
         itemListState = new ItemListState(this);
@@ -26,7 +26,7 @@ public class GameboyColor {
 
         setCurrentState(startMenuState);
         setCurrentMap(map);
-        this.displayer = displayer;
+        displayer = new Displayer(this, map);
         displayer.initiate();
     }
 

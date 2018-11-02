@@ -23,10 +23,9 @@ public class CountZeroInit {
 
         MapSpec mapSpec = new ForestMapSpec();
         Map act1ForestMap = new Map(mapSpec);
-        Displayer displayer = new Displayer();
-        GameboyColor gb = new GameboyColor(act1ForestMap, displayer);
+        GameboyColor gb = new GameboyColor(act1ForestMap);
 
-        
+
 
         System.out.println(gb.getCurrentState());
         System.out.println(gb.getCurrentMap());
