@@ -6,15 +6,16 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Displayer {
-    public static void main(String[] args) {
-        Displayer d = new Displayer();
-        d.initiate();
-    }
+
 
     public void initiate() {
         JFrame frame = new JFrame();
 
         frame.setSize(400, 600);
+
+        MyDrawPanel panel = new MyDrawPanel();
+        frame.getContentPane().add(panel);
+
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
 /*
@@ -27,8 +28,6 @@ public class Displayer {
         frame.getContentPane().add(BorderLayout.NORTH, aButton);
         frame.getContentPane().add(BorderLayout.SOUTH, bButton);
 */
-        MyDrawPanel panel = new MyDrawPanel();
-        frame.getContentPane().add(panel);
     }
 }
 

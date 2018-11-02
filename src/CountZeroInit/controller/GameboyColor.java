@@ -2,6 +2,7 @@ package CountZeroInit.controller;
 
 import CountZeroInit.controller.state.*;
 import CountZeroInit.model.map.Map;
+import CountZeroInit.view.Displayer;
 
 public class GameboyColor {
     State battleState;
@@ -13,8 +14,9 @@ public class GameboyColor {
 
     State currentState;
     Map currentMap;
+    Displayer displayer;
 
-    public GameboyColor(Map map) {
+    public GameboyColor(Map map, Displayer displayer) {
         battleState = new BattleState(this);
         gameState = new GameState(this);
         itemListState = new ItemListState(this);
@@ -24,6 +26,8 @@ public class GameboyColor {
 
         setCurrentState(startMenuState);
         setCurrentMap(map);
+        this.displayer = displayer;
+        displayer.initiate();
     }
 
     public void setCurrentMap(Map map) {

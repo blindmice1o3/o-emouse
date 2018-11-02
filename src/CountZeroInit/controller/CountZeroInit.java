@@ -8,6 +8,7 @@ import CountZeroInit.model.map.ForestMapSpec;
 import CountZeroInit.model.map.Map;
 import CountZeroInit.model.map.MapSpec;
 import CountZeroInit.model.surroundings.Tile;
+import CountZeroInit.view.Displayer;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -22,7 +23,10 @@ public class CountZeroInit {
 
         MapSpec mapSpec = new ForestMapSpec();
         Map act1ForestMap = new Map(mapSpec);
-        GameboyColor gb = new GameboyColor(act1ForestMap);
+        Displayer displayer = new Displayer();
+        GameboyColor gb = new GameboyColor(act1ForestMap, displayer);
+
+        
 
         System.out.println(gb.getCurrentState());
         System.out.println(gb.getCurrentMap());
