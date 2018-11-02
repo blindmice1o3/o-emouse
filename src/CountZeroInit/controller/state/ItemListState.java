@@ -60,7 +60,7 @@ public class ItemListState implements State {
         if (currentIndexForSelectingItem > 0) {
             currentIndexForSelectingItem--;
         } else {
-            currentIndexForSelectingItem = numberOfItems;
+            currentIndexForSelectingItem = (numberOfItems-1);
         }
     }
 

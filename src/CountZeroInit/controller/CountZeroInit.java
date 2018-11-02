@@ -41,6 +41,11 @@ public class CountZeroInit {
         gb.getCurrentState().downButtonPressed();
         gb.getCurrentState().downButtonPressed();
         gb.getCurrentState().aButtonPressed();
+        gb.getCurrentState().downButtonPressed();
+        gb.getCurrentState().aButtonPressed();
+        gb.getCurrentState().upButtonPressed();
+        gb.getCurrentState().upButtonPressed();
+        gb.getCurrentState().aButtonPressed();
 
         Tile[][] testGameBoard = gb.getCurrentMap().getGameBoard();
         MapSpec testMapSpec = gb.getCurrentMap().getMapSpec();
