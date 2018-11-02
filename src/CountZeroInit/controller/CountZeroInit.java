@@ -1,5 +1,6 @@
 package CountZeroInit.controller;
 
+import CountZeroInit.controller.state.ItemListState;
 import CountZeroInit.model.creatures.Humanoid;
 import CountZeroInit.model.creatures.LifeForm;
 import CountZeroInit.model.creatures.Monster;
@@ -36,6 +37,11 @@ public class CountZeroInit {
 
         System.out.println(gb.getCurrentState());
 
+
+        gb.getCurrentState().downButtonPressed();
+        gb.getCurrentState().downButtonPressed();
+        gb.getCurrentState().aButtonPressed();
+
         Tile[][] testGameBoard = gb.getCurrentMap().getGameBoard();
         MapSpec testMapSpec = gb.getCurrentMap().getMapSpec();
         /*
@@ -47,6 +53,8 @@ public class CountZeroInit {
         */
         System.out.println(testMapSpec);
         System.out.println(testMapSpec.getLifeFormsOnBoard().getClass());
+
+
         for (LifeForm lifeForm: testMapSpec.getLifeFormsOnBoard()) {
             System.out.println(lifeForm);
             System.out.println("Resides on Tile: (" + lifeForm.getCol() + ", " + lifeForm.getRow() + ").");

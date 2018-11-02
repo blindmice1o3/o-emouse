@@ -1,6 +1,9 @@
 package CountZeroInit.model.map;
 
 import CountZeroInit.model.creatures.*;
+import CountZeroInit.model.items.CardboardShoulderPads;
+import CountZeroInit.model.items.LightningShockWeapon;
+import CountZeroInit.model.items.PlasticSpork;
 import CountZeroInit.model.surroundings.Grass;
 import CountZeroInit.model.surroundings.Tile;
 
@@ -19,7 +22,14 @@ public class ForestMapSpec extends MapSpec {
             }
         }
 
+
+        Humanoid player1 = new Humanoid("Quiet Riot", "humanoid");
+        player1.inventory.add(new PlasticSpork("plastic spork of player1"));
+        player1.inventory.add(new CardboardShoulderPads("cardboard shoulder pads of player1", 2));
+        player1.inventory.add(new LightningShockWeapon("lightning shock weapon of player1", 1));
+
+
         lifeFormsOnBoard.add(MonsterFactory.orderMonster("Winnie", "pooh"));
-        lifeFormsOnBoard.add(new Humanoid("Quiet Riot", "humanoid"));
+        lifeFormsOnBoard.add(player1);
     }
 }

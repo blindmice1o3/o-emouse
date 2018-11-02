@@ -1,6 +1,7 @@
 package CountZeroInit.controller.commandholder;
 
 import CountZeroInit.controller.GameboyColor;
+import CountZeroInit.controller.state.ItemListState;
 
 public class ItemListStateCommand implements Command {
     GameboyColor gb;
@@ -10,6 +11,10 @@ public class ItemListStateCommand implements Command {
     }
 
     public void execute() {
+
         gb.setCurrentState(gb.getItemListState());
+
+        ItemListState itemListState = (ItemListState)gb.getItemListState();
+        itemListState.setPlayer();
     }
 }
