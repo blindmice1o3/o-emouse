@@ -4,7 +4,7 @@ import CountZeroInit.model.creatures.*;
 import CountZeroInit.model.items.CardboardShoulderPads;
 import CountZeroInit.model.items.LightningShockWeapon;
 import CountZeroInit.model.items.PlasticSpork;
-import CountZeroInit.model.surroundings.Grass;
+import CountZeroInit.model.surroundings.Tree;
 
 import java.util.ArrayList;
 
@@ -16,7 +16,7 @@ public class ForestMapSpec extends MapSpec {
 
         for (int col = 0; col < 20; col++) {
             for (int row = 0; row < 20; row++) {
-                tiles.add(new Grass(col, row));
+                tiles.add(new Tree(col, row));
             }
         }
 
