@@ -2,7 +2,6 @@ package CountZeroInit.controller.state;
 
 import CountZeroInit.controller.GameboyColor;
 import CountZeroInit.model.creatures.Humanoid;
-import CountZeroInit.model.creatures.LifeForm;
 
 public class MyMonsterListState implements State {
     private GameboyColor gb;
@@ -11,56 +10,74 @@ public class MyMonsterListState implements State {
     int currentIndexForSelectingMonster;
 
     public MyMonsterListState(GameboyColor gb) {
+        // The following println() is just to see where MyMonsterListState's constructor is called in the output.
+        System.out.println("MyMonsterListState.constructor...");
+
         this.gb = gb;
     }
 
     public void setPlayer() {
-        // From the list of LifeForm that are on the board at the start of this Map, find and set player.
         // The following println() is just to see where setPlayer() is called in the output.
-        System.out.println("!!!!!!!!!!!!!!!!");
+        System.out.println("MyMonsterListState.setPlayer()...");
+
+        // Sets MyMonsterListState's instance variable player1 to refer to the GameboyColor object's player1 object.
         player1 = gb.getPlayer1();
-/*
-        for (LifeForm lifeForm: gb.getCurrentMap().getMapSpec().getLifeFormsOnBoard()) {
-            if (lifeForm.getType().equals("humanoid")) {
-                player1 = (Humanoid)lifeForm;
-            }
-        }
-*/
+
+        // Initiate the currentIndexForSelectingMonster instance variable to 0 by default.
+        // Initiate the numberOfMonsters instance variable to however many the player1 object has in its myMonsterList ArrayList.
         currentIndexForSelectingMonster = 0;
         numberOfMonsters = player1.getMyMonsterList().size();
 
-        System.out.println(numberOfMonsters);
-        System.out.println(currentIndexForSelectingMonster);
+        // The following println() are just to see if setPlayer() is really setting our player1 variable and we're
+        // really getting player1's monster list size.
+        System.out.println("MyMonsterListState.setPlayer() initiating numberOfMonster variable: " + numberOfMonsters);
     }
 
     @Override
     public void aButtonPressed() {
         // prints out the Monster selected by the currentIndexForSelectingMonster
+
         // actually no... it's going to display a list of things that can be done...
         // such as selecting the first Monster to be swap in the monsters[] position with the next Monster selected with aButtonPress()
         // such as displaying stats about that selected Monster's description and class
         // such as displaying [the soon to be added feature] the 4 skills each Monster will have
         // such as displaying [the soon to be added feature] xp points, level, xp needed for next level
+
+        // The following println() is just to see where aButtonPressed() is called in the output.
+        System.out.println("MyMonsterListState.aButtonPressed()...");
+
         System.out.println(player1.getMyMonsterList().get(currentIndexForSelectingMonster));
     }
 
     @Override
     public void bButtonPressed() {
         // Undo button ???
+
+        // The following println() is just to see where bButtonPressed() is called in the output.
+        System.out.println("MyMonsterListState.bButtonPressed()...");
+
     }
 
     @Override
     public void selectButtonPressed() {
+        // The following println() is just to see where selectButtonPressed() is called in the output.
+        System.out.println("MyMonsterListState.selectButtonPressed()...");
 
     }
 
     @Override
     public void startButtonPressed() {
+        // The following println() is just to see where startButtonPressed() is called in the output.
+        System.out.println("MyMonsterListState.startButtonPressed()...");
+
         gb.setCurrentState(gb.getGameState());
     }
 
     @Override
     public void upButtonPressed() {
+        // The following println() is just to see where upButtonPressed() is called in the output.
+        System.out.println("MyMonsterListState.upButtonPressed()...");
+
         if (currentIndexForSelectingMonster > 0) {
             currentIndexForSelectingMonster--;
         } else {
@@ -70,6 +87,9 @@ public class MyMonsterListState implements State {
 
     @Override
     public void downButtonPressed() {
+        // The following println() is just to see where downButtonPressed() is called in the output.
+        System.out.println("MyMonsterListState.downButtonPressed()...");
+
         if (currentIndexForSelectingMonster < (numberOfMonsters-1)) {
             currentIndexForSelectingMonster++;
         } else {
@@ -79,11 +99,15 @@ public class MyMonsterListState implements State {
 
     @Override
     public void rightButtonPressed() {
+        // The following println() is just to see where rightButtonPressed() is called in the output.
+        System.out.println("MyMonsterListState.rightButtonPressed()...");
 
     }
 
     @Override
     public void leftButtonPressed() {
+        // The following println() is just to see where leftButtonPressed() is called in the output.
+        System.out.println("MyMonsterListState.leftButtonPressed()...");
 
     }
 }
