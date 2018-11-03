@@ -8,6 +8,8 @@ public class GameState implements State {
     private GameboyColor gb;
     Humanoid player1;
     int numberOfItems;
+    int player1Col;
+    int player1Row;
 
     public GameState(GameboyColor gb) {
         this.gb = gb;
@@ -26,6 +28,8 @@ public class GameState implements State {
             }
         }
 */
+        player1Col = player1.getCol();
+        player1Row = player1.getRow();
         numberOfItems = player1.inventory.size();
 
         System.out.println(numberOfItems);
@@ -51,25 +55,59 @@ public class GameState implements State {
     @Override
     public void startButtonPressed() {
         System.out.println("Pressed button: start");
+
+        gb.setCurrentState(gb.getStartMenuState());
     }
 
     @Override
     public void upButtonPressed() {
-       // if (player1.getLocation())
+       System.out.println("upButtonPressed() for GameState class");
+
+       if (player1Row != 0) {
+           player1.setRow(player1Row - 1);
+       } else {
+           // maybe cycle back to the bottom of the map...
+       }
+
+       // refresh picture?
     }
 
     @Override
     public void downButtonPressed() {
+        System.out.println("downButtonPressed() for GameState class");
 
+        if (player1Row != 19) {
+            player1.setRow(player1Row + 1);
+        } else {
+            // maybe cycle back to top of the map...
+        }
+
+        // refresh picture?
     }
 
     @Override
     public void rightButtonPressed() {
+        System.out.println("rightButtonPressed() for GameState class");
 
+        if (player1Col != 19) {
+            player1.setCol(player1Col + 1);
+        } else {
+            // maybe cycle back to left of the map...
+        }
+
+        // refresh picture?
     }
 
     @Override
     public void leftButtonPressed() {
+        System.out.println("leftButtonPressed() for GameState class");
 
+        if (player1Col != 0) {
+            player1.setCol(player1Col - 1);
+        } else {
+            // maybe cycle back to right of the map...
+        }
+
+        // refresh picture?
     }
 }

@@ -19,20 +19,35 @@ import java.util.List;
 public class CountZeroInit {
 
     public static void main (String[] args) {
-        Humanoid player1 = new Humanoid("Player1");
-        Monster monster1 = new ThunderMouse("Fun-Guy Fungus", "Fungi");
+        Humanoid player1;
+        Monster monster1;
 
         MapSpec mapSpec = new ForestMapSpec();
         Map act1ForestMap = new Map(mapSpec);
         GameboyColor gb = new GameboyColor(act1ForestMap);
 
-
+        monster1 = (Monster)act1ForestMap.getMapSpec().getLifeFormsOnBoard().get(0);
+        player1 = (Humanoid)act1ForestMap.getMapSpec().getLifeFormsOnBoard().get(1);
 
         System.out.println(gb.getCurrentState());
         System.out.println(gb.getCurrentMap());
 
         gb.getCurrentState().upButtonPressed();
+        gb.getCurrentState().upButtonPressed();
         gb.getCurrentState().aButtonPressed();
+        System.out.println(gb.getCurrentState());
+
+        gb.getCurrentState().startButtonPressed();
+
+        System.out.println(gb.getCurrentState());
+
+        gb.getCurrentState().upButtonPressed();
+        gb.getCurrentState().upButtonPressed();
+        gb.getCurrentState().upButtonPressed();
+        gb.getCurrentState().upButtonPressed();
+
+        System.out.println(monster1.getCol() + ", " + monster1.getRow());
+        System.out.println(player1.getCol() + ", " + player1.getRow());
 /*
         gb.getCurrentState().downButtonPressed();
         // gb.getCurrentState().downButtonPressed();
@@ -40,7 +55,7 @@ public class CountZeroInit {
 */
 
 
-        System.out.println(gb.getCurrentState());
+
 /*
         gb.getCurrentState().aButtonPressed();
         gb.getCurrentState().downButtonPressed();
@@ -64,8 +79,10 @@ public class CountZeroInit {
         gb.getCurrentState().upButtonPressed();
         gb.getCurrentState().aButtonPressed();
 */
+     /*
         Tile[][] testGameBoard = gb.getCurrentMap().getGameBoard();
         MapSpec testMapSpec = gb.getCurrentMap().getMapSpec();
+     */
         /*
         for (int i = 0; i < testGameBoard.length; i++) {
             for (int j = 0; j < testGameBoard.length; j++) {
@@ -73,6 +90,7 @@ public class CountZeroInit {
             }
         }
         */
+        /*
         System.out.println(testMapSpec);
         System.out.println(testMapSpec.getLifeFormsOnBoard().getClass());
 
@@ -82,7 +100,7 @@ public class CountZeroInit {
             System.out.println("Resides on Tile: (" + lifeForm.getCol() + ", " + lifeForm.getRow() + ").");
 
         }
-
+        */
         //System.out.println("Hello player1\nWhat is your name?\n");
 
         //BufferedReader input = new BufferedReader(new InputStreamReader(System.in));

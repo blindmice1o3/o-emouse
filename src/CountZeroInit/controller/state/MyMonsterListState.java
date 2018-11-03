@@ -36,6 +36,11 @@ public class MyMonsterListState implements State {
     @Override
     public void aButtonPressed() {
         // prints out the Monster selected by the currentIndexForSelectingMonster
+        // actually no... it's going to display a list of things that can be done...
+        // such as selecting the first Monster to be swap in the monsters[] position with the next Monster selected with aButtonPress()
+        // such as displaying stats about that selected Monster's description and class
+        // such as displaying [the soon to be added feature] the 4 skills each Monster will have
+        // such as displaying [the soon to be added feature] xp points, level, xp needed for next level
         System.out.println(player1.monsters.get(currentIndexForSelectingMonster));
     }
 
