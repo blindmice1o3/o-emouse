@@ -31,7 +31,6 @@ public class Humanoid extends LifeForm
     }
 
     public void setInventory(List<Item> fromSource) {
-        myInventory.clear();
         for (Item item: fromSource) {
             myInventory.add(item);
         }
@@ -40,7 +39,6 @@ public class Humanoid extends LifeForm
         return myInventory;
     }
     public void setMyMonsterList(List<Monster> fromSource) {
-        myMonsterList.clear();
         for (Monster monster: fromSource) {
             myMonsterList.add(monster);
         }

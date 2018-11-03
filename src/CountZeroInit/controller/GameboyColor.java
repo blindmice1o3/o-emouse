@@ -36,7 +36,17 @@ public class GameboyColor {
                 initiatePlayer1((Humanoid)lifeForm);
             }
         }
+
+        System.out.println(this.player1);
+        System.out.println(getPlayer1().getCol() + ", " + getPlayer1().getRow() + "; " + getPlayer1().getMyMonsterList()
+                + getPlayer1().getInventory() +getPlayer1().getImageAddress() + getPlayer1().getName());
+
+        System.out.println("xoxoxoxox");
+
         numberOfItems = player1.getInventory().size();
+
+        System.out.println("Inventory size for GameboyColor constructor: " + numberOfItems);
+        System.out.println("Number of Monsters for GameboyColor constructor: " + player1.getMyMonsterList().size());
 
         displayer = new Displayer(this, map);
         displayer.initiate();
@@ -47,8 +57,8 @@ public class GameboyColor {
         player1.setRow(fromMap.getRow());
         player1.setCol(fromMap.getCol());
         player1.setImageAddress(fromMap.getImageAddress());
-        player1.setInventory(fromMap.getInventory());
-        player1.setMyMonsterList(fromMap.getMyMonsterList());
+        //player1.setInventory(fromMap.getInventory());
+        //player1.setMyMonsterList(fromMap.getMyMonsterList());
 
     }
 

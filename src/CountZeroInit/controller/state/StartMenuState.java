@@ -32,7 +32,8 @@ public class StartMenuState implements State {
 
     @Override
     public void bButtonPressed() {
-        gb.setCurrentState(gb.getGameState());
+        Command exitKeyCommand = startMenuCommands[3];
+        exitKeyCommand.execute();
     }
 
     @Override
@@ -42,7 +43,8 @@ public class StartMenuState implements State {
 
     @Override
     public void startButtonPressed() {
-        gb.setCurrentState(gb.getGameState());
+        Command exitKeyCommand = startMenuCommands[3];
+        exitKeyCommand.execute();
     }
 
     @Override

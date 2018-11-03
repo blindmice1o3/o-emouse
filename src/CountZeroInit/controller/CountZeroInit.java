@@ -24,7 +24,7 @@ public class CountZeroInit {
         System.out.println(player1.getMyMonsterList());
 
         System.out.println(gb.getCurrentState());
-        System.out.println(gb.getCurrentMap());
+        System.out.println(gb.getCurrentMap().getMapSpec());
         /*
         gb.getCurrentState().upButtonPressed();
         gb.getCurrentState().upButtonPressed();
@@ -32,7 +32,7 @@ public class CountZeroInit {
         System.out.println(gb.getCurrentState());
         */
 
-        System.out.println(gb.getCurrentState());
+        //System.out.println(gb.getCurrentState());
         gb.getCurrentState().startButtonPressed();
 
         System.out.println(gb.getCurrentState());
