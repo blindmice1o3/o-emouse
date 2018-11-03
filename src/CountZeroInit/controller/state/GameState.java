@@ -63,8 +63,8 @@ public class GameState implements State {
     public void upButtonPressed() {
        System.out.println("upButtonPressed() for GameState class");
 
-       if (player1Row != 0) {
-           player1.setRow(player1Row - 1);
+       if (player1Col != 0) {
+           player1.setCol(player1Col - 1);
        } else {
            // maybe cycle back to the bottom of the map...
        }
@@ -76,8 +76,8 @@ public class GameState implements State {
     public void downButtonPressed() {
         System.out.println("downButtonPressed() for GameState class");
 
-        if (player1Row != 19) {
-            player1.setRow(player1Row + 1);
+        if (player1Col != 19) {
+            player1.setCol(player1Col + 1);
         } else {
             // maybe cycle back to top of the map...
         }
@@ -89,8 +89,8 @@ public class GameState implements State {
     public void rightButtonPressed() {
         System.out.println("rightButtonPressed() for GameState class");
 
-        if (player1Col != 19) {
-            player1.setCol(player1Col + 1);
+        if (player1Row != 19) {
+            player1.setRow(player1Row + 1);
         } else {
             // maybe cycle back to left of the map...
         }
@@ -102,8 +102,8 @@ public class GameState implements State {
     public void leftButtonPressed() {
         System.out.println("leftButtonPressed() for GameState class");
 
-        if (player1Col != 0) {
-            player1.setCol(player1Col - 1);
+        if (player1Row != 0) {
+            player1.setRow(player1Row - 1);
         } else {
             // maybe cycle back to right of the map...
         }
