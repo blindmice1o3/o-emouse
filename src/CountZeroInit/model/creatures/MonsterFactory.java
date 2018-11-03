@@ -4,7 +4,7 @@ import CountZeroInit.model.items.*;
 
 import java.util.List;
 
-public class MonsterFactory {
+public abstract class MonsterFactory {
 
 
     public static Monster orderMonster(String name, String type) {

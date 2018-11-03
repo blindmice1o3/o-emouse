@@ -17,16 +17,18 @@ public class ItemListState implements State {
         this.gb = gb;
     }
 
-    // !!!!! CURRENTLY WORKING ON !!!!!
     public void setPlayer() {
         // From the list of LifeForm that are on the board at the start of this Map, find and set player.
+        // The following println() is just to see where setPlayer() is called in the output.
         System.out.println("!!!!!!!!!!!!!!!!");
-
+        player1 = gb.getPlayer1();
+/*
         for (LifeForm lifeForm: gb.getCurrentMap().getMapSpec().getLifeFormsOnBoard()) {
             if (lifeForm.getType().equals("humanoid")) {
                 player1 = (Humanoid)lifeForm;
             }
         }
+*/
         currentIndexForSelectingItem = 0;
         numberOfItems = player1.inventory.size();
 
@@ -37,12 +39,13 @@ public class ItemListState implements State {
 
     @Override
     public void aButtonPressed() {
+        // So far just printing out, rather than executing a command to use the selected item.
         System.out.println(player1.inventory.get(currentIndexForSelectingItem));
     }
 
     @Override
     public void bButtonPressed() {
-
+        // Undo button ???
     }
 
     @Override
@@ -52,7 +55,7 @@ public class ItemListState implements State {
 
     @Override
     public void startButtonPressed() {
-
+        gb.setCurrentState(gb.getGameState());
     }
 
     @Override

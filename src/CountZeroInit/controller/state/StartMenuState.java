@@ -50,13 +50,13 @@ public class StartMenuState implements State {
         if (startMenuCommandsIndex > 0) {
             startMenuCommandsIndex--;
         } else {
-            startMenuCommandsIndex = startMenuCommandsSize;
+            startMenuCommandsIndex = (startMenuCommandsSize-1);
         }
     }
 
     @Override
     public void downButtonPressed() {
-        if (startMenuCommandsIndex < startMenuCommandsSize) {
+        if (startMenuCommandsIndex < (startMenuCommandsSize-1)) {
             startMenuCommandsIndex++;
         } else {
             startMenuCommandsIndex = 0;

@@ -11,6 +11,8 @@ public class MonsterListStateCommand implements Command {
 
     @Override
     public void execute() {
+
         gb.setCurrentState(gb.getMonsterListState());
+
     }
 }

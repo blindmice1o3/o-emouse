@@ -31,13 +31,30 @@ public class CountZeroInit {
         System.out.println(gb.getCurrentState());
         System.out.println(gb.getCurrentMap());
 
-        gb.getCurrentState().downButtonPressed();
-        gb.getCurrentState().downButtonPressed();
+        gb.getCurrentState().upButtonPressed();
         gb.getCurrentState().aButtonPressed();
+/*
+        gb.getCurrentState().downButtonPressed();
+        // gb.getCurrentState().downButtonPressed();
+        gb.getCurrentState().aButtonPressed();
+*/
+
 
         System.out.println(gb.getCurrentState());
+/*
+        gb.getCurrentState().aButtonPressed();
+        gb.getCurrentState().downButtonPressed();
+        gb.getCurrentState().aButtonPressed();
+        gb.getCurrentState().downButtonPressed();
+        gb.getCurrentState().aButtonPressed();
+        gb.getCurrentState().aButtonPressed();
+        gb.getCurrentState().downButtonPressed();
+        gb.getCurrentState().aButtonPressed();
+        gb.getCurrentState().downButtonPressed();
+        gb.getCurrentState().aButtonPressed();
+*/
 
-
+/*
         gb.getCurrentState().downButtonPressed();
         gb.getCurrentState().downButtonPressed();
         gb.getCurrentState().aButtonPressed();
@@ -46,7 +63,7 @@ public class CountZeroInit {
         gb.getCurrentState().upButtonPressed();
         gb.getCurrentState().upButtonPressed();
         gb.getCurrentState().aButtonPressed();
-
+*/
         Tile[][] testGameBoard = gb.getCurrentMap().getGameBoard();
         MapSpec testMapSpec = gb.getCurrentMap().getMapSpec();
         /*

@@ -1,6 +1,8 @@
 package CountZeroInit.controller;
 
 import CountZeroInit.controller.state.*;
+import CountZeroInit.model.creatures.Humanoid;
+import CountZeroInit.model.creatures.LifeForm;
 import CountZeroInit.model.map.Map;
 import CountZeroInit.view.Displayer;
 
@@ -11,6 +13,8 @@ public class GameboyColor {
     State monsterListState;
     State myMonsterListState;
     State startMenuState;
+    Humanoid player1;
+    int numberOfItems;
 
     State currentState;
     Map currentMap;
@@ -26,8 +30,20 @@ public class GameboyColor {
 
         setCurrentState(startMenuState);
         setCurrentMap(map);
+
+        for (LifeForm lifeForm: getCurrentMap().getMapSpec().getLifeFormsOnBoard()) {
+            if (lifeForm.getType().equals("humanoid")) {
+                player1 = (Humanoid)lifeForm;
+            }
+        }
+        numberOfItems = player1.inventory.size();
+
         displayer = new Displayer(this, map);
         displayer.initiate();
+    }
+
+    public Humanoid getPlayer1() {
+        return player1;
     }
 
     public void setCurrentMap(Map map) {

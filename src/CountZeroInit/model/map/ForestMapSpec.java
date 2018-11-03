@@ -28,8 +28,10 @@ public class ForestMapSpec extends MapSpec {
         player1.inventory.add(new CardboardShoulderPads("cardboard shoulder pads of player1", 2));
         player1.inventory.add(new LightningShockWeapon("lightning shock weapon of player1", 1));
 
+        player1.monsters.add(new ThunderMouse("Baby Brown", "bear"));
+        player1.monsters.add(new ThunderMouse("Bluee Cooie", "piglet"));
 
-        lifeFormsOnBoard.add(MonsterFactory.orderMonster("Winnie", "pooh"));
+        lifeFormsOnBoard.add(MonsterFactory.orderMonster("Winnie the Pooh", "bear"));
         lifeFormsOnBoard.add(player1);
     }
 }
