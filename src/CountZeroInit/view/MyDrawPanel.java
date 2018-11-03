@@ -1,9 +1,9 @@
 package CountZeroInit.view;
 
+import CountZeroInit.controller.GameboyColor;
 import CountZeroInit.model.creatures.Humanoid;
 import CountZeroInit.model.creatures.LifeForm;
 import CountZeroInit.model.creatures.Monster;
-import CountZeroInit.model.creatures.ThunderMouse;
 import CountZeroInit.model.map.Map;
 import CountZeroInit.model.map.MapSpec;
 import CountZeroInit.model.surroundings.Tile;
@@ -15,14 +15,21 @@ import java.util.List;
 public class MyDrawPanel extends JPanel {
     //Monster thunderMouse = new ThunderMouse("Winnie", "pooh");
     //Image thunderMouseImage = new ImageIcon(thunderMouse.getImageAddress()).getImage();
+    GameboyColor gb;
+
     Map map;
     Monster monster;
     Image monsterImage;
     Humanoid humanoid;
     Image humanoidImage;
 
-    public MyDrawPanel(Map map) {
-        this.map = map;
+    public MyDrawPanel(GameboyColor gb) {
+        this.gb = gb;
+        map = gb.getCurrentMap();
+        monster = (Monster)gb.getCurrentMap().getMapSpec().getLifeFormsOnBoard().get(0);
+        monsterImage = new ImageIcon(monster.getImageAddress()).getImage();
+        humanoid = (Humanoid)gb.getCurrentMap().getMapSpec().getLifeFormsOnBoard().get(1);
+        humanoidImage = new ImageIcon(humanoid.getImageAddress()).getImage();
     }
 
     @Override
@@ -31,6 +38,8 @@ public class MyDrawPanel extends JPanel {
         g.setColor(Color.orange);
         g.fillRect(20, 50, 100, 100);
         */
+
+/*
         MapSpec mapSpec = map.getMapSpec();
         List<LifeForm> lifeFormsOnBoard = mapSpec.getLifeFormsOnBoard();
 
@@ -42,9 +51,9 @@ public class MyDrawPanel extends JPanel {
             humanoid = (Humanoid)lifeFormsOnBoard.get(1);
             humanoidImage = new ImageIcon(humanoid.getImageAddress()).getImage();
         }
+*/
 
-
-        List<Tile> tiles = mapSpec.getTiles();
+        List<Tile> tiles = gb.getCurrentMap().getMapSpec().getTiles();
 
         String imageAddress1 = tiles.get(0).getImageAddress();
         String imageAddress2 = tiles.get(1).getImageAddress();

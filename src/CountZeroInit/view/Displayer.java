@@ -20,7 +20,7 @@ public class Displayer {
         JFrame frame = new JFrame();
         frame.setSize(400, 600);
 
-        MyDrawPanel panel = new MyDrawPanel(map);
+        MyDrawPanel panel = new MyDrawPanel(gb);
         frame.getContentPane().add(panel);
 
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
