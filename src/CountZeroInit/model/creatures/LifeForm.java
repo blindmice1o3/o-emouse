@@ -47,6 +47,7 @@ public abstract class LifeForm {
     public void setImageAddress(String imageAddress) {
         this.imageAddress = imageAddress;
     }
+
     public String getImageAddress() {
         return imageAddress;
     }

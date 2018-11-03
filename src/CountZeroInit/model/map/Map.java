@@ -1,6 +1,5 @@
 package CountZeroInit.model.map;
 
-import CountZeroInit.model.surroundings.Grass;
 import CountZeroInit.model.surroundings.Tile;
 import CountZeroInit.model.surroundings.Walkable;
 

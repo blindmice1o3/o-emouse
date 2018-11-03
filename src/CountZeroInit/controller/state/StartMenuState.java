@@ -19,7 +19,7 @@ public class StartMenuState implements State {
 
     public void loadStartMenuCommands() {
         // The following println() is just to see where loadStartMenuCommands() is called in the output.
-        System.out.println("StartMenuStart.loadStartMenuCommands()...");
+        System.out.println("StartMenuState.loadStartMenuCommands()...");
 
         // Instantiate an array to hold Command objects; initialize that array to hold 4 concrete command objects that
         // are instantiated during the startMenuCommands[]'s initialization.

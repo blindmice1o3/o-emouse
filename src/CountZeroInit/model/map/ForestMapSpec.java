@@ -5,10 +5,8 @@ import CountZeroInit.model.items.CardboardShoulderPads;
 import CountZeroInit.model.items.LightningShockWeapon;
 import CountZeroInit.model.items.PlasticSpork;
 import CountZeroInit.model.surroundings.Grass;
-import CountZeroInit.model.surroundings.Tile;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class ForestMapSpec extends MapSpec {
 

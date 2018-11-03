@@ -2,8 +2,6 @@ package CountZeroInit.model.creatures;
 
 import CountZeroInit.model.items.*;
 
-import java.util.List;
-
 public abstract class MonsterFactory {
 
 
@@ -30,9 +28,11 @@ public abstract class MonsterFactory {
     public static Weapon createWeapon() {
         return new LightningShockWeapon("lightningshockweapon", 1);
     }
+
     public static Armor createArmor() {
         return new CardboardShoulderPads("cardboardshoulderpads", 2);
     }
+
     public static Item createItem() {
         return new PlasticSpork("plasticspork");
     }

@@ -1,9 +1,5 @@
 package CountZeroInit.model.creatures;
 
-import CountZeroInit.model.items.Armor;
-import CountZeroInit.model.items.Item;
-import CountZeroInit.model.items.Weapon;
-
 public class ThunderMouse extends Monster {
 
 

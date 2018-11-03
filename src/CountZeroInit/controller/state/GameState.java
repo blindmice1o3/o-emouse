@@ -14,7 +14,6 @@ public class GameState implements State {
         this.gb = gb;
     }
 
-    // !!!!! CURRENTLY WORKING ON !!!!!
     public void setPlayer() {
         // The following println() is just to see where setPlayer() is called in the output.
         System.out.println("GameState.setPlayer()...");
