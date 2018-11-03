@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public interface Playable {
-    List<Item> inventory = new ArrayList<Item>(40);
-    List<Monster> monsters = new ArrayList<Monster>(6);
+    List<Item> myInventory = new ArrayList<Item>(40);
+    List<Monster> myMonsterList = new ArrayList<Monster>(6);
 
 
     public Monster getMonster(int i);

@@ -33,13 +33,23 @@ public class GameboyColor {
 
         for (LifeForm lifeForm: getCurrentMap().getMapSpec().getLifeFormsOnBoard()) {
             if (lifeForm.getType().equals("humanoid")) {
-                player1 = (Humanoid)lifeForm;
+                initiatePlayer1((Humanoid)lifeForm);
             }
         }
-        numberOfItems = player1.inventory.size();
+        numberOfItems = player1.getInventory().size();
 
         displayer = new Displayer(this, map);
         displayer.initiate();
+    }
+
+    public void initiatePlayer1(Humanoid fromMap) {
+        player1 = new Humanoid(fromMap.getName(), fromMap.getType());
+        player1.setRow(fromMap.getRow());
+        player1.setCol(fromMap.getCol());
+        player1.setImageAddress(fromMap.getImageAddress());
+        player1.setInventory(fromMap.getInventory());
+        player1.setMyMonsterList(fromMap.getMyMonsterList());
+
     }
 
     public Humanoid getPlayer1() {

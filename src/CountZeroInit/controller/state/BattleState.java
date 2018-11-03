@@ -9,6 +9,15 @@ public class BattleState implements State {
         this.gb = gb;
     }
 
+    public void initiateBattle() {
+        // while (/*monsters still have hp*/) {
+            // a.fight(b);
+            // b.fight(a);
+        // }
+    }
+
+
+
     @Override
     public void aButtonPressed() {
 

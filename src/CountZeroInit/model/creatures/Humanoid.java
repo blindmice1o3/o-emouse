@@ -1,5 +1,9 @@
 package CountZeroInit.model.creatures;
 
+import CountZeroInit.model.items.Item;
+
+import java.util.List;
+
 public class Humanoid extends LifeForm
         implements Playable {
 
@@ -14,15 +18,34 @@ public class Humanoid extends LifeForm
     }
 
     public void keepMonster(Monster monster) {
-        monsters.add(monster);
+        myMonsterList.add(monster);
     }
 
     public Monster getMonster(int i) {
-        if (monsters.get(i) != null) {
-            return monsters.get(i);
+        if (myMonsterList.get(i) != null) {
+            return myMonsterList.get(i);
         } else {
             System.out.println("You don't have a monster in slot " + i);
             return null;
         }
+    }
+
+    public void setInventory(List<Item> fromSource) {
+        myInventory.clear();
+        for (Item item: fromSource) {
+            myInventory.add(item);
+        }
+    }
+    public List<Item> getInventory() {
+        return myInventory;
+    }
+    public void setMyMonsterList(List<Monster> fromSource) {
+        myMonsterList.clear();
+        for (Monster monster: fromSource) {
+            myMonsterList.add(monster);
+        }
+    }
+    public List<Monster> getMyMonsterList() {
+        return myMonsterList;
     }
 }

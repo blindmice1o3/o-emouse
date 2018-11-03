@@ -8,8 +8,6 @@ public class GameState implements State {
     private GameboyColor gb;
     Humanoid player1;
     int numberOfItems;
-    int player1Col;
-    int player1Row;
 
     public GameState(GameboyColor gb) {
         this.gb = gb;
@@ -28,13 +26,12 @@ public class GameState implements State {
             }
         }
 */
-        player1Col = player1.getCol();
-        player1Row = player1.getRow();
-        numberOfItems = player1.inventory.size();
+
+        numberOfItems = player1.getInventory().size();
 
         System.out.println(numberOfItems);
-        System.out.println(player1.inventory);
-        System.out.println(player1.monsters);
+        System.out.println(player1.getInventory());
+        System.out.println(player1.getMyMonsterList());
     }
 
     @Override
@@ -63,8 +60,8 @@ public class GameState implements State {
     public void upButtonPressed() {
        System.out.println("upButtonPressed() for GameState class");
 
-       if (player1Col != 0) {
-           player1.setCol(player1Col - 1);
+       if (player1.getCol() != 0) {
+           player1.setCol((player1.getCol() - 1));
        } else {
            // maybe cycle back to the bottom of the map...
        }
@@ -76,8 +73,8 @@ public class GameState implements State {
     public void downButtonPressed() {
         System.out.println("downButtonPressed() for GameState class");
 
-        if (player1Col != 19) {
-            player1.setCol(player1Col + 1);
+        if (player1.getCol() != 19) {
+            player1.setCol((player1.getCol() + 1));
         } else {
             // maybe cycle back to top of the map...
         }
@@ -89,8 +86,8 @@ public class GameState implements State {
     public void rightButtonPressed() {
         System.out.println("rightButtonPressed() for GameState class");
 
-        if (player1Row != 19) {
-            player1.setRow(player1Row + 1);
+        if (player1.getRow() != 19) {
+            player1.setRow((player1.getRow() + 1));
         } else {
             // maybe cycle back to left of the map...
         }
@@ -102,8 +99,8 @@ public class GameState implements State {
     public void leftButtonPressed() {
         System.out.println("leftButtonPressed() for GameState class");
 
-        if (player1Row != 0) {
-            player1.setRow(player1Row - 1);
+        if (player1.getRow() != 0) {
+            player1.setRow((player1.getRow() - 1));
         } else {
             // maybe cycle back to right of the map...
         }

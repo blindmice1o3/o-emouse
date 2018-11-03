@@ -27,7 +27,7 @@ public class MyMonsterListState implements State {
         }
 */
         currentIndexForSelectingMonster = 0;
-        numberOfMonsters = player1.monsters.size();
+        numberOfMonsters = player1.getMyMonsterList().size();
 
         System.out.println(numberOfMonsters);
         System.out.println(currentIndexForSelectingMonster);
@@ -41,7 +41,7 @@ public class MyMonsterListState implements State {
         // such as displaying stats about that selected Monster's description and class
         // such as displaying [the soon to be added feature] the 4 skills each Monster will have
         // such as displaying [the soon to be added feature] xp points, level, xp needed for next level
-        System.out.println(player1.monsters.get(currentIndexForSelectingMonster));
+        System.out.println(player1.getMyMonsterList().get(currentIndexForSelectingMonster));
     }
 
     @Override

@@ -30,17 +30,17 @@ public class ItemListState implements State {
         }
 */
         currentIndexForSelectingItem = 0;
-        numberOfItems = player1.inventory.size();
+        numberOfItems = player1.getInventory().size();
 
         System.out.println(numberOfItems);
-        System.out.println(player1.inventory);
+        System.out.println(player1.getInventory());
         System.out.println(currentIndexForSelectingItem);
     }
 
     @Override
     public void aButtonPressed() {
         // So far just printing out, rather than executing a command to use the selected item.
-        System.out.println(player1.inventory.get(currentIndexForSelectingItem));
+        System.out.println(player1.getInventory().get(currentIndexForSelectingItem));
     }
 
     @Override

@@ -1,20 +1,10 @@
 package CountZeroInit.controller;
 
-import CountZeroInit.controller.state.ItemListState;
 import CountZeroInit.model.creatures.Humanoid;
-import CountZeroInit.model.creatures.LifeForm;
 import CountZeroInit.model.creatures.Monster;
-import CountZeroInit.model.creatures.ThunderMouse;
 import CountZeroInit.model.map.ForestMapSpec;
 import CountZeroInit.model.map.Map;
 import CountZeroInit.model.map.MapSpec;
-import CountZeroInit.model.surroundings.Tile;
-import CountZeroInit.view.Displayer;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.List;
 
 public class CountZeroInit {
 
@@ -27,16 +17,22 @@ public class CountZeroInit {
         GameboyColor gb = new GameboyColor(act1ForestMap);
 
         monster1 = (Monster)act1ForestMap.getMapSpec().getLifeFormsOnBoard().get(0);
-        player1 = (Humanoid)act1ForestMap.getMapSpec().getLifeFormsOnBoard().get(1);
+        player1 = gb.getPlayer1();
+
+        System.out.println(player1.getCol() + ", " + player1.getRow());
+        System.out.println(player1.getInventory());
+        System.out.println(player1.getMyMonsterList());
 
         System.out.println(gb.getCurrentState());
         System.out.println(gb.getCurrentMap());
-
+        /*
         gb.getCurrentState().upButtonPressed();
         gb.getCurrentState().upButtonPressed();
         gb.getCurrentState().aButtonPressed();
         System.out.println(gb.getCurrentState());
+        */
 
+        System.out.println(gb.getCurrentState());
         gb.getCurrentState().startButtonPressed();
 
         System.out.println(gb.getCurrentState());
@@ -46,6 +42,7 @@ public class CountZeroInit {
         gb.getCurrentState().upButtonPressed();
         gb.getCurrentState().upButtonPressed();
 
+        System.out.println(gb.getCurrentState());
         System.out.println(monster1.getCol() + ", " + monster1.getRow());
         System.out.println(player1.getCol() + ", " + player1.getRow());
 /*
