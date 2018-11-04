@@ -36,12 +36,12 @@ public class CountZeroInit {
         gb.getCurrentState().startButtonPressed();
 
         System.out.println(gb.getCurrentState());
-
+/*
         gb.getCurrentState().upButtonPressed();
         gb.getCurrentState().upButtonPressed();
         gb.getCurrentState().upButtonPressed();
         gb.getCurrentState().upButtonPressed();
-
+*/
         System.out.println(gb.getCurrentState());
         System.out.println(monster1.getCol() + ", " + monster1.getRow());
         System.out.println(player1.getCol() + ", " + player1.getRow());

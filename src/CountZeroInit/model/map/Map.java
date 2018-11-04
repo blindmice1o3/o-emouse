@@ -10,7 +10,7 @@ public class Map {
     private MapSpec mapSpec;
 
     public Map(MapSpec mapSpec) {
-        gameBoard = new Tile[20][20];
+        gameBoard = new Tile[5][5];
         this.mapSpec = mapSpec;
 
         setGameBoard();
@@ -21,8 +21,8 @@ public class Map {
         int i = 0;
         List<Tile> floorPlan = mapSpec.getTiles();
 
-        for (int col = 0; col < 20; col++) {
-            for (int row = 0; row < 20; row++) {
+        for (int col = 0; col < 5; col++) {
+            for (int row = 0; row < 5; row++) {
                 gameBoard[col][row] = floorPlan.get(i);
                 i++;
             }
@@ -30,14 +30,14 @@ public class Map {
     }
 
     public void setLifeFormColRow() {
-        if (gameBoard[0][4] instanceof Walkable) {
+        if (gameBoard[0][2] instanceof Walkable) {
             mapSpec.lifeFormsOnBoard.get(0).setCol(0);
-            mapSpec.lifeFormsOnBoard.get(0).setRow(4);
+            mapSpec.lifeFormsOnBoard.get(0).setRow(2);
         }
 
-        if (gameBoard[19][4] instanceof Walkable) {
-            mapSpec.lifeFormsOnBoard.get(1).setCol(19);
-            mapSpec.lifeFormsOnBoard.get(1).setRow(4);
+        if (gameBoard[2][3] instanceof Walkable) {
+            mapSpec.lifeFormsOnBoard.get(1).setCol(2);
+            mapSpec.lifeFormsOnBoard.get(1).setRow(3);
         }
     }
 

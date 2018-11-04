@@ -14,8 +14,8 @@ public class ForestMapSpec extends MapSpec {
         lifeFormsOnBoard = new ArrayList();
         tiles = new ArrayList();
 
-        for (int col = 0; col < 20; col++) {
-            for (int row = 0; row < 20; row++) {
+        for (int col = 0; col < 5; col++) {
+            for (int row = 0; row < 5; row++) {
                 tiles.add(new Tree(col, row));
             }
         }

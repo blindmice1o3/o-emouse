@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4264d6a-6746-43ef-b695-128d92c400ed" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CountZeroInit/controller/CountZeroInit.java" afterPath="$PROJECT_DIR$/src/CountZeroInit/controller/CountZeroInit.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CountZeroInit/model/map/ForestMapSpec.java" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/map/ForestMapSpec.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CountZeroInit/model/map/Map.java" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/map/Map.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CountZeroInit/view/MyDrawPanel.java" afterPath="$PROJECT_DIR$/src/CountZeroInit/view/MyDrawPanel.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,8 +23,8 @@
       <file leaf-file-name="CountZeroInit.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CountZeroInit/controller/CountZeroInit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="85">
+              <caret line="38" column="2" lean-forward="false" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -32,8 +35,8 @@
       <file leaf-file-name="GameboyColor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CountZeroInit/controller/GameboyColor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="91" column="23" lean-forward="true" selection-start-line="91" selection-start-column="23" selection-end-line="91" selection-end-column="23" />
+            <state relative-caret-position="136">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,7 +60,19 @@
         <entry file="file://$PROJECT_DIR$/src/CountZeroInit/view/MyDrawPanel.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+              <caret line="59" column="13" lean-forward="true" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MapSpec.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/map/MapSpec.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -98,7 +113,7 @@
       <file leaf-file-name="ForestMapSpec.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/map/ForestMapSpec.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="131">
               <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -107,25 +122,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tile.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/surroundings/Tile.java">
+      <file leaf-file-name="Map.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/map/Map.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+            <state relative-caret-position="442">
+              <caret line="37" column="26" lean-forward="false" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
               <folding>
-                <element signature="e#307#308#0" expanded="true" />
-                <element signature="e#342#343#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ThunderMouse.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/creatures/ThunderMouse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="59" lean-forward="false" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -185,7 +189,6 @@
         <option value="$PROJECT_DIR$/src/CountZeroInit/view/Subscriber.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/view/Subject.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/model/creatures/Playable.java" />
-        <option value="$PROJECT_DIR$/src/CountZeroInit/controller/CountZeroInit.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/controller/state/BattleState.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/controller/state/ItemListState.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/controller/state/MyMonsterListState.java" />
@@ -199,16 +202,17 @@
         <option value="$PROJECT_DIR$/src/CountZeroInit/controller/GameboyColor.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/model/creatures/LifeForm.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/model/creatures/MonsterFactory.java" />
-        <option value="$PROJECT_DIR$/src/CountZeroInit/model/map/Map.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/model/map/MapSpec.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/model/creatures/ThunderMouse.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/model/creatures/Humanoid.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/model/surroundings/Grass.java" />
-        <option value="$PROJECT_DIR$/src/CountZeroInit/model/map/ForestMapSpec.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/model/surroundings/Tree.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/model/surroundings/Walkable.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/view/Displayer.java" />
+        <option value="$PROJECT_DIR$/src/CountZeroInit/model/map/ForestMapSpec.java" />
+        <option value="$PROJECT_DIR$/src/CountZeroInit/controller/CountZeroInit.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/view/MyDrawPanel.java" />
+        <option value="$PROJECT_DIR$/src/CountZeroInit/model/map/Map.java" />
       </list>
     </option>
   </component>
@@ -271,6 +275,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="CountZeroInit" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="o-emouse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="o-emouse" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="CountZeroInit" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="map" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="o-emouse" type="b2602c69:ProjectViewProjectNode" />
@@ -846,27 +858,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/map/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/map/MapSpec.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="46" lean-forward="false" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
-          <folding>
-            <element signature="e#356#357#0" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/surroundings/Door.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -963,16 +954,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/map/ForestMapSpec.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/surroundings/Tile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1018,20 +999,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/controller/CountZeroInit.java">
+    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/controller/GameboyColor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="136">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/controller/GameboyColor.java">
+    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/controller/CountZeroInit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="91" column="23" lean-forward="true" selection-start-line="91" selection-start-column="23" selection-end-line="91" selection-end-column="23" />
+        <state relative-caret-position="85">
+          <caret line="38" column="2" lean-forward="false" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/map/MapSpec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/map/ForestMapSpec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/map/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="37" column="26" lean-forward="false" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1041,7 +1052,7 @@
     <entry file="file://$PROJECT_DIR$/src/CountZeroInit/view/MyDrawPanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <caret line="59" column="13" lean-forward="true" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

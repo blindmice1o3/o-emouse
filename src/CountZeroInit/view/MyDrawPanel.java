@@ -34,7 +34,55 @@ public class MyDrawPanel extends JPanel {
 
         List<Tile> tiles = gb.getCurrentMap().getMapSpec().getTiles();
         List<LifeForm> lifeFormsOnBoard = gb.getCurrentMap().getMapSpec().getLifeFormsOnBoard();
+        String imageAddress;
+        Image image;
+        int x = 10;
+        int y = 10;
+        int tileCounter = 0;
 
+        for (int i = 0; i < tiles.size(); i++) {
+            imageAddress = tiles.get(i).getImageAddress();
+            image = new ImageIcon(imageAddress).getImage();
+            g.drawImage(image, x, y, this);
+
+            x = x + 138;
+            if (tileCounter % 5 == 4) {
+                y = y + 138;
+                x = 10;
+            }
+
+            tileCounter++;
+        }
+
+        int col = 0;
+        int row = 0;
+        int iterationCounter = 0;
+        x=10;
+        y=10;
+        for (int i = 0; i < tiles.size(); i++) {
+            if (lifeFormsOnBoard.get(0).getCol() == col && lifeFormsOnBoard.get(0).getRow() == row) {
+                imageAddress = lifeFormsOnBoard.get(0).getImageAddress();
+                image = new ImageIcon(imageAddress).getImage();
+                g.drawImage(image, x, y, this);
+            }
+            if (lifeFormsOnBoard.get(1).getCol() == col && lifeFormsOnBoard.get(1).getRow() == row) {
+                imageAddress = lifeFormsOnBoard.get(1).getImageAddress();
+                System.out.println("Player1 image: " + imageAddress);
+                image = new ImageIcon(imageAddress).getImage();
+                g.drawImage(image, x, y, this);
+            }
+
+
+            x = x + 138;
+            row++;
+            if (iterationCounter % 5 == 4) {
+                y = y + 138;
+                col++;
+                x = 10;
+            }
+        }
+
+        /*
         String imageAddress1 = tiles.get(0).getImageAddress();
         String imageAddress2 = tiles.get(1).getImageAddress();
         String imageAddress3 = tiles.get(2).getImageAddress();
@@ -72,5 +120,6 @@ public class MyDrawPanel extends JPanel {
         //image = new ImageIcon(imageAddress9).getImage();
         image = new ImageIcon(humanoidImageAddress).getImage();
         g.drawImage(image, 286, 286, this);
+        */
     }
 }
