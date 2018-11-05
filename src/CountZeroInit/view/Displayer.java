@@ -10,21 +10,22 @@ import java.awt.event.ActionListener;
 public class Displayer {
     GameboyColor gb;
     Map map;
+    JFrame frame;
+    MyDrawPanel panel;
 
     public Displayer(GameboyColor gb, Map map) {
         this.gb = gb;
         this.map = map;
-    }
 
-    public void initiate() {
-        JFrame frame = new JFrame();
-        frame.setSize(400, 600);
-
-        MyDrawPanel panel = new MyDrawPanel(gb);
-        frame.getContentPane().add(panel);
-
+        frame = new JFrame();
+        frame.setSize(750, 750);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
+    }
+
+    public void refresh() {
+        panel = new MyDrawPanel(gb);
+        frame.getContentPane().add(panel);
 /*
         JButton aButton = new JButton("A");
         JButton bButton = new JButton("B");

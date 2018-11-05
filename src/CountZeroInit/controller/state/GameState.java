@@ -59,13 +59,16 @@ public class GameState implements State {
         // The following println() is just to see where upButtonPressed() is called in the output.
         System.out.println("GameState.upButtonPressed()...");
 
-       if (player1.getCol() != 0) {
-           player1.setCol((player1.getCol() - 1));
+       if (player1.getRow() != 0) {
+           player1.setRow((player1.getRow() - 1));
        } else {
            // maybe cycle back to the bottom of the map...
        }
 
        // refresh picture?
+
+
+        gb.update();
     }
 
     @Override
@@ -73,13 +76,16 @@ public class GameState implements State {
         // The following println() is just to see where downButtonPressed() is called in the output.
         System.out.println("GameState.downButtonPressed()...");
 
-        if (player1.getCol() != 19) {
-            player1.setCol((player1.getCol() + 1));
+        if (player1.getRow() != 19) {
+            player1.setRow((player1.getRow() + 1));
         } else {
             // maybe cycle back to top of the map...
         }
 
         // refresh picture?
+
+
+        gb.update();
     }
 
     @Override
@@ -87,13 +93,16 @@ public class GameState implements State {
         // The following println() is just to see where rightButtonPressed() is called in the output.
         System.out.println("GameState.rightButtonPressed()...");
 
-        if (player1.getRow() != 19) {
-            player1.setRow((player1.getRow() + 1));
+        if (player1.getCol() != 19) {
+            player1.setCol((player1.getCol() + 1));
         } else {
             // maybe cycle back to left of the map...
         }
 
         // refresh picture?
+
+
+        gb.update();
     }
 
     @Override
@@ -101,12 +110,15 @@ public class GameState implements State {
         // The following println() is just to see where leftButtonPressed() is called in the output.
         System.out.println("GameState.leftButtonPressed()...");
 
-        if (player1.getRow() != 0) {
-            player1.setRow((player1.getRow() - 1));
+        if (player1.getCol() != 0) {
+            player1.setCol((player1.getCol() - 1));
         } else {
             // maybe cycle back to right of the map...
         }
 
         // refresh picture?
+
+
+        gb.update();
     }
 }

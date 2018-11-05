@@ -20,8 +20,9 @@ public class CountZeroInit {
         gb.getCurrentState().startButtonPressed();
         System.out.println("Current game state: " + gb.getCurrentState());
 
-/*
+
         gb.getCurrentState().upButtonPressed();
+/*
         gb.getCurrentState().upButtonPressed();
         gb.getCurrentState().upButtonPressed();
 */

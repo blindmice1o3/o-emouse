@@ -1,12 +1,16 @@
 package CountZeroInit.controller;
 
 import CountZeroInit.controller.state.*;
+import CountZeroInit.model.Observer;
 import CountZeroInit.model.creatures.Humanoid;
 import CountZeroInit.model.creatures.LifeForm;
 import CountZeroInit.model.map.Map;
+import CountZeroInit.model.surroundings.Tile;
 import CountZeroInit.view.Displayer;
 
-public class GameboyColor {
+import java.util.List;
+
+public class GameboyColor implements Observer {
     State battleState;
     State gameState;
     State itemListState;
@@ -18,6 +22,8 @@ public class GameboyColor {
 
     State currentState;
     Map currentMap;
+    List<Tile> tiles;
+    List<LifeForm> lifeFormsOnBoard;
     Displayer displayer;
 
     public GameboyColor(Map map) {
@@ -48,6 +54,20 @@ public class GameboyColor {
             }
         }
 
+
+        tiles = getCurrentMap().getTiles();
+        lifeFormsOnBoard = getCurrentMap().getLifeFormsOnBoard();
+
+
+        // Instantiate a new Displayer object, passing it a reference to "this" GameboyColor object and the Map object
+        // that was passed to the GameboyColor's constructor. Then call the Displayer object's initiate().
+        displayer = new Displayer(this, map);
+        displayer.refresh();
+
+
+        // Register with Humanoid (player1's class; an Observable) as an Observer
+        player1.registerObserver(this);
+
         // The following println() are just to see if initiatePlayer1() is really setting the fields of the Humanoid
         // object composed in "this" GameboyColor object to the Humanoid object we're obtaining by searching the
         // List<LifeForm> from MapSpec's lifeFormsOnMap variable.
@@ -68,10 +88,11 @@ public class GameboyColor {
         System.out.println("Inventory size for GameboyColor constructor: " + numberOfItems);
         System.out.println("Number of Monsters for GameboyColor constructor: " + player1.getMyMonsterList().size());
 
-        // Instantiate a new Displayer object, passing it a reference to "this" GameboyColor object and the Map object
-        // that was passed to the GameboyColor's constructor. Then call the Displayer object's initiate().
-        displayer = new Displayer(this, map);
-        displayer.initiate();
+
+    }
+
+    public void update() {
+        displayer.refresh();
     }
 
     public void initiatePlayer1(Humanoid fromMap) {
@@ -90,6 +111,14 @@ public class GameboyColor {
         System.out.println("GameboyColor.getPlayer1()...");
 
         return player1;
+    }
+
+    public List<Tile> getTiles() {
+        return tiles;
+    }
+
+    public List<LifeForm> getLifeFormsOnBoard() {
+        return lifeFormsOnBoard;
     }
 
     public void setCurrentMap(Map map) {
