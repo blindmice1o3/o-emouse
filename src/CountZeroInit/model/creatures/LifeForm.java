@@ -1,53 +1,45 @@
 package CountZeroInit.model.creatures;
 
 public abstract class LifeForm {
-    String name;
-    String type;
     int col;
     int row;
+    String name;
+    String type;
     String imageAddress;
 
     @Override
     public String toString() {
-        return "LifeForm's name is: " + name + "\nLifeForm's type is: " + type;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    public int getCol() {
-        return col;
+        return "LifeForm.name, type, col, row: " + name + ", " + type + ", " + col + ", " + row;
     }
 
     public void setCol(int col) {
         this.col = col;
     }
-
-    public int getRow() {
-        return row;
-    }
-
     public void setRow(int row) {
         this.row = row;
     }
-
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void setType(String type) {
+        this.type = type;
+    }
     public void setImageAddress(String imageAddress) {
         this.imageAddress = imageAddress;
     }
 
+    public int getCol() {
+        return col;
+    }
+    public int getRow() {
+        return row;
+    }
+    public String getName() {
+        return name;
+    }
+    public String getType() {
+        return type;
+    }
     public String getImageAddress() {
         return imageAddress;
     }

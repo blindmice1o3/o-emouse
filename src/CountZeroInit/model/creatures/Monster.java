@@ -21,11 +21,9 @@ public abstract class Monster extends LifeForm {
     public void setWeapon(Weapon weapon) {
         this.weapon = weapon;
     }
-
     public void setArmor(Armor armor) {
         this.armor = armor;
     }
-
     public void addItem(Item item){
         items.add(item);
     }
@@ -33,13 +31,18 @@ public abstract class Monster extends LifeForm {
     public Weapon getWeapon() {
         return weapon;
     }
-
     public Armor getArmor() {
         return armor;
     }
+    public Item getItem(Item item) {
+        Item returner = null;
+        int i = items.indexOf(item);
 
-    public List<Item> getItems() {
-        return items;
+        if (i >= 0) {
+            returner = items.get(i);
+        }
+
+        return returner;
     }
 
 }

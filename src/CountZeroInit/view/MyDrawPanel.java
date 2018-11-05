@@ -42,6 +42,7 @@ public class MyDrawPanel extends JPanel {
         for (int i = 0; i < gb.getTiles().size(); i++) {
             imageAddress = gb.getTiles().get(i).getImageAddress();
             image = new ImageIcon(imageAddress).getImage();
+
             g.drawImage(image, x, y, this);
 
             x = x + 138;

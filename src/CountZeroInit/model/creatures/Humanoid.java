@@ -10,9 +10,6 @@ import java.util.List;
 public class Humanoid extends LifeForm
         implements Playable, Observable {
 
-    public Humanoid(String type) {
-        this.type = type;
-    }
 
     public Humanoid(String name, String type) {
         this.name = name;
@@ -34,6 +31,9 @@ public class Humanoid extends LifeForm
     public void notifyObservers() {
         for(Observer observer: observers) {
             observer.update();
+
+            // The following println() statement is to identify when notifyObservers() is being called.
+            System.out.println("Humanoid.notifyObservers..." );
         }
     }
 
