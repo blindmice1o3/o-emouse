@@ -8,9 +8,9 @@ import CountZeroInit.model.surroundings.Tree;
 
 import java.util.ArrayList;
 
-public class ForestMapSpec extends MapSpec {
+public class ForestMap extends Map {
 
-    public ForestMapSpec() {
+    public ForestMap() {
         lifeFormsOnBoard = new ArrayList();
         tiles = new ArrayList();
 
@@ -29,7 +29,16 @@ public class ForestMapSpec extends MapSpec {
         player1.getMyMonsterList().add(new ThunderMouse("Baby Brown", "bear"));
         player1.getMyMonsterList().add(new ThunderMouse("Bluee Cooie", "piglet"));
 
-        lifeFormsOnBoard.add(MonsterFactory.orderMonster("Winnie the Pooh", "bear"));
+
+        player1.setCol(1);
+        player1.setRow(4);
+
+        Monster monster1 = MonsterFactory.orderMonster("Winnie the Pooh", "bear");
+        monster1.setCol(1);
+        monster1.setRow(0);
+
+
+        lifeFormsOnBoard.add(monster1);
         lifeFormsOnBoard.add(player1);
     }
 }

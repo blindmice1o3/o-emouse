@@ -42,7 +42,7 @@ public class GameboyColor {
         // map level), find our humanoid player and call the helper method instantiatePlayer1() which takes our Humanoid
         // object from the MapSpec and "copies" its data to a new, separate Humanoid object that's composed in this
         // GameboyColor object.
-        for (LifeForm lifeForm: getCurrentMap().getMapSpec().getLifeFormsOnBoard()) {
+        for (LifeForm lifeForm: getCurrentMap().getLifeFormsOnBoard()) {
             if (lifeForm.getType().equals("humanoid")) {
                 initiatePlayer1((Humanoid)lifeForm);
             }

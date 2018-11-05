@@ -2,107 +2,38 @@ package CountZeroInit.controller;
 
 import CountZeroInit.model.creatures.Humanoid;
 import CountZeroInit.model.creatures.Monster;
-import CountZeroInit.model.map.ForestMapSpec;
+import CountZeroInit.model.map.ForestMap;
 import CountZeroInit.model.map.Map;
-import CountZeroInit.model.map.MapSpec;
 
 public class CountZeroInit {
-
     public static void main (String[] args) {
-        Humanoid player1;
-        Monster monster1;
-
-        MapSpec mapSpec = new ForestMapSpec();
-        Map act1ForestMap = new Map(mapSpec);
+        Map act1ForestMap = new ForestMap();
         GameboyColor gb = new GameboyColor(act1ForestMap);
+        Humanoid player1 = gb.getPlayer1();
+        Monster monster1 = (Monster)act1ForestMap.getLifeFormsOnBoard().get(0);
 
-        monster1 = (Monster)act1ForestMap.getMapSpec().getLifeFormsOnBoard().get(0);
-        player1 = gb.getPlayer1();
+        System.out.println("Player1's Col, Row: " + player1.getCol() + ", " + player1.getRow());
+        System.out.println("Player1's inventory: " + player1.getInventory());
+        System.out.println("Player1's myMonsterList: " + player1.getMyMonsterList());
 
-        System.out.println(player1.getCol() + ", " + player1.getRow());
-        System.out.println(player1.getInventory());
-        System.out.println(player1.getMyMonsterList());
-
-        System.out.println(gb.getCurrentState());
-        System.out.println(gb.getCurrentMap().getMapSpec());
-        /*
-        gb.getCurrentState().upButtonPressed();
-        gb.getCurrentState().upButtonPressed();
-        gb.getCurrentState().aButtonPressed();
-        System.out.println(gb.getCurrentState());
-        */
-
-        //System.out.println(gb.getCurrentState());
+        System.out.println("Current game state: " + gb.getCurrentState());
         gb.getCurrentState().startButtonPressed();
+        System.out.println("Current game state: " + gb.getCurrentState());
 
-        System.out.println(gb.getCurrentState());
 /*
-        gb.getCurrentState().upButtonPressed();
         gb.getCurrentState().upButtonPressed();
         gb.getCurrentState().upButtonPressed();
         gb.getCurrentState().upButtonPressed();
 */
-        System.out.println(gb.getCurrentState());
-        System.out.println(monster1.getCol() + ", " + monster1.getRow());
-        System.out.println(player1.getCol() + ", " + player1.getRow());
-/*
-        gb.getCurrentState().downButtonPressed();
-        // gb.getCurrentState().downButtonPressed();
-        gb.getCurrentState().aButtonPressed();
-*/
 
-
-
-/*
-        gb.getCurrentState().aButtonPressed();
-        gb.getCurrentState().downButtonPressed();
-        gb.getCurrentState().aButtonPressed();
-        gb.getCurrentState().downButtonPressed();
-        gb.getCurrentState().aButtonPressed();
-        gb.getCurrentState().aButtonPressed();
-        gb.getCurrentState().downButtonPressed();
-        gb.getCurrentState().aButtonPressed();
-        gb.getCurrentState().downButtonPressed();
-        gb.getCurrentState().aButtonPressed();
-*/
-
-/*
-        gb.getCurrentState().downButtonPressed();
-        gb.getCurrentState().downButtonPressed();
-        gb.getCurrentState().aButtonPressed();
-        gb.getCurrentState().downButtonPressed();
-        gb.getCurrentState().aButtonPressed();
-        gb.getCurrentState().upButtonPressed();
-        gb.getCurrentState().upButtonPressed();
-        gb.getCurrentState().aButtonPressed();
-*/
-     /*
-        Tile[][] testGameBoard = gb.getCurrentMap().getGameBoard();
-        MapSpec testMapSpec = gb.getCurrentMap().getMapSpec();
-     */
-        /*
-        for (int i = 0; i < testGameBoard.length; i++) {
-            for (int j = 0; j < testGameBoard.length; j++) {
-                System.out.println(testGameBoard[i][j]);
-            }
-        }
-        */
-        /*
-        System.out.println(testMapSpec);
-        System.out.println(testMapSpec.getLifeFormsOnBoard().getClass());
-
-
-        for (LifeForm lifeForm: testMapSpec.getLifeFormsOnBoard()) {
-            System.out.println(lifeForm);
-            System.out.println("Resides on Tile: (" + lifeForm.getCol() + ", " + lifeForm.getRow() + ").");
-
-        }
-        */
-        //System.out.println("Hello player1\nWhat is your name?\n");
-
-        //BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Monster1's Col, Row: " + monster1.getCol() + ", " + monster1.getRow());
+        System.out.println("Player1's Col, Row: " + player1.getCol() + ", " + player1.getRow());
 
         /*
+        System.out.println("Hello player1\nWhat is your name?\n");
+
+        BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+
         try {
             player1.setName(input.readLine());
         } catch (IOException exception) {
@@ -129,65 +60,7 @@ public class CountZeroInit {
             System.out.println("I don't understand your command.");
         }
         */
-
-        /*
-        MapSpec forestMapSpec = new ForestMapSpec();
-        Map act1Forest = new Map(forestMapSpec);
-        Tile[][] gameBoard = act1Forest.getGameBoard();
-        List<LifeForm> lifeFormsOnBoard = forestMapSpec.getLifeFormsOnBoard();
-        */
-
-        /*
-        for (int col = 0; col < 20; col++) {
-            for (int row = 0; row < 20; row++) {
-                if (row != 19) {
-                    System.out.print(gameBoard[col][row].getPix() + " + ");
-                } else {
-                    System.out.println(gameBoard[col][row].getPix());
-                    if (col != 19) {
-                        System.out.println("+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +");
-                    }
-                }
-            }
-        }
-
-        // SEPARATE TRIALS
-
-        /*
-        for (int col = 0; col < 20; col++) {
-            for (int row = 0; row < 20; row++) {
-                if (hasMonsterOnThisTile(lifeFormsOnBoard, col, row)) {
-                    System.out.print("O" + " ");
-                } else {
-                    if (row == 19) {
-                        System.out.println(gameBoard[col][row].getPix());
-                    } else {
-                        System.out.print(gameBoard[col][row].getPix() + " ");
-                    }
-                }
-            }
-        }
-
-        System.out.println("");
-        System.out.println("***Monster from ForestMapSpec: \n" +
-                            lifeFormsOnBoard.get(0) + "\n" +
-                            "***Location: (" + lifeFormsOnBoard.get(0).getCol() + ", " + lifeFormsOnBoard.get(0).getRow() + ")");
-        ThunderMouse tm = (ThunderMouse)lifeFormsOnBoard.get(0);
-        System.out.println("***Monster is wearing: " + tm.getWeapon() + ", " + tm.getArmor() + ", " + tm.getItems());
-        */
-
     }
-
-    /*
-    public static boolean hasMonsterOnThisTile(List<LifeForm> lifeFormsOnBoard, int col, int row) {
-        for (LifeForm lf: lifeFormsOnBoard) {
-            if (lf.getCol() == col && lf.getRow() == row) {
-                return true;
-            }
-        }
-        return false;
-    }
-    */
 }
 
 
