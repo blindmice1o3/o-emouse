@@ -1,27 +1,21 @@
 package CountZeroInit.view;
 
 import CountZeroInit.controller.GameboyColor;
-import CountZeroInit.model.creatures.LifeForm;
-import CountZeroInit.model.surroundings.Tile;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.List;
 
 public class MyDrawPanel extends JPanel {
     GameboyColor gb;
-    //List<Tile> tiles;
-    //List<LifeForm> lifeFormsOnBoard;
     String imageAddress;
     Image image;
+    int x, y;
 
     public MyDrawPanel(GameboyColor gb) {
         // The following println() is just to see where MyDrawPanel's constructor is called in the output.
         System.out.println("MyDrawPanel.constructor...");
 
         this.gb = gb;
-        //tiles = gb.getTiles();
-        //lifeFormsOnBoard = gb.getLifeFormsOnBoard();
     }
 
     @Override
@@ -29,16 +23,20 @@ public class MyDrawPanel extends JPanel {
         // The following println() is just to see where MyDrawPanel's paintComponent() is called in the output.
         System.out.println("MyDrawPanel.paintComponent()...");
 
-        /*
-        g.setColor(Color.orange);
-        g.fillRect(20, 50, 100, 100);
-        */
-
-        int x = 5;
-        int y = 5;
-        int tileCounter = 0;
-
         // Drawing the Tiles (5 by 5 of tree pictures).
+        drawBackground(g);
+
+        // Drawing the LifeForm on board.
+        drawLifeFormsOnBoard(g);
+    }
+
+    public void drawBackground(Graphics g) {
+        // The following println() is just to see where MyDrawPanel's drawBackground() is called in the output.
+        System.out.println("MyDrawPanel.drawBackground()...");
+
+        x = 5;
+        y = 5;
+
         for (int i = 0; i < gb.getTiles().size(); i++) {
             imageAddress = gb.getTiles().get(i).getImageAddress();
             image = new ImageIcon(imageAddress).getImage();
@@ -46,15 +44,18 @@ public class MyDrawPanel extends JPanel {
             g.drawImage(image, x, y, this);
 
             x = x + 138;
-            if (tileCounter % 5 == 4) {
+            if (i % 5 == 4) {
                 y = y + 138;
                 x = 5;
             }
 
-            tileCounter++;
         }
+    }
 
-        // Drawing the LifeForm on board.
+    public void drawLifeFormsOnBoard(Graphics g) {
+        // The following println() is just to see where MyDrawPanel's drawLifeFormsOnBoard() is called in the output.
+        System.out.println("MyDrawPanel.drawLifeFormsOnBoard()...");
+
         imageAddress = gb.getLifeFormsOnBoard().get(0).getImageAddress();
         image = new ImageIcon(imageAddress).getImage();
 
@@ -71,6 +72,5 @@ public class MyDrawPanel extends JPanel {
         x = (playerCol * 138) + 5;
         y = (playerRow * 138) + 5;
         g.drawImage(image, x, y, this);
-
     }
 }
