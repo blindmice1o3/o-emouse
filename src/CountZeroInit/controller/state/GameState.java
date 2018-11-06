@@ -68,7 +68,7 @@ public class GameState implements State {
        // refresh picture?
 
 
-        gb.update();
+        //gb.update();
     }
 
     @Override
@@ -85,7 +85,7 @@ public class GameState implements State {
         // refresh picture?
 
 
-        gb.update();
+       // gb.update();
     }
 
     @Override
@@ -102,7 +102,7 @@ public class GameState implements State {
         // refresh picture?
 
 
-        gb.update();
+        //gb.update();
     }
 
     @Override
@@ -119,6 +119,6 @@ public class GameState implements State {
         // refresh picture?
 
 
-        gb.update();
+        //gb.update();
     }
 }

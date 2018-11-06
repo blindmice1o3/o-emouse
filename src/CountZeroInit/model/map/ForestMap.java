@@ -21,7 +21,7 @@ public class ForestMap extends Map {
         }
 
 
-        Humanoid player1 = new Humanoid("Quiet Riot", "humanoid");
+        Humanoid player1 = new Humanoid("humanoid");
         player1.getInventory().add(new PlasticSpork("plastic spork of player1"));
         player1.getInventory().add(new CardboardShoulderPads("cardboard shoulder pads of player1", 2));
         player1.getInventory().add(new LightningShockWeapon("lightning shock weapon of player1", 1));

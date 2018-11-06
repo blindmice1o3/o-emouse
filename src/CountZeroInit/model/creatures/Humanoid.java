@@ -10,6 +10,10 @@ import java.util.List;
 public class Humanoid extends LifeForm
         implements Playable, Observable {
 
+    public Humanoid(String type) {
+        this.type = type;
+        setImageAddress("src/CountZeroInit/model/creatures/gameboy.png");
+    }
 
     public Humanoid(String name, String type) {
         this.name = name;

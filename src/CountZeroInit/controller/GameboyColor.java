@@ -17,8 +17,8 @@ public class GameboyColor implements Observer {
     State monsterListState;
     State myMonsterListState;
     State startMenuState;
+    State introState;
     Humanoid player1;
-    int numberOfItems;
 
     State currentState;
     Map currentMap;
@@ -30,21 +30,11 @@ public class GameboyColor implements Observer {
         // The following println() is just to see where GameboyColor's constructor is called in the output.
         System.out.println("GameboyColor.constructor...");
 
-        // Instantiate the concrete state classes (using "this" gameboyColor) and have our State instance variables
-        // reference them.
-        battleState = new BattleState(this);
-        gameState = new GameState(this);
-        itemListState = new ItemListState(this);
-        monsterListState = new MonsterListState(this);
-        myMonsterListState = new MyMonsterListState(this);
-        startMenuState = new StartMenuState(this);
-
-        // Calls helper methods setCurrentState() (which starts us in the startMenuState by default) and setCurrentMap()
-        // (which is specified by a concrete map passed in as an argument.
-        setCurrentState(startMenuState);
         setCurrentMap(map);
+        tiles = getCurrentMap().getTiles();
+        lifeFormsOnBoard = getCurrentMap().getLifeFormsOnBoard();
 
-        // Loop through the List<LifeForm> provided by the MapSpec class (all the data about the starting state of that
+        // Loop through the List<LifeForm> provided by the concrete Map class (all the data about the starting state of that
         // map level), find our humanoid player and call the helper method instantiatePlayer1() which takes our Humanoid
         // object from the MapSpec and "copies" its data to a new, separate Humanoid object that's composed in this
         // GameboyColor object.
@@ -54,23 +44,29 @@ public class GameboyColor implements Observer {
             }
         }
 
-
-        tiles = getCurrentMap().getTiles();
-        lifeFormsOnBoard = getCurrentMap().getLifeFormsOnBoard();
-
+        // Instantiate the concrete state classes (using "this" gameboyColor) and have our State instance variables
+        // reference them.
+        introState = new IntroState(this);
+        startMenuState = new StartMenuState(this);
+        gameState = new GameState(this);
+        itemListState = new ItemListState(this);
+        myMonsterListState = new MyMonsterListState(this);
+        monsterListState = new MonsterListState(this);
+        battleState = new BattleState(this);
 
         // Instantiate a new Displayer object, passing it a reference to "this" GameboyColor object and the Map object
         // that was passed to the GameboyColor's constructor. Then call the Displayer object's initiate().
         displayer = new Displayer(this, map);
         displayer.refresh();
 
-
         // Register with Humanoid (player1's class; an Observable) as an Observer
         player1.registerObserver(this);
 
+        setCurrentState(introState);
+/*
         // The following println() are just to see if initiatePlayer1() is really setting the fields of the Humanoid
         // object composed in "this" GameboyColor object to the Humanoid object we're obtaining by searching the
-        // List<LifeForm> from MapSpec's lifeFormsOnMap variable.
+        // List<LifeForm> from concrete Map's lifeFormsOnMap variable.
 
         // The following println() are suppose to test the initiatePlayer1(), and it does... but not in a well thought
         // out and "clean" way; we should refactor this.
@@ -87,7 +83,7 @@ public class GameboyColor implements Observer {
 
         System.out.println("Inventory size for GameboyColor constructor: " + numberOfItems);
         System.out.println("Number of Monsters for GameboyColor constructor: " + player1.getMyMonsterList().size());
-
+*/
 
     }
 
@@ -98,9 +94,9 @@ public class GameboyColor implements Observer {
     public void initiatePlayer1(Humanoid fromMap) {
         // The following println() is just to see where initiatePlayer1() is called in the output.
         System.out.println("GameboyColor.initiatePlayer1()... is being passed its starting state as whatever state the " +
-                "Humanoid object from the concrete MapSpec's List<LifeForm> lifeFormsOnBoard started as.");
+                "Humanoid object from the concrete Map's List<LifeForm> lifeFormsOnBoard started as.");
 
-        player1 = new Humanoid(fromMap.getName(), fromMap.getType());
+        player1 = new Humanoid(fromMap.getType());
         player1.setRow(fromMap.getRow());
         player1.setCol(fromMap.getCol());
         player1.setImageAddress(fromMap.getImageAddress());

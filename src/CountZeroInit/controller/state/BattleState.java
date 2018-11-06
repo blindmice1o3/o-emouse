@@ -1,15 +1,18 @@
 package CountZeroInit.controller.state;
 
 import CountZeroInit.controller.GameboyColor;
+import CountZeroInit.model.creatures.Humanoid;
 
 public class BattleState implements State {
     private GameboyColor gb;
+    Humanoid player1;
 
     public BattleState(GameboyColor gb) {
         // The following println() is just to see where BattleState's constructor is called in the output.
         System.out.println("BattleState.constructor...");
 
         this.gb = gb;
+        player1 = gb.getPlayer1();
     }
 
     public void initiateBattle() {

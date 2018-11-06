@@ -7,10 +7,10 @@ public abstract class LifeForm {
     String type;
     String imageAddress;
 
-    @Override
+    /*@Override
     public String toString() {
         return "LifeForm.name, type, col, row: " + name + ", " + type + ", " + col + ", " + row;
-    }
+    }*/
 
     public void setCol(int col) {
         this.col = col;
