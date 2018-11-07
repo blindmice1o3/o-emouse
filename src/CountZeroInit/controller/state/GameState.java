@@ -12,6 +12,7 @@ public class GameState implements State {
         System.out.println("GameState.constructor...");
 
         this.gb = gb;
+        setPlayer();
     }
 
     public void setPlayer() {

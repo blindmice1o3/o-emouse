@@ -62,7 +62,7 @@ public class GameboyColor implements Observer {
         displayer = new Displayer(this, map);
         displayer.redrawPanel();
 
-        setCurrentState(getStartMenuState());
+        setCurrentState(getGameState());
 
         //displayer.drawIntroPanel();
 
