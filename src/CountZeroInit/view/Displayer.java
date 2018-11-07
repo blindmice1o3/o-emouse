@@ -20,7 +20,7 @@ public class Displayer {
         frame = new JFrame();
         frame.setSize(750, 750);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setVisible(true);
+    //    frame.setVisible(true);
     }
 
     public void drawIntroPanel() {
@@ -29,6 +29,7 @@ public class Displayer {
         startButton.addActionListener(new StartButtonListener());
         startPanel.add(startButton);
         frame.getContentPane().add(startPanel);
+
     }
 
     class StartButtonListener implements ActionListener {
@@ -40,9 +41,13 @@ public class Displayer {
     }
 
     public void redrawPanel() {
-        panel = new MyDrawPanel(gb);
-        frame.getContentPane().add(panel);
+       // panel = new MyDrawPanel(gb);
+       // frame.getContentPane().add(panel);
 
+    }
+
+    public JPanel getPanel() {
+        return panel;
     }
 }
 

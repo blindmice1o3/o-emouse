@@ -61,8 +61,10 @@ public class GameboyColor implements Observer {
         // that was passed to the GameboyColor's constructor. Then call the Displayer object's initiate().
         displayer = new Displayer(this, map);
         displayer.redrawPanel();
-        //displayer.drawIntroPanel();
 
+        setCurrentState(getStartMenuState());
+
+        //displayer.drawIntroPanel();
 
         // TODO: figure out how to update/refresh the JPanel in Displayer class's JFrame; incorporate this into IntroState's startButtonPressed().
 
@@ -92,8 +94,13 @@ public class GameboyColor implements Observer {
 
     }
 
+    public Displayer getDisplayer() {
+        return displayer;
+    }
+
     public void update() {
         displayer.redrawPanel();
+
     }
 
     public void initiatePlayer1(Humanoid fromMap) {

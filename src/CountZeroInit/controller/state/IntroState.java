@@ -72,6 +72,7 @@ public class IntroState implements State {
             System.out.println("Okay, let's go nab our first Monster!");
             gb.setCurrentState(gb.getGameState());
             gb.update();
+
         } else if (player1Response.startsWith("leave")) {
             System.out.println("You've made PETA proud!");
         } else {

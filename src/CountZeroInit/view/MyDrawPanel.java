@@ -16,6 +16,7 @@ public class MyDrawPanel extends JPanel {
         System.out.println("MyDrawPanel.constructor...");
 
         this.gb = gb;
+
     }
 
     @Override
