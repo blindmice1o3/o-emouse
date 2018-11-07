@@ -44,6 +44,9 @@ public class GameboyColor implements Observer {
             }
         }
 
+        // Register with Humanoid (player1's class; an Observable) as an Observer
+        player1.registerObserver(this);
+
         // Instantiate the concrete state classes (using "this" gameboyColor) and have our State instance variables
         // reference them.
         introState = new IntroState(this);
@@ -57,12 +60,14 @@ public class GameboyColor implements Observer {
         // Instantiate a new Displayer object, passing it a reference to "this" GameboyColor object and the Map object
         // that was passed to the GameboyColor's constructor. Then call the Displayer object's initiate().
         displayer = new Displayer(this, map);
-        displayer.refresh();
+        displayer.redrawPanel();
+        //displayer.drawIntroPanel();
 
-        // Register with Humanoid (player1's class; an Observable) as an Observer
-        player1.registerObserver(this);
 
-        setCurrentState(introState);
+        // TODO: figure out how to update/refresh the JPanel in Displayer class's JFrame; incorporate this into IntroState's startButtonPressed().
+
+
+
 /*
         // The following println() are just to see if initiatePlayer1() is really setting the fields of the Humanoid
         // object composed in "this" GameboyColor object to the Humanoid object we're obtaining by searching the
@@ -88,7 +93,7 @@ public class GameboyColor implements Observer {
     }
 
     public void update() {
-        displayer.refresh();
+        displayer.redrawPanel();
     }
 
     public void initiatePlayer1(Humanoid fromMap) {
@@ -136,6 +141,13 @@ public class GameboyColor implements Observer {
         System.out.println("GameboyColor.setCurrentState()...");
 
         currentState = newState;
+    }
+
+    public State getIntroState() {
+        // The following println() is just to see where getIntroState() is called in the output.
+        System.out.println("GameboyColor.getIntroState()...");
+
+        return introState;
     }
 
     public State getBattleState() {

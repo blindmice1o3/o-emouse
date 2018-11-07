@@ -17,40 +17,7 @@ public class IntroState implements State {
 
         this.gb = gb;
         player1 = gb.getPlayer1();
-    }
 
-    public void setUserName() {
-        System.out.println("Hello player1\nWhat is your name?\n");
-
-        BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
-
-        try {
-            player1.setName(input.readLine());
-        } catch (IOException exception) {
-            System.out.println("failed to readLine() for player1.setName()");
-        }
-
-        System.out.println("\nIt's nice to meet you " + player1.getName() + ".\n");
-        System.out.println("\nA wild " + gb.getLifeFormsOnBoard().get(0).getType() + " appeared!\nWould you like to:\n(Keep it) or (Leave it alone)?");
-
-        String player1Response = "";
-
-        try {
-            player1Response = input.readLine();
-        } catch (IOException exception) {
-            System.out.println("failed to readLine() for player1Response");
-        }
-
-        if (player1Response.startsWith("keep")) {
-            System.out.println("Okay, let's go nab our first Monster!");
-            gb.setCurrentState(gb.getGameState());
-        } else if (player1Response.startsWith("leave")) {
-            System.out.println("You've made PETA proud!");
-        } else {
-            System.out.println("I don't understand your command.");
-        }
-
-        gb.setCurrentState(gb.getGameState());
     }
 
     @Override
@@ -78,6 +45,38 @@ public class IntroState implements State {
     public void startButtonPressed() {
         // The following println() is just to see where startButtonPressed() is called in the output.
         System.out.println("IntroState.startButtonPressed()...");
+
+
+        System.out.println("Hello player1\nWhat is your name?\n");
+
+        BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+
+        try {
+            player1.setName(input.readLine());
+        } catch (IOException exception) {
+            System.out.println("failed to readLine() for player1.setName()");
+        }
+
+        System.out.println("\nIt's nice to meet you " + player1.getName() + ".\n");
+        System.out.println("\nA wild " + gb.getLifeFormsOnBoard().get(0).getType() + " appeared!\nWould you like to:\n(Keep it) or (Leave it alone)?");
+
+        String player1Response = "";
+
+        try {
+            player1Response = input.readLine();
+        } catch (IOException exception) {
+            System.out.println("failed to readLine() for player1Response");
+        }
+
+        if (player1Response.startsWith("keep")) {
+            System.out.println("Okay, let's go nab our first Monster!");
+            gb.setCurrentState(gb.getGameState());
+            gb.update();
+        } else if (player1Response.startsWith("leave")) {
+            System.out.println("You've made PETA proud!");
+        } else {
+            System.out.println("I don't understand your command.");
+        }
 
     }
 
