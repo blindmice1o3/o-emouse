@@ -1,6 +1,6 @@
 package CountZeroInit.controller.state;
 
-import CountZeroInit.controller.GameboyColor;
+import CountZeroInit.controller.CountZeroInit;
 import CountZeroInit.model.creatures.Humanoid;
 
 import java.io.BufferedReader;
@@ -8,15 +8,15 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class IntroState implements State {
-    private GameboyColor gb;
+    private CountZeroInit countZeroInit;
     Humanoid player1;
 
-    public IntroState(GameboyColor gb) {
+    public IntroState(CountZeroInit countZeroInit) {
         // The following println() is just to see where IntroState's constructor is called in the output.
         System.out.println("IntroState.constructor...");
 
-        this.gb = gb;
-        player1 = gb.getPlayer1();
+        this.countZeroInit = countZeroInit;
+        player1 = countZeroInit.getPlayer1();
 
     }
 
@@ -58,7 +58,7 @@ public class IntroState implements State {
         }
 
         System.out.println("\nIt's nice to meet you " + player1.getName() + ".\n");
-        System.out.println("\nA wild " + gb.getLifeFormsOnBoard().get(0).getType() + " appeared!\nWould you like to:\n(Keep it) or (Leave it alone)?");
+        System.out.println("\nA wild " + countZeroInit.getLifeFormsOnBoard().get(0).getType() + " appeared!\nWould you like to:\n(Keep it) or (Leave it alone)?");
 
         String player1Response = "";
 
@@ -70,8 +70,8 @@ public class IntroState implements State {
 
         if (player1Response.startsWith("keep")) {
             System.out.println("Okay, let's go nab our first Monster!");
-            gb.setCurrentState(gb.getGameState());
-            gb.update();
+            countZeroInit.setCurrentState(countZeroInit.getGameState());
+
 
         } else if (player1Response.startsWith("leave")) {
             System.out.println("You've made PETA proud!");
@@ -107,5 +107,10 @@ public class IntroState implements State {
         // The following println() is just to see where leftButtonPressed() is called in the output.
         System.out.println("IntroState.leftButtonPressed()...");
 
+    }
+
+    @Override
+    public String toString() {
+        return "IntroState";
     }
 }

@@ -1,53 +1,108 @@
 package CountZeroInit.view;
 
-import CountZeroInit.controller.GameboyColor;
+import CountZeroInit.controller.CountZeroInit;
 import CountZeroInit.model.map.Map;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
-public class Displayer {
-    GameboyColor gb;
+public class Displayer extends JFrame {
+    CountZeroInit countZeroInit;
     Map map;
-    JFrame frame;
-    MyDrawPanel panel;
+    JPanel battlePanel;
+    JPanel gamePanel;
+    JPanel introPanel;
+    JPanel itemListPanel;
+    JPanel monsterListPanel;
+    JPanel myMonsterListPanel;
+    JPanel startMenuPanel;
 
-    public Displayer(GameboyColor gb, Map map) {
-        this.gb = gb;
+    JPanel currentPanel;
+
+    public Displayer(CountZeroInit countZeroInit, Map map) {
+        this.countZeroInit = countZeroInit;
         this.map = map;
 
-        frame = new JFrame();
-        frame.setSize(750, 750);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    //    frame.setVisible(true);
-    }
+        setSize(750, 750);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-    public void drawIntroPanel() {
-        JPanel startPanel = new JPanel();
-        JButton startButton = new JButton("Press Start");
-        startButton.addActionListener(new StartButtonListener());
-        startPanel.add(startButton);
-        frame.getContentPane().add(startPanel);
+        introPanel = new IntroPanel(countZeroInit);
+        gamePanel = new GamePanel(countZeroInit);
+
+        //setCurrentPanel("GameState");
+        currentPanel = gamePanel;
+        getContentPane().add(currentPanel);
+        setVisible(true);
 
     }
 
-    class StartButtonListener implements ActionListener {
-        public void actionPerformed(ActionEvent event) {
-            gb.setCurrentState(gb.getIntroState());
-            gb.getIntroState().startButtonPressed();
-
+    public void setCurrentPanel(String currentState) {
+        switch (currentState) {
+            case "BattleState":
+                currentPanel = getBattlePanel();
+                break;
+            case "GameState":
+                currentPanel = getGamePanel();
+                break;
+            case "IntroState":
+                currentPanel = getIntroPanel();
+                break;
+            case "ItemListState":
+                currentPanel = getItemListPanel();
+                break;
+            case "MonsterListState":
+                currentPanel = getMonsterListPanel();
+                break;
+            case "MyMonsterListState":
+                currentPanel = getMyMonsterListPanel();
+                break;
+            case "StartMenuState":
+                currentPanel = getStartMenuPanel();
+                break;
         }
+
+        getContentPane().removeAll();
+        getContentPane().add(currentPanel);
+        getContentPane().repaint();
+
+        //DISPLAYER NOT DRAWING ITS PANEL!!!!!!!!!!!!!
     }
 
     public void redrawPanel() {
-       // panel = new MyDrawPanel(gb);
-       // frame.getContentPane().add(panel);
+       currentPanel.repaint();
 
     }
 
-    public JPanel getPanel() {
-        return panel;
+    public JPanel getCurrentPanel() {
+        return currentPanel;
     }
+
+    public JPanel getBattlePanel() {
+        return battlePanel;
+    }
+
+    public JPanel getGamePanel() {
+        return gamePanel;
+    }
+
+    public JPanel getIntroPanel() {
+        return introPanel;
+    }
+
+    public JPanel getItemListPanel() {
+        return itemListPanel;
+    }
+
+    public JPanel getMonsterListPanel() {
+        return monsterListPanel;
+    }
+
+    public JPanel getMyMonsterListPanel() {
+        return myMonsterListPanel;
+    }
+
+    public JPanel getStartMenuPanel() {
+        return startMenuPanel;
+    }
+
 }
 

@@ -1,25 +1,25 @@
 package CountZeroInit.controller.commandholder;
 
-import CountZeroInit.controller.GameboyColor;
+import CountZeroInit.controller.CountZeroInit;
 import CountZeroInit.controller.state.GameState;
 
 public class ExitKeyCommand implements Command {
-    GameboyColor gb;
+    CountZeroInit countZeroInit;
 
-    public ExitKeyCommand(GameboyColor gb) {
+    public ExitKeyCommand(CountZeroInit countZeroInit) {
         // The following println() is just to see where ExitKeyCommand's constructor is called in the output.
         System.out.println("ExitKeyCommand.constructor...");
 
-        this.gb = gb;
+        this.countZeroInit = countZeroInit;
     }
 
     public void execute() {
         // The following println() is just to see where execute() is called in the output.
         System.out.println("ExitKeyCommand.execute()...");
 
-        gb.setCurrentState(gb.getGameState());
+        countZeroInit.setCurrentState(countZeroInit.getGameState());
 
-        GameState gameState = (GameState)gb.getGameState();
+        GameState gameState = (GameState) countZeroInit.getGameState();
         gameState.setPlayer();
     }
 }

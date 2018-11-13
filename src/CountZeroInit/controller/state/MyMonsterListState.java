@@ -1,27 +1,27 @@
 package CountZeroInit.controller.state;
 
-import CountZeroInit.controller.GameboyColor;
+import CountZeroInit.controller.CountZeroInit;
 import CountZeroInit.model.creatures.Humanoid;
 
 public class MyMonsterListState implements State {
-    private GameboyColor gb;
+    private CountZeroInit countZeroInit;
     Humanoid player1;
     int numberOfMonsters;
     int currentIndexForSelectingMonster;
 
-    public MyMonsterListState(GameboyColor gb) {
+    public MyMonsterListState(CountZeroInit countZeroInit) {
         // The following println() is just to see where MyMonsterListState's constructor is called in the output.
         System.out.println("MyMonsterListState.constructor...");
 
-        this.gb = gb;
+        this.countZeroInit = countZeroInit;
     }
 
     public void setPlayer() {
         // The following println() is just to see where setPlayer() is called in the output.
         System.out.println("MyMonsterListState.setPlayer()...");
 
-        // Sets MyMonsterListState's instance variable player1 to refer to the GameboyColor object's player1 object.
-        player1 = gb.getPlayer1();
+        // Sets MyMonsterListState's instance variable player1 to refer to the CountZeroInit object's player1 object.
+        player1 = countZeroInit.getPlayer1();
 
         // Initiate the currentIndexForSelectingMonster instance variable to 0 by default.
         // Initiate the numberOfMonsters instance variable to however many the player1 object has in its myMonsterList ArrayList.
@@ -70,7 +70,7 @@ public class MyMonsterListState implements State {
         // The following println() is just to see where startButtonPressed() is called in the output.
         System.out.println("MyMonsterListState.startButtonPressed()...");
 
-        gb.setCurrentState(gb.getGameState());
+        countZeroInit.setCurrentState(countZeroInit.getGameState());
     }
 
     @Override
@@ -109,5 +109,10 @@ public class MyMonsterListState implements State {
         // The following println() is just to see where leftButtonPressed() is called in the output.
         System.out.println("MyMonsterListState.leftButtonPressed()...");
 
+    }
+
+    @Override
+    public String toString() {
+        return "MyMonsterListState";
     }
 }

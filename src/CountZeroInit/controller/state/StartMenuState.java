@@ -1,19 +1,19 @@
 package CountZeroInit.controller.state;
 
-import CountZeroInit.controller.GameboyColor;
+import CountZeroInit.controller.CountZeroInit;
 import CountZeroInit.controller.commandholder.*;
 
 public class StartMenuState implements State {
-    private GameboyColor gb;
+    private CountZeroInit countZeroInit;
     int startMenuCommandsIndex;
     int startMenuCommandsSize;
     Command[] startMenuCommands;
 
-    public StartMenuState(GameboyColor gb) {
+    public StartMenuState(CountZeroInit countZeroInit) {
         // The following println() is just to see where StartMenuState's constructor is called in the output.
         System.out.println("StartMenuState.constructor...");
 
-        this.gb = gb;
+        this.countZeroInit = countZeroInit;
         loadStartMenuCommands();
     }
 
@@ -23,10 +23,10 @@ public class StartMenuState implements State {
 
         // Instantiate an array to hold Command objects; initialize that array to hold 4 concrete command objects that
         // are instantiated during the startMenuCommands[]'s initialization.
-        startMenuCommands = new Command[] { new MonsterListStateCommand(gb),
-                                new MyMonsterListStateCommand(gb),
-                                new ItemListStateCommand(gb),
-                                new ExitKeyCommand(gb) };
+        startMenuCommands = new Command[] { new MonsterListStateCommand(countZeroInit),
+                                new MyMonsterListStateCommand(countZeroInit),
+                                new ItemListStateCommand(countZeroInit),
+                                new ExitKeyCommand(countZeroInit) };
 
         // Initiate the startMenuCommandsIndex instance variable to 0 by default.
         // Initiate the startMenuCommandsSize instance variable to however many the startMenuCommands[] array was initialized with.
@@ -107,5 +107,10 @@ public class StartMenuState implements State {
         // The following println() is just to see where leftButtonPressed() is called in the output.
         System.out.println("StartMenuState.leftButtonPressed()...");
 
+    }
+
+    @Override
+    public String toString() {
+        return "StartMenuState";
     }
 }

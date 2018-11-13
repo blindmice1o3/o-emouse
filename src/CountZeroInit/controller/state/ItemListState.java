@@ -1,27 +1,27 @@
 package CountZeroInit.controller.state;
 
-import CountZeroInit.controller.GameboyColor;
+import CountZeroInit.controller.CountZeroInit;
 import CountZeroInit.model.creatures.Humanoid;
 
 public class ItemListState implements State {
-    private GameboyColor gb;
+    private CountZeroInit countZeroInit;
     Humanoid player1;
     int numberOfItems;
     int currentIndexForSelectingItem;
 
-    public ItemListState(GameboyColor gb) {
+    public ItemListState(CountZeroInit countZeroInit) {
         // The following println() is just to see where ItemListState's constructor is called in the output.
         System.out.println("ItemListState.constructor...");
 
-        this.gb = gb;
+        this.countZeroInit = countZeroInit;
     }
 
     public void setPlayer() {
         // The following println() is just to see where setPlayer() is called in the output.
         System.out.println("ItemListState.setPlayer()...");
 
-        // Sets ItemListState's instance variable player1 to refer to the GameboyColor object's player1 object.
-        player1 = gb.getPlayer1();
+        // Sets ItemListState's instance variable player1 to refer to the CountZeroInit object's player1 object.
+        player1 = countZeroInit.getPlayer1();
 
         // Initiate the currentIndexForSelectingItem instance variable to 0 by default.
         // Initiate the numberOfItems instance variable to however many the player1 object has in its myInventory ArrayList.
@@ -65,7 +65,7 @@ public class ItemListState implements State {
         // The following println() is just to see where startButtonPressed() is called in the output.
         System.out.println("ItemListState.startButtonPressed()...");
 
-        gb.setCurrentState(gb.getGameState());
+        countZeroInit.setCurrentState(countZeroInit.getGameState());
     }
 
     @Override
@@ -104,5 +104,10 @@ public class ItemListState implements State {
         // The following println() is just to see where leftButtonPressed() is called in the output.
         System.out.println("ItemListState.leftButtonPressed()...");
 
+    }
+
+    @Override
+    public String toString() {
+        return "ItemListState";
     }
 }

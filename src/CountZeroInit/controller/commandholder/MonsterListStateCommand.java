@@ -1,15 +1,15 @@
 package CountZeroInit.controller.commandholder;
 
-import CountZeroInit.controller.GameboyColor;
+import CountZeroInit.controller.CountZeroInit;
 
 public class MonsterListStateCommand implements Command {
-    GameboyColor gb;
+    CountZeroInit countZeroInit;
 
-    public MonsterListStateCommand(GameboyColor gb) {
+    public MonsterListStateCommand(CountZeroInit countZeroInit) {
         // The following println() is just to see where MonsterListStateCommand's constructor is called in the output.
         System.out.println("MonsterListStateCommand.constructor...");
 
-        this.gb = gb;
+        this.countZeroInit = countZeroInit;
     }
 
     @Override
@@ -17,7 +17,7 @@ public class MonsterListStateCommand implements Command {
         // The following println() is just to see where execute() is called in the output.
         System.out.println("MonsterListStateCommand.execute()...");
 
-        gb.setCurrentState(gb.getMonsterListState());
+        countZeroInit.setCurrentState(countZeroInit.getMonsterListState());
 
     }
 }

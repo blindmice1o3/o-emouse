@@ -1,17 +1,17 @@
 package CountZeroInit.controller.state;
 
-import CountZeroInit.controller.GameboyColor;
+import CountZeroInit.controller.CountZeroInit;
 import CountZeroInit.model.creatures.Humanoid;
 
 public class GameState implements State {
-    private GameboyColor gb;
+    private CountZeroInit countZeroInit;
     Humanoid player1;
 
-    public GameState(GameboyColor gb) {
+    public GameState(CountZeroInit countZeroInit) {
         // The following println() is just to see where GameState's constructor is called in the output.
         System.out.println("GameState.constructor...");
 
-        this.gb = gb;
+        this.countZeroInit = countZeroInit;
         setPlayer();
     }
 
@@ -19,8 +19,8 @@ public class GameState implements State {
         // The following println() is just to see where setPlayer() is called in the output.
         System.out.println("GameState.setPlayer()...");
 
-        // Sets GameState's instance variable player1 to refer to the GameboyColor object's player1 object.
-        player1 = gb.getPlayer1();
+        // Sets GameState's instance variable player1 to refer to the CountZeroInit object's player1 object.
+        player1 = countZeroInit.getPlayer1();
 
 
         // The following println() are just to see if setPlayer() is really setting our player1 variable and we're
@@ -52,7 +52,7 @@ public class GameState implements State {
         // The following println() is just to see where startButtonPressed() is called in the output.
         System.out.println("GameState.startButtonPressed()...");
 
-        gb.setCurrentState(gb.getStartMenuState());
+        countZeroInit.setCurrentState(countZeroInit.getStartMenuState());
     }
 
     @Override
@@ -67,9 +67,9 @@ public class GameState implements State {
        }
 
        // refresh picture?
+        countZeroInit.getDisplayer().redrawPanel();
 
-
-        //gb.update();
+        //countZeroInit.update();
     }
 
     @Override
@@ -84,9 +84,9 @@ public class GameState implements State {
         }
 
         // refresh picture?
+        countZeroInit.getDisplayer().redrawPanel();
 
-
-       // gb.update();
+       // countZeroInit.update();
     }
 
     @Override
@@ -101,9 +101,9 @@ public class GameState implements State {
         }
 
         // refresh picture?
+        countZeroInit.getDisplayer().redrawPanel();
 
-
-        //gb.update();
+        //countZeroInit.update();
     }
 
     @Override
@@ -118,8 +118,13 @@ public class GameState implements State {
         }
 
         // refresh picture?
+        countZeroInit.getDisplayer().redrawPanel();
 
+        //countZeroInit.update();
+    }
 
-        //gb.update();
+    @Override
+    public String toString() {
+        return "GameState";
     }
 }

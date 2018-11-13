@@ -1,18 +1,18 @@
 package CountZeroInit.controller.state;
 
-import CountZeroInit.controller.GameboyColor;
+import CountZeroInit.controller.CountZeroInit;
 import CountZeroInit.model.creatures.Humanoid;
 
 public class BattleState implements State {
-    private GameboyColor gb;
+    private CountZeroInit countZeroInit;
     Humanoid player1;
 
-    public BattleState(GameboyColor gb) {
+    public BattleState(CountZeroInit countZeroInit) {
         // The following println() is just to see where BattleState's constructor is called in the output.
         System.out.println("BattleState.constructor...");
 
-        this.gb = gb;
-        player1 = gb.getPlayer1();
+        this.countZeroInit = countZeroInit;
+        player1 = countZeroInit.getPlayer1();
     }
 
     public void initiateBattle() {
@@ -79,5 +79,10 @@ public class BattleState implements State {
         // The following println() is just to see where leftButtonPressed() is called in the output.
         System.out.println("BattleState.leftButtonPressed()...");
 
+    }
+
+    @Override
+    public String toString() {
+        return "BattleState";
     }
 }

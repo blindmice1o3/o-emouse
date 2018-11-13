@@ -9,4 +9,5 @@ public interface State {
     public void downButtonPressed();
     public void rightButtonPressed();
     public void leftButtonPressed();
+    public String toString();
 }

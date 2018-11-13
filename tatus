@@ -902,19 +902,19 @@ Binary files a/out/production/o-emouse/CountZeroInit/model/map/Map.class and b/o
  [m
 [32m+[m[32m        MapSpec mapSpec = new ForestMapSpec();[m
 [32m+[m[32m        Map act1ForestMap = new Map(mapSpec);[m
-[32m+[m[32m        GameboyColor gb = new GameboyColor(act1ForestMap);[m
+[32m+[m[32m        GameboyColor countZeroInit = new GameboyColor(act1ForestMap);[m
 [32m+[m
-[32m+[m[32m        System.out.println(gb.getCurrentState());[m
-[32m+[m[32m        System.out.println(gb.getCurrentMap());[m
+[32m+[m[32m        System.out.println(countZeroInit.getCurrentState());[m
+[32m+[m[32m        System.out.println(countZeroInit.getCurrentMap());[m
 [32m+[m
-[32m+[m[32m        gb.getCurrentState().downButtonPressed();[m
-[32m+[m[32m        gb.getCurrentState().downButtonPressed();[m
-[32m+[m[32m        gb.getCurrentState().aButtonPressed();[m
+[32m+[m[32m        countZeroInit.getCurrentState().downButtonPressed();[m
+[32m+[m[32m        countZeroInit.getCurrentState().downButtonPressed();[m
+[32m+[m[32m        countZeroInit.getCurrentState().aButtonPressed();[m
 [32m+[m
-[32m+[m[32m        System.out.println(gb.getCurrentState());[m
+[32m+[m[32m        System.out.println(countZeroInit.getCurrentState());[m
 [32m+[m
-[32m+[m[32m        Tile[][] testGameBoard = gb.getCurrentMap().getGameBoard();[m
-[32m+[m[32m        MapSpec testMapSpec = gb.getCurrentMap().getMapSpec();[m
+[32m+[m[32m        Tile[][] testGameBoard = countZeroInit.getCurrentMap().getGameBoard();[m
+[32m+[m[32m        MapSpec testMapSpec = countZeroInit.getCurrentMap().getMapSpec();[m
 [32m+[m[32m        /*[m
 [32m+[m[32m        for (int i = 0; i < testGameBoard.length; i++) {[m
 [32m+[m[32m            for (int j = 0; j < testGameBoard.length; j++) {[m
@@ -1025,21 +1025,21 @@ Binary files a/out/production/o-emouse/CountZeroInit/model/map/Map.class and b/o
 [1m+++ b/src/CountZeroInit/controller/state/StartMenuState.java[m
 [36m@@ -11,26 +11,25 @@[m [mpublic class StartMenuState implements State {[m
  [m
-     public StartMenuState(GameboyColor gb) {[m
-         this.gb = gb;[m
+     public StartMenuState(GameboyColor countZeroInit) {[m
+         this.countZeroInit = countZeroInit;[m
 [31m-        startMenuCommandsIndex = 0;[m
 [32m+[m[32m        loadStartMenuCommands();[m
 [32m+[m[32m    }[m
  [m
-[31m-        startMenuCommands[0] = new MonsterListStateCommand(gb);[m
-[31m-        startMenuCommands[1] = new MyMonsterListStateCommand(gb);[m
-[31m-        startMenuCommands[2] = new ItemListStateCommand(gb);[m
-[31m-        startMenuCommands[3] = new ExitKeyCommand(gb);[m
+[31m-        startMenuCommands[0] = new MonsterListStateCommand(countZeroInit);[m
+[31m-        startMenuCommands[1] = new MyMonsterListStateCommand(countZeroInit);[m
+[31m-        startMenuCommands[2] = new ItemListStateCommand(countZeroInit);[m
+[31m-        startMenuCommands[3] = new ExitKeyCommand(countZeroInit);[m
 [32m+[m[32m    public void loadStartMenuCommands() {[m
-[32m+[m[32m        startMenuCommands = new Command[] { new MonsterListStateCommand(gb),[m
-[32m+[m[32m                                new MyMonsterListStateCommand(gb),[m
-[32m+[m[32m                                new ItemListStateCommand(gb),[m
-[32m+[m[32m                                new ExitKeyCommand(gb) };[m
+[32m+[m[32m        startMenuCommands = new Command[] { new MonsterListStateCommand(countZeroInit),[m
+[32m+[m[32m                                new MyMonsterListStateCommand(countZeroInit),[m
+[32m+[m[32m                                new ItemListStateCommand(countZeroInit),[m
+[32m+[m[32m                                new ExitKeyCommand(countZeroInit) };[m
  [m
 [32m+[m[32m        startMenuCommandsIndex = 0;[m
          startMenuCommandsSize = startMenuCommands.length;[m
@@ -1058,7 +1058,7 @@ Binary files a/out/production/o-emouse/CountZeroInit/model/map/Map.class and b/o
 [31m-[m
      @Override[m
      public void bButtonPressed() {[m
-         gb.setCurrentState(gb.getGameState());[m
+         countZeroInit.setCurrentState(countZeroInit.getGameState());[m
 [1mdiff --git a/src/CountZeroInit/model/map/Map.java b/src/CountZeroInit/model/map/Map.java[m
 [1mindex d168f44..c7d29c2 100644[m
 [1m--- a/src/CountZeroInit/model/map/Map.java[m

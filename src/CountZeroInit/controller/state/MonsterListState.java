@@ -1,15 +1,15 @@
 package CountZeroInit.controller.state;
 
-import CountZeroInit.controller.GameboyColor;
+import CountZeroInit.controller.CountZeroInit;
 
 public class MonsterListState implements State {
-    private GameboyColor gb;
+    private CountZeroInit countZeroInit;
 
-    public MonsterListState(GameboyColor gb) {
+    public MonsterListState(CountZeroInit countZeroInit) {
         // The following println() is just to see where MonsterListState's constructor is called in the output.
         System.out.println("MonsterListState.constructor...");
 
-        this.gb = gb;
+        this.countZeroInit = countZeroInit;
     }
 
 
@@ -70,5 +70,10 @@ public class MonsterListState implements State {
         // The following println() is just to see where leftButtonPressed() is called in the output.
         System.out.println("MonsterListState.leftButtonPressed()...");
 
+    }
+
+    @Override
+    public String toString() {
+        return "MonsterListState";
     }
 }
