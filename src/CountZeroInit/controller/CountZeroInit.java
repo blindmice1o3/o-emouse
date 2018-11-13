@@ -19,19 +19,31 @@ public class CountZeroInit
     State myMonsterListState;
     State startMenuState;
     State introState;
-    Humanoid player1;
 
-    State currentState;
+    Humanoid player1;
     Map currentMap;
     List<Tile> tiles;
     List<LifeForm> lifeFormsOnBoard;
+
     Displayer displayer;
+    State currentState;
 
     public CountZeroInit(Map map) {
         // The following println() is just to see where CountZeroInit's constructor is called in the output.
         System.out.println("CountZeroInit.constructor...");
 
         setCurrentMap(map);
+
+        gameInit();
+
+        gameStart();
+
+        //displayer.drawIntroPanel();
+
+
+    }
+
+    public void gameInit() {
         tiles = getCurrentMap().getTiles();
         lifeFormsOnBoard = getCurrentMap().getLifeFormsOnBoard();
 
@@ -60,42 +72,21 @@ public class CountZeroInit
 
         // Instantiate a new Displayer object, passing it a reference to "this" CountZeroInit object and the Map object
         // that was passed to the CountZeroInit's constructor. Then call the Displayer object's initiate().
-        displayer = new Displayer(this, map);
+        displayer = new Displayer(this, getCurrentMap());
 
-        // The following line may be redundant.
-        //displayer.redrawPanel();
-
+        // TODO: Start the game off in GameState (player is able to walk around).
         setCurrentState(getGameState());
+    }
 
-        //displayer.drawIntroPanel();
-
-        // TODO: figure out how to update/refresh the JPanel in Displayer class's JFrame; incorporate this into IntroState's startButtonPressed().
-
+    public void gameStart() {
+        // TODO: Introduce a game loop that will call gameUpdate() (one step in the game) followed by gameDraw() (redraw after one input from player).
 
 
-/*
-        // The following println() are just to see if initiatePlayer1() is really setting the fields of the Humanoid
-        // object composed in "this" CountZeroInit object to the Humanoid object we're obtaining by searching the
-        // List<LifeForm> from concrete Map's lifeFormsOnMap variable.
-
-        // The following println() are suppose to test the initiatePlayer1(), and it does... but not in a well thought
-        // out and "clean" way; we should refactor this.
-        System.out.println("CountZeroInit.Constructor... after calling initiatePlayer1(): " + this.player1);
-        System.out.println(getPlayer1().getCol() + ", " + getPlayer1().getRow() + "; \n" + getPlayer1().getMyMonsterList()
-                + "\n" + getPlayer1().getInventory()
-                + "\n" + getPlayer1().getImageAddress()
-                + "\n" + getPlayer1().getName());
-
-        System.out.println("CountZeroInitConstructor... after calling initiatePlayer1(): \nnow seeing if we can can call " +
-                        "the Humanoid's inventory field (an ArrayList) to call the size() on it: ");
-
-        numberOfItems = player1.getInventory().size();
-
-        System.out.println("Inventory size for CountZeroInit constructor: " + numberOfItems);
-        System.out.println("Number of Monsters for CountZeroInit constructor: " + player1.getMyMonsterList().size());
-*/
 
     }
+    public void gameUpdate() {}
+    public void gameDraw() {}
+    public void gameShutdown() {}
 
     public Displayer getDisplayer() {
         return displayer;
@@ -103,8 +94,9 @@ public class CountZeroInit
 
     public void update() {
         displayer.redrawPanel();
-
     }
+
+
 
     public void initiatePlayer1(Humanoid fromMap) {
         // The following println() is just to see where initiatePlayer1() is called in the output.
