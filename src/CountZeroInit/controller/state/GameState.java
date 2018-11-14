@@ -3,6 +3,8 @@ package CountZeroInit.controller.state;
 import CountZeroInit.controller.CountZeroInit;
 import CountZeroInit.model.creatures.Humanoid;
 
+import java.awt.event.KeyEvent;
+
 public class GameState implements State {
     private CountZeroInit countZeroInit;
     Humanoid player1;
@@ -28,6 +30,26 @@ public class GameState implements State {
         System.out.println("GameState.setPlayer() initialized the player1 instance variable's inventory as: " + player1.getInventory());
         System.out.println("GameState.setPlayer() initiatized the player1 instance variable's monster list as: " + player1.getMyMonsterList());
     }
+    public void gameKeyPressed(int keyCode) {
+
+        switch (keyCode) {
+            case KeyEvent.VK_W:
+                upButtonPressed();
+                break;
+            case KeyEvent.VK_S:
+                downButtonPressed();
+                break;
+            case KeyEvent.VK_A:
+                leftButtonPressed();
+                break;
+            case KeyEvent.VK_D:
+                rightButtonPressed();
+                break;
+        }
+        // refresh picture?
+        countZeroInit.getDisplayer().redrawPanel();
+    }
+
 
     @Override
     public void aButtonPressed() {
@@ -66,9 +88,6 @@ public class GameState implements State {
            // maybe cycle back to the bottom of the map...
        }
 
-       // refresh picture?
-        countZeroInit.getDisplayer().redrawPanel();
-
         //countZeroInit.update();
     }
 
@@ -82,9 +101,6 @@ public class GameState implements State {
         } else {
             // maybe cycle back to top of the map...
         }
-
-        // refresh picture?
-        countZeroInit.getDisplayer().redrawPanel();
 
        // countZeroInit.update();
     }
@@ -100,9 +116,6 @@ public class GameState implements State {
             // maybe cycle back to left of the map...
         }
 
-        // refresh picture?
-        countZeroInit.getDisplayer().redrawPanel();
-
         //countZeroInit.update();
     }
 
@@ -116,9 +129,6 @@ public class GameState implements State {
         } else {
             // maybe cycle back to right of the map...
         }
-
-        // refresh picture?
-        countZeroInit.getDisplayer().redrawPanel();
 
         //countZeroInit.update();
     }

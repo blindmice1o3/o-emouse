@@ -15,6 +15,7 @@ public class MyMonsterListState implements State {
 
         this.countZeroInit = countZeroInit;
     }
+    public void gameKeyPressed(int keyCode) {}
 
     public void setPlayer() {
         // The following println() is just to see where setPlayer() is called in the output.

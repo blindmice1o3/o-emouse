@@ -14,6 +14,7 @@ public class BattleState implements State {
         this.countZeroInit = countZeroInit;
         player1 = countZeroInit.getPlayer1();
     }
+    public void gameKeyPressed(int keyCode) {}
 
     public void initiateBattle() {
         // The following println() is just to see where initiateBattle() is called in the output.

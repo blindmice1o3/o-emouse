@@ -11,7 +11,7 @@ public class MonsterListState implements State {
 
         this.countZeroInit = countZeroInit;
     }
-
+    public void gameKeyPressed(int keyCode) {}
 
     // !!!!! CURRENTLY WORKING ON !!!!!
 

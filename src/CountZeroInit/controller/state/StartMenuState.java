@@ -16,6 +16,7 @@ public class StartMenuState implements State {
         this.countZeroInit = countZeroInit;
         loadStartMenuCommands();
     }
+    public void gameKeyPressed(int keyCode) {}
 
     public void loadStartMenuCommands() {
         // The following println() is just to see where loadStartMenuCommands() is called in the output.

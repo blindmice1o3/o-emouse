@@ -4,8 +4,11 @@ import CountZeroInit.controller.CountZeroInit;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 
-public class GamePanel extends JPanel {
+public class GamePanel extends JPanel
+        implements KeyListener {
     CountZeroInit countZeroInit;
     String imageAddress;
     Image image;
@@ -16,7 +19,9 @@ public class GamePanel extends JPanel {
         System.out.println("GamePanel.constructor...");
 
         this.countZeroInit = countZeroInit;
-
+        setFocusable(true);
+        // TODO: not sure if have to setRequestFocus (doesn't seem like it)
+        addKeyListener(this);
     }
 
     @Override
@@ -82,5 +87,20 @@ public class GamePanel extends JPanel {
         x = (playerCol * 138) + 5;
         y = (playerRow * 138) + 5;
         g.drawImage(image, x, y, this);
+    }
+
+    @Override
+    public void keyTyped(KeyEvent e) {
+
+    }
+
+    @Override
+    public void keyPressed(KeyEvent e) {
+        countZeroInit.getCurrentState().gameKeyPressed(e.getKeyCode());
+    }
+
+    @Override
+    public void keyReleased(KeyEvent e) {
+
     }
 }

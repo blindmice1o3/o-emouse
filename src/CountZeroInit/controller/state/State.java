@@ -10,4 +10,5 @@ public interface State {
     public void rightButtonPressed();
     public void leftButtonPressed();
     public String toString();
+    public void gameKeyPressed(int keyCode);
 }

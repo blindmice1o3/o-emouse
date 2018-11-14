@@ -6,7 +6,6 @@ import CountZeroInit.model.items.Item;
 
 import java.util.List;
 
-
 public class Humanoid extends LifeForm
         implements Playable, Observable {
 

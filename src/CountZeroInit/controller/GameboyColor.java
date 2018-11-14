@@ -16,10 +16,10 @@ public class GameboyColor {
 
         // The CountZeroInit's upButtonPressed() is called to change the player's row variable to decrement by two and
         // column increment by two (3, 2).
-        countZeroInit.getCurrentState().upButtonPressed();
-        countZeroInit.getCurrentState().upButtonPressed();
-        countZeroInit.getCurrentState().rightButtonPressed();
-        countZeroInit.getCurrentState().rightButtonPressed();
+        //countZeroInit.getCurrentState().upButtonPressed();
+        //countZeroInit.getCurrentState().upButtonPressed();
+        //countZeroInit.getCurrentState().rightButtonPressed();
+        //countZeroInit.getCurrentState().rightButtonPressed();
         System.out.println("Player1's current position: (" + countZeroInit.getPlayer1().getCol() + ", " + countZeroInit.getPlayer1().getRow() + ")");
 
         /*

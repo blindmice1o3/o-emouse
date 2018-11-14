@@ -8,6 +8,7 @@ import CountZeroInit.model.map.Map;
 import CountZeroInit.model.surroundings.Tile;
 import CountZeroInit.view.Displayer;
 
+import java.awt.event.KeyEvent;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -136,25 +137,7 @@ public class CountZeroInit
     public void gameUpdate() {
         // TODO: Implement player providing input.
 
-        try {
-            System.out.println("Please select direction to move\n(Up, down, left, or right): ");
-            playerCommand = input.readLine();
-        } catch (IOException ex) {
-            System.out.println("failed to readLine() for playerCommand");
-        }
 
-        if (playerCommand.equals("up")) {
-            getCurrentState().upButtonPressed();
-        }
-        else if (playerCommand.equals("down")) {
-            getCurrentState().downButtonPressed();
-        }
-        else if (playerCommand.equals("left")) {
-            getCurrentState().leftButtonPressed();
-        }
-        else if (playerCommand.equals("right")) {
-            getCurrentState().rightButtonPressed();
-        }
 
     }
 

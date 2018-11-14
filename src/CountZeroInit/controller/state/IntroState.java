@@ -19,6 +19,7 @@ public class IntroState implements State {
         player1 = countZeroInit.getPlayer1();
 
     }
+    public void gameKeyPressed(int keyCode) {}
 
     @Override
     public void aButtonPressed() {
