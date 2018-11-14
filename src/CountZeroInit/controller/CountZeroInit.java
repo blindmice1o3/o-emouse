@@ -8,9 +8,7 @@ import CountZeroInit.model.map.Map;
 import CountZeroInit.model.surroundings.Tile;
 import CountZeroInit.view.Displayer;
 
-import java.awt.event.KeyEvent;
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.List;
 
@@ -84,7 +82,7 @@ public class CountZeroInit
         displayer = new Displayer(this, getCurrentMap());
 
         // TODO: Start the game off in GameState (player is able to walk around).
-        setCurrentState(getGameState());
+        setCurrentState(getStartMenuState());
     }
 
     public void gameStart() {

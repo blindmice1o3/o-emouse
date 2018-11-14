@@ -19,8 +19,10 @@ public class GamePanel extends JPanel
         System.out.println("GamePanel.constructor...");
 
         this.countZeroInit = countZeroInit;
+
         setFocusable(true);
         // TODO: not sure if have to setRequestFocus (doesn't seem like it)
+        //requestFocus();
         addKeyListener(this);
     }
 

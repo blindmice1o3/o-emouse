@@ -27,9 +27,10 @@ public class Displayer extends JFrame {
 
         introPanel = new IntroPanel(countZeroInit);
         gamePanel = new GamePanel(countZeroInit);
+        startMenuPanel = new StartMenuPanel(countZeroInit);
 
         //setCurrentPanel("GameState");
-        currentPanel = gamePanel;
+        currentPanel = startMenuPanel;
         getContentPane().add(currentPanel);
         setVisible(true);
 

@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4264d6a-6746-43ef-b695-128d92c400ed" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CountZeroInit/view/StartMenuPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/view/GamePanel.class" afterPath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/view/GamePanel.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CountZeroInit/controller/CountZeroInit.java" afterPath="$PROJECT_DIR$/src/CountZeroInit/controller/CountZeroInit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CountZeroInit/controller/GameboyColor.java" afterPath="$PROJECT_DIR$/src/CountZeroInit/controller/GameboyColor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CountZeroInit/controller/state/BattleState.java" afterPath="$PROJECT_DIR$/src/CountZeroInit/controller/state/BattleState.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CountZeroInit/controller/state/GameState.java" afterPath="$PROJECT_DIR$/src/CountZeroInit/controller/state/GameState.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CountZeroInit/controller/state/IntroState.java" afterPath="$PROJECT_DIR$/src/CountZeroInit/controller/state/IntroState.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CountZeroInit/controller/state/ItemListState.java" afterPath="$PROJECT_DIR$/src/CountZeroInit/controller/state/ItemListState.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CountZeroInit/controller/state/MonsterListState.java" afterPath="$PROJECT_DIR$/src/CountZeroInit/controller/state/MonsterListState.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CountZeroInit/controller/state/MyMonsterListState.java" afterPath="$PROJECT_DIR$/src/CountZeroInit/controller/state/MyMonsterListState.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CountZeroInit/controller/state/StartMenuState.java" afterPath="$PROJECT_DIR$/src/CountZeroInit/controller/state/StartMenuState.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CountZeroInit/controller/state/State.java" afterPath="$PROJECT_DIR$/src/CountZeroInit/controller/state/State.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CountZeroInit/model/creatures/Humanoid.java" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/creatures/Humanoid.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CountZeroInit/view/Displayer.java" afterPath="$PROJECT_DIR$/src/CountZeroInit/view/Displayer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CountZeroInit/view/GamePanel.java" afterPath="$PROJECT_DIR$/src/CountZeroInit/view/GamePanel.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -32,8 +25,8 @@
       <file leaf-file-name="GameboyColor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CountZeroInit/controller/GameboyColor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="68">
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -42,12 +35,13 @@
       <file leaf-file-name="GamePanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CountZeroInit/view/GamePanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="22" column="75" lean-forward="false" selection-start-line="22" selection-start-column="75" selection-end-line="22" selection-end-column="75" />
+            <state relative-caret-position="153">
+              <caret line="42" column="13" lean-forward="false" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="method#keyTyped#0;class#GamePanel#0" expanded="false" />
-                <element signature="e#3812#3813#0" expanded="true" />
-                <element signature="e#3890#3891#0" expanded="true" />
+                <element signature="e#3839#3840#0" expanded="true" />
+                <element signature="e#3917#3918#0" expanded="true" />
                 <element signature="method#keyReleased#0;class#GamePanel#0" expanded="false" />
               </folding>
             </state>
@@ -58,17 +52,17 @@
         <entry file="file://$PROJECT_DIR$/src/CountZeroInit/controller/state/IntroState.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="21" column="46" lean-forward="false" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+              <caret line="21" column="45" lean-forward="false" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CountZeroInit.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CountZeroInit/controller/CountZeroInit.java">
+      <file leaf-file-name="StartMenuPanel.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/CountZeroInit/view/StartMenuPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="138" column="0" lean-forward="true" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+            <state relative-caret-position="408">
+              <caret line="24" column="49" lean-forward="false" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,61 +70,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BattleState.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CountZeroInit/controller/state/BattleState.java">
+      <file leaf-file-name="StartMenuState.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CountZeroInit/controller/state/StartMenuState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="16" column="46" lean-forward="false" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+            <state relative-caret-position="238">
+              <caret line="18" column="45" lean-forward="true" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameState.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="IntroPanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CountZeroInit/view/IntroPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CountZeroInit.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CountZeroInit/controller/CountZeroInit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="82" column="0" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Displayer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CountZeroInit/view/Displayer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="32" column="8" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameState.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CountZeroInit/controller/state/GameState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="35" column="26" lean-forward="true" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="State.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CountZeroInit/controller/state/State.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyMonsterListState.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CountZeroInit/controller/state/MyMonsterListState.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="17" column="46" lean-forward="false" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MonsterListState.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CountZeroInit/controller/state/MonsterListState.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="46" lean-forward="false" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ItemListState.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CountZeroInit/controller/state/ItemListState.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="17" column="46" lean-forward="false" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+            <state relative-caret-position="119">
+              <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -164,7 +152,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/CountZeroInit/model/items/PlasticSpork.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/model/items/Item.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/controller/commandholder/Command.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/controller/enumholder/StartMenuStateEnum.java" />
@@ -199,7 +186,6 @@
         <option value="$PROJECT_DIR$/src/CountZeroInit/controller/commandholder/MonsterListStateCommand.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/controller/commandholder/ItemListStateCommand.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/controller/commandholder/ExitKeyCommand.java" />
-        <option value="$PROJECT_DIR$/src/CountZeroInit/view/Displayer.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/view/IntroPanel.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/model/surroundings/Tree.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/model/creatures/ThunderMouse.java" />
@@ -212,9 +198,11 @@
         <option value="$PROJECT_DIR$/src/CountZeroInit/controller/state/IntroState.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/controller/state/BattleState.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/controller/GameboyColor.java" />
-        <option value="$PROJECT_DIR$/src/CountZeroInit/controller/CountZeroInit.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/controller/state/GameState.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/view/GamePanel.java" />
+        <option value="$PROJECT_DIR$/src/CountZeroInit/controller/CountZeroInit.java" />
+        <option value="$PROJECT_DIR$/src/CountZeroInit/view/Displayer.java" />
+        <option value="$PROJECT_DIR$/src/CountZeroInit/view/StartMenuPanel.java" />
       </list>
     </option>
   </component>
@@ -271,6 +259,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="CountZeroInit" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="o-emouse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="o-emouse" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="CountZeroInit" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="commandholder" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="o-emouse" type="b2602c69:ProjectViewProjectNode" />
@@ -568,6 +564,30 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3398693" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3267974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36928105" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53594774" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19742814" sideWeight="0.49346405" order="1" side_tool="false" content_ui="combo" x="1072" y="100" width="256" height="583" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3398693" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.19440243" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="1047" y="99" width="279" height="560" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39932886" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24508321" sideWeight="0.50653595" order="4" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -614,13 +634,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/Observable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CountZeroInit/view/IntroDrawPanel.java" />
     <entry file="file://$PROJECT_DIR$/src/CountLegacyInit/GameCanvas.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/src.zip!/java/util/List.java">
@@ -728,6 +741,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -742,13 +756,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/surroundings/Tree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -878,24 +886,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/view/Displayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/view/IntroPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/creatures/Humanoid.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -904,26 +894,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/controller/state/StartMenuState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CountZeroInit/controller/state/MyMonsterListState.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="17" column="46" lean-forward="false" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/controller/state/IntroState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="21" column="46" lean-forward="false" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
           <folding />
         </state>
       </provider>
@@ -960,42 +934,95 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/controller/GameboyColor.java">
+    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/controller/state/IntroState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="272">
+          <caret line="21" column="45" lean-forward="false" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/controller/CountZeroInit.java">
+    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/view/IntroPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="138" column="0" lean-forward="true" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+        <state relative-caret-position="119">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/controller/state/GameState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/controller/GameboyColor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/controller/CountZeroInit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="82" column="0" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/view/Displayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="32" column="8" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/controller/state/StartMenuState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="18" column="45" lean-forward="true" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/surroundings/Tree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/CountZeroInit/view/GamePanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="75" lean-forward="false" selection-start-line="22" selection-start-column="75" selection-end-line="22" selection-end-column="75" />
+        <state relative-caret-position="153">
+          <caret line="42" column="13" lean-forward="false" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#keyTyped#0;class#GamePanel#0" expanded="false" />
-            <element signature="e#3812#3813#0" expanded="true" />
-            <element signature="e#3890#3891#0" expanded="true" />
+            <element signature="e#3839#3840#0" expanded="true" />
+            <element signature="e#3917#3918#0" expanded="true" />
             <element signature="method#keyReleased#0;class#GamePanel#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/controller/state/GameState.java">
+    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/view/StartMenuPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="35" column="26" lean-forward="true" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
-          <folding />
+        <state relative-caret-position="408">
+          <caret line="24" column="49" lean-forward="false" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
