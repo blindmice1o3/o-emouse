@@ -65,13 +65,13 @@ public class Humanoid extends LifeForm
         }
     }
 
-    public void setInventory(List<Item> fromSource) {
+    public void setMyItemList(List<Item> fromSource) {
         for (Item item: fromSource) {
-            myInventory.add(item);
+            myItemList.add(item);
         }
     }
-    public List<Item> getInventory() {
-        return myInventory;
+    public List<Item> getMyItemList() {
+        return myItemList;
     }
     public void setMyMonsterList(List<Monster> fromSource) {
         for (Monster monster: fromSource) {

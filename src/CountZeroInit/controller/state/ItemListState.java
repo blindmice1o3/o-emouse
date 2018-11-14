@@ -25,14 +25,14 @@ public class ItemListState implements State {
         player1 = countZeroInit.getPlayer1();
 
         // Initiate the currentIndexForSelectingItem instance variable to 0 by default.
-        // Initiate the numberOfItems instance variable to however many the player1 object has in its myInventory ArrayList.
+        // Initiate the numberOfItems instance variable to however many the player1 object has in its myItemList ArrayList.
         currentIndexForSelectingItem = 0;
-        numberOfItems = player1.getInventory().size();
+        numberOfItems = player1.getMyItemList().size();
 
         // The following println() are just to see if setPlayer() is really setting our player1 variable and we're
         // really getting player1's inventory size.
         System.out.println("ItemListState.setPlayer() initiating numberOfItems variable: " + numberOfItems);
-        System.out.println("ItemListState.setPlayer()... this is player1's inventory: " + player1.getInventory());
+        System.out.println("ItemListState.setPlayer()... this is player1's inventory: " + player1.getMyItemList());
     }
 
     @Override
@@ -42,7 +42,7 @@ public class ItemListState implements State {
         // The following println() is just to see where aButtonPressed() is called in the output.
         System.out.println("ItemListState.aButtonPressed()...");
 
-        System.out.println(player1.getInventory().get(currentIndexForSelectingItem));
+        System.out.println(player1.getMyItemList().get(currentIndexForSelectingItem));
     }
 
     @Override

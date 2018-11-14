@@ -22,9 +22,9 @@ public class ForestMap extends Map {
 
 
         Humanoid player1 = new Humanoid("humanoid");
-        player1.getInventory().add(new PlasticSpork("plastic spork of player1"));
-        player1.getInventory().add(new CardboardShoulderPads("cardboard shoulder pads of player1", 2));
-        player1.getInventory().add(new LightningShockWeapon("lightning shock weapon of player1", 1));
+        player1.getMyItemList().add(new PlasticSpork("plastic spork of player1"));
+        player1.getMyItemList().add(new CardboardShoulderPads("cardboard shoulder pads of player1", 2));
+        player1.getMyItemList().add(new LightningShockWeapon("lightning shock weapon of player1", 1));
 
         player1.getMyMonsterList().add(new ThunderMouse("Baby Brown", "bear"));
         player1.getMyMonsterList().add(new ThunderMouse("Bluee Cooie", "piglet"));

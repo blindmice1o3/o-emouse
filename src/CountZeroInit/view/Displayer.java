@@ -25,12 +25,16 @@ public class Displayer extends JFrame {
         setSize(750, 750);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        introPanel = new IntroPanel(countZeroInit);
+        battlePanel = new BattlePanel(countZeroInit);
         gamePanel = new GamePanel(countZeroInit);
+        introPanel = new IntroPanel(countZeroInit);
+        itemListPanel = new ItemListPanel(countZeroInit);
+        monsterListPanel = new MonsterListPanel(countZeroInit);
+        myMonsterListPanel = new MyMonsterListPanel(countZeroInit);
         startMenuPanel = new StartMenuPanel(countZeroInit);
 
         //setCurrentPanel("GameState");
-        currentPanel = startMenuPanel;
+        currentPanel = itemListPanel;
         getContentPane().add(currentPanel);
         setVisible(true);
 

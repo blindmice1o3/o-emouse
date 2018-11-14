@@ -27,7 +27,7 @@ public class GameState implements State {
 
         // The following println() are just to see if setPlayer() is really setting our player1 variable and we're
         // really getting player1's inventory and monster list.
-        System.out.println("GameState.setPlayer() initialized the player1 instance variable's inventory as: " + player1.getInventory());
+        System.out.println("GameState.setPlayer() initialized the player1 instance variable's inventory as: " + player1.getMyItemList());
         System.out.println("GameState.setPlayer() initiatized the player1 instance variable's monster list as: " + player1.getMyMonsterList());
     }
     public void gameKeyPressed(int keyCode) {
