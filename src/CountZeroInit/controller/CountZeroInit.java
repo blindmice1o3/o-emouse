@@ -8,10 +8,16 @@ import CountZeroInit.model.map.Map;
 import CountZeroInit.model.surroundings.Tile;
 import CountZeroInit.view.Displayer;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.List;
 
 public class CountZeroInit
         implements Observer {
+    static final int UPDATES_PER_SEC = 4;                               // number of game update per second
+    static final long UPDATE_PER_NSEC = 1000000000L / UPDATES_PER_SEC;  // nanoseconds
+
     State battleState;
     State gameState;
     State itemListState;
@@ -27,6 +33,8 @@ public class CountZeroInit
 
     Displayer displayer;
     State currentState;
+    BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+    String playerCommand;
 
     public CountZeroInit(Map map) {
         // The following println() is just to see where CountZeroInit's constructor is called in the output.
@@ -79,13 +87,81 @@ public class CountZeroInit
     }
 
     public void gameStart() {
-        // TODO: Introduce a game loop that will call gameUpdate() (one step in the game) followed by gameDraw() (redraw after one input from player).
+        // TODO: Introduce a game loop that will call gameUpdate() (one step in the game) followed by gameDraw() (redraw
+        // after one input from player).
 
+        // Create a new game thread
+        Thread gameThread = new Thread() {
+            // Override run() to provide the running behavior of this thread.
+            @Override
+            public void run() {
+                gameLoop();
+            }
+        };
+        // Start the thread. start() calls run(), which in turn calls gameLoop().
+        gameThread.start();
+    }
 
+    public void gameLoop() {
+        // Regenerate the game objects for a new game.
+
+        // Game loop.
+        long timeBegin, timeTaken, timeLeft;    // in msec
+
+        while (true) {
+            timeBegin = System.nanoTime();
+            if (currentState instanceof GameState) {    // not paused
+                // Update the state and position of all the game objects,
+                // detect collisions and provide responses.
+                gameUpdate();
+            }
+            // Refresh the display.
+            gameDraw();
+            // Delay timer to provide the necessary delay to meet the target rate.
+            timeTaken = System.nanoTime() - timeBegin;
+            timeLeft = (UPDATE_PER_NSEC - timeTaken) / 1000000L;    // in milliseconds
+            if (timeLeft < 10) {
+                timeLeft = 10;                                      // set a minimum
+            }
+            try {
+                // Provides the necessary delay and also yields control so that other thread can do work.
+                Thread.sleep(timeLeft);
+            } catch (InterruptedException ex) {
+
+            }
+        }
 
     }
-    public void gameUpdate() {}
-    public void gameDraw() {}
+
+    public void gameUpdate() {
+        // TODO: Implement player providing input.
+
+        try {
+            System.out.println("Please select direction to move\n(Up, down, left, or right): ");
+            playerCommand = input.readLine();
+        } catch (IOException ex) {
+            System.out.println("failed to readLine() for playerCommand");
+        }
+
+        if (playerCommand.equals("up")) {
+            getCurrentState().upButtonPressed();
+        }
+        else if (playerCommand.equals("down")) {
+            getCurrentState().downButtonPressed();
+        }
+        else if (playerCommand.equals("left")) {
+            getCurrentState().leftButtonPressed();
+        }
+        else if (playerCommand.equals("right")) {
+            getCurrentState().rightButtonPressed();
+        }
+
+    }
+
+    public void gameDraw() {
+        displayer.redrawPanel();
+    }
+
     public void gameShutdown() {}
 
     public Displayer getDisplayer() {
