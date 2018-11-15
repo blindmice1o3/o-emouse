@@ -2,10 +2,15 @@ package CountZeroInit.controller.state;
 
 import CountZeroInit.controller.CountZeroInit;
 import CountZeroInit.model.creatures.Humanoid;
+import CountZeroInit.model.creatures.Monster;
+
+import java.util.List;
 
 public class MyMonsterListState implements State {
     private CountZeroInit countZeroInit;
     Humanoid player1;
+    List<Monster> myMonsterList;
+
     int numberOfMonsters;
     int currentIndexForSelectingMonster;
 
@@ -23,11 +28,11 @@ public class MyMonsterListState implements State {
 
         // Sets MyMonsterListState's instance variable player1 to refer to the CountZeroInit object's player1 object.
         player1 = countZeroInit.getPlayer1();
-
+        myMonsterList = player1.getMyMonsterList();
         // Initiate the currentIndexForSelectingMonster instance variable to 0 by default.
         // Initiate the numberOfMonsters instance variable to however many the player1 object has in its myMonsterList ArrayList.
         currentIndexForSelectingMonster = 0;
-        numberOfMonsters = player1.getMyMonsterList().size();
+        numberOfMonsters = myMonsterList.size();
 
         // The following println() are just to see if setPlayer() is really setting our player1 variable and we're
         // really getting player1's monster list size.

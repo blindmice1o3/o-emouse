@@ -1,15 +1,20 @@
 package CountZeroInit.controller.state;
 
 import CountZeroInit.controller.CountZeroInit;
+import CountZeroInit.model.creatures.Monster;
+
+import java.util.List;
 
 public class MonsterListState implements State {
     private CountZeroInit countZeroInit;
+    List<Monster> allMonsterList;
 
     public MonsterListState(CountZeroInit countZeroInit) {
         // The following println() is just to see where MonsterListState's constructor is called in the output.
         System.out.println("MonsterListState.constructor...");
 
         this.countZeroInit = countZeroInit;
+
     }
     public void gameKeyPressed(int keyCode) {}
 

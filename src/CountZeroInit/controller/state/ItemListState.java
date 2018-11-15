@@ -87,7 +87,7 @@ public class ItemListState implements State {
         System.out.println("ItemListState.downButtonPressed()...");
 
         if (currentIndexForSelectingItem < (numberOfItems-1)) {
-            currentIndexForSelectingItem++;
+///            currentIndexForSelectingItem++;
         } else {
             currentIndexForSelectingItem = 0;
         }

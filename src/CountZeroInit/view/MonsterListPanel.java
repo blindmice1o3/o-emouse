@@ -1,12 +1,16 @@
 package CountZeroInit.view;
 
 import CountZeroInit.controller.CountZeroInit;
+import CountZeroInit.model.creatures.Monster;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.List;
+
 
 public class MonsterListPanel extends JPanel {
     CountZeroInit countZeroInit;
+    List<Monster> allMonsterList;
 
     public MonsterListPanel(CountZeroInit countZeroInit) {
         this.countZeroInit = countZeroInit;

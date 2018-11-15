@@ -15,8 +15,12 @@ public class ItemListPanel extends JPanel {
         this.countZeroInit = countZeroInit;
 
         myItemList = countZeroInit.getPlayer1().getMyItemList();
-    }
 
+
+        JList itemList = new JList(myItemList.toArray());
+        add(itemList);
+    }
+/*
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         setBackground(Color.WHITE);
@@ -24,4 +28,5 @@ public class ItemListPanel extends JPanel {
         Graphics2D g2d = (Graphics2D)g;
         g2d.drawString(myItemList.toString(), 10, 10);
     }
+*/
 }
