@@ -82,7 +82,7 @@ public class CountZeroInit
         displayer = new Displayer(this, getCurrentMap());
 
         // TODO: Start the game off in GameState (player is able to walk around).
-        setCurrentState(getGameState());
+        setCurrentState(getIntroState());
     }
 
     public void gameStart() {

@@ -84,6 +84,6 @@ public class BattleState implements State {
 
     @Override
     public String toString() {
-        return "BattleState";
+        return "Battle";
     }
 }

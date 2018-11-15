@@ -3,6 +3,8 @@ package CountZeroInit.controller.state;
 import CountZeroInit.controller.CountZeroInit;
 import CountZeroInit.model.creatures.Humanoid;
 
+import java.awt.event.KeyEvent;
+
 public class ItemListState implements State {
     private CountZeroInit countZeroInit;
     Humanoid player1;
@@ -15,7 +17,25 @@ public class ItemListState implements State {
 
         this.countZeroInit = countZeroInit;
     }
-    public void gameKeyPressed(int keyCode) {}
+    public void gameKeyPressed(int keyCode) {
+
+        switch (keyCode) {
+            case KeyEvent.VK_W:
+                upButtonPressed();
+                break;
+            case KeyEvent.VK_S:
+                downButtonPressed();
+                break;
+            case KeyEvent.VK_A:
+                leftButtonPressed();
+                break;
+            case KeyEvent.VK_D:
+                rightButtonPressed();
+                break;
+        }
+        // refresh picture?
+        countZeroInit.getDisplayer().redrawPanel();
+    }
 
     public void setPlayer() {
         // The following println() is just to see where setPlayer() is called in the output.
@@ -87,7 +107,7 @@ public class ItemListState implements State {
         System.out.println("ItemListState.downButtonPressed()...");
 
         if (currentIndexForSelectingItem < (numberOfItems-1)) {
-///            currentIndexForSelectingItem++;
+            currentIndexForSelectingItem++;
         } else {
             currentIndexForSelectingItem = 0;
         }
@@ -109,6 +129,6 @@ public class ItemListState implements State {
 
     @Override
     public String toString() {
-        return "ItemListState";
+        return "ItemList";
     }
 }

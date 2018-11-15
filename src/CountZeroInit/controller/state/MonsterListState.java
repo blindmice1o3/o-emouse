@@ -79,6 +79,6 @@ public class MonsterListState implements State {
 
     @Override
     public String toString() {
-        return "MonsterListState";
+        return "MonsterList";
     }
 }

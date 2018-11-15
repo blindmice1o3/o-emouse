@@ -25,8 +25,8 @@ public class StartMenuPanel extends JPanel {
         g2d.drawImage(arrowImage, 425, 80, 440, 95, 0, 0, 120, 120, null);
 
         g2d.drawString("START_MENU_PANEL", 450, 50);
-        g2d.drawString("MonsterList", 450, 90);
-        g2d.drawString("MyMonsterList", 450, 130);
-        g2d.drawString("ItemList", 450, 170);
+        g2d.drawString(countZeroInit.getMonsterListState().toString(), 450, 90);
+        g2d.drawString(countZeroInit.getMyMonsterListState().toString(), 450, 130);
+        g2d.drawString(countZeroInit.getItemListState().toString(), 450, 170);
     }
 }

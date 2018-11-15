@@ -119,6 +119,6 @@ public class MyMonsterListState implements State {
 
     @Override
     public String toString() {
-        return "MyMonsterListState";
+        return "MyMonsterList";
     }
 }

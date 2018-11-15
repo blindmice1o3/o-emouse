@@ -135,6 +135,6 @@ public class GameState implements State {
 
     @Override
     public String toString() {
-        return "GameState";
+        return "Game";
     }
 }

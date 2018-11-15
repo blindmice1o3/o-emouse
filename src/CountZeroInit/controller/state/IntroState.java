@@ -112,6 +112,6 @@ public class IntroState implements State {
 
     @Override
     public String toString() {
-        return "IntroState";
+        return "Intro";
     }
 }

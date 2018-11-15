@@ -112,6 +112,6 @@ public class StartMenuState implements State {
 
     @Override
     public String toString() {
-        return "StartMenuState";
+        return "StartMenu";
     }
 }

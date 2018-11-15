@@ -4,6 +4,7 @@ import CountZeroInit.controller.CountZeroInit;
 import CountZeroInit.model.map.Map;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class Displayer extends JFrame {
     CountZeroInit countZeroInit;
@@ -34,7 +35,7 @@ public class Displayer extends JFrame {
         startMenuPanel = new StartMenuPanel(countZeroInit);
 
         //setCurrentPanel("GameState");
-        currentPanel = gamePanel;
+        currentPanel = introPanel;
         getContentPane().add(currentPanel);
         setVisible(true);
 
@@ -42,25 +43,25 @@ public class Displayer extends JFrame {
 
     public void setCurrentPanel(String currentState) {
         switch (currentState) {
-            case "BattleState":
+            case "Battle":
                 currentPanel = getBattlePanel();
                 break;
-            case "GameState":
+            case "Game":
                 currentPanel = getGamePanel();
                 break;
-            case "IntroState":
+            case "Intro":
                 currentPanel = getIntroPanel();
                 break;
-            case "ItemListState":
+            case "ItemList":
                 currentPanel = getItemListPanel();
                 break;
-            case "MonsterListState":
+            case "MonsterList":
                 currentPanel = getMonsterListPanel();
                 break;
-            case "MyMonsterListState":
+            case "MyMonsterList":
                 currentPanel = getMyMonsterListPanel();
                 break;
-            case "StartMenuState":
+            case "StartMenu":
                 currentPanel = getStartMenuPanel();
                 break;
         }
