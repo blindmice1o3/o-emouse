@@ -23,7 +23,7 @@ public class Displayer extends JFrame {
         this.countZeroInit = countZeroInit;
         this.map = map;
 
-        setSize(750, 750);
+        setSize(728, 728);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         battlePanel = new BattlePanel(countZeroInit);
