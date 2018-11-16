@@ -34,11 +34,11 @@ public class Displayer extends JFrame {
         myMonsterListPanel = new MyMonsterListPanel(countZeroInit);
         startMenuPanel = new StartMenuPanel(countZeroInit);
 
-        //setCurrentPanel("GameState");
-        currentPanel = introPanel;
+        // Using this line to select the module to work on.
+        currentPanel = getGamePanel();
+
         getContentPane().add(currentPanel);
         setVisible(true);
-
     }
 
     public void setCurrentPanel(String currentState) {
@@ -66,11 +66,10 @@ public class Displayer extends JFrame {
                 break;
         }
 
-        getContentPane().removeAll();
-        getContentPane().add(currentPanel);
-        getContentPane().repaint();
 
-        //DISPLAYER NOT DRAWING ITS PANEL!!!!!!!!!!!!!
+        //getContentPane().removeAll();
+        //getContentPane().add(currentPanel);
+        getContentPane().repaint();
     }
 
     public void redrawPanel() {

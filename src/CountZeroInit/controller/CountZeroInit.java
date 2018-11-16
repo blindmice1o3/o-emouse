@@ -8,8 +8,6 @@ import CountZeroInit.model.map.Map;
 import CountZeroInit.model.surroundings.Tile;
 import CountZeroInit.view.Displayer;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.util.List;
 
 public class CountZeroInit
@@ -17,23 +15,14 @@ public class CountZeroInit
     static final int UPDATES_PER_SEC = 4;                               // number of game update per second
     static final long UPDATE_PER_NSEC = 1000000000L / UPDATES_PER_SEC;  // nanoseconds
 
-    State battleState;
-    State gameState;
-    State itemListState;
-    State monsterListState;
-    State myMonsterListState;
-    State startMenuState;
-    State introState;
+    State battleState, gameState, introState, itemListState, monsterListState, myMonsterListState, startMenuState;
 
-    Humanoid player1;
+    Displayer displayer;
     Map currentMap;
     List<Tile> tiles;
     List<LifeForm> lifeFormsOnBoard;
-
-    Displayer displayer;
+    Humanoid player1;
     State currentState;
-    BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
-    String playerCommand;
 
     public CountZeroInit(Map map) {
         // The following println() is just to see where CountZeroInit's constructor is called in the output.
@@ -45,50 +34,43 @@ public class CountZeroInit
 
         gameStart();
 
-        //displayer.drawIntroPanel();
-
-
     }
 
     public void gameInit() {
         tiles = getCurrentMap().getTiles();
         lifeFormsOnBoard = getCurrentMap().getLifeFormsOnBoard();
-
         // Loop through the List<LifeForm> provided by the concrete Map class (all the data about the starting state of that
         // map level), find our humanoid player and call the helper method instantiatePlayer1() which takes our Humanoid
-        // object from the MapSpec and "copies" its data to a new, separate Humanoid object that's composed in this
+        // object from the Map and "copies" its data to a new, separate Humanoid object that's composed in this
         // CountZeroInit object.
         for (LifeForm lifeForm: getCurrentMap().getLifeFormsOnBoard()) {
             if (lifeForm.getType().equals("humanoid")) {
                 initiatePlayer1((Humanoid)lifeForm);
             }
         }
-
         // Register with Humanoid (player1's class; an Observable) as an Observer
         player1.registerObserver(this);
 
-        // Instantiate the concrete state classes (using "this" gameboyColor) and have our State instance variables
+
+        // Instantiate the concrete state classes (using "this" countZeroInit) and have our State instance variables
         // reference them.
-        introState = new IntroState(this);
-        startMenuState = new StartMenuState(this);
-        gameState = new GameState(this);
-        itemListState = new ItemListState(this);
-        myMonsterListState = new MyMonsterListState(this);
-        monsterListState = new MonsterListState(this);
         battleState = new BattleState(this);
+        gameState = new GameState(this);
+        introState = new IntroState(this);
+        itemListState = new ItemListState(this);
+        monsterListState = new MonsterListState(this);
+        myMonsterListState = new MyMonsterListState(this);
+        startMenuState = new StartMenuState(this);
 
         // Instantiate a new Displayer object, passing it a reference to "this" CountZeroInit object and the Map object
-        // that was passed to the CountZeroInit's constructor. Then call the Displayer object's initiate().
+        // that was passed to the CountZeroInit's constructor.
         displayer = new Displayer(this, getCurrentMap());
 
-        // TODO: Start the game off in GameState (player is able to walk around).
-        setCurrentState(getIntroState());
+        // Using this line to select the module to work on.
+        setCurrentState(getGameState());
     }
 
     public void gameStart() {
-        // TODO: Introduce a game loop that will call gameUpdate() (one step in the game) followed by gameDraw() (redraw
-        // after one input from player).
-
         // Create a new game thread
         Thread gameThread = new Thread() {
             // Override run() to provide the running behavior of this thread.
@@ -109,9 +91,9 @@ public class CountZeroInit
 
         while (true) {
             timeBegin = System.nanoTime();
-            if (currentState instanceof GameState) {    // not paused
-                // Update the state and position of all the game objects,
-                // detect collisions and provide responses.
+            if (currentState instanceof GameState) {    // desired: not paused (currently configured: if in GameState)
+                // Update the state and position of all the game objects, detect collisions,
+                // and provide responses. It is one step in the game.
                 gameUpdate();
             }
             // Refresh the display.
@@ -198,8 +180,12 @@ public class CountZeroInit
     public void setCurrentState(State newState) {
         // The following println() is just to see where setCurrentState() is called in the output.
         System.out.println("CountZeroInit.setCurrentState()...");
-
+        // ********** ACTUAL INTENDED FUNCTION ***********
+        // Set the currentState field to the State argument passed in.
         currentState = newState;
+
+
+        // All other time, it's just switching the panels to match its corresponding states.
         displayer.setCurrentPanel(currentState.toString());
     }
 

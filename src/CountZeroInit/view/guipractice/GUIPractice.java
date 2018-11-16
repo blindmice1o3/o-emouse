@@ -1,4 +1,4 @@
-package CountZeroInit.view;
+package CountZeroInit.view.guipractice;
 
 import javax.swing.*;
 import java.awt.*;
