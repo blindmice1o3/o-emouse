@@ -4,12 +4,23 @@
  Cyberpunk and Cannabis
 ************************
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Ultimately this project's mission is to create something to be use as a test of patience.
+// If you sit there using this, and learn something, or take something away that you find useful, good for you!
+//
+// But at its core, this game is meant to take away seconds of your life.
+//
+// We can market it as an investment of your time to learn a practical/beneficial skill set that will enhance your future
+// predicament, but that's just a nicely decorated, fancy way of saying give up your time now in exchange for a substance-less
+// concept that may not even exist (the garbage collector may get you three days from now, therefore your time investment
+// of now is instantly and magically transformed into another form [state], what use to be an investment is now time-wasted).
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Harvest Moon + Cannabis + Space Colonies + giant gap in wealth + second-class citizen + cyborg vs biohacker
 //  + teaches the user (1) introductory programming concepts (2) biology through cannabis cultivation
 // (3) study habits.
-/////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /*
 Object composition: we can graft "components" together to use their functionality (delegation of task to another object's
