@@ -1,4 +1,4 @@
-package SetGameStateCannabis;
+package MoonRocks_ItsNotWhatYoureThinking;
 
 import javax.swing.*;
 import java.awt.*;
@@ -7,7 +7,7 @@ public class PicturePanel extends JPanel {
     Image backgroundImage;
 
     public PicturePanel() {
-        backgroundImage = new ImageIcon("src/SetGameStateCannabis/cyberpunk_wallpapers(1920x1080).jpg").getImage();
+        backgroundImage = new ImageIcon("src/MoonRocks_ItsNotWhatYoureThinking/cyberpunk_wallpapers(1920x1080).jpg").getImage();
         //setVisible(true);
     }
 

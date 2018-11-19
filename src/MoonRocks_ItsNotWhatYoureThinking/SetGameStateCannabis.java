@@ -1,4 +1,4 @@
-package SetGameStateCannabis;
+package MoonRocks_ItsNotWhatYoureThinking;
 
 import javax.swing.*;
 

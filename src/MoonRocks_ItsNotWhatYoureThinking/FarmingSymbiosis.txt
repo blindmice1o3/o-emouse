@@ -1,0 +1,15 @@
+
+
+Genetic editing tools and technology such as CRISPR-Cas9 initially allowed humans the opportunity to alter sequences of
+germ-line cell (as oppose to somatic cells) for whole-system-level changes; suddenly, instances of humans contain genetic
+sequences (group of statements stored as methods/functions) not found in its parent, but across the horizontal branches of
+the hierarchical tree.
+
+
+"Symbiosis (Wikipedia): In a cleaning symbiosis, the clownfish feeds on small invertebrates that otherwise have potential
+to harm the sea anemone, and the fecal matter from the clownfish provides the nutrients to the sea anemone. The clownfish
+is protected from predators by the anemone's stinging cells, to which the clownfish is immune. The clownfish emits a high
+pitched sound that deters butterfly fish, which would otherwise eat the anemone, making the relationship appear mutualistic."
+
+
+
