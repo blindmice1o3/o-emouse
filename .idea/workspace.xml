@@ -2,17 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4264d6a-6746-43ef-b695-128d92c400ed" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/FarmingSymbiosis.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/SetGameStateCannabis/Act1SeedHunt.java" afterPath="$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/Act1SeedHunt.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/SetGameStateCannabis/Dirt.java" afterPath="$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/Dirt.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/SetGameStateCannabis/GamePremise.txt" afterPath="$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/GamePremise.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/SetGameStateCannabis/PicturePanel.java" afterPath="$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/PicturePanel.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/SetGameStateCannabis/Player.java" afterPath="$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/Player.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/SetGameStateCannabis/Seed.java" afterPath="$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/Seed.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/SetGameStateCannabis/SetGameStateCannabis.java" afterPath="$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/SetGameStateCannabis.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/SetGameStateCannabis/State.java" afterPath="$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/State.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/SetGameStateCannabis/cyberpunk_wallpapers(1920x1080).jpg" afterPath="$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/cyberpunk_wallpapers(1920x1080).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/super_and_this.txt" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/SetGameStateCannabis/Act1SeedHunt.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/SetGameStateCannabis/Dirt.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/SetGameStateCannabis/GamePremise.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/SetGameStateCannabis/PicturePanel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/SetGameStateCannabis/Player.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/SetGameStateCannabis/Seed.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/SetGameStateCannabis/SetGameStateCannabis.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/SetGameStateCannabis/State.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/SetGameStateCannabis/cyberpunk_wallpapers(1920x1080).jpg" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/Act1SeedHunt.java" afterPath="$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/Act1Panel.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/SetGameStateCannabis.java" afterPath="$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/MoonRocksItsNotWhatYoureThinking.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/FarmingSymbiosis.txt" afterPath="$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/FarmingSymbiosis.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/GamePremise.txt" afterPath="$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/GamePremise.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,11 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Act1SeedHunt.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/Act1SeedHunt.java">
+      <file leaf-file-name="Act1Panel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/Act1Panel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="30" column="14" lean-forward="false" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+            <state relative-caret-position="153">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -83,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GamePremise.txt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GamePremise.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/GamePremise.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="39" column="45" lean-forward="false" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
+            <state relative-caret-position="459">
+              <caret line="96" column="69" lean-forward="false" selection-start-line="96" selection-start-column="69" selection-end-line="96" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -103,34 +107,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FarmingSymbiosis.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FarmingSymbiosis.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/FarmingSymbiosis.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+            <state relative-caret-position="153">
+              <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SetGameStateCannabis.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/SetGameStateCannabis.java">
+      <file leaf-file-name="super_and_this.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/super_and_this.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-              <folding>
-                <element signature="e#523#524#0" expanded="true" />
-                <element signature="e#560#561#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="State.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/State.java">
+      <file leaf-file-name="MoonRocksItsNotWhatYoureThinking.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/MoonRocksItsNotWhatYoureThinking.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="306">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -164,9 +165,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/CountZeroInit/model/surroundings/Tile.java" />
-        <option value="$PROJECT_DIR$/src/CountZeroInit/model/surroundings/Grass.java" />
-        <option value="$PROJECT_DIR$/src/CountZeroInit/model/surroundings/Door.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/model/surroundings/Wall.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/model/surroundings/House.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/model/creatures/Monster.java" />
@@ -213,8 +211,11 @@
         <option value="$PROJECT_DIR$/src/SetGameStateCannabis/SetGameStateCannabis.java" />
         <option value="$PROJECT_DIR$/src/SetGameStateCannabis/Act1SeedHunt.java" />
         <option value="$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/Act1SeedHunt.java" />
-        <option value="$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/GamePremise.txt" />
+        <option value="$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/Act1Panel.java" />
         <option value="$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/FarmingSymbiosis.txt" />
+        <option value="$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/MoonRocksItsNotWhatYoureThinking.java" />
+        <option value="$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/super_and_this.txt" />
+        <option value="$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/GamePremise.txt" />
       </list>
     </option>
   </component>
@@ -302,7 +303,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SetGameStateCannabis">
+  <component name="RunManager">
     <configuration name="Displayer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -360,14 +361,14 @@
       <module name="o-emouse" />
       <envs />
     </configuration>
-    <configuration name="SetGameStateCannabis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="MoonRocksItsNotWhatYoureThinking" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="MoonRocks_ItsNotWhatYoureThinking.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="MoonRocks_ItsNotWhatYoureThinking.SetGameStateCannabis" />
+      <option name="MAIN_CLASS_NAME" value="MoonRocks_ItsNotWhatYoureThinking.MoonRocksItsNotWhatYoureThinking" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -483,11 +484,11 @@
       <item index="1" class="java.lang.String" itemvalue="Application.GameboyColor" />
       <item index="2" class="java.lang.String" itemvalue="Application.Displayer" />
       <item index="3" class="java.lang.String" itemvalue="Application.GUIPractice" />
-      <item index="4" class="java.lang.String" itemvalue="Application.SetGameStateCannabis" />
+      <item index="4" class="java.lang.String" itemvalue="Application.MoonRocksItsNotWhatYoureThinking" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.SetGameStateCannabis" />
+        <item index="0" class="java.lang.String" itemvalue="Application.MoonRocksItsNotWhatYoureThinking" />
         <item index="1" class="java.lang.String" itemvalue="Application.GameboyColor" />
         <item index="2" class="java.lang.String" itemvalue="Application.GUIPractice" />
         <item index="3" class="java.lang.String" itemvalue="Application.Displayer" />
@@ -526,6 +527,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3267974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -540,7 +542,6 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39932886" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24508321" sideWeight="0.50653595" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3267974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -617,13 +618,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/items/Weapon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/items/PlasticSpork.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -917,38 +911,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/SetGameStateCannabis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-          <folding>
-            <element signature="e#523#524#0" expanded="true" />
-            <element signature="e#560#561#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/Act1SeedHunt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="30" column="14" lean-forward="false" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/cyberpunk_wallpapers(1920x1080).jpg">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/GamePremise.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="39" column="45" lean-forward="false" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CountZeroInit/view/guipractice/GUIPractice.java">
@@ -959,10 +924,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/Act1Panel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/MoonRocksItsNotWhatYoureThinking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/super_and_this.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/FarmingSymbiosis.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        <state relative-caret-position="153">
+          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/GamePremise.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="96" column="69" lean-forward="false" selection-start-line="96" selection-start-column="69" selection-end-line="96" selection-end-column="69" />
           <folding />
         </state>
       </provider>

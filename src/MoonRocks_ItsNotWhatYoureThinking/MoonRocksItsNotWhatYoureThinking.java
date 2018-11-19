@@ -2,21 +2,20 @@ package MoonRocks_ItsNotWhatYoureThinking;
 
 import javax.swing.*;
 
-public class SetGameStateCannabis extends JFrame {
+public class MoonRocksItsNotWhatYoureThinking extends JFrame {
     public static int moveCounter = 0;
     private Player player1;
 
     JPanel gamePanel;
     State gameState;
 
-    public SetGameStateCannabis() {
+    public MoonRocksItsNotWhatYoureThinking() {
 
-        gamePanel = new Act1SeedHunt();
+        gamePanel = new Act1Panel();
         setContentPane(gamePanel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocation(75, 75);
         setSize(600, 480);
-
 
         player1 = new Player();
 
@@ -27,7 +26,7 @@ public class SetGameStateCannabis extends JFrame {
     }
 
     public static void main(String[] args) {
-        SetGameStateCannabis setGameStateCannabis = new SetGameStateCannabis();
-        setGameStateCannabis.initGame();
+        MoonRocksItsNotWhatYoureThinking moonRocksItsNotWhatYoureThinking = new MoonRocksItsNotWhatYoureThinking();
+        moonRocksItsNotWhatYoureThinking.initGame();
     }
 }

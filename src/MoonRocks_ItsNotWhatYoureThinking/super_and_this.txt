@@ -1,0 +1,43 @@
+5.6.3  super and this As Constructors
+Constructors are not inherited. That is, if you extend an existing class to make a subclass, the constructors in the
+superclass do not become part of the subclass. If you want constructors in the subclass, you have to define new ones
+from scratch. If you don't define any constructors in the subclass, then the computer will make up a default constructor,
+with no parameters, for you.
+
+This could be a problem, if there is a constructor in the superclass that does a lot of necessary work. It looks like
+you might have to repeat all that work in the subclass! This could be a real problem if you don't have the source code
+to the superclass, and don't even know how it is implemented. It might look like an impossible problem, if the constructor
+in the superclass uses private member variables that you don't even have access to in the subclass!
+
+Obviously, there has to be some fix for this, and there is. It involves the special variable, super. As the very first
+statement in a constructor, you can use super to call a constructor from the superclass. The notation for this is a bit
+ugly and misleading, and it can only be used in this one particular circumstance: It looks like you are calling super as
+a subroutine (even though super is not a subroutine and you can't call constructors the same way you call other
+subroutines anyway). As an example, assume that the PairOfDice class has a constructor that takes two integers as
+parameters. Consider a subclass:
+
+public class GraphicalDice extends PairOfDice {
+
+     public GraphicalDice() {  // Constructor for this class.
+
+         super(3,4);  // Call the constructor from the
+                      //   PairOfDice class, with parameters 3, 4.
+
+         initializeGraphics();  // Do some initialization specific
+                                //   to the GraphicalDice class.
+     }
+        .
+        .  // More constructors, methods, variables...
+        .
+}
+The statement "super(3,4);" calls the constructor from the superclass. This call must be the first line of the
+constructor in the subclass. Note that if you don't explicitly call a constructor from the superclass in this way,
+then the default constructor from the superclass, the one with no parameters, will be called automatically. (And if
+no such constructor exists in the superclass, the compiler will consider it to be a syntax error.)
+
+You can use the special variable this in exactly the same way to call another constructor in the same class. That is,
+the very first line of a constructor can look like a subroutine call with "this" as the name of the subroutine. The
+result is that the body of another constructor in the same class is executed. This can be very useful since it can save
+you from repeating the same code in several different constructors. As an example, consider MosaicPanel.java, which was
+used indirectly in Section 4.6. A MosaicPanel represents a grid of colored rectangles. It has a constructor with many
+parameters:

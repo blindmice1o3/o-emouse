@@ -11,24 +11,6 @@
 // (3) study habits.
 /////////////////////////
 
-/*
-Object composition: we can graft "components" together to use their functionality (delegation of task to another object's
-method invocation), sort of like the idea of creating a human-shaped monster (you may be imagining the outline/shape of
-its head as having a horizontal [think "horizon", left-to-right, x-axis of math class, rows of pixel in a computer monitor,
-opposite of vertical], a monster with a flat head brought back to life through the miracle of fantasy-science and lightning).
-
-For biology, a cannabis plants can be grafted together where root systems can be set/referenced to another plant's
-stem/shoots system. If done on the genetic level, grafting with tool/technology CRISPR-Cas9, the leaf system can be alter/set
-to upgrade to larger blade-leaf for maximum area of sunlight exposure or to smaller blade-leaf because your surroundings
-causes water loss through transpiration from stomata on the under-side of the leaf.
-
-For programming, a class can be compose with objects of other classes to delegate task to. A duck class is compose with
-Wings class, Beak class, and Feet class. Different types of Wings allow for different behavior (all Wings can fly, but
-some type of Wings are more suited for long distance-sustained flight while others are more suited for short, burst-of-speed
-flight), just as different Beak subclasses allow for different behavior (all Beaks know how to eat, but some are better
-at breaking the shell of seeds, gaining access to narrow-tubed flowers, ripping apart flesh), and the same with different
-types of Feet subclasses (these Feet subclasses, aka concrete classes of Feet, can be TalonFeet, WebbedFeet, LargeDrumStickFeet).
-*/
 
 /*
  *    Monocultured crop from poor (greedy) choice of Bioengineering/Pharmaceutical-cannabis-conglomerate became a
@@ -71,31 +53,6 @@ video games, this original prototype has more functions (methods) than its desce
 
 -Player starts by going to school, sitting in programming class, learning about for-loop.
 -Falls asleep at desk.
-
--You are not your past, collection of memories with a less than reliable retrieval mechanism that doesn't technically
-fail at re-building screen-shot-images or small-streams-of-visual-representation, but rather, it is successful in its
-re-building these "memories" with a (often) minor bug(s) of graininess, like the static fuzz of a television set (an output
-device) that's not connected to a source that's transmitting data. This re-build can contain detail changes (changes to
-state data) that just meets the threshold of what defines "passable" (uses the same interface or something like that; the
-end result, it meets our standard of what "real" happened. You are not your past. You are not a mere collection of events
-and method-calls that's been serialized (and deserialed from a File object) everytime you go to sleep. You are more than
-your perceived reality, the interpretation of your surroundings. Your memories can be written into a File object, copied
-into an apparently separate body (object), and that separate body can read from your memories (the File object, data), but
-that separate body is not you. What if your current body loses an arm or leg and you can graft arms/legs from a non-you
- source, does the idea of you change to include those external parts (are you the sum of the parts you're "composed of")
- or does the definition of you change to no longer include absence limbs and to define the newly grafted arms/legs as
- foreign from the idea of you? You are more than your memories. You are more than your future. The what-can-be. Along the
-same line, you are not the what-could-have-been. Are you the choices the make in this moment? Are you what you set your
-current state to be, in this instance of your perceived reality? Are you the gestalt of state variables, now? What defines
-you? What separates the idea of you and from a tape-worm inside your digestive tract? From the colonies of different
-species of bacteria of your digestive systems (mouth, stomach, intestines)? And what defines this moment? This linear
-existence in time. Your body can move in many direction, forward and backward. In your current perception of the physical
-state of matter, the relationship to time is limited to forward traversal.
-
-To see an alternative.  // You do not have to discard your previously held belief, but you
-Press the Start Button, // will have to pause/suspend/hide it enough to entertain an alternative.
-now.                    // One that is possibly offensive. Fart joke.
-
 -Wakes up in, apparently, the future, on a Off-World Colony funded by one of three cannabis conglomerates.
 -They are the invisible hand pulling strings behind the scene.
 -All space colonies are specialized.

@@ -3,7 +3,11 @@ package MoonRocks_ItsNotWhatYoureThinking;
 import javax.swing.*;
 import java.awt.*;
 
-public class Act1SeedHunt extends JPanel {
+public class Act1Panel extends JPanel {
+    //////////////////////////////////
+    /////////// Seed Hunt ////////////
+    //////////////////////////////////
+
     JPanel displayPanel;
     JPanel buttonPanel;
     JPanel inputPanel;
@@ -13,7 +17,7 @@ public class Act1SeedHunt extends JPanel {
     JButton inventoryButton;
     JButton pauseButton;
 
-    public Act1SeedHunt() {
+    public Act1Panel() {
         displayPanel = new PicturePanel();
         buttonPanel = new JPanel();
         inputPanel = new JPanel();
