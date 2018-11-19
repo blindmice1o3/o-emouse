@@ -114,13 +114,22 @@ The colonies are self-contained, independently able to run/exist without contact
 
 During the two hundred years, Earth underwent major changes. Peace amongst the different countries spread as the age of
 global communication blossomed. Technology developed at an exponential rate. But still there were limits. Physical limitations
-on traveling/traversing long distances of space (matter travel at speed of light?) has not been overcome. It takes (insert
-trip duration to travel from Earth to the moon) for supplies to reach the colonies (even though they're independent).
-The last communication from Earth has children of the Colonies in a wistful state, imagining life in gravity. Whatever
-happened, it happened quick (month). Earth is now polluted to the point where sunlight cannot reach the planet's surface.
+on traveling/traversing long distances of space (matter travel at speed of light?) has not been overcome.
+
+It takes (insert trip duration to travel from Earth to the moon) for supplies to reach the colonies (even though they're
+independent). The last communication from Earth has children of the Colonies in a wistful state, imagining life in gravity.
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////// Insert joke about Git/Github... centralized/decentralized... work offline... local copy of remotes...
+///////// older version control systems!!!!!!!!!!!
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Whatever happened, it happened quick (month). Earth is now polluted to the point where sunlight cannot reach the planet's surface.
+
 The moon colony is entering a period of isolation. An island evolution effect takes place and the moon colony is eventually
 very different from the Mar colony, which is different from the etc., and Earthlings also develop minute differences compared
 to the moon farmers.
+
+
+
 
 
 Time:
