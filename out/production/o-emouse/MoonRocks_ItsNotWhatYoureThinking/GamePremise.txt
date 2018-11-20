@@ -1,15 +1,87 @@
-************************
-  Journey to the West
-        meets
- Cyberpunk and Cannabis
-************************
+//************************//
+//  Journey to the West   //
+//        meets           //
+// Cyberpunk and Cannabis //
+//************************//
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Ultimately this project's mission is to create something to be use as a test of patience.
+// If you sit there and use this program, and end up learning or taking something away that you find useful, good for you!
+//
+// But at its core, this game is meant to take away seconds of your life.
+//
+// We can market it as an investment of your time to learn a practical/beneficial skill set that will enhance your future
+// predicament, but that's just a nicely decorated, fancy way of saying give up your time now in exchange for a substance-less
+// concept that may not even exist (the GARBAGE COLLECTOR may get you three days from now, therefore your three days time
+// "investment" is instantly and magically transformed into another form [state], time "regretted"). How is this alchemy
+// achieved? It has something to do with the "potential" of the three days (the difference of perceived time-wasted
+// versus time-utilized). A caveat to this (which happens to be the key to spiritual contentment) involves: a balance
+// between enjoying each moment and recognizing/accepting tradeoffs).
+//
+// I'm trying to become the villain that this world deserves, but through video games, so like, the Disney version.
+//
+// The hidden curriculum is the set of lessons related to good citizenship (the intended lessons; the ones that uses life science,
+// programming language, human language, history, and math as a vessel to communicate its messages). It is the message
+// that is surreptitiously ingrained to the subconsciousness of players of the game (my future minions).
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/////////////////////////
+     /*
+     -CountZeroInit was suppose to be a knock-off of a specific video game (Pokemon Red and Pokemon Blue).
+     -MoonRocks_ItsNotWhatYoureThinking is suppose to be a knock-off of the idea of video game (it's an educational
+        tool poorly disguised as a video game [Wolf object composed in a SheepAdapter object]).
+     */
+
+     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+     // The production quality of the graphics will be found wanting (use this form of the word "want" as a JDialog or
+     // pop-up to teach language), and the aim of the plot/desired-user-experiential-sequence/beta-of-the-story is:
+     //
+     // "wait....... so the GameboyColorPrototype object reached the player by time-travel
+     //
+     // (planted there by the player's future self, after having played THIS game, gone on to learn programming, and somehow
+     // time-traveled back... making it seem as if the player randomly happened upon the game in the first place),
+     //
+     //
+     // (found by the player's parental figure, passed onto the player at the parental figure's untimely death [after
+     // "investing" a bit of time into secretly programming it/customizing it, waiting for the player to one day unlock
+     // it with the "secret keyword"], somehow slipped into the hands of a mega video game giant, got dumbed-down to be
+     // mass-produced, and became obsolete technology
+     // -so-they-no-longer-need-the-prototype-and-needed-good-publicity-following-a-strange-antiavian-campaign] *cough*),
+     //
+     // but THAT DOESN'T MATTER because all of this is just THE GRID anyways??"
+     //
+     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+     /*
+        -The player's guide, the Artificial Intelligence inside the GameboyColor, is a visual/graphical construct of
+        predefined statements that are interacting at runtime to the player's "input/stimulus", but this construct is
+        basically a jerk.
+            -Reformed-pimp-turned-grower who has a tendency to use swear-words as a tool for emphasis.
+                -"always clear your corners."
+                -"know your audience (that's kind of like pick your battles, again I wouldn't know, not much of a fighter)."
+                -"there's this one motherlover 'use ta know (smart as a fiddle, complete opposite of myself), he's always
+                'use ta say (kindness, we must defend it at all cost, even if it means taking up arms and acting with swift,
+                unhesitating resistance). That motherlover, an unrelenting idealist."
+                -"pimps don't suicide." (movie: "Southland Tales")
+                -"real gangster ass n-word should not be glorified, but certain predisposed qualities are admirable and
+                    there are lessons that can be learned." (song: dontRememberTheSongTitleMustLookUpLater)
+                    -"real gangster ass n-word don't flex much, cause..."
+                    -"real gangster ass n-word don't run, cause... real gangster ass n-word don't run fast"
+                (songs with lyrics may include chorus that are repeated, print song lyrics to the screen that capitalizes
+                on a computer language's ability to store a group of char as one variable that can be use to represent
+                repetition of the song chorus)
+                -"colloquially (JDialog or pop-up) referred to as "console-jockey", pejoratively (JDialog or pop-up) as
+                "keyboard-jockey", and (as development in technology allowed for smaller devices) "INSERT THIRD TYPE OF
+                NICKNAME"; but to me [the GameboyColor construct/AI], these people always have been the "operator" or "computer".
+                -"you humans are so prone to chasing after the idea of what you think will make you happy, it's like a
+                hopeless drug addict obsessing over their next "fix", compulsively and constantly searching, entirely
+                dismissive of its toll/cost!"
+     */
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Harvest Moon + Cannabis + Space Colonies + giant gap in wealth + second-class citizen + cyborg vs biohacker
 //  + teaches the user (1) introductory programming concepts (2) biology through cannabis cultivation
 // (3) study habits.
-/////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /*
 Object composition: we can graft "components" together to use their functionality (delegation of task to another object's
@@ -114,13 +186,22 @@ The colonies are self-contained, independently able to run/exist without contact
 
 During the two hundred years, Earth underwent major changes. Peace amongst the different countries spread as the age of
 global communication blossomed. Technology developed at an exponential rate. But still there were limits. Physical limitations
-on traveling/traversing long distances of space (matter travel at speed of light?) has not been overcome. It takes (insert
-trip duration to travel from Earth to the moon) for supplies to reach the colonies (even though they're independent).
-The last communication from Earth has children of the Colonies in a wistful state, imagining life in gravity. Whatever
-happened, it happened quick (month). Earth is now polluted to the point where sunlight cannot reach the planet's surface.
+on traveling/traversing long distances of space (matter travel at speed of light?) has not been overcome.
+
+It takes (insert trip duration to travel from Earth to the moon) for supplies to reach the colonies (even though they're
+independent). The last communication from Earth has children of the Colonies in a wistful state, imagining life in gravity.
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////// Insert joke about Git/Github... centralized/decentralized... work offline... local copy of remotes...
+///////// older version control systems!!!!!!!!!!!
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Whatever happened, it happened quick (month). Earth is now polluted to the point where sunlight cannot reach the planet's surface.
+
 The moon colony is entering a period of isolation. An island evolution effect takes place and the moon colony is eventually
 very different from the Mar colony, which is different from the etc., and Earthlings also develop minute differences compared
 to the moon farmers.
+
+
+
 
 
 Time:

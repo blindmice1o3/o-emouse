@@ -1,10 +1,10 @@
-************************
-  Journey to the West
-        meets
- Cyberpunk and Cannabis
-************************
+//************************//
+//  Journey to the West   //
+//        meets           //
+// Cyberpunk and Cannabis //
+//************************//
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Ultimately this project's mission is to create something to be use as a test of patience.
 // If you sit there and use this program, and end up learning or taking something away that you find useful, good for you!
 //
@@ -20,23 +20,47 @@
 //
 // I'm trying to become the villain that this world deserves, but through video games, so like, the Disney version.
 //
-// The hidden curriculum are lessons related to good citizenship (the intended lessons; the ones that uses life science,
+// The hidden curriculum is the set of lessons related to good citizenship (the intended lessons; the ones that uses life science,
 // programming language, human language, history, and math as a vessel to communicate its messages). It is the message
 // that is surreptitiously ingrained to the subconsciousness of players of the game (my future minions).
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
      /*
      -CountZeroInit was suppose to be a knock-off of a specific video game (Pokemon Red and Pokemon Blue).
      -MoonRocks_ItsNotWhatYoureThinking is suppose to be a knock-off of the idea of video game (it's an educational
-        tool poorly disguised as a video game [wolf object composed in a SheepAdapter object]).
+        tool poorly disguised as a video game [Wolf object composed in a SheepAdapter object]).
+     */
 
-        -The production quality of the graphics will be found wanting (use this form of the word "want" as a JDialog or
-        pop-up to teach language), and the aim of the ambience is "cutely whimsical for the chronically cynical".
+     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+     // The production quality of the graphics will be found wanting (use this form of the word "want" as a JDialog or
+     // pop-up to teach language), and the aim of the plot/desired-user-experiential-sequence/beta-of-the-story is:
+     //
+     // "wait....... so the GameboyColorPrototype object reached the player by time-travel
+     //
+     // (planted there by the player's future self, after having played THIS game, gone on to learn programming, and somehow
+     // time-traveled back... making it seem as if the player randomly happened upon the game in the first place),
+     //
+     //
+     // (found by the player's parental figure, passed onto the player at the parental figure's untimely death [after
+     // "investing" a bit of time into secretly programming it/customizing it, waiting for the player to one day unlock
+     // it with the "secret keyword"], somehow slipped into the hands of a mega video game giant, got dumbed-down to be
+     // mass-produced, and became obsolete technology
+     // -so-they-no-longer-need-the-prototype-and-needed-good-publicity-following-a-strange-antiavian-campaign] *cough*),
+     //
+     // but THAT DOESN'T MATTER because all of this is just THE GRID anyways??"
+     //
+     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+     /*
         -The player's guide, the Artificial Intelligence inside the GameboyColor, is a visual/graphical construct of
         predefined statements that are interacting at runtime to the player's "input/stimulus", but this construct is
-        basically a jerk, hopefully this will naturally lead to a chronically cynical atmosphere.
+        basically a jerk.
             -Reformed-pimp-turned-grower who has a tendency to use swear-words as a tool for emphasis.
                 -"always clear your corners."
+                -"know your audience (that's kind of like pick your battles, again I wouldn't know, not much of a fighter)."
+                -"there's this one motherlover 'use ta know (smart as a fiddle, complete opposite of myself), he's always
+                'use ta say (kindness, we must defend it at all cost, even if it means taking up arms and acting with swift,
+                unhesitating resistance). That motherlover, an unrelenting idealist."
                 -"pimps don't suicide." (movie: "Southland Tales")
                 -"real gangster ass n-word should not be glorified, but certain predisposed qualities are admirable and
                     there are lessons that can be learned." (song: dontRememberTheSongTitleMustLookUpLater)

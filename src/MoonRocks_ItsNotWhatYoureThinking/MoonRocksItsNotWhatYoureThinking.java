@@ -21,8 +21,14 @@ public class MoonRocksItsNotWhatYoureThinking extends JFrame {
 
     }
 
+    public void setPlayer1Name() {
+        player1.setName(JOptionPane.showInputDialog(this, "player1, please input your handle..."));
+    }
+
     public void initGame() {
         this.setVisible(true);
+        setPlayer1Name();
+        System.out.println(player1.getName());
     }
 
     public static void main(String[] args) {

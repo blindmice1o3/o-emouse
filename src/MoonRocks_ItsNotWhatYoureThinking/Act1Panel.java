@@ -11,6 +11,10 @@ public class Act1Panel extends JPanel {
     JPanel displayPanel;
     JPanel buttonPanel;
     JPanel inputPanel;
+
+
+    JPanel cyberpunkWallpapersPanel;
+
     Font guiFont;
 
     JTextField inputTextField;
@@ -18,7 +22,9 @@ public class Act1Panel extends JPanel {
     JButton pauseButton;
 
     public Act1Panel() {
-        displayPanel = new PicturePanel();
+        cyberpunkWallpapersPanel = new CyberpunkWallpapersPanel();
+
+        displayPanel = cyberpunkWallpapersPanel;
         buttonPanel = new JPanel();
         inputPanel = new JPanel();
         guiFont = new Font("SansSerif", Font.BOLD, 8);
