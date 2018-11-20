@@ -1,24 +1,34 @@
 package MoonRocks_ItsNotWhatYoureThinking;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class MoonRocksItsNotWhatYoureThinking extends JFrame {
-    public static int moveCounter = 0;
+    Toolkit awt;
+    Dimension screenDimension;
+    int frameWidth;
+    int frameHeight;
+
+    //public static int moveCounter = 0;
     private Player player1;
 
-    JPanel gamePanel;
-    State gameState;
+    JPanel framePanel;
 
     public MoonRocksItsNotWhatYoureThinking() {
+        awt = Toolkit.getDefaultToolkit();
+        screenDimension = awt.getScreenSize();
+        frameWidth = (int)screenDimension.getWidth();
+        frameHeight = (int)screenDimension.getHeight()-40;      // -40 pixels to try to account for start/Windows bar.
 
-        gamePanel = new Act1Panel();
-        setContentPane(gamePanel);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLocation(75, 75);
-        setSize(600, 480);
+        framePanel = new IntroFramePanel(frameWidth, frameHeight);
+
+        this.setContentPane(framePanel);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setLocation(0, 0);
+
+        this.setSize(frameWidth, frameHeight);
 
         player1 = new Player();
-
     }
 
     public void setPlayer1Name() {
@@ -27,7 +37,7 @@ public class MoonRocksItsNotWhatYoureThinking extends JFrame {
 
     public void initGame() {
         this.setVisible(true);
-        setPlayer1Name();
+        this.setPlayer1Name();
         System.out.println(player1.getName());
     }
 
