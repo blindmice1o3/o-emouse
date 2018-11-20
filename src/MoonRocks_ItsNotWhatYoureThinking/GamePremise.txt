@@ -6,15 +6,52 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Ultimately this project's mission is to create something to be use as a test of patience.
-// If you sit there using this, and learn something, or take something away that you find useful, good for you!
+// If you sit there and use this program, and end up learning or taking something away that you find useful, good for you!
 //
 // But at its core, this game is meant to take away seconds of your life.
 //
 // We can market it as an investment of your time to learn a practical/beneficial skill set that will enhance your future
 // predicament, but that's just a nicely decorated, fancy way of saying give up your time now in exchange for a substance-less
-// concept that may not even exist (the garbage collector may get you three days from now, therefore your time investment
-// of now is instantly and magically transformed into another form [state], what use to be an investment is now time-wasted).
+// concept that may not even exist (the GARBAGE COLLECTOR may get you three days from now, therefore your three days time
+// "investment" is instantly and magically transformed into another form [state], time "regretted"). How is this alchemy
+// achieved? It has something to do with the "potential" of the three days (the difference of perceived time-wasted
+// versus time-utilized). A caveat to this (which happens to be the key to spiritual contentment) involves: a balance
+// between enjoying each moment and recognizing/accepting tradeoffs).
+//
+// I'm trying to become the villain that this world deserves, but through video games, so like, the Disney version.
+//
+// The hidden curriculum are lessons related to good citizenship (the intended lessons; the ones that uses life science,
+// programming language, human language, history, and math as a vessel to communicate its messages). It is the message
+// that is surreptitiously ingrained to the subconsciousness of players of the game (my future minions).
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+     /*
+     -CountZeroInit was suppose to be a knock-off of a specific video game (Pokemon Red and Pokemon Blue).
+     -MoonRocks_ItsNotWhatYoureThinking is suppose to be a knock-off of the idea of video game (it's an educational
+        tool poorly disguised as a video game [wolf object composed in a SheepAdapter object]).
+
+        -The production quality of the graphics will be found wanting (use this form of the word "want" as a JDialog or
+        pop-up to teach language), and the aim of the ambience is "cutely whimsical for the chronically cynical".
+        -The player's guide, the Artificial Intelligence inside the GameboyColor, is a visual/graphical construct of
+        predefined statements that are interacting at runtime to the player's "input/stimulus", but this construct is
+        basically a jerk, hopefully this will naturally lead to a chronically cynical atmosphere.
+            -Reformed-pimp-turned-grower who has a tendency to use swear-words as a tool for emphasis.
+                -"always clear your corners."
+                -"pimps don't suicide." (movie: "Southland Tales")
+                -"real gangster ass n-word should not be glorified, but certain predisposed qualities are admirable and
+                    there are lessons that can be learned." (song: dontRememberTheSongTitleMustLookUpLater)
+                    -"real gangster ass n-word don't flex much, cause..."
+                    -"real gangster ass n-word don't run, cause... real gangster ass n-word don't run fast"
+                (songs with lyrics may include chorus that are repeated, print song lyrics to the screen that capitalizes
+                on a computer language's ability to store a group of char as one variable that can be use to represent
+                repetition of the song chorus)
+                -"colloquially (JDialog or pop-up) referred to as "console-jockey", pejoratively (JDialog or pop-up) as
+                "keyboard-jockey", and (as development in technology allowed for smaller devices) "INSERT THIRD TYPE OF
+                NICKNAME"; but to me [the GameboyColor construct/AI], these people always have been the "operator" or "computer".
+                -"you humans are so prone to chasing after the idea of what you think will make you happy, it's like a
+                hopeless drug addict obsessing over their next "fix", compulsively and constantly searching, entirely
+                dismissive of its toll/cost!"
+     */
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Harvest Moon + Cannabis + Space Colonies + giant gap in wealth + second-class citizen + cyborg vs biohacker
