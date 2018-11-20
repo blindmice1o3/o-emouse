@@ -1,7 +1,6 @@
 package MoonRocks_ItsNotWhatYoureThinking;
 
 import javax.swing.*;
-import javax.swing.JPanel;
 import java.awt.*;
 
 public class IntroFramePanel extends JPanel {
@@ -26,13 +25,9 @@ public class IntroFramePanel extends JPanel {
         guiFont = new Font("SansSerif", Font.BOLD, 8);
         setFont(guiFont);
 
-        int mainDisplayPanelWidth = (int)(this.getWidth() * (4/5));
-        int mainDisplayPanelHeight = (int) (this.getHeight() * (4/5));
-
-
-        mainDisplayPanel = new CyberpunkWallpapersPanel(mainDisplayPanelWidth, mainDisplayPanelHeight);
+        mainDisplayPanel = new CyberpunkWallpapersPanel(this.width-50, this.height-50);
         mainDisplayPanel.repaint();
-        //mainDisplayPanel.setSize(mainDisplayPanelWidth, mainDisplayPanelHeight);
+
         secondaryDisplayPanel = new JPanel();
         inputTextPanel = new JPanel();
 
@@ -40,11 +35,15 @@ public class IntroFramePanel extends JPanel {
         inventoryButton = new JButton("inventory");
         pauseButton = new JButton("pause");
 
+        //
+        mainDisplayPanel.add(inventoryButton);
+        //
+
         inputTextPanel.setLayout(new FlowLayout());
         inputTextPanel.add(inputTextField);
 
         secondaryDisplayPanel.setLayout(new GridLayout(3, 1));
-        secondaryDisplayPanel.add(inventoryButton);
+        //secondaryDisplayPanel.add(inventoryButton);
         secondaryDisplayPanel.add(pauseButton);
 
         this.setSize(this.getWidth(), this.getHeight());
@@ -55,13 +54,5 @@ public class IntroFramePanel extends JPanel {
         this.add(mainDisplayPanel, BorderLayout.CENTER);
 
         this.setVisible(true);
-    }
-
-    public int getWidth() {
-        return width;
-    }
-
-    public int getHeight() {
-        return height;
     }
 }
