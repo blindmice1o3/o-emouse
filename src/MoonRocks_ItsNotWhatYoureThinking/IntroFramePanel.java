@@ -26,27 +26,27 @@ public class IntroFramePanel extends JPanel {
         setFont(guiFont);
 
         mainDisplayPanel = new CyberpunkWallpapersPanel(this.width-50, this.height-50);
-        mainDisplayPanel.repaint();
-
+        mainDisplayPanel.setPreferredSize(new Dimension(this.width-50, this.height-50));
+        mainDisplayPanel.setVisible(true);
         secondaryDisplayPanel = new JPanel();
         inputTextPanel = new JPanel();
 
-        inputTextField = new JTextField("player1's input: ", 30);
         inventoryButton = new JButton("inventory");
         pauseButton = new JButton("pause");
+        inputTextField = new JTextField("player1's input: ", 30);
 
         //
         mainDisplayPanel.add(inventoryButton);
         //
 
-        inputTextPanel.setLayout(new FlowLayout());
-        inputTextPanel.add(inputTextField);
-
         secondaryDisplayPanel.setLayout(new GridLayout(3, 1));
         //secondaryDisplayPanel.add(inventoryButton);
         secondaryDisplayPanel.add(pauseButton);
 
-        this.setSize(this.getWidth(), this.getHeight());
+        inputTextPanel.setLayout(new FlowLayout());
+        inputTextPanel.add(inputTextField);
+
+        this.setSize(this.width, this.height);
         this.setLayout(new BorderLayout());
 
         this.add(inputTextPanel, BorderLayout.SOUTH);
