@@ -35,7 +35,7 @@ public class CountLegacyStart extends JFrame {
         framePanel.setVisible(true);
 
         this.setContentPane(framePanel);
-        this.setPreferredSize(new Dimension(width, height));
+        this.setSize(width, height);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
