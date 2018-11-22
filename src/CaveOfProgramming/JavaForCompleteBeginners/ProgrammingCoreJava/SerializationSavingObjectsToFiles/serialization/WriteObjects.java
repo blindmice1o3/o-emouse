@@ -39,6 +39,12 @@ public class WriteObjects {
             // We're taking some kind of output stream and passing it some kind of fileoutput stream, and using that to
             //      write to file. Like russian doll thing (within each other) (decorator pattern, object composition).
 
+
+
+
+
+
+
             os.close();
 
         } catch (FileNotFoundException e) {

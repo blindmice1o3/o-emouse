@@ -14,6 +14,14 @@ public class CountLegacyInit extends JFrame
     int width;
     int height;
 
+    JMenuBar menuBar;
+    JMenu saveAndLoadMenu;
+    JMenu themeMenu;
+    JMenuItem saveCommand;
+    JMenuItem loadCommand;
+    JMenuItem themeCommand0;
+    JMenuItem themeCommand1;
+
     JPanel mainDisplayPanel;
     JPanel secondaryDisplayPanel;
     JPanel textInputPanel;
@@ -30,6 +38,32 @@ public class CountLegacyInit extends JFrame
         awt = Toolkit.getDefaultToolkit();
         width = (int)awt.getScreenSize().getWidth();
         height = (int)awt.getScreenSize().getHeight()-38;
+
+        menuBar = new JMenuBar();
+        saveAndLoadMenu = new JMenu("Save/Load");
+        themeMenu = new JMenu("Theme");
+        saveCommand = new JMenuItem("Record \"current\" state");
+        saveCommand.setToolTipText("save");
+        loadCommand = new JMenuItem("Reboot to \"previous\" state");
+        loadCommand.setToolTipText("load");
+        themeCommand0 = new JMenuItem("ThemeCommand0");
+        themeCommand0.setToolTipText("TODO: implement themeCommand0");
+        themeCommand1 = new JMenuItem("ThemeCommand1");
+        themeCommand1.setToolTipText("TODO: implement themeCommand1");
+        // saveCommand.addActionListener(listener);
+        // loadCommand.addActionListener(listener);
+        // themeCommand0.addActionListener(listener);
+        // themeCommand1.addActionListener(listener);
+        saveAndLoadMenu.add(saveCommand);
+        saveAndLoadMenu.addSeparator();
+        saveAndLoadMenu.add(loadCommand);
+        themeMenu.add(themeCommand0);
+        themeMenu.add(themeCommand1);
+        menuBar.add(saveAndLoadMenu);
+        menuBar.add(themeMenu);
+        this.setJMenuBar(menuBar);
+
+
 
         framePanel = new JPanel();
         framePanel.setPreferredSize(new Dimension(width, height));
@@ -84,8 +118,8 @@ public class CountLegacyInit extends JFrame
 
         textOutput.append(player1.getName() + ", if you wish to enter THE GRID...\n"
                 + "Socket your device, then request entry...\n\n\n" +
-                "To request entry, type \"" + player1.getName() + ".init();\" followed by ENTER \n"
-                        + "(at which point you will be jacked into THE GRID.\n\n\n");
+                "To request entry, type:\n\"eggsAreNotSupposeToBeGreen();\"\nand press the Enter key. \n\n\n");
+        textOutput.append("(it's not too late to turn back, type: \"exit();\"\nand press the Enter key.)\n\n\n");
 
         textInput.requestFocus();
         textInput.setCaretPosition(inputMessage.length());
