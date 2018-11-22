@@ -120,8 +120,8 @@ public class CountLegacyInit extends JFrame
 
         textOutput.append(player1.getName() + ", if you wish to enter THE GRID...\n"
                 + "Socket your device, then request entry...\n\n\n" +
-                "To request entry, type:\n\"eggsAreNotSupposeToBeGreen();\"\nand press the Enter key. \n\n\n");
-        textOutput.append("(it's not too late to turn back, type: \"exit();\"\nand press the Enter key.)\n\n\n");
+                "To request entry, type:\n\"setGreenEggsAndSpam(true);\"\nand press the Enter key. \n\n\n");
+        textOutput.append("(it's not too late to turn back, type: \n\"eggsAreNotSupposeToBeGreen();\"\nand press the Enter key.)\n\n\n");
 
         textInput.requestFocus();
         textInput.setCaretPosition(inputMessage.length());
