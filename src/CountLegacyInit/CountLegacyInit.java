@@ -11,6 +11,8 @@ public class CountLegacyInit extends JFrame
 
     JPanel framePanel;
     Toolkit awt;
+    String frameIconImageAddress = "src/CountLegacyInit/icons/sick_bear.png";
+    Image frameIcon;
     int width;
     int height;
 
@@ -37,6 +39,7 @@ public class CountLegacyInit extends JFrame
 
         awt = Toolkit.getDefaultToolkit();
         width = (int)awt.getScreenSize().getWidth();
+        frameIcon = awt.getImage(frameIconImageAddress);
         height = (int)awt.getScreenSize().getHeight()-38;
 
         menuBar = new JMenuBar();
@@ -106,6 +109,7 @@ public class CountLegacyInit extends JFrame
         framePanel.setVisible(true);
 
         this.setTitle("Moon Rocks - It's NOT What You're Thinking");
+        this.setIconImage(frameIcon);
         this.setContentPane(framePanel);
         this.setSize(width, height);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
