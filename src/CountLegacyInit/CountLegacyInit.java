@@ -44,19 +44,21 @@ public class CountLegacyInit extends JFrame
         secondaryDisplayPanel.setBackground(Color.LIGHT_GRAY);
         secondaryDisplayPanel.setBorder(BorderFactory.createLineBorder(Color.LIGHT_GRAY, 2, false));
         secondaryDisplayPanel.setLayout(new FlowLayout());
-        textOutput = new JTextArea("",41, 30);
+        textOutput = new JTextArea(player1SetNameMessage,41, 28);
         textOutput.setSize((width-(int)(width*0.75)), height-15);
+        textOutput.setMargin(new Insets(0, 3, 0, 0));
         textOutput.setLineWrap(true);
         textOutput.setWrapStyleWord(true);
         textOutput.setEditable(false);
-
         textOutputScrollPane = new JScrollPane(textOutput);
+        textOutputScrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
         secondaryDisplayPanel.add(textOutputScrollPane);
 
         textInputPanel = new JPanel();
         textInputPanel.setBorder(BorderFactory.createLineBorder(Color.LIGHT_GRAY, 2, false));
         textInputPanel.setLayout(new GridLayout());
         textInput = new JTextField(inputMessage, 30);
+        textInput.setMargin(new Insets(0, 3, 0, 0));
         textInput.setEditable(true);
         textInput.setFocusable(true);
         textInput.addActionListener(this);
@@ -74,17 +76,16 @@ public class CountLegacyInit extends JFrame
         textInput.requestFocusInWindow();
         this.setVisible(true);
 
-        textOutput.append(player1SetNameMessage);
         player1.setName(JOptionPane.showInputDialog(this, player1SetNameMessage));
-        textOutput.append(player1.getName() + "\n\n");
+        textOutput.append(player1.getName() + "\n\n\n");
 
         inputMessage = player1.getName() + inputMessage.substring(7);
         textInput.setText(inputMessage);
 
-        textOutput.append(player1.getName() + ", if you wish to enter THE GRID...\n\n"
-                + "Socket your device, then request entry...\n\n" +
+        textOutput.append(player1.getName() + ", if you wish to enter THE GRID...\n"
+                + "Socket your device, then request entry...\n\n\n" +
                 "To request entry, type \"" + player1.getName() + ".init();\" followed by ENTER \n"
-                        + "(at which point you will be jacked into THE GRID.\n\n");
+                        + "(at which point you will be jacked into THE GRID.\n\n\n");
 
         textInput.requestFocus();
         textInput.setCaretPosition(inputMessage.length());
@@ -93,8 +94,9 @@ public class CountLegacyInit extends JFrame
     @Override
     public void actionPerformed(ActionEvent e) {
         textOutput.append(textInput.getText().substring(inputMessage.length()) + "\n\n\n");
+
         textInput.setText(inputMessage);
-        textInput.requestFocus();;
+        textInput.requestFocus();
         textInput.setCaretPosition(inputMessage.length());
     }
 
