@@ -69,26 +69,28 @@ public class CountLegacyInit extends JFrame
         framePanel.setPreferredSize(new Dimension(width, height));
         framePanel.setLayout(new BorderLayout());
 
-        mainDisplayPanel = new BackgroundDisplayPanel((width-(int)(width*0.25)), height-15);
-        mainDisplayPanel.setPreferredSize( new Dimension((width-(int)(width*0.25)), height-15));
-        mainDisplayPanel.setBorder(BorderFactory.createLineBorder(Color.LIGHT_GRAY, 3, false));
+        mainDisplayPanel = new BackgroundDisplayPanel((width-(int)(width*0.25)), height-(15 + menuBar.getHeight()));
+        mainDisplayPanel.setPreferredSize( new Dimension((width-(int)(width*0.25)), height-(15 + menuBar.getHeight())));
+        mainDisplayPanel.setBorder(BorderFactory.createLineBorder(Color.YELLOW, 3, false));
 
         secondaryDisplayPanel = new JPanel();
-        secondaryDisplayPanel.setPreferredSize( new Dimension((width-(int)(width*0.75)), height));
+        secondaryDisplayPanel.setSize( new Dimension((width-(int)(width*0.75)), (height-(15 + menuBar.getHeight()))));
         secondaryDisplayPanel.setBackground(Color.LIGHT_GRAY);
-        secondaryDisplayPanel.setBorder(BorderFactory.createLineBorder(Color.LIGHT_GRAY, 2, false));
+        secondaryDisplayPanel.setBorder(BorderFactory.createLineBorder(Color.YELLOW, 2, false));
         secondaryDisplayPanel.setLayout(new FlowLayout());
-        textOutput = new JTextArea(player1SetNameMessage,41, 28);
-        textOutput.setSize((width-(int)(width*0.75)), height-15);
+        textOutput = new JTextArea(player1SetNameMessage,38, 28);
+        textOutput.setSize(new Dimension((width-(int)(width*0.75)), (height-(15 + menuBar.getHeight())))); // 15 for the textInput
         textOutput.setMargin(new Insets(0, 3, 0, 0));
         textOutput.setLineWrap(true);
         textOutput.setWrapStyleWord(true);
         textOutput.setEditable(false);
         textOutputScrollPane = new JScrollPane(textOutput);
+        textOutputScrollPane.setSize(new Dimension ((width-(int)(width*0.75)), (height-(15 + menuBar.getHeight()))));
         textOutputScrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
         secondaryDisplayPanel.add(textOutputScrollPane);
 
         textInputPanel = new JPanel();
+        textInputPanel.setSize( new Dimension(width, 15));
         textInputPanel.setBorder(BorderFactory.createLineBorder(Color.LIGHT_GRAY, 2, false));
         textInputPanel.setLayout(new GridLayout());
         textInput = new JTextField(inputMessage, 30);
