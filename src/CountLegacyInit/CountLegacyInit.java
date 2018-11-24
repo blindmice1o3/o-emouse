@@ -1,9 +1,11 @@
 package CountLegacyInit;
 
 import javax.swing.*;
+import javax.swing.text.DefaultEditorKit;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
 
 public class CountLegacyInit extends JFrame
         implements ActionListener {
@@ -18,9 +20,13 @@ public class CountLegacyInit extends JFrame
 
     JMenuBar menuBar;
     JMenu saveAndLoadMenu;
+    JMenu editMenu;
     JMenu themeMenu;
     JMenuItem saveCommand;
     JMenuItem loadCommand;
+    JMenuItem cutCommand;
+    JMenuItem copyCommand;
+    JMenuItem pasteCommand;
     JMenuItem themeCommand0;
     JMenuItem themeCommand1;
 
@@ -44,11 +50,26 @@ public class CountLegacyInit extends JFrame
 
         menuBar = new JMenuBar();
         saveAndLoadMenu = new JMenu("Save/Load");
+        editMenu = new JMenu("Edit");
+        editMenu.setMnemonic(KeyEvent.VK_E);
         themeMenu = new JMenu("Theme");
+
         saveCommand = new JMenuItem("Record \"current\" state");
         saveCommand.setToolTipText("save");
         loadCommand = new JMenuItem("Reboot to \"previous\" state");
         loadCommand.setToolTipText("load");
+        cutCommand = new JMenuItem(new DefaultEditorKit.CutAction());
+        cutCommand.setText("Cut");
+        cutCommand.setToolTipText("cut (ctrl + x)");
+        cutCommand.setMnemonic(KeyEvent.VK_X);
+        copyCommand = new JMenuItem(new DefaultEditorKit.CopyAction());
+        copyCommand.setText("Copy");
+        copyCommand.setToolTipText("copy (ctrl + c)");
+        copyCommand.setMnemonic(KeyEvent.VK_C);
+        pasteCommand = new JMenuItem(new DefaultEditorKit.PasteAction());
+        pasteCommand.setText("Paste");
+        pasteCommand.setToolTipText("paste (ctrl + v)");
+        pasteCommand.setMnemonic(KeyEvent.VK_V);
         themeCommand0 = new JMenuItem("ThemeCommand0");
         themeCommand0.setToolTipText("TODO: implement themeCommand0");
         themeCommand1 = new JMenuItem("ThemeCommand1");
@@ -60,9 +81,14 @@ public class CountLegacyInit extends JFrame
         saveAndLoadMenu.add(saveCommand);
         saveAndLoadMenu.addSeparator();
         saveAndLoadMenu.add(loadCommand);
+        editMenu.add(cutCommand);
+        editMenu.add(copyCommand);
+        editMenu.addSeparator();
+        editMenu.add(pasteCommand);
         themeMenu.add(themeCommand0);
         themeMenu.add(themeCommand1);
         menuBar.add(saveAndLoadMenu);
+        menuBar.add(editMenu);
         menuBar.add(themeMenu);
         this.setJMenuBar(menuBar);
 
