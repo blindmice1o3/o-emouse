@@ -39,14 +39,15 @@ public class CountLegacyInit extends JFrame
     JTextField textInput;
     String inputMessage = "player1's request: ";
     String player1SetNameMessage = "player1, please input your handle: ";
+    Cursor cursorHand;
 
     public CountLegacyInit() {
         Player player1 = new Player();
-
         awt = Toolkit.getDefaultToolkit();
         width = (int)awt.getScreenSize().getWidth();
+        height = (int)awt.getScreenSize().getHeight()-38;   // -38  to try to account for start bar
         frameIcon = awt.getImage(frameIconImageAddress);
-        height = (int)awt.getScreenSize().getHeight()-38;
+        cursorHand = Toolkit.getDefaultToolkit().createCustomCursor(frameIcon, new Point(0,0), "cursorHand");
 
         menuBar = new JMenuBar();
         saveAndLoadMenu = new JMenu("Save/Load");
@@ -101,6 +102,7 @@ public class CountLegacyInit extends JFrame
         mainDisplayPanel = new BackgroundDisplayPanel((width-(int)(width*0.25)), height-(15 + menuBar.getHeight()));
         mainDisplayPanel.setPreferredSize( new Dimension((width-(int)(width*0.25)), height-(15 + menuBar.getHeight())));
         mainDisplayPanel.setBorder(BorderFactory.createLineBorder(Color.YELLOW, 3, false));
+        mainDisplayPanel.setCursor(cursorHand);
 
         secondaryDisplayPanel = new JPanel();
         secondaryDisplayPanel.setSize( new Dimension((width-(int)(width*0.75)), (height-(15 + menuBar.getHeight()))));
