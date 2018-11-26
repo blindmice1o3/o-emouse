@@ -39,7 +39,7 @@ public class Tinker {
     class DisplayPanel extends JPanel {
         @Override
         public void paintComponent(Graphics g) {
-            g.drawImage(displayPanelBackgroundImage, 0, 0, this.getWidth(), this.getHeight(),
+            g.drawImage(displayPanelBackgroundImage, 0, 0, displayPanel.getWidth(), displayPanel.getHeight(),
                     0, 0, displayPanelBackgroundImage.getWidth(displayPanelBackgroundImageImageObserver),
                     displayPanelBackgroundImage.getHeight(displayPanelBackgroundImageImageObserver), null);
         }
@@ -55,7 +55,7 @@ public class Tinker {
     public void initMemberVariables() {
         awt = Toolkit.getDefaultToolkit();
         frameWidth = (int)awt.getScreenSize().getWidth();
-        frameHeight = (int)awt.getScreenSize().getHeight();
+        frameHeight = (int)awt.getScreenSize().getHeight()-38;
         frame = new JFrame("Tinker");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         framePanel = new JPanel();
@@ -67,26 +67,33 @@ public class Tinker {
 
         frame.setSize(frameWidth, frameHeight);
         framePanel.setSize(frameWidth, frameHeight);
+        System.out.println("framePanel width&height: " + framePanel.getWidth() + ", " + framePanel.getHeight());
 
-        displayPanelBackgroundImageAddress = "src/CountLegacyInit/icons/butters_profchaos.jpg";
+        displayPanelBackgroundImageAddress = "src/MoonRocks_ItsNotWhatYoureThinking/cyberpunk_wallpapers(1920x1080).jpg";
         displayPanelBackgroundImage = awt.getImage(displayPanelBackgroundImageAddress);
         displayPanelBackgroundImageImageObserver = new DisplayPanelBackgroundImageImageObserver();
 
         displayPanel = new DisplayPanel();
-        displayPanel.setSize((frameWidth*(4/5)), (int)(frameHeight*0.80));
+        displayPanel.setSize((int)(framePanel.getWidth()*(0.60)), (int)(framePanel.getHeight()*(0.80)));
+        System.out.println("displayPanel width&height: " + displayPanel.getWidth() + ", " + displayPanel.getHeight());
         displayPanel.setVisible(true);
         buttonsPanel = new JPanel();
-        buttonsPanel.setSize((frameWidth*(4/5)),(int)(frameHeight*0.20));
+        buttonsPanel.setSize((int)(framePanel.getWidth()*(0.60)),(int)(framePanel.getHeight()*(0.20)));
+        System.out.println("buttonsPanel width&height: " + buttonsPanel.getWidth() + ", " + buttonsPanel.getHeight());
         buttonsPanel.setLayout(new GridLayout(3, 16));
         buttonsPanel.add(new JButton("helloWORLD"));
         buttonsPanel.setVisible(true);
 
-        framePanel.setLayout(new BorderLayout());
-        framePanel.add(displayPanel, BorderLayout.CENTER);
-        framePanel.add(buttonsPanel, BorderLayout.SOUTH);
+        framePanel.setLayout(null);
+        framePanel.add(displayPanel);
+        framePanel.add(buttonsPanel);
+        displayPanel.setLocation((int)(framePanel.getWidth()/2)-(displayPanel.getWidth()/2), 6);
+        buttonsPanel.setLocation((int)(framePanel.getWidth()/2)-(buttonsPanel.getWidth()/2), (int)(framePanel.getHeight()*(0.80))+8);
+
 
         frame.setJMenuBar(frameMenuBar);
         frame.setContentPane(framePanel);
+        frame.repaint();
     }
 
     public void startTinker() {
