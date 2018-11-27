@@ -39,7 +39,7 @@ public class Tinker {
     class DisplayPanel extends JPanel {
         @Override
         public void paintComponent(Graphics g) {
-            g.drawImage(displayPanelBackgroundImage, 0, 0, displayPanel.getWidth(), displayPanel.getHeight(),
+            g.drawImage(displayPanelBackgroundImage, 0, 0, this.getWidth(), this.getHeight(),
                     0, 0, displayPanelBackgroundImage.getWidth(displayPanelBackgroundImageImageObserver),
                     displayPanelBackgroundImage.getHeight(displayPanelBackgroundImageImageObserver), null);
         }
@@ -67,6 +67,7 @@ public class Tinker {
 
         frame.setSize(frameWidth, frameHeight);
         framePanel.setSize(frameWidth, frameHeight);
+        framePanel.setVisible(true);
         System.out.println("framePanel width&height: " + framePanel.getWidth() + ", " + framePanel.getHeight());
 
         displayPanelBackgroundImageAddress = "src/MoonRocks_ItsNotWhatYoureThinking/cyberpunk_wallpapers(1920x1080).jpg";
@@ -76,7 +77,10 @@ public class Tinker {
         displayPanel = new DisplayPanel();
         displayPanel.setSize((int)(framePanel.getWidth()*(0.60)), (int)(framePanel.getHeight()*(0.80)));
         System.out.println("displayPanel width&height: " + displayPanel.getWidth() + ", " + displayPanel.getHeight());
+        displayPanel.setLayout(null);
         displayPanel.setVisible(true);
+        displayPanel.repaint();
+
         buttonsPanel = new JPanel();
         buttonsPanel.setSize((int)(framePanel.getWidth()*(0.60)),(int)(framePanel.getHeight()*(0.20)));
         System.out.println("buttonsPanel width&height: " + buttonsPanel.getWidth() + ", " + buttonsPanel.getHeight());
@@ -93,7 +97,7 @@ public class Tinker {
 
         frame.setJMenuBar(frameMenuBar);
         frame.setContentPane(framePanel);
-        frame.repaint();
+        framePanel.repaint();
     }
 
     public void startTinker() {

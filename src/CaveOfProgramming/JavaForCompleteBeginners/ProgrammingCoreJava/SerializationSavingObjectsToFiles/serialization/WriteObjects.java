@@ -6,6 +6,8 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class WriteObjects {
 
@@ -17,6 +19,9 @@ public class WriteObjects {
 
         System.out.println(mike);
         System.out.println(sue);
+
+        Person[] personArray = { new Person(1, "Bob"), new Person(2, "Nancy"), new Person(3, "Rue") };
+        ArrayList<Person> personArrayList = new ArrayList<Person>(Arrays.asList(personArray));
 
         // This class lets us stream data to a file (streaming just means sending data sequentially to a file).
         // We need to supply an argument to the constructor (which is the name of the file to stream TO).
@@ -42,6 +47,8 @@ public class WriteObjects {
             os.writeObject(mike);
             os.writeObject(sue);
 
+            os.writeObject(personArray);
+            os.writeObject(personArrayList);
 
             os.close();
 
