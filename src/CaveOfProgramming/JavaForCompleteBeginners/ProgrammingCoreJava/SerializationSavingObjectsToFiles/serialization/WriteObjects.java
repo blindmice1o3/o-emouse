@@ -44,11 +44,22 @@ public class WriteObjects {
             // We're taking some kind of output stream and passing it some kind of fileoutput stream, and using that to
             //      write to file. Like russian doll thing (within each other) (decorator pattern, object composition).
 
-            os.writeObject(mike);
-            os.writeObject(sue);
+            os.writeObject(mike);   //1object
+            os.writeObject(sue);    //2object
 
-            os.writeObject(personArray);
-            os.writeObject(personArrayList);
+            os.writeObject(personArray);    //3object
+            os.writeObject(personArrayList);    //4object
+
+            // Record the size of the ArrayList during the Serialization so we can use it when we Deserialize.
+            os.writeInt(personArrayList.size());    //1Int
+
+            // Record all the objects in this ArrayList (we had saved the size of it in our previous method call which
+            // recorded an int. When the ReadObjects class deserializes the people.bin file, it will record that int, then
+            // it can go on to use a regular for loop to iterate through the ArrayList<Person>, calling the readObject()
+            // method the correction number of times because of the int.
+            for (Person person: personArrayList) {
+                os.writeObject(person);             //5,6,7object
+            }
 
             os.close();
 

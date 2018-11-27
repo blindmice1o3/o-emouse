@@ -18,14 +18,11 @@ public class ReadObjects {
             ObjectInputStream os = new ObjectInputStream(fi);
 
 
-            Person person1 = (Person)os.readObject();
-            Person person2 = (Person)os.readObject();
+            Person person1 = (Person)os.readObject();   //1object
+            Person person2 = (Person)os.readObject();   //2object
 
-            Person[] personArray = (Person[])os.readObject();
-            ArrayList<Person> personArrayList = (ArrayList<Person>)os.readObject();
-
-            os.close();
-
+            Person[] personArray = (Person[])os.readObject();       //3object
+            ArrayList<Person> personArrayList = (ArrayList<Person>)os.readObject();     //4object
 
             System.out.println(person1);
             System.out.println(person2);
@@ -37,6 +34,24 @@ public class ReadObjects {
             for (Person person: personArrayList) {
                 System.out.println("ArrayList<Person> deserialized: " + person);
             }
+
+
+
+            // We saved the size of the ArrayList<Person> in our WriteObjects class on purpose so we can read it back in
+            // this ReadObjects class, able to use it as an upper index in a regular for loop.
+            int num = os.readInt();     //1Int
+
+            for (int i=0; i < num; i++) {
+                Person person = (Person)os.readObject();    //5,6,7object
+                System.out.println(person);
+            }
+
+            os.close();
+
+
+
+
+
 
 
 
