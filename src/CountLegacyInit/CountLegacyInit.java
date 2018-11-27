@@ -14,7 +14,13 @@ public class CountLegacyInit extends JFrame
     JPanel framePanel;
     Toolkit awt;
     String frameIconImageAddress = "src/CountLegacyInit/icons/sick_bear.png";
+    String cursorIconMonkeyImageAddress = "src/CountLegacyInit/icons/5monkey.jpg";
+    String cursorIconPigImageAddress = "src/CountLegacyInit/icons/4pig.jpg";
+    String cursorIconFishImageAddress = "src/CountLegacyInit/icons/2fish_purple.jpg";
     Image frameIcon;
+    Image cursorIconMonkey;
+    Image cursorIconPig;
+    Image cursorIconFish;
     int width;
     int height;
 
@@ -29,6 +35,7 @@ public class CountLegacyInit extends JFrame
     JMenuItem pasteCommand;
     JMenuItem themeCommand0;
     JMenuItem themeCommand1;
+    JMenuItem themeRosePetalGlasses;
 
     JPanel mainDisplayPanel;
     JPanel secondaryDisplayPanel;
@@ -39,7 +46,9 @@ public class CountLegacyInit extends JFrame
     JTextField textInput;
     String inputMessage = "player1's request: ";
     String player1SetNameMessage = "player1, please input your handle: ";
-    Cursor cursorHand;
+    Cursor cursorMonkey;
+    Cursor cursorPig;
+    Cursor cursorFish;
 
     public CountLegacyInit() {
         Player player1 = new Player();
@@ -47,7 +56,12 @@ public class CountLegacyInit extends JFrame
         width = (int)awt.getScreenSize().getWidth();
         height = (int)awt.getScreenSize().getHeight()-38;   // -38  to try to account for start bar
         frameIcon = awt.getImage(frameIconImageAddress);
-        cursorHand = Toolkit.getDefaultToolkit().createCustomCursor(frameIcon, new Point(0,0), "cursorHand");
+        cursorIconMonkey = awt.getImage(cursorIconMonkeyImageAddress);
+        cursorIconPig = awt.getImage(cursorIconPigImageAddress);
+        cursorIconFish = awt.getImage(cursorIconFishImageAddress);
+        cursorMonkey = awt.createCustomCursor(cursorIconMonkey, new Point(0,0), "cursorMonkey");
+        cursorPig = awt.createCustomCursor(cursorIconPig, new Point(0, 0), "cursorPig");
+        cursorFish = awt.createCustomCursor(cursorIconFish, new Point(0, 0), "cursorFish");
 
         menuBar = new JMenuBar();
         saveAndLoadMenu = new JMenu("Save/Load");
@@ -75,6 +89,9 @@ public class CountLegacyInit extends JFrame
         themeCommand0.setToolTipText("TODO: implement themeCommand0");
         themeCommand1 = new JMenuItem("ThemeCommand1");
         themeCommand1.setToolTipText("TODO: implement themeCommand1");
+        themeRosePetalGlasses = new JMenuItem("ThemeRosePetalGlasses");
+        themeRosePetalGlasses.setToolTipText("from nothing,\nto nothing,\nbut this is everything inbetween");
+        themeRosePetalGlasses.setCursor(cursorFish);
         // saveCommand.addActionListener(listener);
         // loadCommand.addActionListener(listener);
         // themeCommand0.addActionListener(listener);
@@ -88,6 +105,8 @@ public class CountLegacyInit extends JFrame
         editMenu.add(pasteCommand);
         themeMenu.add(themeCommand0);
         themeMenu.add(themeCommand1);
+        themeMenu.addSeparator();
+        themeMenu.add(themeRosePetalGlasses);
         menuBar.add(saveAndLoadMenu);
         menuBar.add(editMenu);
         menuBar.add(themeMenu);
@@ -102,7 +121,6 @@ public class CountLegacyInit extends JFrame
         mainDisplayPanel = new BackgroundDisplayPanel((width-(int)(width*0.25)), height-(15 + menuBar.getHeight()));
         mainDisplayPanel.setPreferredSize( new Dimension((width-(int)(width*0.25)), height-(15 + menuBar.getHeight())));
         mainDisplayPanel.setBorder(BorderFactory.createLineBorder(Color.YELLOW, 3, false));
-        mainDisplayPanel.setCursor(cursorHand);
 
         secondaryDisplayPanel = new JPanel();
         secondaryDisplayPanel.setSize( new Dimension((width-(int)(width*0.75)), (height-(15 + menuBar.getHeight()))));
@@ -119,6 +137,7 @@ public class CountLegacyInit extends JFrame
         textOutputScrollPane.setSize(new Dimension ((width-(int)(width*0.75)), (height-(15 + menuBar.getHeight()))));
         textOutputScrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
         secondaryDisplayPanel.add(textOutputScrollPane);
+        secondaryDisplayPanel.setCursor(cursorMonkey);
 
         textInputPanel = new JPanel();
         textInputPanel.setSize( new Dimension(width, 15));
@@ -130,6 +149,7 @@ public class CountLegacyInit extends JFrame
         textInput.setFocusable(true);
         textInput.addActionListener(this);
         textInputPanel.add(textInput);
+        textInputPanel.setCursor(cursorPig);
 
         framePanel.add(mainDisplayPanel, BorderLayout.CENTER);
         framePanel.add(secondaryDisplayPanel, BorderLayout.EAST);
