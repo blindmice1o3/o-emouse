@@ -19,12 +19,12 @@ public class CyberpunkWallpapersPanel extends JPanel {
         backgroundImageIcon = new ImageIcon(imageFileName);
         backgroundImage = backgroundImageIcon.getImage();
 
-        this.setPreferredSize(new Dimension(this.width, this.height));
+        this.setSize(new Dimension(this.width, this.height));
         this.setVisible(true);
     }
 
     @Override
     public void paintComponent(Graphics g) {
-        g.drawImage(backgroundImage, 1, 1, this.width, this.height, 0, 0, 1920, 1080, null);
+        g.drawImage(backgroundImage, 1, 1, this.width-2, this.height-2, 0, 0, 1920, 1080, null);
     }
 }

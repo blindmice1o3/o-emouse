@@ -121,6 +121,7 @@ public class CountLegacyInit extends JFrame
         mainDisplayPanel = new BackgroundDisplayPanel((width-(int)(width*0.25)), height-(15 + menuBar.getHeight()));
         mainDisplayPanel.setPreferredSize( new Dimension((width-(int)(width*0.25)), height-(15 + menuBar.getHeight())));
         mainDisplayPanel.setBorder(BorderFactory.createLineBorder(Color.YELLOW, 3, false));
+        mainDisplayPanel.setCursor(cursorMonkey);
 
         secondaryDisplayPanel = new JPanel();
         secondaryDisplayPanel.setSize( new Dimension((width-(int)(width*0.75)), (height-(15 + menuBar.getHeight()))));
@@ -137,7 +138,7 @@ public class CountLegacyInit extends JFrame
         textOutputScrollPane.setSize(new Dimension ((width-(int)(width*0.75)), (height-(15 + menuBar.getHeight()))));
         textOutputScrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
         secondaryDisplayPanel.add(textOutputScrollPane);
-        secondaryDisplayPanel.setCursor(cursorMonkey);
+        secondaryDisplayPanel.setCursor(cursorPig);
 
         textInputPanel = new JPanel();
         textInputPanel.setSize( new Dimension(width, 15));
@@ -149,7 +150,6 @@ public class CountLegacyInit extends JFrame
         textInput.setFocusable(true);
         textInput.addActionListener(this);
         textInputPanel.add(textInput);
-        textInputPanel.setCursor(cursorPig);
 
         framePanel.add(mainDisplayPanel, BorderLayout.CENTER);
         framePanel.add(secondaryDisplayPanel, BorderLayout.EAST);

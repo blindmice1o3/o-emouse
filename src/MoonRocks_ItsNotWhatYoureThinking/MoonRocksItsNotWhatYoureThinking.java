@@ -19,8 +19,10 @@ public class MoonRocksItsNotWhatYoureThinking extends JFrame {
         screenDimension = awt.getScreenSize();
         frameWidth = (int)screenDimension.getWidth();
         frameHeight = (int)screenDimension.getHeight()-40;      // -40 pixels to try to account for start/Windows bar.
-
+            System.out.println(frameWidth + ", " +  frameHeight);
         framePanel = new IntroFramePanel(frameWidth, frameHeight);
+        framePanel.setVisible(true);
+        framePanel.repaint();
 
         this.setContentPane(framePanel);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
