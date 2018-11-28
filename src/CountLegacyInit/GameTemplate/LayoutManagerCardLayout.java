@@ -29,7 +29,7 @@ public class LayoutManagerCardLayout extends JPanel
     public String[] createStringArray() {
         String[] mainMenuList = new String[MainMenu.values().length];
         for (int i = 0; i < MainMenu.values().length; i++) {
-            mainMenuList[i] = MainMenu.values()[i].name();
+            mainMenuList[i] = MainMenu.values()[i].getName();
         }
         return mainMenuList;
     }
