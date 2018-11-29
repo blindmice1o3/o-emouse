@@ -28,6 +28,7 @@ public class GamePanel extends JPanel
 
     @Override
     public void paintComponent(Graphics g) {
+        super.paintComponent(g);
         // The following println() is just to see where GamePanel's paintComponent() is called in the output.
         System.out.println("GamePanel.paintComponent()...");
 
