@@ -12,6 +12,6 @@ public enum Animal {
         return name;
     }
     public String toString() {
-        return "This animal is called " + name;
+        return "This Animal is called " + name;
     }
 }
