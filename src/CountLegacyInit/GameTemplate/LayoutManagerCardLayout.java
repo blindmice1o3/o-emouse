@@ -17,12 +17,15 @@ public class LayoutManagerCardLayout extends JPanel
     JPanel cardOption = new JPanel();
 
     public LayoutManagerCardLayout() {
-        initiateCardPane();
         initiateComboBoxPane();
+        initiateCardPane();
+
         this.setLayout(new BorderLayout());
         this.setSize(600, 400);
+
         this.add(comboBoxPane, BorderLayout.PAGE_START);
         this.add(cardsPane, BorderLayout.CENTER);
+
         this.setVisible(true);
     }
 
@@ -36,11 +39,11 @@ public class LayoutManagerCardLayout extends JPanel
 
     public void initiateCardPane() {
         cardsPane = new JPanel(new CardLayout());
-        cardsPane.add(cardMonsterList, MainMenu.MONSTER_LIST.name());
-        cardsPane.add(cardMyMonsterList, MainMenu.MY_MONSTER_LIST.name());
-        cardsPane.add(cardItemList, MainMenu.ITEM_LIST.name());
-        cardsPane.add(cardPlayerInfo, MainMenu.PLAYER_INFO.name());
-        cardsPane.add(cardOption, MainMenu.OPTION.name());
+        cardsPane.add(cardMonsterList, MainMenu.MONSTER_LIST.getName());
+        cardsPane.add(cardMyMonsterList, MainMenu.MY_MONSTER_LIST.getName());
+        cardsPane.add(cardItemList, MainMenu.ITEM_LIST.getName());
+        cardsPane.add(cardPlayerInfo, MainMenu.PLAYER_INFO.getName());
+        cardsPane.add(cardOption, MainMenu.OPTION.getName());
     }
     public void initiateComboBoxPane() {
         comboBoxPane = new JPanel();
