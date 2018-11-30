@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4264d6a-6746-43ef-b695-128d92c400ed" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CaveOfProgramming/JavaForCompleteBeginners/TheJavaCollectionsFramework/ArrayListArraysTheEasyWay.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/o-emouse/CaveOfProgramming/JavaForCompleteBeginners/ProgrammingCoreJava/IteratorsAndImplementingIterable/UrlLibrary$UrlIterator.class" afterPath="$PROJECT_DIR$/out/production/o-emouse/CaveOfProgramming/JavaForCompleteBeginners/ProgrammingCoreJava/IteratorsAndImplementingIterable/UrlLibrary$UrlIterator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/o-emouse/CaveOfProgramming/JavaForCompleteBeginners/ProgrammingCoreJava/IteratorsAndImplementingIterable/UrlLibrary.class" afterPath="$PROJECT_DIR$/out/production/o-emouse/CaveOfProgramming/JavaForCompleteBeginners/ProgrammingCoreJava/IteratorsAndImplementingIterable/UrlLibrary.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/Tinker.java" afterPath="$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/Tinker.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,14 +21,10 @@
       <file leaf-file-name="EventDispatchThread.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/EventDispatchThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="53" column="24" lean-forward="true" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+            <state relative-caret-position="748">
+              <caret line="53" column="24" lean-forward="false" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1042#1184#0" expanded="true" />
-                <element signature="e#1183#1184#0" expanded="true" />
-                <element signature="e#1219#1364#0" expanded="true" />
-                <element signature="e#1363#1364#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -39,7 +33,7 @@
       <file leaf-file-name="Animal.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CaveOfProgramming/JavaForCompleteBeginners/ProgrammingCoreJava/EnumTypesBasicAndAdvancedUsage/Animal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="153">
               <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
               <folding>
                 <element signature="e#342#343#0" expanded="true" />
@@ -52,8 +46,28 @@
       <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CaveOfProgramming/JavaForCompleteBeginners/ProgrammingCoreJava/EnumTypesBasicAndAdvancedUsage/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
+            <state relative-caret-position="595">
               <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameTemplate.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/GameTemplate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="257" column="34" lean-forward="false" selection-start-line="257" selection-start-column="34" selection-end-line="257" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tinker.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/Tinker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="91" column="105" lean-forward="false" selection-start-line="91" selection-start-column="105" selection-end-line="91" selection-end-column="105" />
               <folding />
             </state>
           </provider>
@@ -62,7 +76,7 @@
       <file leaf-file-name="GamePanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CountZeroInit/view/GamePanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
+            <state relative-caret-position="425">
               <caret line="30" column="8" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -71,15 +85,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArrayListArraysTheEasyWay.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ArrayListArraysTheEasyWay.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CaveOfProgramming/JavaForCompleteBeginners/TheJavaCollectionsFramework/ArrayListArraysTheEasyWay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+            <state relative-caret-position="476">
+              <caret line="29" column="26" lean-forward="false" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#270#279#0" expanded="true" />
-                <element signature="e#1020#1028#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,11 +100,10 @@
       <file leaf-file-name="LayoutManagerCardLayout.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/LayoutManagerCardLayout.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="69" column="19" lean-forward="true" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="19" />
+            <state relative-caret-position="1122">
+              <caret line="69" column="19" lean-forward="false" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1663#1671#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -163,9 +174,7 @@
         <option value="$PROJECT_DIR$/src/CountLegacyInit/Player.java" />
         <option value="$PROJECT_DIR$/src/CountLegacyInit/CountLegacyStart.java" />
         <option value="$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/CountLegacyInit.java" />
-        <option value="$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/GameTemplate.java" />
         <option value="$PROJECT_DIR$/src/CaveOfProgramming/JavaForCompleteBeginners/ProgrammingCoreJava/SerializationSavingObjectsToFiles/Person.java" />
-        <option value="$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/Tinker.java" />
         <option value="$PROJECT_DIR$/src/CaveOfProgramming/JavaForCompleteBeginners/ProgrammingCoreJava/SerializationSavingObjectsToFiles/serialization/WriteObjects.java" />
         <option value="$PROJECT_DIR$/src/CaveOfProgramming/JavaForCompleteBeginners/ProgrammingCoreJava/SerializationSavingObjectsToFiles/deserialization/ReadObjects.java" />
         <option value="$PROJECT_DIR$/src/CaveOfProgramming/JavaForCompleteBeginners/ProgrammingCoreJava/GenericsUsingGenerics.java" />
@@ -187,6 +196,8 @@
         <option value="$PROJECT_DIR$/src/CaveOfProgramming/JavaForCompleteBeginners/ProgrammingCoreJava/IteratorsAndImplementingIterable/AppUrlLibrary.java" />
         <option value="$PROJECT_DIR$/src/CaveOfProgramming/JavaForCompleteBeginners/ProgrammingCoreJava/IteratorsAndImplementingIterable/UrlLibrary.java" />
         <option value="$PROJECT_DIR$/src/CaveOfProgramming/JavaForCompleteBeginners/TheJavaCollectionsFramework/ArrayListArraysTheEasyWay.java" />
+        <option value="$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/GameTemplate.java" />
+        <option value="$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/Tinker.java" />
       </list>
     </option>
   </component>
@@ -234,9 +245,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -278,14 +286,6 @@
               <item name="JavaForCompleteBeginners" type="462c0819:PsiDirectoryNode" />
               <item name="ProgrammingCoreJava" type="462c0819:PsiDirectoryNode" />
               <item name="EnumTypesBasicAndAdvancedUsage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="o-emouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="o-emouse" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="CaveOfProgramming" type="462c0819:PsiDirectoryNode" />
-              <item name="JavaForCompleteBeginners" type="462c0819:PsiDirectoryNode" />
-              <item name="TheJavaCollectionsFramework" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="o-emouse" type="b2602c69:ProjectViewProjectNode" />
@@ -338,6 +338,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -369,7 +372,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ArrayListArraysTheEasyWay">
+  <component name="RunManager" selected="Application.Tinker">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -427,14 +430,14 @@
       <module name="o-emouse" />
       <envs />
     </configuration>
-    <configuration name="EventDispatchThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="GameboyColor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="CountLegacyInit.GameTemplate.*" />
+          <option name="PATTERN" value="CountZeroInit.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="CountLegacyInit.GameTemplate.EventDispatchThread" />
+      <option name="MAIN_CLASS_NAME" value="CountZeroInit.controller.GameboyColor" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -446,14 +449,14 @@
       <module name="o-emouse" />
       <envs />
     </configuration>
-    <configuration name="GameboyColor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Tinker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="CountZeroInit.controller.*" />
+          <option name="PATTERN" value="CountLegacyInit.GameTemplate.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="CountZeroInit.controller.GameboyColor" />
+      <option name="MAIN_CLASS_NAME" value="CountLegacyInit.GameTemplate.Tinker" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -546,19 +549,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.EventDispatchThread" />
-      <item index="1" class="java.lang.String" itemvalue="Application.GameboyColor" />
-      <item index="2" class="java.lang.String" itemvalue="Application.App" />
-      <item index="3" class="java.lang.String" itemvalue="Application.AppUrlLibrary" />
-      <item index="4" class="java.lang.String" itemvalue="Application.ArrayListArraysTheEasyWay" />
+      <item index="0" class="java.lang.String" itemvalue="Application.GameboyColor" />
+      <item index="1" class="java.lang.String" itemvalue="Application.App" />
+      <item index="2" class="java.lang.String" itemvalue="Application.AppUrlLibrary" />
+      <item index="3" class="java.lang.String" itemvalue="Application.ArrayListArraysTheEasyWay" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Tinker" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.ArrayListArraysTheEasyWay" />
-        <item index="1" class="java.lang.String" itemvalue="Application.GameboyColor" />
-        <item index="2" class="java.lang.String" itemvalue="Application.AppUrlLibrary" />
-        <item index="3" class="java.lang.String" itemvalue="Application.App" />
-        <item index="4" class="java.lang.String" itemvalue="Application.EventDispatchThread" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Tinker" />
+        <item index="1" class="java.lang.String" itemvalue="Application.ArrayListArraysTheEasyWay" />
+        <item index="2" class="java.lang.String" itemvalue="Application.GameboyColor" />
+        <item index="3" class="java.lang.String" itemvalue="Application.AppUrlLibrary" />
+        <item index="4" class="java.lang.String" itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -597,11 +600,11 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5620915" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5620915" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6666667" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24886535" sideWeight="0.49346405" order="0" side_tool="false" content_ui="combo" x="1072" y="100" width="256" height="583" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2526475" sideWeight="0.49346405" order="0" side_tool="false" content_ui="combo" x="1072" y="100" width="256" height="583" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19440243" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="1047" y="99" width="279" height="560" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -816,13 +819,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/people.bin" />
-    <entry file="file://$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/Tinker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/super_and_this.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -862,7 +858,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="27" column="70" lean-forward="false" selection-start-line="27" selection-start-column="70" selection-end-line="27" selection-end-column="70" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -885,14 +880,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/GameTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="119" column="13" lean-forward="false" selection-start-line="119" selection-start-column="13" selection-end-line="119" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -900,6 +887,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="46" column="24" lean-forward="true" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1699#1700#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -907,7 +898,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -915,6 +905,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <folding>
+            <element signature="e#279#280#0" expanded="false" />
+            <element signature="e#311#312#0" expanded="false" />
+            <element signature="e#342#343#0" expanded="false" />
+            <element signature="e#369#370#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -924,7 +920,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -932,14 +927,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#394#402#0" expanded="false" />
-            <element signature="e#1581#1582#0" expanded="false" />
-            <element signature="e#1623#1624#0" expanded="false" />
-            <element signature="e#1992#1993#0" expanded="false" />
-            <element signature="e#2032#2033#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -947,29 +934,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="29" column="56" lean-forward="false" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/EventDispatchThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="53" column="24" lean-forward="true" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+        <state relative-caret-position="748">
+          <caret line="53" column="24" lean-forward="false" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1042#1184#0" expanded="true" />
-            <element signature="e#1183#1184#0" expanded="true" />
-            <element signature="e#1219#1364#0" expanded="true" />
-            <element signature="e#1363#1364#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CaveOfProgramming/JavaForCompleteBeginners/ProgrammingCoreJava/EnumTypesBasicAndAdvancedUsage/Animal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="153">
           <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
           <folding>
             <element signature="e#342#343#0" expanded="true" />
@@ -978,36 +958,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CaveOfProgramming/JavaForCompleteBeginners/ProgrammingCoreJava/EnumTypesBasicAndAdvancedUsage/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/IntroFramePanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="54" column="23" lean-forward="false" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/LayoutManagerCardLayout.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="69" column="19" lean-forward="true" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="19" />
+        <state relative-caret-position="1122">
+          <caret line="69" column="19" lean-forward="false" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1663#1671#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CountZeroInit/view/GamePanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
+        <state relative-caret-position="425">
           <caret line="30" column="8" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1017,13 +987,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CaveOfProgramming/JavaForCompleteBeginners/TheJavaCollectionsFramework/ArrayListArraysTheEasyWay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+        <state relative-caret-position="476">
+          <caret line="29" column="26" lean-forward="false" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#270#279#0" expanded="true" />
-            <element signature="e#1020#1028#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CaveOfProgramming/JavaForCompleteBeginners/ProgrammingCoreJava/EnumTypesBasicAndAdvancedUsage/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/GameTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="257" column="34" lean-forward="false" selection-start-line="257" selection-start-column="34" selection-end-line="257" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/Tinker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="91" column="105" lean-forward="false" selection-start-line="91" selection-start-column="105" selection-end-line="91" selection-end-column="105" />
+          <folding />
         </state>
       </provider>
     </entry>

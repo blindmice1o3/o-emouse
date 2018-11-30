@@ -59,6 +59,9 @@ public class Tinker {
         frame = new JFrame("Tinker");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         framePanel = new JPanel();
+        displayPanelBackgroundImageAddress = "src/MoonRocks_ItsNotWhatYoureThinking/cyberpunk_wallpapers(1920x1080).jpg";
+        displayPanelBackgroundImage = awt.getImage(displayPanelBackgroundImageAddress);
+        displayPanelBackgroundImageImageObserver = new DisplayPanelBackgroundImageImageObserver();
         frameMenuBar = new JMenuBar();
         frameBackgroundColorMenu = new JMenu("GameboyColor's Color");
         colorRadioButtonMenuItem = new JRadioButtonMenuItem();
@@ -67,19 +70,13 @@ public class Tinker {
 
         frame.setSize(frameWidth, frameHeight);
         framePanel.setSize(frameWidth, frameHeight);
-        framePanel.setVisible(true);
         System.out.println("framePanel width&height: " + framePanel.getWidth() + ", " + framePanel.getHeight());
-
-        displayPanelBackgroundImageAddress = "src/MoonRocks_ItsNotWhatYoureThinking/cyberpunk_wallpapers(1920x1080).jpg";
-        displayPanelBackgroundImage = awt.getImage(displayPanelBackgroundImageAddress);
-        displayPanelBackgroundImageImageObserver = new DisplayPanelBackgroundImageImageObserver();
 
         displayPanel = new DisplayPanel();
         displayPanel.setSize((int)(framePanel.getWidth()*(0.60)), (int)(framePanel.getHeight()*(0.80)));
         System.out.println("displayPanel width&height: " + displayPanel.getWidth() + ", " + displayPanel.getHeight());
         displayPanel.setLayout(null);
         displayPanel.setVisible(true);
-        displayPanel.repaint();
 
         buttonsPanel = new JPanel();
         buttonsPanel.setSize((int)(framePanel.getWidth()*(0.60)),(int)(framePanel.getHeight()*(0.20)));
@@ -90,14 +87,13 @@ public class Tinker {
 
         framePanel.setLayout(null);
         framePanel.add(displayPanel);
+        displayPanel.setLocation((frameWidth/2)-(displayPanel.getWidth()/2), 1);
         framePanel.add(buttonsPanel);
-        displayPanel.setLocation((int)(framePanel.getWidth()/2)-(displayPanel.getWidth()/2), 6);
-        buttonsPanel.setLocation((int)(framePanel.getWidth()/2)-(buttonsPanel.getWidth()/2), (int)(framePanel.getHeight()*(0.80))+8);
-
+        buttonsPanel.setLocation((frameWidth/2)-(buttonsPanel.getWidth()/2), displayPanel.getHeight()+2);
+        framePanel.setVisible(true);
 
         frame.setJMenuBar(frameMenuBar);
         frame.setContentPane(framePanel);
-        framePanel.repaint();
     }
 
     public void startTinker() {
