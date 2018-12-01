@@ -8,8 +8,9 @@ public class TinkerMouseAdapterBackground extends JPanel {
     Image image;
 
     public TinkerMouseAdapterBackground() {
-        Toolkit awt = Toolkit.getDefaultToolkit();
-        image = awt.getImage(imageAddress);
+        //Toolkit awt = Toolkit.getDefaultToolkit();
+        //image = awt.getImage(imageAddress);
+        image = new ImageIcon(imageAddress).getImage();
     }
 
     public void paintComponent(Graphics g) {

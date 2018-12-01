@@ -14,6 +14,7 @@ public class TinkerMouseAdapter implements MouseListener, MouseMotionListener {
     private JFrame frame;
     private JPanel mainPanel;
     private JPanel displayPanel;
+    private JPanel controlPanel;
 
     public TinkerMouseAdapter() {
         awt = Toolkit.getDefaultToolkit();
@@ -21,24 +22,25 @@ public class TinkerMouseAdapter implements MouseListener, MouseMotionListener {
         frameHeight = awt.getScreenSize().height - 37;
 
         displayPanel = new TinkerMouseAdapterBackground();
-        displayPanel.setLayout(null);
-        displayPanel.setPreferredSize( new Dimension(1920, 1080) );
-        displayPanel.setRequestFocusEnabled(true);
-        displayPanel.setFocusable(true);
+        displayPanel.setSize(frameWidth, frameHeight);
         displayPanel.setVisible(true);
 
-/*        mainPanel = new JPanel();
+        controlPanel = new JPanel();
+        controlPanel.setBackground( Color.YELLOW );
+
+        mainPanel = new JPanel();
         mainPanel.setLayout( new BorderLayout() );
         mainPanel.setPreferredSize( new Dimension(frameWidth, frameHeight) );
         mainPanel.add(displayPanel, BorderLayout.CENTER);
+        mainPanel.add(controlPanel, BorderLayout.PAGE_END);
         mainPanel.setRequestFocusEnabled(true);
         mainPanel.setFocusable(true);
         mainPanel.setVisible(true);
-*/
+
         frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(frameWidth, frameHeight);
-        frame.setContentPane(displayPanel);
+        frame.setContentPane(mainPanel);
         frame.setVisible(true);
 
 
