@@ -5,7 +5,6 @@ import java.awt.*;
 
 public class MoonRocksItsNotWhatYoureThinking extends JFrame {
     Toolkit awt;
-    Dimension screenDimension;
     int frameWidth;
     int frameHeight;
 
@@ -16,19 +15,17 @@ public class MoonRocksItsNotWhatYoureThinking extends JFrame {
 
     public MoonRocksItsNotWhatYoureThinking() {
         awt = Toolkit.getDefaultToolkit();
-        screenDimension = awt.getScreenSize();
-        frameWidth = (int)screenDimension.getWidth();
-        frameHeight = (int)screenDimension.getHeight()-40;      // -40 pixels to try to account for start/Windows bar.
-            System.out.println(frameWidth + ", " +  frameHeight);
+        frameWidth = awt.getScreenSize().width;
+        frameHeight = awt.getScreenSize().height - 37;      // -40 pixels to try to account for start/Windows bar.
+
         framePanel = new IntroFramePanel(frameWidth, frameHeight);
         framePanel.setVisible(true);
-        framePanel.repaint();
 
-        this.setContentPane(framePanel);
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setLocation(0, 0);
-
-        this.setSize(frameWidth, frameHeight);
+        setSize(frameWidth, frameHeight);
+        System.out.println(this.getWidth() + ", " +  this.getHeight());
+        setLocation(0, 0);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setContentPane(framePanel);
 
         player1 = new Player();
     }
