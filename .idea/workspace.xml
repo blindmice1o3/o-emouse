@@ -20,8 +20,8 @@
       <file leaf-file-name="EventDispatchThread.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/EventDispatchThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -32,33 +32,9 @@
       <file leaf-file-name="Tinker.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/Tinker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="238">
+              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TinkerMouseAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/mouseadapter/TinkerMouseAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="19" column="14" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TinkerMouseAdapterBackground.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/mouseadapter/TinkerMouseAdapterBackground.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="12" column="55" lean-forward="false" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -66,8 +42,21 @@
       <file leaf-file-name="CountLegacyInit.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CountLegacyInit/CountLegacyInit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="220" column="9" lean-forward="false" selection-start-line="220" selection-start-column="9" selection-end-line="220" selection-end-column="9" />
+            <state relative-caret-position="357">
+              <caret line="77" column="8" lean-forward="true" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="8" />
+              <folding>
+                <element signature="e#4895#4896#0" expanded="true" />
+                <element signature="e#4982#4983#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BackgroundDisplayPanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CountLegacyInit/BackgroundDisplayPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -244,6 +233,19 @@
               <item name="GameTemplate" type="462c0819:PsiDirectoryNode" />
               <item name="mouseadapter" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="o-emouse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="o-emouse" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="CountZeroInit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="o-emouse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="o-emouse" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="CountZeroInit" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -306,14 +308,14 @@
       <module name="o-emouse" />
       <envs />
     </configuration>
-    <configuration name="GameboyColor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="EventDispatchThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="CountZeroInit.controller.*" />
+          <option name="PATTERN" value="CountLegacyInit.GameTemplate.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="CountZeroInit.controller.GameboyColor" />
+      <option name="MAIN_CLASS_NAME" value="CountLegacyInit.GameTemplate.EventDispatchThread" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -325,14 +327,14 @@
       <module name="o-emouse" />
       <envs />
     </configuration>
-    <configuration name="MoonRocksItsNotWhatYoureThinking" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="GameboyColor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="MoonRocks_ItsNotWhatYoureThinking.*" />
+          <option name="PATTERN" value="CountZeroInit.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="MoonRocks_ItsNotWhatYoureThinking.MoonRocksItsNotWhatYoureThinking" />
+      <option name="MAIN_CLASS_NAME" value="CountZeroInit.controller.GameboyColor" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -465,17 +467,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.GameboyColor" />
       <item index="1" class="java.lang.String" itemvalue="Application.Tinker" />
-      <item index="2" class="java.lang.String" itemvalue="Application.CountLegacyInit" />
-      <item index="3" class="java.lang.String" itemvalue="Application.MoonRocksItsNotWhatYoureThinking" />
-      <item index="4" class="java.lang.String" itemvalue="Application.TinkerMouseAdapter" />
+      <item index="2" class="java.lang.String" itemvalue="Application.TinkerMouseAdapter" />
+      <item index="3" class="java.lang.String" itemvalue="Application.EventDispatchThread" />
+      <item index="4" class="java.lang.String" itemvalue="Application.CountLegacyInit" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.CountLegacyInit" />
-        <item index="1" class="java.lang.String" itemvalue="Application.TinkerMouseAdapter" />
-        <item index="2" class="java.lang.String" itemvalue="Application.MoonRocksItsNotWhatYoureThinking" />
-        <item index="3" class="java.lang.String" itemvalue="Application.GameboyColor" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Tinker" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Tinker" />
+        <item index="2" class="java.lang.String" itemvalue="Application.EventDispatchThread" />
+        <item index="3" class="java.lang.String" itemvalue="Application.TinkerMouseAdapter" />
+        <item index="4" class="java.lang.String" itemvalue="Application.GameboyColor" />
       </list>
     </recent_temporary>
   </component>
@@ -810,13 +812,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CountLegacyInit/BackgroundDisplayPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CountZeroInit/view/GamePanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -831,16 +826,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/EventDispatchThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/LayoutManagerCardLayout.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1071">
@@ -851,28 +836,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/Tinker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/mouseadapter/TinkerMouseAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/mouseadapter/TinkerMouseAdapterBackground.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="55" lean-forward="false" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -900,23 +867,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/MoonRocksItsNotWhatYoureThinking.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="20" column="44" lean-forward="false" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/mouseadapter/TinkerMouseAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="14" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CountLegacyInit/Player.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -925,11 +875,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/CountLegacyInit/BackgroundDisplayPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/MoonRocksItsNotWhatYoureThinking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/mouseadapter/TinkerMouseAdapterBackground.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="55" lean-forward="false" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/mouseadapter/TinkerMouseAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="32" lean-forward="true" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/Tinker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/EventDispatchThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/CountLegacyInit/CountLegacyInit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="220" column="9" lean-forward="false" selection-start-line="220" selection-start-column="9" selection-end-line="220" selection-end-column="9" />
-          <folding />
+        <state relative-caret-position="357">
+          <caret line="77" column="8" lean-forward="true" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="8" />
+          <folding>
+            <element signature="e#4895#4896#0" expanded="true" />
+            <element signature="e#4982#4983#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
