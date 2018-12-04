@@ -10,8 +10,17 @@ import java.awt.event.KeyEvent;
 public class CountLegacyInit extends JFrame
         implements ActionListener {
     Player player1;
+    public static final int phase0 = 0;
+    public static final int phase1 = 1;
+    public static final int phase2 = 2;
+    public static final int phase3 = 3;
+    public static final int phase4 = 4;
+    public static int phaseNow = 0;
 
     JPanel framePanel;
+    int width;
+    int height;
+
     Toolkit awt;
     String frameIconImageAddress = "src/CountLegacyInit/icons/sick_bear.png";
     String cursorIconMonkeyImageAddress = "src/CountLegacyInit/icons/5monkey.jpg";
@@ -21,8 +30,7 @@ public class CountLegacyInit extends JFrame
     Image cursorIconMonkey;
     Image cursorIconPig;
     Image cursorIconFish;
-    int width;
-    int height;
+
 
     JMenuBar menuBar;
     JMenu saveAndLoadMenu;
@@ -43,12 +51,15 @@ public class CountLegacyInit extends JFrame
 
     JScrollPane textOutputScrollPane;
     JTextArea textOutput;
+    JLabel textInputLabel;
     JTextField textInput;
     String inputMessage = "player1's request: ";
     String player1SetNameMessage = "player1, please input your handle: ";
     Cursor cursorMonkey;
     Cursor cursorPig;
     Cursor cursorFish;
+
+
 
     public CountLegacyInit() {
         Player player1 = new Player();
@@ -143,13 +154,15 @@ public class CountLegacyInit extends JFrame
         textInputPanel = new JPanel();
         textInputPanel.setSize( new Dimension(width, 15));
         textInputPanel.setBorder(BorderFactory.createLineBorder(Color.LIGHT_GRAY, 2, false));
-        textInputPanel.setLayout(new GridLayout());
-        textInput = new JTextField(inputMessage, 30);
+        textInputPanel.setLayout(new BorderLayout());
+        textInputLabel = new JLabel(inputMessage);
+        textInput = new JTextField(60);
         textInput.setMargin(new Insets(0, 3, 0, 0));
         textInput.setEditable(true);
         textInput.setFocusable(true);
         textInput.addActionListener(this);
-        textInputPanel.add(textInput);
+        textInputPanel.add(textInputLabel, BorderLayout.LINE_START);
+        textInputPanel.add(textInput, BorderLayout.CENTER);
 
         framePanel.add(mainDisplayPanel, BorderLayout.CENTER);
         framePanel.add(secondaryDisplayPanel, BorderLayout.EAST);
@@ -168,7 +181,7 @@ public class CountLegacyInit extends JFrame
         textOutput.append(player1.getName() + "\n\n\n");
 
         inputMessage = player1.getName() + inputMessage.substring(7);
-        textInput.setText(inputMessage);
+        textInputLabel.setText(inputMessage);
 
         textOutput.append(player1.getName() + ", if you wish to enter THE GRID...\n"
                 + "Socket your device, then request entry...\n\n\n" +
@@ -176,16 +189,18 @@ public class CountLegacyInit extends JFrame
         textOutput.append("(it's not too late to turn back, type: \n\"eggsAreNotSupposeToBeGreen();\"\nand press the Enter key.)\n\n\n");
 
         textInput.requestFocus();
-        textInput.setCaretPosition(inputMessage.length());
+        //textInput.setCaretPosition(inputMessage.length());
+
+
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        textOutput.append(textInput.getText().substring(inputMessage.length()) + "\n\n\n");
+        textOutput.append(textInput.getText() + "\n\n\n");
 
-        textInput.setText(inputMessage);
+        textInput.setText("");
         textInput.requestFocus();
-        textInput.setCaretPosition(inputMessage.length());
+        //textInput.setCaretPosition(inputMessage.length());
     }
 
     public static void main(String[] args) {
