@@ -15,7 +15,7 @@ public class CountLegacyInit extends JFrame
     public static final int phase2 = 2;
     public static final int phase3 = 3;
     public static final int phase4 = 4;
-    public static int phaseNow = 0;
+    public static int phaseNow;
 
     JPanel framePanel;
     int width;
@@ -58,11 +58,12 @@ public class CountLegacyInit extends JFrame
     Cursor cursorMonkey;
     Cursor cursorPig;
     Cursor cursorFish;
-
+    String prevRequest = "";
 
 
     public CountLegacyInit() {
         Player player1 = new Player();
+        this.phaseNow = this.phase0;
         awt = Toolkit.getDefaultToolkit();
         width = (int)awt.getScreenSize().getWidth();
         height = (int)awt.getScreenSize().getHeight()-38;   // -38  to try to account for start bar
@@ -183,6 +184,8 @@ public class CountLegacyInit extends JFrame
         inputMessage = player1.getName() + inputMessage.substring(7);
         textInputLabel.setText(inputMessage);
 
+        this.phaseNow = this.phase1;
+
         textOutput.append(player1.getName() + ", if you wish to enter THE GRID...\n"
                 + "Socket your device, then request entry...\n\n\n" +
                 "To request entry, type:\n\"setGreenEggsAndSpam(true);\"\nand press the Enter key. \n\n\n");
@@ -196,11 +199,26 @@ public class CountLegacyInit extends JFrame
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        prevRequest = textInput.getText();
         textOutput.append(textInput.getText() + "\n\n\n");
-
         textInput.setText("");
         textInput.requestFocus();
-        //textInput.setCaretPosition(inputMessage.length());
+        //if(this.phaseNow == this.phase1) {
+            if (prevRequest.equals("setGreenEggsAndSpam(true);")) {
+                mainDisplayPanel.setSize( new Dimension(50,350) );
+                framePanel.repaint();
+                this.phaseNow = this.phase2;
+            } else if (prevRequest.equals("eggsAreNotSupposeToBeGreen();")) {
+                mainDisplayPanel.setSize( new Dimension(350,50) );
+                framePanel.repaint();
+                this.phaseNow = this.phase0;
+
+            } else {
+                textOutput.append("INPUT ERROR, may only choose from the earlier two options. \n\n\n");
+                textInput.setText("");
+                textInput.requestFocus();
+            }
+       // }
     }
 
     public static void main(String[] args) {
