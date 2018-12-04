@@ -9,7 +9,9 @@ import java.awt.event.KeyEvent;
 
 public class CountLegacyInit extends JFrame
         implements ActionListener {
+
     Player player1;
+
     public static final int phase0 = 0;
     public static final int phase1 = 1;
     public static final int phase2 = 2;
@@ -18,36 +20,24 @@ public class CountLegacyInit extends JFrame
     public static int phaseNow;
 
     JPanel framePanel;
-    int width;
-    int height;
-
+    int width, height;
     Toolkit awt;
     String frameIconImageAddress = "src/CountLegacyInit/icons/sick_bear.png";
+    Image frameIcon;
+
+    JMenuBar menuBar;
+    JMenu saveAndLoadMenu, editMenu, themeMenu;
+    JMenuItem saveCommand, loadCommand,
+            cutCommand, copyCommand, pasteCommand,
+            themeCommand0, themeCommand1, themeRosePetalGlasses;
+
     String cursorIconMonkeyImageAddress = "src/CountLegacyInit/icons/5monkey.jpg";
     String cursorIconPigImageAddress = "src/CountLegacyInit/icons/4pig.jpg";
     String cursorIconFishImageAddress = "src/CountLegacyInit/icons/2fish_purple.jpg";
-    Image frameIcon;
-    Image cursorIconMonkey;
-    Image cursorIconPig;
-    Image cursorIconFish;
+    Image cursorIconMonkey, cursorIconPig, cursorIconFish;
+    Cursor cursorMonkey, cursorPig, cursorFish;
 
-
-    JMenuBar menuBar;
-    JMenu saveAndLoadMenu;
-    JMenu editMenu;
-    JMenu themeMenu;
-    JMenuItem saveCommand;
-    JMenuItem loadCommand;
-    JMenuItem cutCommand;
-    JMenuItem copyCommand;
-    JMenuItem pasteCommand;
-    JMenuItem themeCommand0;
-    JMenuItem themeCommand1;
-    JMenuItem themeRosePetalGlasses;
-
-    JPanel mainDisplayPanel;
-    JPanel secondaryDisplayPanel;
-    JPanel textInputPanel;
+    JPanel mainDisplayPanel, secondaryDisplayPanel, textInputPanel;
 
     JScrollPane textOutputScrollPane;
     JTextArea textOutput;
@@ -55,9 +45,6 @@ public class CountLegacyInit extends JFrame
     JTextField textInput;
     String inputMessage = "player1's request: ";
     String player1SetNameMessage = "player1, please input your handle: ";
-    Cursor cursorMonkey;
-    Cursor cursorPig;
-    Cursor cursorFish;
     String prevRequest = "";
 
 
@@ -102,21 +89,6 @@ public class CountLegacyInit extends JFrame
 
     }
 
-    private void initFramePanel() {
-        framePanel = new JPanel();
-        framePanel.setPreferredSize(new Dimension(width, height));
-        framePanel.setLayout(new BorderLayout());
-
-        initMainDisplayPanel();
-        initSecondaryDisplayPanel();
-        initTextInputPanel();
-
-        framePanel.add(mainDisplayPanel, BorderLayout.CENTER);
-        framePanel.add(secondaryDisplayPanel, BorderLayout.EAST);
-        framePanel.add(textInputPanel, BorderLayout.SOUTH);
-        framePanel.setVisible(true);
-    }
-
     @Override
     public void actionPerformed(ActionEvent e) {
         prevRequest = textInput.getText();
@@ -145,6 +117,21 @@ public class CountLegacyInit extends JFrame
             }
         } );
 
+    }
+
+    private void initFramePanel() {
+        framePanel = new JPanel();
+        framePanel.setPreferredSize(new Dimension(width, height));
+        framePanel.setLayout(new BorderLayout());
+
+        initMainDisplayPanel();
+        initSecondaryDisplayPanel();
+        initTextInputPanel();
+
+        framePanel.add(mainDisplayPanel, BorderLayout.CENTER);
+        framePanel.add(secondaryDisplayPanel, BorderLayout.EAST);
+        framePanel.add(textInputPanel, BorderLayout.SOUTH);
+        framePanel.setVisible(true);
     }
 
     private void initMainDisplayPanel() {
