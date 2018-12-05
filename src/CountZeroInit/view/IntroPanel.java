@@ -6,34 +6,200 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
-public class IntroPanel extends JPanel {
+public class IntroPanel extends JPanel
+        implements ActionListener {
     CountZeroInit countZeroInit;
-    JTextField userWelcomeMessage;
-    String introMessage = "player1, please define your handle to enter the grid: ";
 
-    JTextField userInputField;
+    Toolkit awt;
+    int width, height;
+
+    JPanel mainDisplayPanel, secondaryDisplayPanel, textInputPanel;
+
+    JScrollPane textOutputScrollPane;
+    JTextArea textOutput;
+    JLabel textInputLabel;
+    JTextField textInput;
+    String inputMessage = "player1's request: ";
+    String player1SetNameMessage = "player1, please input your handle: ";
+    String prevRequest = "";
 
     public IntroPanel(CountZeroInit countZeroInit) {
         this.countZeroInit = countZeroInit;
 
-        this.setFocusable(true);
+        awt = Toolkit.getDefaultToolkit();
+        width = (int)awt.getScreenSize().getWidth();
+        height = (int)awt.getScreenSize().getHeight()-38;   // -38  to try to account for start bar
 
-        userWelcomeMessage = new JTextField(introMessage);
-        userWelcomeMessage.setMargin( new Insets(5, 5, 5, 5));
-        userWelcomeMessage.setEditable(false);
+        this.setPreferredSize( new Dimension(width, height) );
+        this.setLayout( new BorderLayout() );
 
-        userInputField = new JTextField(60);
-        userInputField.setMargin( new Insets(5, 5, 5, 5));
-        userInputField.setFocusable(true);
+        initMainDisplayPanel();
+        initSecondaryDisplayPanel();
+        initTextInputPanel();
 
+        this.add(mainDisplayPanel, BorderLayout.CENTER);
+        this.add(secondaryDisplayPanel, BorderLayout.EAST);
+        this.add(textInputPanel, BorderLayout.SOUTH);
+        this.setVisible(true);
 
-        this.add(userWelcomeMessage);
-        this.add(userInputField);
+        textInput.requestFocusInWindow();
 
+        countZeroInit.getPlayer1().setName(JOptionPane.showInputDialog(this, player1SetNameMessage));
+        textOutput.append(countZeroInit.getPlayer1().getName() + "\n\n\n");
 
+        inputMessage = countZeroInit.getPlayer1().getName() + inputMessage.substring(7);
+        textInputLabel.setText(inputMessage);
 
-        userInputField.requestFocusInWindow();
+        textOutput.append(countZeroInit.getPlayer1().getName() + ", if you wish to enter THE GRID...\n"
+                + "Socket your device, then request entry...\n\n\n" +
+                "To request entry, type:\n\"setGreenEggsAndSpam(true);\"\nand press the Enter key. \n\n\n");
+        textOutput.append("(it's not too late to turn back, type: \n\"eggsAreNotSupposeToBeGreen();\"\nand press the Enter key.)\n\n\n");
+
+        textInput.requestFocus();
+
     }
 
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        prevRequest = textInput.getText();
+        textOutput.append(textInput.getText() + "\n\n\n");
+        textInput.setText("");
+        textInput.requestFocus();
+        //if(this.phaseNow == this.phase1) {
+        if (prevRequest.equals("setGreenEggsAndSpam(true);")) {
+            mainDisplayPanel.setSize( new Dimension(50,350) );
+            //this.phaseNow = this.phase2;
+        } else if (prevRequest.equals("eggsAreNotSupposeToBeGreen();")) {
+            this.remove(mainDisplayPanel);
+            mainDisplayPanel = new MouseClickDisplayPanel();
+            this.add(mainDisplayPanel, BorderLayout.CENTER);
+            this.revalidate();
+            //this.phaseNow = this.phase0;
+        } else {
+            textOutput.append("INPUT ERROR, may only choose from the earlier two options. \n\n\n");
+            textInput.setText("");
+            textInput.requestFocus();
+        }
+        // }
+    }
+
+    private void initMainDisplayPanel() {
+        mainDisplayPanel = new BackgroundDisplayPanel((width-(int)(width*0.25)), height-(15 /*+ menuBar.getHeight()*/));
+        mainDisplayPanel.setPreferredSize( new Dimension((width-(int)(width*0.25)), height-(15 /*+ menuBar.getHeight()*/)) );
+        mainDisplayPanel.setBorder(BorderFactory.createLineBorder(Color.YELLOW, 3, false));
+        //mainDisplayPanel.setCursor(cursorMonkey);
+    }
+    private void initSecondaryDisplayPanel() {
+        secondaryDisplayPanel = new JPanel();
+        secondaryDisplayPanel.setSize( new Dimension((width-(int)(width*0.75)), (height-(15 /*+ menuBar.getHeight()*/))));
+        secondaryDisplayPanel.setBackground(Color.LIGHT_GRAY);
+        secondaryDisplayPanel.setBorder(BorderFactory.createLineBorder(Color.BLUE, 2, false));
+        secondaryDisplayPanel.setLayout(new FlowLayout());
+        textOutput = new JTextArea(player1SetNameMessage,38, 28);
+        textOutput.setSize(new Dimension((width-(int)(width*0.75)), (height-(15 /*+ menuBar.getHeight()*/)))); // 15 for the textInput
+        textOutput.setMargin(new Insets(0, 3, 0, 0));
+        textOutput.setLineWrap(true);
+        textOutput.setWrapStyleWord(true);
+        textOutput.setEditable(false);
+        textOutputScrollPane = new JScrollPane(textOutput);
+        textOutputScrollPane.setSize(new Dimension ((width-(int)(width*0.75)), (height-(15 /*+ menuBar.getHeight()*/))));
+        textOutputScrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+        secondaryDisplayPanel.add(textOutputScrollPane);
+        //secondaryDisplayPanel.setCursor(cursorPig);
+    }
+    private void initTextInputPanel() {
+        textInputPanel = new JPanel();
+        textInputPanel.setSize( new Dimension(width, 15));
+        textInputPanel.setBorder(BorderFactory.createLineBorder(Color.RED, 2, false));
+        textInputPanel.setLayout(new BorderLayout());
+        textInputLabel = new JLabel(inputMessage);
+        textInput = new JTextField(60);
+        textInput.setMargin(new Insets(0, 3, 0, 0));
+        textInput.setEditable(true);
+        textInput.setFocusable(true);
+        textInput.addActionListener(this);
+        textInputPanel.add(textInputLabel, BorderLayout.LINE_START);
+        textInputPanel.add(textInput, BorderLayout.CENTER);
+    }
+
+
+}
+
+
+
+
+
+class BackgroundDisplayPanel extends JPanel {
+
+    String backgroundDisplayImageAddress;
+    ImageIcon backgroundDisplayImageIcon;
+    Image backgroundDisplayImage;
+
+    public BackgroundDisplayPanel(int width, int height) {
+        this.setPreferredSize(new Dimension(width, height));
+
+        backgroundDisplayImageAddress = "src/MoonRocks_ItsNotWhatYoureThinking/cyberpunk_wallpapers(1920x1080).jpg";
+        backgroundDisplayImageIcon = new ImageIcon(backgroundDisplayImageAddress);
+        backgroundDisplayImage = backgroundDisplayImageIcon.getImage();
+
+        this.setVisible(true);
+    }
+
+    @Override
+    public void paintComponent(Graphics g) {
+        g.drawImage(backgroundDisplayImage, 0, 0, this.getWidth(), this.getHeight(), 0, 0, 1920, 1080, null);
+    }
+}
+
+
+
+
+class MouseClickDisplayPanel extends JPanel {
+    private int squareX = 50;
+    private int squareY = 50;
+    private int squareW = 20;
+    private int squareH = 20;
+
+    public MouseClickDisplayPanel() {
+        setBorder(BorderFactory.createLineBorder(Color.BLACK));
+
+        addMouseListener( new MouseAdapter() {
+            public void mousePressed(MouseEvent e) {
+                moveSquare(e.getX(), e.getY());
+            }
+        });
+        addMouseMotionListener( new MouseAdapter() {
+            public void mouseDragged(MouseEvent e) {
+                moveSquare(e.getX(), e.getY());
+            }
+        });
+    }
+    private void moveSquare(int x, int y) {
+        int OFFSET = 1;
+        if ((squareX!=x) || (squareY!=y)) {
+            repaint(squareX, squareY, squareW+OFFSET, squareH+OFFSET);
+            squareX = x;
+            squareY = y;
+            repaint(squareX, squareY, squareW+OFFSET, squareH+OFFSET);
+        }
+    }
+
+    // this is ***overriding*** getPreferredSize().
+    public Dimension getPreferredSize() {
+        return new Dimension(250, 200);
+    }
+
+    // this is overriding paintComponent(Graphics g).
+    public void paintComponent(Graphics g) {
+        super.paintComponent(g);
+
+        g.drawString("This is my custom Panel!", 10, 20);
+        g.setColor(Color.RED);
+        g.fillRect(squareX, squareY, squareW, squareH);
+        g.setColor(Color.BLACK);
+        g.drawRect(squareX, squareY, squareW, squareH);
+    }
 }

@@ -41,7 +41,7 @@ public class Displayer extends JFrame {
         startMenuPanel = new StartMenuPanel(countZeroInit);
 
         // Using this line to select the module to work on.
-        currentPanel = getGamePanel();
+        currentPanel = getIntroPanel();
 
         this.setContentPane(currentPanel);
         this.setVisible(true);

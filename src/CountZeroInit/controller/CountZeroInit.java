@@ -67,7 +67,7 @@ public class CountZeroInit
         displayer = new Displayer(this, getCurrentMap());
 
         // Using this line to select the module to work on.
-        setCurrentState(getGameState());
+        setCurrentState(getIntroState());
     }
 
 /*    public void gameStart() {
