@@ -32,7 +32,7 @@ public class CountZeroInit
 
         gameInit();
 
-        gameStart();
+//        gameStart();
 
     }
 
@@ -76,14 +76,14 @@ public class CountZeroInit
             // Override run() to provide the running behavior of this thread.
             @Override
             public void run() {
-                gameLoop();
+//                gameLoop();
             }
         };
         // Start the thread. start() calls run(), which in turn calls gameLoop().
         gameThread.start();
     }
 
-    public void gameLoop() {
+/*    public void gameLoop() {
         // Regenerate the game objects for a new game.
 
         // Game loop.
@@ -94,10 +94,10 @@ public class CountZeroInit
             if (currentState instanceof GameState) {    // desired: not paused (currently configured: if in GameState)
                 // Update the state and position of all the game objects, detect collisions,
                 // and provide responses. It is one step in the game.
-                gameUpdate();
+//                gameUpdate();
             }
             // Refresh the display.
-            gameDraw();
+//            gameDraw();
             // Delay timer to provide the necessary delay to meet the target rate.
             timeTaken = System.nanoTime() - timeBegin;
             timeLeft = (UPDATE_PER_NSEC - timeTaken) / 1000000L;    // in milliseconds
@@ -113,7 +113,7 @@ public class CountZeroInit
         }
 
     }
-
+*/
     public void gameUpdate() {
         // TODO: Implement player providing input.
 
