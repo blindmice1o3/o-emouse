@@ -51,10 +51,10 @@ public class CountLegacyInit extends JFrame
     public CountLegacyInit() {
         Player player1 = new Player();
         this.phaseNow = this.phase0;
-        awt = Toolkit.getDefaultToolkit();
-        width = (int)awt.getScreenSize().getWidth();
-        height = (int)awt.getScreenSize().getHeight()-38;   // -38  to try to account for start bar
-        frameIcon = awt.getImage(frameIconImageAddress);
+//        awt = Toolkit.getDefaultToolkit();
+//        width = (int)awt.getScreenSize().getWidth();
+//        height = (int)awt.getScreenSize().getHeight()-38;   // -38  to try to account for start bar
+//        frameIcon = awt.getImage(frameIconImageAddress);
 
         initCursorIcons();
 
@@ -63,13 +63,13 @@ public class CountLegacyInit extends JFrame
 
         initFramePanel();
 
-        this.setTitle("Moon Rocks - It's NOT What You're Thinking");
-        this.setIconImage(frameIcon);
-        this.setContentPane(framePanel);
-        this.setSize(width, height);
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//        this.setTitle("Moon Rocks - It's NOT What You're Thinking");
+//        this.setIconImage(frameIcon);
+//        this.setContentPane(framePanel);
+//        this.setSize(width, height);
+//        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         textInput.requestFocusInWindow();
-        this.setVisible(true);
+//        this.setVisible(true);
 
         player1.setName(JOptionPane.showInputDialog(this, player1SetNameMessage));
         textOutput.append(player1.getName() + "\n\n\n");
@@ -104,7 +104,7 @@ public class CountLegacyInit extends JFrame
             mainDisplayPanel = new MouseClickDisplayPanel();
             framePanel.add(mainDisplayPanel, BorderLayout.CENTER);
             framePanel.revalidate();
-            framePanel.repaint();
+            //framePanel.repaint();
             //mainDisplayPanel.setSize( new Dimension(350,50) );
             //this.phaseNow = this.phase0;
         } else {

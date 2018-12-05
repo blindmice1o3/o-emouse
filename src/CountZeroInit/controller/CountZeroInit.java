@@ -12,8 +12,8 @@ import java.util.List;
 
 public class CountZeroInit
         implements Observer {
-    static final int UPDATES_PER_SEC = 4;                               // number of game update per second
-    static final long UPDATE_PER_NSEC = 1000000000L / UPDATES_PER_SEC;  // nanoseconds
+//    static final int UPDATES_PER_SEC = 4;                               // number of game update per second
+//    static final long UPDATE_PER_NSEC = 1000000000L / UPDATES_PER_SEC;  // nanoseconds
 
     State battleState, gameState, introState, itemListState, monsterListState, myMonsterListState, startMenuState;
 
@@ -22,6 +22,7 @@ public class CountZeroInit
     List<Tile> tiles;
     List<LifeForm> lifeFormsOnBoard;
     Humanoid player1;
+
     State currentState;
 
     public CountZeroInit(Map map) {
@@ -33,7 +34,6 @@ public class CountZeroInit
         gameInit();
 
 //        gameStart();
-
     }
 
     public void gameInit() {
@@ -67,7 +67,7 @@ public class CountZeroInit
         displayer = new Displayer(this, getCurrentMap());
 
         // Using this line to select the module to work on.
-        setCurrentState(getIntroState());
+        setCurrentState(getGameState());
     }
 
 /*    public void gameStart() {
@@ -76,7 +76,7 @@ public class CountZeroInit
             // Override run() to provide the running behavior of this thread.
             @Override
             public void run() {
-//                gameLoop();
+                gameLoop();
             }
         };
         // Start the thread. start() calls run(), which in turn calls gameLoop().
@@ -94,10 +94,10 @@ public class CountZeroInit
             if (currentState instanceof GameState) {    // desired: not paused (currently configured: if in GameState)
                 // Update the state and position of all the game objects, detect collisions,
                 // and provide responses. It is one step in the game.
-//                gameUpdate();
+                gameUpdate();
             }
             // Refresh the display.
-//            gameDraw();
+            gameDraw();
             // Delay timer to provide the necessary delay to meet the target rate.
             timeTaken = System.nanoTime() - timeBegin;
             timeLeft = (UPDATE_PER_NSEC - timeTaken) / 1000000L;    // in milliseconds
@@ -113,19 +113,13 @@ public class CountZeroInit
         }
 
     }
-*/
-    public void gameUpdate() {
-        // TODO: Implement player providing input.
 
+    public void gameUpdate() {}
 
-
-    }
-
-    public void gameDraw() {
-        displayer.redrawPanel();
-    }
+    public void gameDraw() {)
 
     public void gameShutdown() {}
+*/
 
     public Displayer getDisplayer() {
         return displayer;
@@ -134,8 +128,6 @@ public class CountZeroInit
     public void update() {
         displayer.redrawPanel();
     }
-
-
 
     public void initiatePlayer1(Humanoid fromMap) {
         // The following println() is just to see where initiatePlayer1() is called in the output.

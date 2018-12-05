@@ -7,15 +7,14 @@ import javax.swing.*;
 import java.awt.*;
 
 public class Displayer extends JFrame {
+    JPanel battlePanel, gamePanel, introPanel, itemListPanel, monsterListPanel, myMonsterListPanel, startMenuPanel;
+
     CountZeroInit countZeroInit;
     Map map;
-    JPanel battlePanel;
-    JPanel gamePanel;
-    JPanel introPanel;
-    JPanel itemListPanel;
-    JPanel monsterListPanel;
-    JPanel myMonsterListPanel;
-    JPanel startMenuPanel;
+    Toolkit awt;
+    int width, height;
+    String frameIconImageAddress = "src/CountLegacyInit/icons/sick_bear.png";
+    Image frameIcon;
 
     JPanel currentPanel;
 
@@ -23,8 +22,15 @@ public class Displayer extends JFrame {
         this.countZeroInit = countZeroInit;
         this.map = map;
 
-        setSize(728, 728);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        awt = Toolkit.getDefaultToolkit();
+        width = (int)awt.getScreenSize().getWidth();
+        height = (int)awt.getScreenSize().getHeight()-38;   // -38  to try to account for start bar
+        frameIcon = awt.getImage(frameIconImageAddress);
+
+        this.setTitle("Moon Rocks - It's NOT What You're Thinking");
+        this.setIconImage(frameIcon);
+        this.setSize(width, height);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         battlePanel = new BattlePanel(countZeroInit);
         gamePanel = new GamePanel(countZeroInit);
@@ -35,10 +41,10 @@ public class Displayer extends JFrame {
         startMenuPanel = new StartMenuPanel(countZeroInit);
 
         // Using this line to select the module to work on.
-        currentPanel = getIntroPanel();
+        currentPanel = getGamePanel();
 
-        getContentPane().add(currentPanel);
-        setVisible(true);
+        this.setContentPane(currentPanel);
+        this.setVisible(true);
     }
 
     public void setCurrentPanel(String currentState) {

@@ -2,26 +2,31 @@ package CountZeroInit.controller;
 
 import CountZeroInit.model.map.ForestMap;
 
+import javax.swing.*;
+
 public class GameboyColor {
     public static void main (String[] args) {
-        CountZeroInit countZeroInit = new CountZeroInit(new ForestMap());
+        SwingUtilities.invokeLater( new Runnable() {
+            public void run() {
+                CountZeroInit countZeroInit = new CountZeroInit(new ForestMap());
 
-        // Currently, the game starts off by default with currentGameState set to GameState.
-        System.out.println("Current game state: " + countZeroInit.getCurrentState());
+                // Currently, the game starts off by default with currentGameState set to GameState.
+                System.out.println("Current game state: " + countZeroInit.getCurrentState());
 
-        // The player in ForestMap starts with position (1, 4), with 3 Items in myItemList, and 2 Monsters in myMonsterList.
-        System.out.println("Player1's current position: (" + countZeroInit.getPlayer1().getCol() + ", " + countZeroInit.getPlayer1().getRow() + ")");
-        System.out.println("Player1's inventory: " + countZeroInit.getPlayer1().getMyItemList());
-        System.out.println("Player1's myMonsterList: " + countZeroInit.getPlayer1().getMyMonsterList());
+                // The player in ForestMap starts with position (1, 4), with 3 Items in myItemList, and 2 Monsters in myMonsterList.
+                System.out.println("Player1's current position: (" + countZeroInit.getPlayer1().getCol() + ", " + countZeroInit.getPlayer1().getRow() + ")");
+                System.out.println("Player1's inventory: " + countZeroInit.getPlayer1().getMyItemList());
+                System.out.println("Player1's myMonsterList: " + countZeroInit.getPlayer1().getMyMonsterList());
 
-        // The CountZeroInit's upButtonPressed() is called to change the player's row variable to decrement by two and
-        // column increment by two (3, 2).
-        //countZeroInit.getCurrentState().upButtonPressed();
-        //countZeroInit.getCurrentState().upButtonPressed();
-        //countZeroInit.getCurrentState().rightButtonPressed();
-        //countZeroInit.getCurrentState().rightButtonPressed();
-        System.out.println("Player1's current position: (" + countZeroInit.getPlayer1().getCol() + ", " + countZeroInit.getPlayer1().getRow() + ")");
-
+                // The CountZeroInit's upButtonPressed() is called to change the player's row variable to decrement by two and
+                // column increment by two (3, 2).
+                //countZeroInit.getCurrentState().upButtonPressed();
+                //countZeroInit.getCurrentState().upButtonPressed();
+                //countZeroInit.getCurrentState().rightButtonPressed();
+                //countZeroInit.getCurrentState().rightButtonPressed();
+                System.out.println("Player1's current position: (" + countZeroInit.getPlayer1().getCol() + ", " + countZeroInit.getPlayer1().getRow() + ")");
+            }
+        } );
         /*
         // The CountZeroInit's startButtonPressed() is called to change the currentGameState to StartMenuState, then is
         // navigated to call the Command for ItemListStateCommand (which sets currentGameState to ItemListState).
