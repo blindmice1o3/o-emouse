@@ -67,10 +67,10 @@ public class CountZeroInit
         displayer = new Displayer(this, getCurrentMap());
 
         // Using this line to select the module to work on.
-        setCurrentState(getGameState());
+        setCurrentState(getIntroState());
     }
 
-    public void gameStart() {
+/*    public void gameStart() {
         // Create a new game thread
         Thread gameThread = new Thread() {
             // Override run() to provide the running behavior of this thread.
@@ -83,7 +83,7 @@ public class CountZeroInit
         gameThread.start();
     }
 
-/*    public void gameLoop() {
+    public void gameLoop() {
         // Regenerate the game objects for a new game.
 
         // Game loop.

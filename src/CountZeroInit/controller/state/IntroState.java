@@ -59,7 +59,8 @@ public class IntroState implements State {
         }
 
         System.out.println("\nIt's nice to meet you " + player1.getName() + ".\n");
-        System.out.println("\nA wild " + countZeroInit.getLifeFormsOnBoard().get(0).getType() + " appeared!\nWould you like to:\n(Keep it) or (Leave it alone)?");
+        System.out.println("\nA wild " + countZeroInit.getLifeFormsOnBoard().get(0).getType() +
+                " appeared!\nWould you like to:\n(Keep it) or (Leave it alone)?");
 
         String player1Response = "";
 
