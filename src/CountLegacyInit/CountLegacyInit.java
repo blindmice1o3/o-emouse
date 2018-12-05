@@ -98,10 +98,15 @@ public class CountLegacyInit extends JFrame
         //if(this.phaseNow == this.phase1) {
         if (prevRequest.equals("setGreenEggsAndSpam(true);")) {
             mainDisplayPanel.setSize( new Dimension(50,350) );
-            this.phaseNow = this.phase2;
+            //this.phaseNow = this.phase2;
         } else if (prevRequest.equals("eggsAreNotSupposeToBeGreen();")) {
-            mainDisplayPanel.setSize( new Dimension(350,50) );
-            this.phaseNow = this.phase0;
+            framePanel.remove(mainDisplayPanel);
+            mainDisplayPanel = new MouseClickDisplayPanel();
+            framePanel.add(mainDisplayPanel, BorderLayout.CENTER);
+            framePanel.revalidate();
+            framePanel.repaint();
+            //mainDisplayPanel.setSize( new Dimension(350,50) );
+            //this.phaseNow = this.phase0;
         } else {
             textOutput.append("INPUT ERROR, may only choose from the earlier two options. \n\n\n");
             textInput.setText("");
