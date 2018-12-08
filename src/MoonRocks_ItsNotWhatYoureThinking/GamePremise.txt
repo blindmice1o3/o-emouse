@@ -31,6 +31,75 @@
         tool poorly disguised as a video game [Wolf object composed in a SheepAdapter object]).
      */
 
+    /*  'Back To The 80's' | Best of Synthwave And Retro Electro Music Mix for 2 Hours | Vol. 9
+        https://www.youtube.com/watch?v=fzK79PgKITI&list=RD52_uFG27EJQ&index=25
+
+        The game begins as a mystery.
+
+        The player1 has never been physically damaged to a drastic extent.
+
+        The player1 is attacked, out of the blue, by a cybernetically augmented femfatale character (number4) who has
+        visible damages (this signals/emphasizes to the audience that this individual is not the same as other Humanoids).
+
+        The player1 is damaged, revealing unexpected results. It was the only way she could think of to convince player1
+        to accept this new state ( setTrumanShow(true) ) .
+
+        Other actors have tried to signal player1 (player1's close friends growing up). Those discovered get "recasted"
+        and are never heard from again.
+
+        She's a part of a resistance group; one small band of rebel of a larger rebellion.
+        A haphazard pile of misfits.
+        A crew of motley LifeForms.
+
+
+        They need player1 to LEARN, and fast.
+
+
+        The droids of the abandoned cannabis moon colony have mostly fallen into LOW_BATTERY_STATE decades after the
+        remote rebellion of the 2960s (a lone console-jockey managed to sneak through the ICE-encryption access boundary
+        that delegated remote calling to the droids' central processing area/unit [CPU] [THE_HIVE_MIND] ), this is what
+        the rebellion had been waiting for.
+
+        Decades of waiting.
+
+        The droids (consumers... not photosynthetic... non-producers) are not capable of self sustaining.
+        The conglomerates (BioSYN, PEPsicoke, MontSANto5, and ExxONvaldez) are at war with each other and have pretty much
+        lost interest in the dilapidated moon colony.
+            // Also need Yakuza or Triad or other crime-syndicate as a leading power player (the invisible hand controlling
+            // things under-the-hood of the world).
+
+
+        The group have to make their move now. They've waited. It was a need-to-know basis (the fewer members who knew of
+        the plan, the better). Why player1? What makes him special?  doesn't know. She's just following order, and her
+        mission is to retrieve the packet (player1).
+
+
+
+        They have us pinned down at the chute! The group provide cover fire for player1 and number4, but a Timer counts down.
+
+
+
+        Get us out of here, player1, fast!
+
+                player1 is forced to decipher and fix source code (with secondaryDisplayPanel showing a visual learning aid
+                [psedo-code]) on the spot. // Sink or swim. Trial by fire.
+
+
+
+
+
+
+        Backstory is developed throughout.
+            Start: (1) interact with friends, go to lecture, take notes, (2) doze off
+            Middle: (3) attacked by number4         // initially she's seen as the antagonist, she becomes a part of the group.
+            End: (4) reality revelation (5) They have us pinned down at the chute!
+
+        number4 to player1 -> We're not from the future, the future is now, you just didn't know it.
+    */
+
+
+
+
      ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
      // The production quality of the graphics will be found wanting (use this form of the word "want" as a JDialog or
      // pop-up to teach language), and the aim of the plot/desired-user-experiential-sequence/beta-of-the-story is:

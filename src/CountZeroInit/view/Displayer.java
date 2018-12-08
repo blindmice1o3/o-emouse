@@ -7,7 +7,8 @@ import javax.swing.*;
 import java.awt.*;
 
 public class Displayer extends JFrame {
-    JPanel battlePanel, gamePanel, introPanel, itemListPanel, monsterListPanel, myMonsterListPanel, startMenuPanel;
+    JPanel battlePanel, gamePanel, introPanel, itemListPanel, monsterListPanel, myMonsterListPanel, startMenuPanel,
+        animationPracticePanel;
 
     CountZeroInit countZeroInit;
     Map map;
@@ -30,6 +31,8 @@ public class Displayer extends JFrame {
         this.setTitle("Moon Rocks - It's NOT What You're Thinking");
         this.setIconImage(frameIcon);
         this.setSize(width, height);
+        this.setLocationRelativeTo(null);   // Centers the window on the screen.
+        this.setResizable(false);           // The frame can NOT be resized.
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         battlePanel = new BattlePanel(countZeroInit);
@@ -39,9 +42,10 @@ public class Displayer extends JFrame {
         monsterListPanel = new MonsterListPanel(countZeroInit);
         myMonsterListPanel = new MyMonsterListPanel(countZeroInit);
         startMenuPanel = new StartMenuPanel(countZeroInit);
+        animationPracticePanel = new AnimationPracticePanel(countZeroInit);
 
         // Using this line to select the module to work on.
-        currentPanel = getIntroPanel();
+        currentPanel = getAnimationPracticePanel();
 
         this.setContentPane(currentPanel);
         this.setVisible(true);
@@ -114,6 +118,8 @@ public class Displayer extends JFrame {
     public JPanel getStartMenuPanel() {
         return startMenuPanel;
     }
+
+    public JPanel getAnimationPracticePanel() { return animationPracticePanel; }
 
 }
 
