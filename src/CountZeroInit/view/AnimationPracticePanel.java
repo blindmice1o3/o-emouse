@@ -19,7 +19,8 @@ public class AnimationPracticePanel extends JPanel
     Timer timer;
     int xImage, yImage;
 
-    int dx2 = 25;
+    int dx2 = 100;
+    int dy2 = 100;
 
 
     public AnimationPracticePanel(CountZeroInit countZeroInit) {
@@ -47,14 +48,19 @@ public class AnimationPracticePanel extends JPanel
     }
 
     public void drawImage(Graphics g) {
-        g.drawImage(image, xImage, yImage, dx2, 25, 0, 0, 256, 256, null);
+        g.drawImage(image, xImage, yImage, dx2, dy2, 0, 0, 256, 256, null);
     }
 
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        xImage = xImage + 1;
-        dx2 = dx2 + 1;
+        if ( xImage < (this.getWidth() / 2) ) {
+            xImage = xImage + 1;
+            dx2 = dx2 + 1;
+        } else {
+            yImage = yImage +1;
+            dy2 = dy2 +1;
+        }
 
         repaint();
     }
