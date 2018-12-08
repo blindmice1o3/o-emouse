@@ -13,11 +13,13 @@ public class AnimationPracticePanel extends JPanel
     String imageAddress = "src/CountLegacyInit/icons/wolfman.png";
     ImageIcon ii;
 
-    private final int DELAY = 25;
+    private final int DELAY = 50;
 
     Image image;
     Timer timer;
     int xImage, yImage;
+
+    int dx2 = 25;
 
 
     public AnimationPracticePanel(CountZeroInit countZeroInit) {
@@ -45,13 +47,14 @@ public class AnimationPracticePanel extends JPanel
     }
 
     public void drawImage(Graphics g) {
-        g.drawImage(image, xImage, yImage, 25, 25, 0, 0, 256, 256, null);
+        g.drawImage(image, xImage, yImage, dx2, 25, 0, 0, 256, 256, null);
     }
 
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        xImage++;
+        xImage = xImage + 1;
+        dx2 = dx2 + 1;
 
         repaint();
     }
