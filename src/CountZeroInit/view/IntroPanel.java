@@ -25,6 +25,7 @@ public class IntroPanel extends JPanel
     String inputMessage = "player1's request: ";
     String player1SetNameMessage = "player1, please input your handle: ";
     String prevRequest = "";
+    StringBuffer history;
 
     String cursorIconMonkeyImageAddress = "src/CountLegacyInit/icons/5monkey.jpg";
     String cursorIconPigImageAddress = "src/CountLegacyInit/icons/4pig.jpg";
@@ -57,15 +58,19 @@ public class IntroPanel extends JPanel
     public void setPlayer1Name() {
         countZeroInit.getPlayer1().setName(JOptionPane.showInputDialog(this, player1SetNameMessage));
 
-        textOutput.append(countZeroInit.getPlayer1().getName() + "\n\n\n");
+        history.append(countZeroInit.getPlayer1().getName() + "\n\n\n");
+
+        textOutput.setText(history.toString());
 
         inputMessage = countZeroInit.getPlayer1().getName() + inputMessage.substring(7);
         textInputLabel.setText(inputMessage);
 
-        textOutput.append(countZeroInit.getPlayer1().getName() + ", if you wish to enter THE GRID...\n"
-                + "Socket your device, then request entry...\n\n\n" +
-                "To request entry, type:\n\"setGreenEggsAndSpam(true);\"\nand press the Enter key. \n\n\n");
-        textOutput.append("(it's not too late to turn back, type: \n\"eggsAreNotSupposeToBeGreen();\"\nand press the Enter key.)\n\n\n");
+        history.append(countZeroInit.getPlayer1().getName() + ", if you wish to enter THE GRID...\n" +
+                "Socket your device, then request entry...\n\n\n" +
+                "To request entry, type:\n\"setGreenEggsAndSpam(true);\"\nand press the Enter key. \n\n\n" +
+                "(it's not too late to turn back, type: \n\"eggsAreNotSupposeToBeGreen();\"\nand press the Enter key.)\n\n\n");
+        textOutput.setText(history.toString());
+        textOutput.setCaretPosition(history.toString().length());
 
         textInput.requestFocus();
     }
@@ -73,7 +78,8 @@ public class IntroPanel extends JPanel
     @Override
     public void actionPerformed(ActionEvent e) {
         prevRequest = textInput.getText();
-        textOutput.append(textInput.getText() + "\n\n\n");
+        history.append(textInput.getText() + "\n\n\n");
+        textOutput.setText(history.toString());
         textInput.setText("");
         textInput.requestFocus();
         //if(this.phaseNow == this.phase1) {
@@ -108,7 +114,8 @@ public class IntroPanel extends JPanel
 
             //this.phaseNow = this.phase0;
         } else {
-            textOutput.append("INPUT ERROR, may only choose from the earlier two options. \n\n\n");
+            history.append("INPUT ERROR, may only choose from the earlier two options. \n\n\n");
+            textOutput.setText(history.toString());
             textInput.setText("");
             textInput.requestFocus();
         }
@@ -133,6 +140,7 @@ public class IntroPanel extends JPanel
         secondaryDisplayPanel.setBackground(Color.LIGHT_GRAY);
         secondaryDisplayPanel.setBorder(BorderFactory.createLineBorder(Color.BLUE, 2, false));
         secondaryDisplayPanel.setLayout(new FlowLayout());
+        history = new StringBuffer();
         textOutput = new JTextArea(player1SetNameMessage,38, 28);
         textOutput.setSize(new Dimension((width-(int)(width*0.75)), (height-(15 /*+ menuBar.getHeight()*/)))); // 15 for the textInput
         textOutput.setMargin(new Insets(0, 3, 0, 0));

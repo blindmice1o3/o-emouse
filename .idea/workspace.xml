@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4264d6a-6746-43ef-b695-128d92c400ed" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/view/AnimationPracticePanel.class" afterPath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/view/AnimationPracticePanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/view/BackgroundDisplayPanel.class" afterPath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/view/BackgroundDisplayPanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/view/Displayer.class" afterPath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/view/Displayer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/view/IntroPanel.class" afterPath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/view/IntroPanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/view/MouseClickDisplayPanel$1.class" afterPath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/view/MouseClickDisplayPanel$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/view/MouseClickDisplayPanel$2.class" afterPath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/view/MouseClickDisplayPanel$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/view/MouseClickDisplayPanel.class" afterPath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/view/MouseClickDisplayPanel.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CountZeroInit/controller/CountZeroInit.java" afterPath="$PROJECT_DIR$/src/CountZeroInit/controller/CountZeroInit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CountZeroInit/view/AnimationPracticePanel.java" afterPath="$PROJECT_DIR$/src/CountZeroInit/view/AnimationPracticePanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CountZeroInit/view/Displayer.java" afterPath="$PROJECT_DIR$/src/CountZeroInit/view/Displayer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CountZeroInit/view/IntroPanel.java" afterPath="$PROJECT_DIR$/src/CountZeroInit/view/IntroPanel.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -65,8 +55,8 @@
       <file leaf-file-name="IntroPanel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CountZeroInit/view/IntroPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+            <state relative-caret-position="442">
+              <caret line="118" column="34" lean-forward="true" selection-start-line="118" selection-start-column="34" selection-end-line="118" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1006,8 +996,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CountZeroInit/view/IntroPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+        <state relative-caret-position="442">
+          <caret line="118" column="34" lean-forward="true" selection-start-line="118" selection-start-column="34" selection-end-line="118" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
