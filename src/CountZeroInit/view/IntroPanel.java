@@ -58,14 +58,10 @@ public class IntroPanel extends JPanel
     public void setPlayer1Name() {
         countZeroInit.getPlayer1().setName(JOptionPane.showInputDialog(this, player1SetNameMessage));
 
-        history.append(countZeroInit.getPlayer1().getName() + "\n\n\n");
-
-        textOutput.setText(history.toString());
-
         inputMessage = countZeroInit.getPlayer1().getName() + inputMessage.substring(7);
         textInputLabel.setText(inputMessage);
 
-        history.append(countZeroInit.getPlayer1().getName() + ", if you wish to enter THE GRID...\n" +
+        history.append("\n\n\n" + countZeroInit.getPlayer1().getName() + ", if you wish to enter THE GRID...\n" +
                 "Socket your device, then request entry...\n\n\n" +
                 "To request entry, type:\n\"setGreenEggsAndSpam(true);\"\nand press the Enter key. \n\n\n" +
                 "(it's not too late to turn back, type: \n\"eggsAreNotSupposeToBeGreen();\"\nand press the Enter key.)\n\n\n");
@@ -89,6 +85,8 @@ public class IntroPanel extends JPanel
             this.remove(mainDisplayPanel);
             mainDisplayPanel = countZeroInit.getDisplayer().getGamePanel();
             this.add(mainDisplayPanel, BorderLayout.CENTER);
+            mainDisplayPanel.setRequestFocusEnabled(true);
+            mainDisplayPanel.grabFocus();
             this.revalidate();
 
             //mainDisplayPanel.setSize( new Dimension(50,350) );
@@ -132,6 +130,7 @@ public class IntroPanel extends JPanel
         mainDisplayPanel = new BackgroundDisplayPanel((width-(int)(width*0.25)), height-(15 /*+ menuBar.getHeight()*/));
         mainDisplayPanel.setPreferredSize( new Dimension((width-(int)(width*0.25)), height-(15 /*+ menuBar.getHeight()*/)) );
         mainDisplayPanel.setBorder(BorderFactory.createLineBorder(Color.YELLOW, 3, false));
+        mainDisplayPanel.setFocusable(true);
         mainDisplayPanel.setCursor(cursorMonkey);
     }
     private void initSecondaryDisplayPanel() {
@@ -141,7 +140,8 @@ public class IntroPanel extends JPanel
         secondaryDisplayPanel.setBorder(BorderFactory.createLineBorder(Color.BLUE, 2, false));
         secondaryDisplayPanel.setLayout(new FlowLayout());
         history = new StringBuffer();
-        textOutput = new JTextArea(player1SetNameMessage,38, 28);
+        history.append(player1SetNameMessage);
+        textOutput = new JTextArea(history.toString(),38, 28);
         textOutput.setSize(new Dimension((width-(int)(width*0.75)), (height-(15 /*+ menuBar.getHeight()*/)))); // 15 for the textInput
         textOutput.setMargin(new Insets(0, 3, 0, 0));
         textOutput.setLineWrap(true);

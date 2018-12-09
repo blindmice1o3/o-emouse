@@ -25,17 +25,17 @@ public class CountLegacyInit extends JFrame
     String frameIconImageAddress = "src/CountLegacyInit/icons/sick_bear.png";
     Image frameIcon;
 
-    //JMenuBar menuBar;
-    //JMenu saveAndLoadMenu, editMenu, themeMenu;
-    //JMenuItem saveCommand, loadCommand,
-    //        cutCommand, copyCommand, pasteCommand,
-    //        themeCommand0, themeCommand1, themeRosePetalGlasses;
+    JMenuBar menuBar;
+    JMenu saveAndLoadMenu, editMenu, themeMenu;
+    JMenuItem saveCommand, loadCommand,
+            cutCommand, copyCommand, pasteCommand,
+            themeCommand0, themeCommand1, themeRosePetalGlasses;
 
-    //String cursorIconMonkeyImageAddress = "src/CountLegacyInit/icons/5monkey.jpg";
-    //String cursorIconPigImageAddress = "src/CountLegacyInit/icons/4pig.jpg";
-    //String cursorIconFishImageAddress = "src/CountLegacyInit/icons/2fish_purple.jpg";
-    //Image cursorIconMonkey, cursorIconPig, cursorIconFish;
-    //Cursor cursorMonkey, cursorPig, cursorFish;
+    String cursorIconMonkeyImageAddress = "src/CountLegacyInit/icons/5monkey.jpg";
+    String cursorIconPigImageAddress = "src/CountLegacyInit/icons/4pig.jpg";
+    String cursorIconFishImageAddress = "src/CountLegacyInit/icons/2fish_purple.jpg";
+    Image cursorIconMonkey, cursorIconPig, cursorIconFish;
+    Cursor cursorMonkey, cursorPig, cursorFish;
 
     JPanel mainDisplayPanel, secondaryDisplayPanel, textInputPanel;
 
@@ -51,49 +51,47 @@ public class CountLegacyInit extends JFrame
     public CountLegacyInit() {
         Player player1 = new Player();
         this.phaseNow = this.phase0;
-            //awt = Toolkit.getDefaultToolkit();
-            //width = (int)awt.getScreenSize().getWidth();
-            //height = (int)awt.getScreenSize().getHeight()-38;   // -38  to try to account for start bar
-            //frameIcon = awt.getImage(frameIconImageAddress);
+        awt = Toolkit.getDefaultToolkit();
+        width = (int)awt.getScreenSize().getWidth();
+        height = (int)awt.getScreenSize().getHeight()-38;   // -38  to try to account for start bar
+        frameIcon = awt.getImage(frameIconImageAddress);
 
-            //initCursorIcons();
+        initCursorIcons();
 
-            //initMenuBar();
-            //this.setJMenuBar(menuBar);
+        initMenuBar();
+        this.setJMenuBar(menuBar);
 
-            //initFramePanel();
+        initFramePanel();
 
-            //this.setTitle("Moon Rocks - It's NOT What You're Thinking");
-            //this.setIconImage(frameIcon);
-            //this.setContentPane(framePanel);
-            //this.setSize(width, height);
-            //this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            //textInput.requestFocusInWindow();
-            //this.setVisible(true);
+        this.setTitle("Moon Rocks - It's NOT What You're Thinking");
+        this.setIconImage(frameIcon);
+        this.setContentPane(framePanel);
+        this.setSize(width, height);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        textInput.requestFocusInWindow();
+        this.setVisible(true);
 
-/*      player1.setName(JOptionPane.showInputDialog(this, player1SetNameMessage));
+        player1.setName(JOptionPane.showInputDialog(this, player1SetNameMessage));
         textOutput.append(player1.getName() + "\n\n\n");
 
         inputMessage = player1.getName() + inputMessage.substring(7);
         textInputLabel.setText(inputMessage);
-*/
+
         this.phaseNow = this.phase1;
 
-/*      textOutput.append(player1.getName() + ", if you wish to enter THE GRID...\n"
+        textOutput.append(player1.getName() + ", if you wish to enter THE GRID...\n"
                 + "Socket your device, then request entry...\n\n\n" +
                 "To request entry, type:\n\"setGreenEggsAndSpam(true);\"\nand press the Enter key. \n\n\n");
         textOutput.append("(it's not too late to turn back, type: \n\"eggsAreNotSupposeToBeGreen();\"\nand press the Enter key.)\n\n\n");
 
         textInput.requestFocus();
-*/
 
-        //textInput.setCaretPosition(inputMessage.length());
     }
 
 
     @Override
     public void actionPerformed(ActionEvent e) {
-    /*    prevRequest = textInput.getText();
+        prevRequest = textInput.getText();
         textOutput.append(textInput.getText() + "\n\n\n");
         textInput.setText("");
         textInput.requestFocus();
@@ -114,7 +112,7 @@ public class CountLegacyInit extends JFrame
             textInput.setText("");
             textInput.requestFocus();
         }
-        // } */
+        // }
     }
 
 
@@ -128,20 +126,20 @@ public class CountLegacyInit extends JFrame
     }
 
     private void initFramePanel() {
-        //framePanel = new JPanel();
-        //framePanel.setPreferredSize( new Dimension(width, height) );
-        //framePanel.setLayout( new BorderLayout() );
+        framePanel = new JPanel();
+        framePanel.setPreferredSize( new Dimension(width, height) );
+        framePanel.setLayout( new BorderLayout() );
 
-        //initMainDisplayPanel();
-        //initSecondaryDisplayPanel();
-        //initTextInputPanel();
+        initMainDisplayPanel();
+        initSecondaryDisplayPanel();
+        initTextInputPanel();
 
-        //framePanel.add(mainDisplayPanel, BorderLayout.CENTER);
-        //framePanel.add(secondaryDisplayPanel, BorderLayout.EAST);
-        //framePanel.add(textInputPanel, BorderLayout.SOUTH);
-        //framePanel.setVisible(true);
+        framePanel.add(mainDisplayPanel, BorderLayout.CENTER);
+        framePanel.add(secondaryDisplayPanel, BorderLayout.EAST);
+        framePanel.add(textInputPanel, BorderLayout.SOUTH);
+        framePanel.setVisible(true);
     }
-/*
+
     private void initMainDisplayPanel() {
         mainDisplayPanel = new BackgroundDisplayPanel((width-(int)(width*0.25)), height-(15 + menuBar.getHeight()));
         mainDisplayPanel.setPreferredSize( new Dimension((width-(int)(width*0.25)), height-(15 + menuBar.getHeight())) );
@@ -180,9 +178,9 @@ public class CountLegacyInit extends JFrame
         textInputPanel.add(textInputLabel, BorderLayout.LINE_START);
         textInputPanel.add(textInput, BorderLayout.CENTER);
     }
-*/
 
-/*
+
+
     private void initCursorIcons() {
         cursorIconMonkey = awt.getImage(cursorIconMonkeyImageAddress);
         cursorIconPig = awt.getImage(cursorIconPigImageAddress);
@@ -252,5 +250,5 @@ public class CountLegacyInit extends JFrame
         themeMenu.addSeparator();
         themeMenu.add(themeRosePetalGlasses);
     }
-*/
+
 }
