@@ -26,6 +26,11 @@ public class IntroPanel extends JPanel
     String player1SetNameMessage = "player1, please input your handle: ";
     String prevRequest = "";
 
+    String cursorIconMonkeyImageAddress = "src/CountLegacyInit/icons/5monkey.jpg";
+    String cursorIconPigImageAddress = "src/CountLegacyInit/icons/4pig.jpg";
+    Image cursorIconMonkey, cursorIconPig;
+    Cursor cursorMonkey, cursorPig;
+
     public IntroPanel(CountZeroInit countZeroInit) {
         this.countZeroInit = countZeroInit;
 
@@ -35,6 +40,8 @@ public class IntroPanel extends JPanel
 
         this.setPreferredSize( new Dimension(width, height) );
         this.setLayout( new BorderLayout() );
+
+        initCursorIcons();
 
         initMainDisplayPanel();
         initSecondaryDisplayPanel();
@@ -85,12 +92,18 @@ public class IntroPanel extends JPanel
         }
         // }
     }
+    private void initCursorIcons() {
+        cursorIconMonkey = awt.getImage(cursorIconMonkeyImageAddress);
+        cursorMonkey = awt.createCustomCursor(cursorIconMonkey, new Point(0,0), "cursorMonkey");
+        cursorIconPig = awt.getImage(cursorIconPigImageAddress);
+        cursorPig = awt.createCustomCursor(cursorIconPig, new Point(0, 0), "cursorPig");
+    }
 
     private void initMainDisplayPanel() {
         mainDisplayPanel = new BackgroundDisplayPanel((width-(int)(width*0.25)), height-(15 /*+ menuBar.getHeight()*/));
         mainDisplayPanel.setPreferredSize( new Dimension((width-(int)(width*0.25)), height-(15 /*+ menuBar.getHeight()*/)) );
         mainDisplayPanel.setBorder(BorderFactory.createLineBorder(Color.YELLOW, 3, false));
-        //mainDisplayPanel.setCursor(cursorMonkey);
+        mainDisplayPanel.setCursor(cursorMonkey);
     }
     private void initSecondaryDisplayPanel() {
         secondaryDisplayPanel = new JPanel();
@@ -108,7 +121,7 @@ public class IntroPanel extends JPanel
         textOutputScrollPane.setSize(new Dimension ((width-(int)(width*0.75)), (height-(15 /*+ menuBar.getHeight()*/))));
         textOutputScrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
         secondaryDisplayPanel.add(textOutputScrollPane);
-        //secondaryDisplayPanel.setCursor(cursorPig);
+        secondaryDisplayPanel.setCursor(cursorPig);
     }
     private void initTextInputPanel() {
         textInputPanel = new JPanel();

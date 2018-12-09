@@ -4,7 +4,9 @@ import CountZeroInit.controller.CountZeroInit;
 import CountZeroInit.model.map.Map;
 
 import javax.swing.*;
+import javax.swing.text.DefaultEditorKit;
 import java.awt.*;
+import java.awt.event.KeyEvent;
 
 public class Displayer extends JFrame {
     JPanel battlePanel, gamePanel, introPanel, itemListPanel, monsterListPanel, myMonsterListPanel, startMenuPanel,
@@ -18,6 +20,20 @@ public class Displayer extends JFrame {
     Image frameIcon;
 
     JPanel currentPanel;
+
+    //========================================================================================//
+
+    JMenuBar menuBar;
+    JMenu saveAndLoadMenu, editMenu, themeMenu;
+    JMenuItem saveCommand, loadCommand,
+            cutCommand, copyCommand, pasteCommand,
+            themeCommand0, themeCommand1, themeRosePetalGlasses;
+
+    String cursorIconFishImageAddress = "src/CountLegacyInit/icons/2fish_purple.jpg";
+    Image cursorIconFish;
+    Cursor cursorFish;
+
+    //==========================================================================================//
 
     public Displayer(CountZeroInit countZeroInit, Map map) {
         this.countZeroInit = countZeroInit;
@@ -35,6 +51,11 @@ public class Displayer extends JFrame {
         this.setResizable(false);           // The frame can NOT be resized.
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
+        initCursorIcons();
+
+        initMenuBar();
+        this.setJMenuBar(menuBar);
+
         battlePanel = new BattlePanel(countZeroInit);
         gamePanel = new GamePanel(countZeroInit);
         introPanel = new IntroPanel(countZeroInit);
@@ -45,7 +66,7 @@ public class Displayer extends JFrame {
         animationPracticePanel = new AnimationPracticePanel(countZeroInit);
 
         // Using this line to select the module to work on.
-        currentPanel = getAnimationPracticePanel();
+        currentPanel = getIntroPanel();
 
         this.setContentPane(currentPanel);
         this.setVisible(true);
@@ -86,6 +107,85 @@ public class Displayer extends JFrame {
        currentPanel.repaint();
 
     }
+
+
+
+
+
+    //============================================================================//
+
+    private void initCursorIcons() {
+        cursorIconFish = awt.getImage(cursorIconFishImageAddress);
+        cursorFish = awt.createCustomCursor(cursorIconFish, new Point(0, 0), "cursorFish");
+    }
+
+    private void initMenuBar() {
+        menuBar = new JMenuBar();
+
+        initSaveAndLoadMenu();
+        initEditMenu();
+        initThemeMenu();
+
+        menuBar.add(saveAndLoadMenu);
+        menuBar.add(editMenu);
+        menuBar.add(themeMenu);
+    }
+
+    private void initSaveAndLoadMenu() {
+        saveAndLoadMenu = new JMenu("Save/Load");
+        saveCommand = new JMenuItem("Record \"current\" state");
+        saveCommand.setToolTipText("save");
+        loadCommand = new JMenuItem("Reboot to \"previous\" state");
+        loadCommand.setToolTipText("load");
+        // saveCommand.addActionListener(listener);
+        // loadCommand.addActionListener(listener);
+        saveAndLoadMenu.add(saveCommand);
+        saveAndLoadMenu.addSeparator();
+        saveAndLoadMenu.add(loadCommand);
+    }
+    private void initEditMenu() {
+        editMenu = new JMenu("Edit");
+        editMenu.setMnemonic(KeyEvent.VK_E);
+        cutCommand = new JMenuItem(new DefaultEditorKit.CutAction());
+        cutCommand.setText("Cut");
+        cutCommand.setToolTipText("cut (ctrl + x)");
+        cutCommand.setMnemonic(KeyEvent.VK_X);
+        copyCommand = new JMenuItem(new DefaultEditorKit.CopyAction());
+        copyCommand.setText("Copy");
+        copyCommand.setToolTipText("copy (ctrl + c)");
+        copyCommand.setMnemonic(KeyEvent.VK_C);
+        pasteCommand = new JMenuItem(new DefaultEditorKit.PasteAction());
+        pasteCommand.setText("Paste");
+        pasteCommand.setToolTipText("paste (ctrl + v)");
+        pasteCommand.setMnemonic(KeyEvent.VK_V);
+        editMenu.add(cutCommand);
+        editMenu.add(copyCommand);
+        editMenu.addSeparator();
+        editMenu.add(pasteCommand);
+    }
+    private void initThemeMenu() {
+        themeMenu = new JMenu("Theme");
+        themeCommand0 = new JMenuItem("ThemeCommand0");
+        themeCommand0.setToolTipText("TODO: implement themeCommand0");
+        themeCommand1 = new JMenuItem("ThemeCommand1");
+        themeCommand1.setToolTipText("TODO: implement themeCommand1");
+        themeRosePetalGlasses = new JMenuItem("ThemeRosePetalGlasses");
+        themeRosePetalGlasses.setToolTipText("from nothing,\nto nothing,\nbut this is everything inbetween");
+        themeRosePetalGlasses.setCursor(cursorFish);
+        // themeCommand0.addActionListener(listener);
+        // themeCommand1.addActionListener(listener);
+        themeMenu.add(themeCommand0);
+        themeMenu.add(themeCommand1);
+        themeMenu.addSeparator();
+        themeMenu.add(themeRosePetalGlasses);
+    }
+
+
+
+
+
+
+    //=============================================================================//
 
     public JPanel getCurrentPanel() {
         return currentPanel;
