@@ -52,9 +52,11 @@ public class IntroPanel extends JPanel
         this.add(textInputPanel, BorderLayout.SOUTH);
         this.setVisible(true);
 
-        textInput.requestFocusInWindow();
+    }
 
+    public void setPlayer1Name() {
         countZeroInit.getPlayer1().setName(JOptionPane.showInputDialog(this, player1SetNameMessage));
+
         textOutput.append(countZeroInit.getPlayer1().getName() + "\n\n\n");
 
         inputMessage = countZeroInit.getPlayer1().getName() + inputMessage.substring(7);
@@ -66,7 +68,6 @@ public class IntroPanel extends JPanel
         textOutput.append("(it's not too late to turn back, type: \n\"eggsAreNotSupposeToBeGreen();\"\nand press the Enter key.)\n\n\n");
 
         textInput.requestFocus();
-
     }
 
     @Override
@@ -91,6 +92,11 @@ public class IntroPanel extends JPanel
             this.remove(mainDisplayPanel);
             mainDisplayPanel = countZeroInit.getDisplayer().getAnimationPracticePanel();
             this.add(mainDisplayPanel, BorderLayout.CENTER);
+
+            AnimationPracticePanel animationPracticePanel = (AnimationPracticePanel)countZeroInit.getDisplayer().getAnimationPracticePanel();
+            Timer timer = animationPracticePanel.getTimer();
+            timer.start();
+
             this.revalidate();
 
             /*

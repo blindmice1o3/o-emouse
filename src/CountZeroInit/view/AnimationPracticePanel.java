@@ -10,6 +10,7 @@ import java.awt.event.ActionListener;
 public class AnimationPracticePanel extends JPanel
         implements ActionListener {
     CountZeroInit countZeroInit;
+
     String imageAddress = "src/CountLegacyInit/icons/wolfman.png";
     ImageIcon ii;
 
@@ -36,7 +37,7 @@ public class AnimationPracticePanel extends JPanel
 
 
         timer = new Timer(DELAY, this);
-        timer.start();
+
     }
 
 
@@ -49,11 +50,14 @@ public class AnimationPracticePanel extends JPanel
 
     public void drawImage(Graphics g) {
         g.drawImage(image, xImage, yImage, dx2, dy2, 0, 0, 256, 256, null);
+        Toolkit.getDefaultToolkit().sync();
     }
 
 
     @Override
     public void actionPerformed(ActionEvent e) {
+
+
         if ( xImage < (this.getWidth() / 2) ) {
             xImage = xImage + 1;
             dx2 = dx2 + 1;
@@ -63,5 +67,9 @@ public class AnimationPracticePanel extends JPanel
         }
 
         repaint();
+    }
+
+    public Timer getTimer() {
+        return timer;
     }
 }

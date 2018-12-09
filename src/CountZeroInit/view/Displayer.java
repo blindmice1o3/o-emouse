@@ -70,6 +70,7 @@ public class Displayer extends JFrame {
 
         this.setContentPane(currentPanel);
         this.setVisible(true);
+
     }
 
     public void setCurrentPanel(String currentState) {

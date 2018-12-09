@@ -7,6 +7,7 @@ import CountZeroInit.model.creatures.LifeForm;
 import CountZeroInit.model.map.Map;
 import CountZeroInit.model.surroundings.Tile;
 import CountZeroInit.view.Displayer;
+import CountZeroInit.view.IntroPanel;
 
 import java.util.List;
 
@@ -68,6 +69,9 @@ public class CountZeroInit
 
         // Using this line to select the module to work on.
         setCurrentState(getIntroState());
+
+        IntroPanel initIntroPanel = (IntroPanel)displayer.getIntroPanel();
+        initIntroPanel.setPlayer1Name();
     }
 
 /*    public void gameStart() {
