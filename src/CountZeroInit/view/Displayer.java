@@ -100,7 +100,7 @@ public class Displayer extends JFrame {
 
         //getContentPane().removeAll();
         //getContentPane().add(currentPanel);
-        getContentPane().repaint();
+        currentPanel.repaint();
     }
 
     public void redrawPanel() {

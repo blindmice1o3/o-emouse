@@ -77,13 +77,29 @@ public class IntroPanel extends JPanel
         textInput.requestFocus();
         //if(this.phaseNow == this.phase1) {
         if (prevRequest.equals("setGreenEggsAndSpam(true);")) {
-            mainDisplayPanel.setSize( new Dimension(50,350) );
+            countZeroInit.setCurrentState(countZeroInit.getGameState());
+
+            this.remove(mainDisplayPanel);
+            mainDisplayPanel = countZeroInit.getDisplayer().getGamePanel();
+            this.add(mainDisplayPanel, BorderLayout.CENTER);
+            this.revalidate();
+
+            //mainDisplayPanel.setSize( new Dimension(50,350) );
             //this.phaseNow = this.phase2;
         } else if (prevRequest.equals("eggsAreNotSupposeToBeGreen();")) {
+
+            this.remove(mainDisplayPanel);
+            mainDisplayPanel = countZeroInit.getDisplayer().getAnimationPracticePanel();
+            this.add(mainDisplayPanel, BorderLayout.CENTER);
+            this.revalidate();
+
+            /*
             this.remove(mainDisplayPanel);
             mainDisplayPanel = new MouseClickDisplayPanel();
             this.add(mainDisplayPanel, BorderLayout.CENTER);
             this.revalidate();
+            */
+
             //this.phaseNow = this.phase0;
         } else {
             textOutput.append("INPUT ERROR, may only choose from the earlier two options. \n\n\n");
