@@ -11,7 +11,7 @@ public class AnimationPracticePanel extends JPanel
         implements ActionListener {
     CountZeroInit countZeroInit;
 
-    String imageAddress = "src/CountLegacyInit/icons/wolfman.png";
+    String imageAddress = "src/CountZeroInit/model/icons/wolfman.png";
     ImageIcon ii;
 
     private final int DELAY = 50;

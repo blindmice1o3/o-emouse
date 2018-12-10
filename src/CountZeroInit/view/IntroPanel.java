@@ -28,8 +28,8 @@ public class IntroPanel extends JPanel
     String prevRequest = "";
     StringBuffer history;
 
-    String cursorIconMonkeyImageAddress = "src/CountLegacyInit/icons/5monkey.jpg";
-    String cursorIconPigImageAddress = "src/CountLegacyInit/icons/4pig.jpg";
+    String cursorIconMonkeyImageAddress = "src/CountZeroInit/model/icons/5monkey.jpg";
+    String cursorIconPigImageAddress = "src/CountZeroInit/model/icons/4pig.jpg";
     Image cursorIconMonkey, cursorIconPig;
     Cursor cursorMonkey, cursorPig;
 
@@ -199,7 +199,7 @@ class BackgroundDisplayPanel extends JPanel {
     public BackgroundDisplayPanel(int width, int height) {
         this.setPreferredSize(new Dimension(width, height));
 
-        backgroundDisplayImageAddress = "src/MoonRocks_ItsNotWhatYoureThinking/cyberpunk_wallpapers(1920x1080).jpg";
+        backgroundDisplayImageAddress = "src/CountZeroInit/model/icons/cyberpunk_wallpapers(1920x1080).jpg";
         backgroundDisplayImageIcon = new ImageIcon(backgroundDisplayImageAddress);
         backgroundDisplayImage = backgroundDisplayImageIcon.getImage();
 

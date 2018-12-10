@@ -16,7 +16,7 @@ public class Displayer extends JFrame {
     Map map;
     Toolkit awt;
     int width, height;
-    String frameIconImageAddress = "src/CountLegacyInit/icons/sick_bear.png";
+    String frameIconImageAddress = "src/CountZeroInit/model/icons/sick_bear.png";
     Image frameIcon;
 
     JPanel currentPanel;
@@ -29,7 +29,7 @@ public class Displayer extends JFrame {
             cutCommand, copyCommand, pasteCommand,
             themeCommand0, themeCommand1, themeRosePetalGlasses;
 
-    String cursorIconFishImageAddress = "src/CountLegacyInit/icons/2fish_purple.jpg";
+    String cursorIconFishImageAddress = "src/CountZeroInit/model/icons/2fish_purple.jpg";
     Image cursorIconFish;
     Cursor cursorFish;
 
