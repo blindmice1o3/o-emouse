@@ -3,6 +3,7 @@ package CountZeroInit.view;
 import CountZeroInit.controller.CountZeroInit;
 
 import javax.swing.*;
+import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -126,10 +127,24 @@ public class IntroPanel extends JPanel
         cursorPig = awt.createCustomCursor(cursorIconPig, new Point(0, 0), "cursorPig");
     }
 
+    JLabel somethingText;
     private void initMainDisplayPanel() {
         mainDisplayPanel = new BackgroundDisplayPanel((width-(int)(width*0.25)), height-(15 /*+ menuBar.getHeight()*/));
         mainDisplayPanel.setPreferredSize( new Dimension((width-(int)(width*0.25)), height-(15 /*+ menuBar.getHeight()*/)) );
         mainDisplayPanel.setBorder(BorderFactory.createLineBorder(Color.YELLOW, 3, false));
+
+        mainDisplayPanel.setLayout(null);
+        somethingText = new JLabel("The Cantina scene && The Space Bazaar scene && That Ice Planet battle scene");
+        somethingText.setFont( new Font("san-serif", Font.BOLD, 22) );
+        somethingText.setForeground(Color.YELLOW);
+        somethingText.setBorder(BorderFactory.createRaisedBevelBorder());
+        somethingText.setSize(820, 35);
+        somethingText.setLocation(80, 75);
+        //mainDisplayPanel.setLayout( new FlowLayout() );
+        mainDisplayPanel.add(somethingText);
+
+
+
         mainDisplayPanel.setFocusable(true);
         mainDisplayPanel.setCursor(cursorMonkey);
     }

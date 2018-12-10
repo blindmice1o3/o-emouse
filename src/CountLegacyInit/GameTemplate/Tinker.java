@@ -14,6 +14,7 @@ public class Tinker {
     JPanel displayPanel;
     String displayPanelBackgroundImageAddress;
     Image displayPanelBackgroundImage;
+    //ImageIcon ii;
 
     public Tinker() {
         initMemberVariables();
@@ -34,6 +35,9 @@ public class Tinker {
         frameHeight = (int)awt.getScreenSize().getHeight()-38;      // -38 pixels to account for window/start bar
         displayPanelBackgroundImageAddress = "src/MoonRocks_ItsNotWhatYoureThinking/cyberpunk_wallpapers(1920x1080).jpg";
         displayPanelBackgroundImage = awt.getImage(displayPanelBackgroundImageAddress);
+
+        //ii = new ImageIcon(displayPanelBackgroundImageAddress);
+        //displayPanelBackgroundImage = ii.getImage();
 
         frame = new JFrame("Tinker");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

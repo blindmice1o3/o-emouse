@@ -16,7 +16,10 @@ public class TinkerMouseAdapterBackground extends JPanel {
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
 
-        g.drawString("Image width/height: " + this.getWidth() + "/" + this.getHeight(), 1920/2, 1080/2);
         g.drawImage(image, 0, 0, this.getWidth(), this.getHeight(), 0, 0, 1920, 1080, null);
+
+        g.setColor(Color.YELLOW);
+        g.drawString("Image width/height: " + this.getWidth() + "/" + this.getHeight(), this.getWidth()/2, this.getHeight()/2);
+
     }
 }
