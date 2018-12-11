@@ -4,6 +4,14 @@
 // Cyberpunk and Cannabis //
 //************************//
 
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Harvest Moon + Cannabis + Space Colonies + giant gap in wealth + second-class citizen + cyborg vs biohacker
+//  + teaches the user (1) introductory programming concepts (2) biology through cannabis cultivation
+// (3) study habits.
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Ultimately this project's mission is to create something to be use as a test of patience.
 // If you sit there and use this program, and end up learning or taking something away that you find useful, good for you!
@@ -31,41 +39,91 @@
         tool poorly disguised as a video game [Wolf object composed in a SheepAdapter object]).
      */
 
-
-// Perceived reality: typing simulation game to improve touch typing (one of the games to accumulate points to "buy" cannabis stuff like soil and seed)
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// The Midnight - Kids (Full Album)
+//
+// Perceived reality: typing simulation game to improve touch typing
+//      (one of the games to accumulate points to "buy" cannabis stuff like soil and seed)
 //      Some of the words have background color that's different from the rest. This is a hidden message from the Resistance.
 //      One of the programming exercise can be to find a way to parse the log/history of the typing exercise and use
 //          programming somehow... teach how array indexing works! Each word is an element in the array.
-
+//
 //      Pattern recognition (every 5th element in the array is a different-colored-background word that's a hidden message
 //          from the Resistance) (can use as a for-loop parameter?)
+//
+//          There are invisible hands behind the scene manipulating world events (conglomerates and AIs)
+//
+//      Most of the pain of this world is caused by misunderstanding/misinterpretation/baseless assumptions.
+//      We hurt ourselves from our fear of not being accepted by the tribe around us.
+//      Our expectation can set us up for pleasant surprises or woe-inducing disappointments; either way, it is within our control.
+//      Control is an illusion.
+//      Detachment: setUserExperience( PilotMode.AUTOPILOT );   // your fingers are just dancing across the keyboard
+//
+//  This is maddenly inconsistent. This game just does NOT care if it contradicts itself. But it'll get you there.
+//  Where? Under there.
+//
+//    "What if every moment really does count? Keep studying, keep learning. The Resistance needs you."
+//        "We need you."
+//
+//      They are a sequence (beta) of state changes progressing forever (uni-directional) forward in time. We are beyond
+//      time. We are the Resistance. They and we are illusions. There is no they, just like there is no we. There is now.
+//          Like still-frame pictures, displayed at a rate so quick they appear as if close-to-seamless movement.
+//          The pulse of a heart. Chemical state changes. Electrical state changes. Recolonization rate of different
+//          populations of gut bacteria pre and post puberty state changes.
+// We are the gestalt of the properties (and their value) that define us as us. We are the part. We are the whole.
+// We are the Resistance.
+//
+//          From nothing, to nothing, but this is everything in between. We are the Resistance. Sunrise, sunset.
+//
+//      You have to learn to enjoy this moment and learn to be okay when things get derailed and pewter out away from
+//          what was intended, otherwise this whole thing becomes a waste of time. Have fun along the way,
+//          detach from expectation/investment/desired-outcome. You are not your past, you do not have a future,
+//          you are this moment.
+//      Grab a seat, but don't get too comfy, you only need the edge.
+//
+//      invisible characters (like /n, /t) exist. they're not perceptible to our limited senses, but they're there.
+//          imagine senses like detecting electrical impulses (shark's line of something-something) beyond our comprehension, color range
+//
+//    counting down JOKE:
+//      15, 14, 13, 12, 11, 10, 8, 7, 6, ...
+//                                          *interruption: "WAIT, what happened to 9?"* ...
+//      Oh... 7 ate 9 (words that sound alike joke/consecutive sequence joke)
+//      5, 4, 3, 2, 1, 0 (continues the countdown while audience process that joke)
+//
+//
+//      why do we sleep? we reboot every night. shut down. restart. throw in an update every now and then from the operator.
+//          the joke can be used in an intro scene. someone says I can't sleep, I'm too scared. knowing moral/spirit is super
+//          important, this joke is inserted into the I'll-make-you-a-deal--we'll-go-to-sleep-after-I-count-down suggestion.
+//
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 /*
-
-    "If'n youse gots fingers, make 'em dance."
-
-    "S'kay; da operator, he's a saw fit ta outfit ya witha backup."
-
-    "What if every moment really does count? Keep studying, keep learning. The Resistance needs you."
-    "We need you."
-
-
-
-
     Journey to the West.
         Small crew of motley individuals on the moon (cannabis farming colony) are survivors of the android revolt of 2960's.
-        They're cut off from access to (unfiltered?) information (the free internet) and only have this link with the player.
-        The player must learn to program in order to lead the caravan (monk, monkey, pig, river demon)
-            (harvester [botanist, learn to grow, harvest, process (cut and trim), and cook (edibles, tinctures, concentrates)],
-            feral-child [moral booster/humor/comic relief/group's spirit, doesn't understand societal values or conventional behaviors],
-            jamaican-accent goth hedonist reprogrammed android who knows date of death [mechanic/mathematician/physicist?],
-            femfetale cyborg/electronically augmented [skeletons-in-the-closet-past; we're not our past, we're who we are now])
+        They're cut off from access to (unfiltered?) information (the free internet) and only have this stream with the player.
+
+        The player must learn to program in order to lead the caravan (1 monk, 2 monkey, 3 pig, 4 river demon)
+            1 harvester [botanist, learn to grow, harvest, process (cut and trim), and cook (edibles, tinctures, concentrates)],
+            2 feral-child [moral booster/humor/comic relief/group's spirit, doesn't understand societal values or conventional behaviors],
+            3 jamaican-accent goth hedonist reprogrammed android who knows date of death [mechanic/mathematician/physicist?],
+                    "If'n youse gots fingers, make 'em dance."
+
+                    "S'kay; da operator, he's a saw fit ta outfit ya witha backup."
+
+                    "(1) Don't trust Time, he ain't the linear, sequential by-the-book mofo he presents himself to be.
+                     (2) Death's s'kay, don't ya be gettin' upset with em. He's a has a toughen nuff time as is, eveeeryone and
+                         their mother be a running from em. We a need em.
+                     (3) We are all one."
+            4 femfetale cyborg/electronically augmented [skeletons-in-the-closet-past; we're not our past, we're who we are now]
         from the Cannabis SEED Storage Bank on the moon back to Earth.
+
         The player is always interacting REMOTELY with this group (who has no contact with anyone other than the player).
+
         The player still goes to class and has an everyday life, and no one believes he's really in contact with moon people.
         The people in the player's everyday life believes the player has an overactive imagination and is just playing
             a computer game (cannabis farming simulator).
+
         The cannabis crew/caravan offer an alternative interpretation to the player's perspective of everyday life (Truman Show).
         Actors have been "recasted".
         The resistance has been suppressed and nearly extinguished.
@@ -75,7 +133,7 @@
 
         You can't let the director/producer of the Truman Show know you're aware, not yet. Not until your crew/caravan reach Earth.
 
-        Fertilizer/seed modified for interdependency through genetic engineering (monopolized by a conglomerate)
+        Fertilizer/seed modified for interdependency through genetic engineering (monopolized by conglomerates that merged [pharmaceutical and blank)
         Monocultured cannabis on Earth
         Cannabis on Earth susceptible to disease outbreaks (banana comparison)
 
@@ -83,6 +141,32 @@
         throughout the player's experience with the game (revealed in chunks of mystery-inducing sequences).
 
 
+*/
+
+/*
+Time:
+-Distance future where the cybernetic-prosthetic-enhancements industry (down to three mega corporations of the
+EurAsia continent) is seen as becoming obsolete. Development of Western gene-editting-technology has enable lab-grown
+(functional) tissues (skeletal-muscular system) created from a sample collect of the client's cells (in terms of immune
+system rejection, this procedure of biosynthetic engineering is generally accepted as being far safer than augmenting the
+body with foreign components). A fierce advertising war between the cyborg and bio-splicer (like the visible mushroom
+part of fungus or glacier) sets the stage for global war.
+
+
+
+Separation/compartmentalization/encapsulation:
+-societal role (butcher) enabled the separation of guilt arising from raising/killing live-stocks the masses to a few
+individuals who developed specialization at such a skill/service.
+-growing crops has also been separated from the layman's consciousness.
+-photosynthesis is no longer the dominate process of acquiring/fixing carbon atoms.
+-chemosynthesis has been developed out of necessity (extreme levels of atmospheric pollutant prevented sunlight from
+ reaching plants), it was the result of the collaborative efforts of the brightest minds of all the world's countries.
+ The infrastructure of
+
+Starting point:
+-Plateua that is so isolated it's virtually untouched by time. (homeage to "The Lost World")
+-Explorer had followed whispers/rumors/folktales and gone in search of the plateua; and returned with cannabis seeds.
+-Explorer being chased, gives seeds to player1 (the son of an inn keeper) before dying. (homeage to "Treasure Island")
 */
 
 
@@ -184,7 +268,8 @@
                 -"know your audience (that's kind of like pick your battles, again I wouldn't know, not much of a fighter)."
                 -"there's this one motherlover 'use ta know (smart as a fiddle, complete opposite of myself), he's always
                 'use ta say (kindness, we must defend it at all cost, even if it means taking up arms and acting with swift,
-                unhesitating resistance). That motherlover, an unrelenting idealist."
+                unhesitating, irreversible actions). That motherlover, an unrelenting idealist who respected
+                necessary evils and abhorred inaction. Make moves. Keep making moves. I'm more of a lie-and-wait type though."
                 -"pimps don't suicide." (movie: "Southland Tales")
                 -"real gangster ass n-word should not be glorified, but certain predisposed qualities are admirable and
                     there are lessons that can be learned." (song: dontRememberTheSongTitleMustLookUpLater)
@@ -200,12 +285,6 @@
                 hopeless drug addict obsessing over their next "fix", compulsively and constantly searching, entirely
                 dismissive of its toll/cost!"
      */
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// Harvest Moon + Cannabis + Space Colonies + giant gap in wealth + second-class citizen + cyborg vs biohacker
-//  + teaches the user (1) introductory programming concepts (2) biology through cannabis cultivation
-// (3) study habits.
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /*
 Object composition: we can graft "components" together to use their functionality (delegation of task to another object's
@@ -328,27 +407,4 @@ to the moon farmers.
 
 
 
-Time:
--Distance future where the cybernetic-prosthetic-enhancements industry (down to three mega corporations of the
-EurAsia continent) is seen as becoming obsolete. Development of Western gene-editting-technology has enable lab-grown
-(functional) tissues (skeletal-muscular system) created from a sample collect of the client's cells (in terms of immune
-system rejection, this procedure of biosynthetic engineering is generally accepted as being far safer than augmenting the
-body with foreign components). A fierce advertising war between the cyborg and bio-splicer (like the visible mushroom
-part of fungus or glacier) sets the stage for global war.
-
-
-
-Separation/compartmentalization/encapsulation:
--societal role (butcher) enabled the separation of guilt arising from raising/killing live-stocks the masses to a few
-individuals who developed specialization at such a skill/service.
--growing crops has also been separated from the layman's consciousness.
--photosynthesis is no longer the dominate process of acquiring/fixing carbon atoms.
--chemosynthesis has been developed out of necessity (extreme levels of atmospheric pollutant prevented sunlight from
- reaching plants), it was the result of the collaborative efforts of the brightest minds of all the world's countries.
- The infrastructure of
-
-Starting point:
--Plateua that is so isolated it's virtually untouched by time. (homeage to "The Lost World")
--Explorer had followed whispers/rumors/folktales and gone in search of the plateua; and returned with cannabis seeds.
--Explorer being chased, gives seeds to player1 (the son of an inn keeper) before dying. (homeage to "Treasure Island")
 
