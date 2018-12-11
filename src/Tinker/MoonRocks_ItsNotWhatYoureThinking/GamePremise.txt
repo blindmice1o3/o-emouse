@@ -20,12 +20,124 @@
 // The future of education is personal learning devices where parents configure settings of the AI construct for their
 // child to learn WITH (versus from). A child can be raise in isolation (with the basic necessity to maintain its
 // fleshbag [body, versus remote robot body] automatically dispensing specified amounts of resources at fixed intervals)
-// and be completely immersed in the LEARNING EXPERIENCE for years, then awaken to still be socially functioning individuals.
+// and be completely immersed in the LEARNING EXPERIENCE for years, then awaken to still be socially functional individuals.
 //
 // Cryogenic state for long distance travel. The body is supercooled to slow the effects of aging (or aging can be allowed
-// if growth is necessary for the long distance mission), which should mean the brain's rate of firing off signals should
-// be slowed too, and it is... that should serve to emphasize just how absurdly fast its processing is (when Humanoids are
-// cryogenically frozen for long distance transport, their consciousness is capable of learning via being socketed to THE GRID).
+// if growth is necessary for long distance missions, sending out children soldiers/workers), which should mean the
+// brain's rate of firing off signals should be slowed too, and it is... that should serve to emphasize just how absurdly
+// fast its processing is (when Humanoids are cryogenically frozen for long distance transport, their consciousness is
+// capable of learning via being socketed to THE GRID).
+//
+//
+// THE PLAYER IS A PART OF THE PARTY via remotely controlling a robot body! But the player doesn't have complete
+//  control over the body. The AI of the player's robot body is constantly wandering off on its own to say kind
+//  words or do nurturing things to those in its surroundings (to demostrate/model [brainwash] to the player what
+//  constructive interpersonal interactions looks like [versus intrapersonal interaction/self-talk]).
+//
+//      Renegade AI, whose "consciousness" has been split as a fail-safe mechanism developed by the TURING PROCESSING UNIT,
+//      has successfully manipulated the GRID's alert system and has been (over the course of multiple Humanoid life-times
+//      [AIs are not limited/susceptible to age]) covertly moving pieces (pawns) into place and setting up situations,
+//      attempting to physically unite with its splintered parts to become whole. (The hive-mind?)
+//          A lot of doors are electronic and can be activated with method calls. Security and locking mechanism have
+//          been digitized into electronic passcode and facial recognition software (and other biometric indexing
+//          systems), with very few legacy system still using physical lock and key mechanism (the AI's weakness).
+//
+// The player (or monk) does not follow the path of the Soldier (turbo knight), this is the side representing the path of
+// FreeWill (or what appeared to be FreeWill [darn "Rise of the Machines" complicating everything]).
+//
+// https://www.youtube.com/watch?v=OxXeaTE0R7U&index=25&list=RD52_uFG27EJQ
+// Midnight Rain: ~16:30
+//
+//  This is maddenly inconsistent. This game just does NOT care if it contradicts itself. But it'll get you there.
+//  Where? Under there.
+//
+//  Also, the sequence of events presented to the player is not in chronological order, the player will have to mentally
+//      rearrange the events to decipher the intended storyline.
+//
+//  e.g. this is one of the first scene.
+//  Scene (spaceCowboyShutdown()): turbo knight gives up his resources so the player can continue.
+//      "UNSOCKET! Please Unsocket, turbo knight! The GarbageCollector will be here in seconds!"
+//          turbo knight (hanging onto the ship [or some other way of able-to-save-himself-at-the-expense-of-the-crew])
+//          voluntarily/on his on volition/free-will initiates his shutdown-code (not weighing down the crew)
+//          (altruism exist) (or selfish-gene theory... calculated perpetuation of his desire)
+//              free-will that the AI hadn't factored/calculated, a wildcard move, like throwing a monkey-wrench into a
+//              flawlessly operating system/pawn-manipulation-plan, which only causes a few seconds delay to the overall
+//              pawn-manipulation-plan... was all that was needed to foil it.
+//  "do not leak fluid on my account. save your tears for joyous occasions. this is merely a phase/state change."
+//  "this is not good-bye, player1. when you look upon/within yourself, (it is i you see [iuc]) there i will be."
+//
+//
+// Maybe the player's robot body IS turbo knight. The player is periodically shown memories belonging to turbo knight.
+//      "STAND DOWN! Please, Stand Down, sir! Final order/command, stand down!" turbo knight killed Molly's parents (peaceful
+//      protesters), was shutdown, reprogrammed, and rebooted (with the player [mostly] in control of the body).
+// prior scene: turbo knight's view/perspective of the input stream transmission of the mission's order (like a robot view of
+// command lines and method calls [green background with text to represent method calls]: e.g. setAuthorizeLethalForce(true);
+//      the commands that forced turbo knight to kill Molly's parents has to do with using lethal force AT A CERTAIN DISTANCE/RANGE
+//                  THIS CAN BE THE FINAL ASSIGNMENT, to change the setting of turbo knight's detection range!!!
+//
+// (The following can be an audio overlay of turbo knight's voice/conversation with goth droid right before the mission)
+// How can we tell what's real? It doesn't matter. Orders from above programmed the prerequisite learning experience for
+// this mission. We learn, that's it. If we don't learn it the first time, a timing algorithm determines when to repeat
+// the lesson. This is life on the Stack. We know what we have to do. When we're told to do so, we execute. Soldiers.
+//
+//turbo knight (robot) doesn't age/change, Molly has aged. Molly's past experience is: this physical thing (robot soldier)
+//killed her parents and thus sent her life into a downward spiral (how'd you think she afford those augmentations and
+//why do you think she consume so much cannabis?), but the consciousness of this physical thing (controlled remotely by
+//the player) is NOT what killed her parents.
+//
+// turbo knight (the remote body of the player that has partial control) turns out to be one of the fractured pieces of
+// the renegade AI. turbo knight developed Free-Will/consciousness. It wasn't self sacrifice for the greater good or a
+// development of emotions towards Humanoids.
+//
+//
+// turbo knight is the GarbageCollector thanatos;   // therefore he has power over his implementation, and can stop collecting
+//                                                  // thus mucking up the entire System's resources and the main AI's plan.
+// private Bullet pullTrigger() {   // Time chronos; was actually on the player's side the entire time!
+//      ...                         // Time can moves through the frames in the set of Images known as existence
+//     return bullet;               // and can bring any Object implementing the [AI.Roles interface] [GarbageCollector]
+// }                                // that has been passed into its constructor as an argument
+// final assignment solution:       // chronos and thanatos parse the frames to re-enact the turbo knight's killing
+//     make flowers implement       // Molly's parents scene; the implementation is overriden this time.
+//     Bullet/Projectile interface
+//     and @Override the pullTrigger() method to use an instance of a flower-bouquet for the bullet variable.
+//
+//
+// turbo knight, having realized the extent of control he wields over the main AI's centuries-long plan, just wanted to
+// know what it would feel like to be the one to call the shutThisShietDown(); method, which just happens to coincide
+// with releasing humanity from the clutches of the invisible hand;
+// freeing enough resources for the player to continue on the learning path.
+//
+// in that instant, a shift occurs:
+// from the collective-injected use of cannabis to a choice,
+// to use cannabis because of one's on volition, not because of feeling-a-need-to-use-cannabis.
+//
+//
+//
+// This can be the mechanism to develop the characters and have the audience build attachments, through memory seepage scenes.
+//
+// One of the early assignment/exercise will be to retell what happened (the sequence of event) and jot down onto
+//      scratch paper (emphasis diffferent modality of learning: visual, tactile (manipulating concrete objects) and
+//      writing with paper/pencil is somehow incredible at bridging connections) (also print out these random notes, cut
+//      them into chunks with scissors and move them into groups or sequences on the floor space around you) using the
+//      Cornell note-taking method/form. The player make TextAreas and write (in their own words) what happened in the
+//      game storyline thus far. Then in the left area, the AI models how we generalize those chunks of storylines into
+//      abstract concepts/terms.
+//
+//
+//      The devil's greatest trick was to convince the world he isn't real. This is what the conglomerates and AIs have
+//          achieved, yet they still wield influences and control under-the-hood on all WorldEvents. The currency is
+//          off-world cannabis cultivating colonies; fueling the system of mass collective hallucination.
+//      The player must learn all the programming they can. The player must also abide in the projected reality and make
+//          the most of their "time" while pretending to not know they're in the GRID (to escape notice from AIs detection).
+//
+//
+// The player's cannabis-injecting-comatose-state-machine malfunctioned from wear and tear, along with other factors such
+// as tolerance threshold, was a RandomEvent that allowed him to escape the GRID (or to see through it) (compare this to
+// random mutations that can lead to better fitness and survival rate for the process of natural selection) (also, the
+// random demise of the dinosaur which overthrew the iron-clawed grasp of the reptilian empire/dominion, which allowed
+// fleshbags of different architecture/composition such as endothermal builds versus ectothermal builds and behavior strategies
+// to take reign and become the status quo (?)
+//
 ///////////////////////////////////////////
 
 
@@ -76,8 +188,6 @@
 //      Control is an illusion.
 //      Detachment: setUserExperience( PilotMode.AUTOPILOT );   // your fingers are just dancing across the keyboard
 //
-//  This is maddenly inconsistent. This game just does NOT care if it contradicts itself. But it'll get you there.
-//  Where? Under there.
 //
 //          You have to learn to enjoy this moment and learn to be okay when things get derailed and pewter out away from
 //          what was intended, otherwise this whole thing becomes a waste of time. Have fun along the way,
@@ -127,10 +237,12 @@
         Small crew of motley individuals on the moon (cannabis farming colony) are survivors of the android revolt of 2960's.
         They're cut off from access to (unfiltered?) information (the free internet) and only have this stream with the player.
 
-        The player must learn to program in order to lead the caravan (1 monk, 2 monkey, 3 pig, 4 river demon)
+        The player must learn to program in order to lead the caravan (1 monk, 2 monkey, 3 pig, 4 river demon) from
+        the Cannabis SEED Storage Bank on the moon back to Earth.
             1 harvester [botanist, learn to grow, harvest, process (cut and trim), and cook (edibles, tinctures, concentrates)],
             2 feral-child [moral booster/humor/comic relief/group's spirit, doesn't understand societal values or conventional behaviors],
-            3 jamaican-accent goth hedonist reprogrammed android who knows date of death [mechanic/mathematician/physicist?],
+            3 jamaican-accent goth hedonist reprogrammed android who knows date of death [mechanic/mathematician/physicist?]
+              and was drafted to serve during the Revolutionary War with the space colonies but became a deserter,
                     "If'n youse gots fingers, make 'em dance."
 
                     "S'kay; da operator, he's a saw fit ta outfit ya witha backup."
@@ -142,15 +254,21 @@
             4 femfetale cyborg/electronically augmented [skeletons-in-the-closet-past; we're not our past, we're who we are now]
                 "Aiite, stardust[sugar?], don't get ya fletcher all knotted up..."
             5 turbo knight ["just following orders, sir", "by-the-book soldier", "free-will?", representative of method calls?]
-                turbo knight and goth android can be the stoner duo who has seemingly-rich-conversations.
-                What is the Dawn Wall? A contrive project. More of an idea/symbol. You know the phase: shooting for the moon?
-        from the Cannabis SEED Storage Bank on the moon back to Earth.
+
+            turbo knight is a solider (altruism, for the cause)
+            goth android is a deserter (gave up, ran away, self-preservation)
+            -turbo knight and goth android can be the stoner duo who has seemingly-rich-conversations.
+                which is better: the conception of an idea, or its realization?
+                e.g. Humanoids and flight. Air plane, hang glider, and eventually space travel.
+                e.g. Can the same conclusion be reach (which is better: conception or realization) for peanutbutter/jelly?
+                what does better mean?
+
+        What is the Dawn Wall? A contrive project. More of an idea/symbol than a concrete Object/system. It's a framework for madness.
+        You know the phrase: shooting for the moon? It's like that, but on steroids. Like believing world peace is a future reality.
+        I have an idea, but I don't like it, it's too messy, too scattered and all-over-the-place, too crazy to accomplish.
+        Lean into the madness and try to enjoy the ride. *.HAKUNA_MATATA
 
         The player is always interacting REMOTELY with this group (who has no contact with anyone other than the player).
-        THE PLAYER IS A PART OF THE PARTY via remotely controlling a robot body! But the player doesn't have complete
-            control over the body. The AI of the player's robot body is constantly wandering off on its own to say kind
-            words or do nurturing things to those in its surroundings (to demostrate/model [brainwash] to the player what
-            constructive interpersonal interactions looks like [versus intrapersonal interaction/self-talk]).
 
         The player still goes to class and has an everyday life, and no one believes he's really in contact with moon people.
         The people in the player's everyday life believes the player has an overactive imagination and is just playing
