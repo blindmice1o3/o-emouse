@@ -12,6 +12,18 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
+//    "What if every moment really does count? Keep studying, keep learning. The Resistance needs you."
+//        "We need you." *.HAKUNA_MATATA
+
+
+////////////////////////
+// The future of education is personal learning devices where parents configure settings of the AI construct for their
+// child to learn WITH (versus from). A child can be raise in isolation (with the basic necessity to maintain its
+// fleshbag [body, versus remote robot body] automatically dispensing specified amounts of resources at fixed intervals)
+// and be completely immersed in the LEARNING EXPERIENCE for years, then awaken to still be socially functioning individuals.
+///////////////////////////////////////////
+
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Ultimately this project's mission is to create something to be use as a test of patience.
 // If you sit there and use this program, and end up learning or taking something away that you find useful, good for you!
@@ -49,7 +61,7 @@
 //          programming somehow... teach how array indexing works! Each word is an element in the array.
 //
 //      Pattern recognition (every 5th element in the array is a different-colored-background word that's a hidden message
-//          from the Resistance) (can use as a for-loop parameter?)
+//          from the Resistance [end the message with "HAKUNA_MATATA") (can use as a for-loop parameter?)
 //
 //          There are invisible hands behind the scene manipulating world events (conglomerates and AIs)
 //
@@ -62,24 +74,31 @@
 //  This is maddenly inconsistent. This game just does NOT care if it contradicts itself. But it'll get you there.
 //  Where? Under there.
 //
-//    "What if every moment really does count? Keep studying, keep learning. The Resistance needs you."
-//        "We need you."
-//
-//      They are a sequence (beta) of state changes progressing forever (uni-directional) forward in time. We are beyond
-//      time. We are the Resistance. They and we are illusions. There is no they, just like there is no we. There is now.
-//          Like still-frame pictures, displayed at a rate so quick they appear as if close-to-seamless movement.
-//          The pulse of a heart. Chemical state changes. Electrical state changes. Recolonization rate of different
-//          populations of gut bacteria pre and post puberty state changes.
-// We are the gestalt of the properties (and their value) that define us as us. We are the part. We are the whole.
-// We are the Resistance.
-//
-//          From nothing, to nothing, but this is everything in between. We are the Resistance. Sunrise, sunset.
-//
-//      You have to learn to enjoy this moment and learn to be okay when things get derailed and pewter out away from
+//          You have to learn to enjoy this moment and learn to be okay when things get derailed and pewter out away from
 //          what was intended, otherwise this whole thing becomes a waste of time. Have fun along the way,
 //          detach from expectation/investment/desired-outcome. You are not your past, you do not have a future,
 //          you are this moment.
 //      Grab a seat, but don't get too comfy, you only need the edge.
+//
+//
+//      They are a sequence (beta) of state changes progressing forever (uni-directional) forward in time. We are beyond
+//      time. We are the Resistance. They and we are illusions. There is no they, just like there is no we.
+//
+//      Time is an illusion. By the way, here's a Timer object. You're going to use it in the following exercise to
+//          measure units of this non-real thing called time. Learn to quantify units and use of base 10 system
+//          (introduce binary system) and practice multiplying by 10. In order to break the illusion of time, we're
+//          going to have to understand the properties of the illusion. When the threshold of awareness is reach, going
+//          back will no longer be possible. There is no back. There is now. We are the Resistance. *.HAKUNA_MATATA
+//
+//          Like still-frame pictures, displayed at a rate so quick they appear as if close-to-seamless movement.
+//          The pulse of a heart. Chemical state changes. Electrical state changes. Recolonization rate of different
+//          populations of gut bacteria pre and post puberty state changes.
+// We are the gestalt of the properties (and their value) that define us as us. We are the part. We are the whole.
+// We are the Resistance. *.HAKUNA_MATATA
+//
+//          From nothing, to nothing, but this is everything in between. We are the Resistance. Sunrise, sunset. *.HAKUNA_MATATA
+//
+//
 //
 //      invisible characters (like /n, /t) exist. they're not perceptible to our limited senses, but they're there.
 //          imagine senses like detecting electrical impulses (shark's line of something-something) beyond our comprehension, color range
@@ -116,9 +135,17 @@
                          their mother be a running from em. We a need em.
                      (3) We are all one."
             4 femfetale cyborg/electronically augmented [skeletons-in-the-closet-past; we're not our past, we're who we are now]
+                "Aiite, stardust[sugar?], don't get ya fletcher all knotted up..."
+            5 turbo knight ["just following orders, sir", "by-the-book soldier", "free-will?", representative of method calls?]
+                turbo knight and goth android can be the stoner duo who has seemingly-rich-conversations.
+                What is the Dawn Wall? A contrive project. More of an idea/symbol. You know the phase: shooting for the moon?
         from the Cannabis SEED Storage Bank on the moon back to Earth.
 
         The player is always interacting REMOTELY with this group (who has no contact with anyone other than the player).
+        THE PLAYER IS A PART OF THE PARTY via remotely controlling a robot body! But the player doesn't have complete
+            control over the body. The AI of the player's robot body is constantly wandering off on its own to say kind
+            words or do nurturing things to those in its surroundings (to demostrate/model [brainwash] to the player what
+            constructive interpersonal interactions looks like [versus intrapersonal interaction/self-talk]).
 
         The player still goes to class and has an everyday life, and no one believes he's really in contact with moon people.
         The people in the player's everyday life believes the player has an overactive imagination and is just playing
