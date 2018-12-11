@@ -2,123 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4264d6a-6746-43ef-b695-128d92c400ed" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/creatures/Harvester.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/BackgroundDisplayPanel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/CountLegacyInit$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/CountLegacyInit.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/GameTemplate/EventDispatchThread$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/GameTemplate/EventDispatchThread.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/GameTemplate/GameTemplate$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/GameTemplate/GameTemplate$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/GameTemplate/GameTemplate$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/GameTemplate/GameTemplate$GameCanvas.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/GameTemplate/GameTemplate$GameState.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/GameTemplate/GameTemplate.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/GameTemplate/LayoutManagerBoxLayout.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/GameTemplate/LayoutManagerCardLayout.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/GameTemplate/MainMenu.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/GameTemplate/MyPanel$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/GameTemplate/MyPanel$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/GameTemplate/MyPanel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/GameTemplate/Tinker$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/GameTemplate/Tinker$DisplayPanel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/GameTemplate/Tinker.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/GameTemplate/mouseadapter/TinkerMouseAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/GameTemplate/mouseadapter/TinkerMouseAdapterBackground.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/MouseClickDisplayPanel$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/MouseClickDisplayPanel$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/MouseClickDisplayPanel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/Player.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/icons/0monk_drawing_buddha_full_body.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/icons/1monk_drawing_buddha_outline.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/icons/2fish_purple.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/icons/3fish_blue_spirit.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/icons/4pig.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/icons/5monkey.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/icons/Turtle.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/icons/butters_profchaos.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/icons/fish_gold.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/icons/fish_gold_flying_hellfish(simpsons).png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/icons/green_dice(256x256).svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/icons/green_dice(900x800).jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/icons/honeycomb.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/icons/ladel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/icons/monkey_stuffed_animal.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/icons/robot_flat_head.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/icons/robot_planting_steampunk.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/icons/samurai_overhead.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/icons/sick_bear.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/icons/spore_mushroom(cupcake).png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/icons/troll.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/icons/turtle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/icons/vampire.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/icons/wolfman.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountLegacyInit/icons/zombie.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/MoonRocks_ItsNotWhatYoureThinking/CyberpunkWallpapersPanel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/MoonRocks_ItsNotWhatYoureThinking/Dirt.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/MoonRocks_ItsNotWhatYoureThinking/FarmingSymbiosis.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/MoonRocks_ItsNotWhatYoureThinking/GamePremise.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/MoonRocks_ItsNotWhatYoureThinking/IntroFramePanel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/MoonRocks_ItsNotWhatYoureThinking/MoonRocksItsNotWhatYoureThinking.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/MoonRocks_ItsNotWhatYoureThinking/Player.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/MoonRocks_ItsNotWhatYoureThinking/Seed.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/MoonRocks_ItsNotWhatYoureThinking/cyberpunk_wallpapers(1920x1080).jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/MoonRocks_ItsNotWhatYoureThinking/super_and_this.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/GameTemplate.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CountLegacyInit/BackgroundDisplayPanel.java" afterPath="$PROJECT_DIR$/src/Tinker/CountLegacyInit/BackgroundDisplayPanel.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CountLegacyInit/CountLegacyInit.java" afterPath="$PROJECT_DIR$/src/Tinker/CountLegacyInit/CountLegacyInit.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/EventDispatchThread.java" afterPath="$PROJECT_DIR$/src/Tinker/MouseClickPaintRedSquare.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/LayoutManagerBoxLayout.java" afterPath="$PROJECT_DIR$/src/Tinker/layout_manager/BoxLayout.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/LayoutManagerCardLayout.java" afterPath="$PROJECT_DIR$/src/Tinker/layout_manager/CardLayout.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/MainMenu.java" afterPath="$PROJECT_DIR$/src/Tinker/layout_manager/MainMenu.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/Tinker.java" afterPath="$PROJECT_DIR$/src/Tinker/Tinker.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/mouseadapter/TinkerMouseAdapter.java" afterPath="$PROJECT_DIR$/src/Tinker/mouse_adapter/TinkerMouseAdapter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/mouseadapter/TinkerMouseAdapterBackground.java" afterPath="$PROJECT_DIR$/src/Tinker/mouse_adapter/TinkerMouseAdapterBackground.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CountLegacyInit/MouseClickDisplayPanel.java" afterPath="$PROJECT_DIR$/src/Tinker/CountLegacyInit/MouseClickDisplayPanel.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CountLegacyInit/Player.java" afterPath="$PROJECT_DIR$/src/Tinker/CountLegacyInit/Player.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CountLegacyInit/icons/0monk_drawing_buddha_full_body.png" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/icons/0monk_drawing_buddha_full_body.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CountLegacyInit/icons/1monk_drawing_buddha_outline.png" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/icons/1monk_drawing_buddha_outline.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CountLegacyInit/icons/2fish_purple.jpg" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/icons/2fish_purple.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CountLegacyInit/icons/3fish_blue_spirit.png" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/icons/3fish_blue_spirit.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CountLegacyInit/icons/4pig.jpg" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/icons/4pig.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CountLegacyInit/icons/5monkey.jpg" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/icons/5monkey.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CountLegacyInit/icons/Turtle.gif" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/icons/Turtle.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CountLegacyInit/icons/butters_profchaos.jpg" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/icons/butters_profchaos.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CountLegacyInit/icons/fish_gold.png" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/icons/fish_gold.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CountLegacyInit/icons/fish_gold_flying_hellfish(simpsons).png" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/icons/fish_gold_flying_hellfish(simpsons).png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CountLegacyInit/icons/green_dice(256x256).svg" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/icons/green_dice(256x256).svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CountLegacyInit/icons/green_dice(900x800).jpg" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/icons/green_dice(900x800).jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CountLegacyInit/icons/honeycomb.jpg" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/icons/honeycomb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CountLegacyInit/icons/ladel.jpg" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/icons/ladel.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CountLegacyInit/icons/monkey_stuffed_animal.jpg" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/icons/monkey_stuffed_animal.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CountLegacyInit/icons/robot_flat_head.png" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/icons/robot_flat_head.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CountLegacyInit/icons/robot_planting_steampunk.png" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/icons/robot_planting_steampunk.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CountLegacyInit/icons/samurai_overhead.png" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/icons/samurai_overhead.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CountLegacyInit/icons/sick_bear.png" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/icons/sick_bear.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CountLegacyInit/icons/spore_mushroom(cupcake).png" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/icons/spore_mushroom(cupcake).png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CountLegacyInit/icons/troll.png" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/icons/troll.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CountLegacyInit/icons/turtle.png" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/icons/turtle.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CountLegacyInit/icons/vampire.png" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/icons/vampire.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CountLegacyInit/icons/wolfman.png" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/icons/wolfman.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CountLegacyInit/icons/zombie.png" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/icons/zombie.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/CyberpunkWallpapersPanel.java" afterPath="$PROJECT_DIR$/src/Tinker/MoonRocks_ItsNotWhatYoureThinking/CyberpunkWallpapersPanel.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/Dirt.java" afterPath="$PROJECT_DIR$/src/Tinker/MoonRocks_ItsNotWhatYoureThinking/Dirt.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/FarmingSymbiosis.txt" afterPath="$PROJECT_DIR$/src/Tinker/MoonRocks_ItsNotWhatYoureThinking/FarmingSymbiosis.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/GamePremise.txt" afterPath="$PROJECT_DIR$/src/Tinker/MoonRocks_ItsNotWhatYoureThinking/GamePremise.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/IntroFramePanel.java" afterPath="$PROJECT_DIR$/src/Tinker/MoonRocks_ItsNotWhatYoureThinking/IntroFramePanel.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/MoonRocksItsNotWhatYoureThinking.java" afterPath="$PROJECT_DIR$/src/Tinker/MoonRocks_ItsNotWhatYoureThinking/MoonRocksItsNotWhatYoureThinking.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/Player.java" afterPath="$PROJECT_DIR$/src/Tinker/MoonRocks_ItsNotWhatYoureThinking/Player.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/Seed.java" afterPath="$PROJECT_DIR$/src/Tinker/MoonRocks_ItsNotWhatYoureThinking/Seed.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/cyberpunk_wallpapers(1920x1080).jpg" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/icons/cyberpunk_wallpapers(1920x1080).jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MoonRocks_ItsNotWhatYoureThinking/super_and_this.txt" afterPath="$PROJECT_DIR$/src/Tinker/MoonRocks_ItsNotWhatYoureThinking/super_and_this.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/view/AnimationPracticePanel.class" afterPath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/view/AnimationPracticePanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/view/BackgroundDisplayPanel.class" afterPath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/view/BackgroundDisplayPanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/view/Displayer.class" afterPath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/view/Displayer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/view/IntroPanel.class" afterPath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/view/IntroPanel.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CountZeroInit/view/AnimationPracticePanel.java" afterPath="$PROJECT_DIR$/src/CountZeroInit/view/AnimationPracticePanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CountZeroInit/view/Displayer.java" afterPath="$PROJECT_DIR$/src/CountZeroInit/view/Displayer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CountZeroInit/view/IntroPanel.java" afterPath="$PROJECT_DIR$/src/CountZeroInit/view/IntroPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tinker/MoonRocks_ItsNotWhatYoureThinking/GamePremise.txt" afterPath="$PROJECT_DIR$/src/Tinker/MoonRocks_ItsNotWhatYoureThinking/GamePremise.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -133,14 +19,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="IntroPanel.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="IntroPanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CountZeroInit/view/IntroPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="221">
+              <caret line="142" column="36" lean-forward="false" selection-start-line="142" selection-start-column="36" selection-end-line="142" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GamePremise.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Tinker/MoonRocks_ItsNotWhatYoureThinking/GamePremise.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="51" column="8" lean-forward="false" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -173,7 +69,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/CaveOfProgramming/JavaForCompleteBeginners/ProgrammingCoreJava/EnumTypesBasicAndAdvancedUsage/Animal.java" />
         <option value="$PROJECT_DIR$/src/CaveOfProgramming/JavaForCompleteBeginners/ProgrammingCoreJava/EnumTypesBasicAndAdvancedUsage/App.java" />
         <option value="$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/MainMenu.java" />
         <option value="$PROJECT_DIR$/src/CountLegacyInit/GameTemplate/LayoutManagerCardLayout.java" />
@@ -221,9 +116,10 @@
         <option value="$PROJECT_DIR$/src/Tinker/layout_manager/LayoutManagerCardLayout.java" />
         <option value="$PROJECT_DIR$/src/Tinker/layout_manager/BoxLayout.java" />
         <option value="$PROJECT_DIR$/src/Tinker/layout_manager/MainMenu.java" />
-        <option value="$PROJECT_DIR$/src/CountZeroInit/view/IntroPanel.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/view/AnimationPracticePanel.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/view/Displayer.java" />
+        <option value="$PROJECT_DIR$/src/CountZeroInit/view/IntroPanel.java" />
+        <option value="$PROJECT_DIR$/src/Tinker/MoonRocks_ItsNotWhatYoureThinking/GamePremise.txt" />
       </list>
     </option>
   </component>
@@ -312,6 +208,19 @@
               <item name="CountZeroInit" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
               <item name="IntroPanel.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="o-emouse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="o-emouse" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Tinker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="o-emouse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="o-emouse" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Tinker" type="462c0819:PsiDirectoryNode" />
+              <item name="MoonRocks_ItsNotWhatYoureThinking" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -788,14 +697,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinker/MoonRocks_ItsNotWhatYoureThinking/GamePremise.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1615">
-          <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/src.zip!/java/awt/Component.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48977">
@@ -973,7 +874,7 @@
         <state relative-caret-position="833">
           <caret line="51" column="8" lean-forward="false" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -983,7 +884,7 @@
         <state relative-caret-position="1122">
           <caret line="66" column="13" lean-forward="false" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1038,11 +939,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CountZeroInit/view/IntroPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="221">
+          <caret line="142" column="36" lean-forward="false" selection-start-line="142" selection-start-column="36" selection-end-line="142" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinker/MoonRocks_ItsNotWhatYoureThinking/GamePremise.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="51" column="8" lean-forward="false" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>

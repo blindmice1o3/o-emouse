@@ -134,12 +134,13 @@ public class IntroPanel extends JPanel
         mainDisplayPanel.setBorder(BorderFactory.createLineBorder(Color.YELLOW, 3, false));
 
         mainDisplayPanel.setLayout(null);
-        somethingText = new JLabel("The Cantina scene && The Space Bazaar scene && That Ice Planet battle scene");
-        somethingText.setFont( new Font("san-serif", Font.BOLD, 22) );
+        //somethingText = new JLabel("The Cantina scene && The Space Bazaar scene && That Ice Planet battle scene");
+        somethingText = new JLabel("What if every moment really does count? Keep studying, keep learning. The Resistance needs you.");
+        somethingText.setFont( new Font("san-serif", Font.BOLD, 17) );
         somethingText.setForeground(Color.YELLOW);
         somethingText.setBorder(BorderFactory.createRaisedBevelBorder());
-        somethingText.setSize(820, 35);
-        somethingText.setLocation(80, 75);
+        somethingText.setSize(800, 35);
+        somethingText.setLocation(90, 75);
         //mainDisplayPanel.setLayout( new FlowLayout() );
         mainDisplayPanel.add(somethingText);
 

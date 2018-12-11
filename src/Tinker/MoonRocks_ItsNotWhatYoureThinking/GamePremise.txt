@@ -27,9 +27,74 @@
 
      /*
      -CountZeroInit was suppose to be a knock-off of a specific video game (Pokemon Red and Pokemon Blue).
-     -Tinker.MoonRocks_ItsNotWhatYoureThinking is suppose to be a knock-off of the idea of video game (it's an educational
+     -MoonRocks_ItsNotWhatYoureThinking is suppose to be a knock-off of the idea of video game (it's an educational
         tool poorly disguised as a video game [Wolf object composed in a SheepAdapter object]).
      */
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// The Midnight - Kids (Full Album)
+//
+// Perceived reality: typing simulation game to improve touch typing (one of the games to accumulate points to "buy" cannabis stuff like soil and seed)
+//      Some of the words have background color that's different from the rest. This is a hidden message from the Resistance.
+//      One of the programming exercise can be to find a way to parse the log/history of the typing exercise and use
+//          programming somehow... teach how array indexing works! Each word is an element in the array.
+//
+//      Pattern recognition (every 5th element in the array is a different-colored-background word that's a hidden message
+//          from the Resistance) (can use as a for-loop parameter?)
+//
+//    "What if every moment really does count? Keep studying, keep learning. The Resistance needs you."
+//        "We need you."
+//
+//
+//    counting down JOKE:
+//      15, 14, 13, 12, 11, 10, 8, 7, 6, ...
+//                                          *interruption: "WAIT, what happened to 9?"* ...
+//      Oh... 7 ate 9 (words that sound alike joke/consecutive sequence joke)
+//      5, 4, 3, 2, 1, 0 (continues the countdown while audience process that joke)
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/*
+
+    "If'n youse gots fingers, make 'em dance."
+
+    "S'kay; da operator, he's a saw fit ta outfit ya witha backup."
+
+
+
+
+    Journey to the West.
+        Small crew of motley individuals on the moon (cannabis farming colony) are survivors of the android revolt of 2960's.
+        They're cut off from access to (unfiltered?) information (the free internet) and only have this link with the player.
+        The player must learn to program in order to lead the caravan (monk, monkey, pig, river demon)
+            (harvester [botanist, learn to grow, harvest, process (cut and trim), and cook (edibles, tinctures, concentrates)],
+            feral-child [moral booster/humor/comic relief/group's spirit, doesn't understand societal values or conventional behaviors],
+            jamaican-accent goth hedonist reprogrammed android who knows date of death [mechanic/mathematician/physicist?],
+            femfetale cyborg/electronically augmented [skeletons-in-the-closet-past; we're not our past, we're who we are now])
+        from the Cannabis SEED Storage Bank on the moon back to Earth.
+        The player is always interacting REMOTELY with this group (who has no contact with anyone other than the player).
+        The player still goes to class and has an everyday life, and no one believes he's really in contact with moon people.
+        The people in the player's everyday life believes the player has an overactive imagination and is just playing
+            a computer game (cannabis farming simulator).
+        The cannabis crew/caravan offer an alternative interpretation to the player's perspective of everyday life (Truman Show).
+        Actors have been "recasted".
+        The resistance has been suppressed and nearly extinguished.
+
+        You must wake up. Come out of the consensual group hallucination/delusion that was created and sustained by the
+            invisible hands of the conglomerates and AIs.
+
+        You can't let the director/producer of the Truman Show know you're aware, not yet. Not until your crew/caravan reach Earth.
+
+        Fertilizer/seed modified for interdependency through genetic engineering (monopolized by a conglomerate)
+        Monocultured cannabis on Earth
+        Cannabis on Earth susceptible to disease outbreaks (banana comparison)
+
+        History of what has happened since previously-perceived present (2018) to actual present (2999) is developed
+        throughout the player's experience with the game (revealed in chunks of mystery-inducing sequences).
+
+
+*/
+
 
     /*  'Back To The 80's' | Best of Synthwave And Retro Electro Music Mix for 2 Hours | Vol. 9
         https://www.youtube.com/watch?v=fzK79PgKITI&list=RD52_uFG27EJQ&index=25
