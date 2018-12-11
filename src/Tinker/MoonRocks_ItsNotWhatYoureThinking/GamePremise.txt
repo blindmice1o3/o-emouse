@@ -21,6 +21,11 @@
 // child to learn WITH (versus from). A child can be raise in isolation (with the basic necessity to maintain its
 // fleshbag [body, versus remote robot body] automatically dispensing specified amounts of resources at fixed intervals)
 // and be completely immersed in the LEARNING EXPERIENCE for years, then awaken to still be socially functioning individuals.
+//
+// Cryogenic state for long distance travel. The body is supercooled to slow the effects of aging (or aging can be allowed
+// if growth is necessary for the long distance mission), which should mean the brain's rate of firing off signals should
+// be slowed too, and it is... that should serve to emphasize just how absurdly fast its processing is (when Humanoids are
+// cryogenically frozen for long distance transport, their consciousness is capable of learning via being socketed to THE GRID).
 ///////////////////////////////////////////
 
 
