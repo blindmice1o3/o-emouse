@@ -33,6 +33,10 @@ public class IntroPanel extends JPanel
     Image cursorIconMonkey, cursorIconPig;
     Cursor cursorMonkey, cursorPig;
 
+    int timerCounter = 0;
+    JLabel timerDisplay;
+    Timer timer;
+
     public IntroPanel(CountZeroInit countZeroInit) {
         this.countZeroInit = countZeroInit;
 
@@ -56,6 +60,11 @@ public class IntroPanel extends JPanel
 
     }
 
+    public void startTimer() {
+        timer = new Timer(1000, this);
+        timer.start();
+    }
+
     public void setPlayer1Name() {
         countZeroInit.getPlayer1().setName(JOptionPane.showInputDialog(this, player1SetNameMessage));
 
@@ -74,35 +83,43 @@ public class IntroPanel extends JPanel
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        prevRequest = textInput.getText();
-        history.append(textInput.getText() + "\n\n\n");
-        textOutput.setText(history.toString());
-        textInput.setText("");
-        textInput.requestFocus();
-        //if(this.phaseNow == this.phase1) {
-        if (prevRequest.equals("setGreenEggsAndSpam(true);")) {
-            countZeroInit.setCurrentState(countZeroInit.getGameState());
+        if (e.getSource() == timer) {
+            timerDisplay.setText("" + timerCounter++);
 
-            this.remove(mainDisplayPanel);
-            mainDisplayPanel = countZeroInit.getDisplayer().getGamePanel();
-            this.add(mainDisplayPanel, BorderLayout.CENTER);
-            mainDisplayPanel.setRequestFocusEnabled(true);
-            mainDisplayPanel.grabFocus();
-            this.revalidate();
+            if (timerCounter == 3600) {
+                timer.removeActionListener(this);
+            }
+        }
+        else if (e.getSource() == textInput) {
+            prevRequest = textInput.getText();
+            history.append(textInput.getText() + "\n\n\n");
+            textOutput.setText(history.toString());
+            textInput.setText("");
+            textInput.requestFocus();
+            //if(this.phaseNow == this.phase1) {
+            if (prevRequest.equals("setGreenEggsAndSpam(true);")) {
+                countZeroInit.setCurrentState(countZeroInit.getGameState());
 
-            //mainDisplayPanel.setSize( new Dimension(50,350) );
-            //this.phaseNow = this.phase2;
-        } else if (prevRequest.equals("eggsAreNotSupposeToBeGreen();")) {
+                this.remove(mainDisplayPanel);
+                mainDisplayPanel = countZeroInit.getDisplayer().getGamePanel();
+                this.add(mainDisplayPanel, BorderLayout.CENTER);
+                mainDisplayPanel.setRequestFocusEnabled(true);
+                mainDisplayPanel.grabFocus();
+                this.revalidate();
 
-            this.remove(mainDisplayPanel);
-            mainDisplayPanel = countZeroInit.getDisplayer().getAnimationPracticePanel();
-            this.add(mainDisplayPanel, BorderLayout.CENTER);
+                //mainDisplayPanel.setSize( new Dimension(50,350) );
+                //this.phaseNow = this.phase2;
+            } else if (prevRequest.equals("eggsAreNotSupposeToBeGreen();")) {
 
-            AnimationPracticePanel animationPracticePanel = (AnimationPracticePanel)countZeroInit.getDisplayer().getAnimationPracticePanel();
-            Timer timer = animationPracticePanel.getTimer();
-            timer.start();
+                this.remove(mainDisplayPanel);
+                mainDisplayPanel = countZeroInit.getDisplayer().getAnimationPracticePanel();
+                this.add(mainDisplayPanel, BorderLayout.CENTER);
 
-            this.revalidate();
+                AnimationPracticePanel animationPracticePanel = (AnimationPracticePanel) countZeroInit.getDisplayer().getAnimationPracticePanel();
+                Timer timer = animationPracticePanel.getTimer();
+                timer.start();
+
+                this.revalidate();
 
             /*
             this.remove(mainDisplayPanel);
@@ -111,12 +128,15 @@ public class IntroPanel extends JPanel
             this.revalidate();
             */
 
-            //this.phaseNow = this.phase0;
+                //this.phaseNow = this.phase0;
+            } else {
+                history.append("INPUT ERROR, may only choose from the earlier two options. \n\n\n");
+                textOutput.setText(history.toString());
+                textInput.setText("");
+                textInput.requestFocus();
+            }
         } else {
-            history.append("INPUT ERROR, may only choose from the earlier two options. \n\n\n");
-            textOutput.setText(history.toString());
-            textInput.setText("");
-            textInput.requestFocus();
+            System.out.println("IntroPanel's actionPerformed(ActionEvent) method");
         }
         // }
     }
@@ -144,10 +164,17 @@ public class IntroPanel extends JPanel
         //mainDisplayPanel.setLayout( new FlowLayout() );
         mainDisplayPanel.add(somethingText);
 
-
+        timerDisplay = new JLabel("" + timerCounter);
+        timerDisplay.setFont( new Font("san-serif", Font.BOLD, 8) );
+        timerDisplay.setForeground(Color.YELLOW);
+        timerDisplay.setSize(50, 15);
+        timerDisplay.setLocation(10, 10);
+        mainDisplayPanel.add(timerDisplay);
 
         mainDisplayPanel.setFocusable(true);
         mainDisplayPanel.setCursor(cursorMonkey);
+
+        startTimer();
     }
     private void initSecondaryDisplayPanel() {
         secondaryDisplayPanel = new JPanel();

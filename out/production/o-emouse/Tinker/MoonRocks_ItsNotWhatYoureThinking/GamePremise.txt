@@ -63,6 +63,8 @@
 //              free-will that the AI hadn't factored/calculated, a wildcard move, like throwing a monkey-wrench into a
 //              flawlessly operating system/pawn-manipulation-plan, which only causes a few seconds delay to the overall
 //              pawn-manipulation-plan... was all that was needed to foil it.
+//  "do not leak fluid on my account. save your tears for joyous occasions. this is merely a phase/state change."
+//  "this is not good-bye, player1. when you look upon/within yourself, (it is i you see [iuc]) there i will be."
 //
 //
 // Maybe the player's robot body IS turbo knight. The player is periodically shown memories belonging to turbo knight.
@@ -83,8 +85,47 @@
 //why do you think she consume so much cannabis?), but the consciousness of this physical thing (controlled remotely by
 //the player) is NOT what killed her parents.
 //
+// turbo knight (the remote body of the player that has partial control) turns out to be one of the fractured pieces of
+// the renegade AI. turbo knight developed Free-Will/consciousness. It wasn't self sacrifice for the greater good or a
+// development of emotions towards Humanoids.
 //
-// This can be the mechanism to develop the characters and have the audience build attachments, through memory seepage scenes.
+//
+// turbo knight is the GarbageCollector thanatos;   // therefore he has power over his implementation, and can stop collecting
+//                                                  // thus mucking up the entire System's resources and the main AI's plan.
+// private Bullet pullTrigger() {   // Time chronos; was actually on the player's side the entire time!
+//      ...                         // Time can moves through the frames in the set of Images known as existence
+//     return bullet;               // and can bring any Object implementing the [AI.Roles interface] [GarbageCollector]
+// }                                // that has been passed into its constructor as an argument
+// final assignment solution:       // chronos and thanatos parse the frames to re-enact the turbo knight's killing
+//     make flowers implement       // Molly's parents scene; the implementation is overriden this time.
+//     Bullet/Projectile interface
+//     and @Override the pullTrigger() method to use an instance of a flower-bouquet for the bullet variable.
+//
+//
+// turbo knight, having realized the extent of control he wields over the main AI's centuries-long plan, just wanted to
+// know what it would feel like to be the one to call the shutThisShietDown(); method, which just happens to coincide
+// with releasing humanity from the clutches of the invisible hand;
+// freeing enough resources for the player to continue on the learning path.
+//
+// in that instant, a shift occurs:
+// from the collective-injected use of cannabis to a choice,
+// to use cannabis because of one's on volition, not because of feeling-a-need-to-use-cannabis.
+//
+// if you can blur the line that separates playing and working, you've already won
+//
+// This (memory seepage scenes) can be the mechanism to develop the characters' background; the audience build attachments.
+//
+// fleshbags (Humanoids) aren't very good at thinking beyond their own life-time (blink of an eye relative to the System),
+// and they have that annoying tendency to project themselves and that leads to misunderstanding and needless pain. -AI
+//
+// Points earning and spending system:
+// You know how the game started with farming simulator to grow cannabis and the player unlocks WaterSprinkler which waters
+// 9 Tiles in one call as oppose to Old2LiterSodaBottle which waters 1 Tile in one call...
+//      We can have that "unlocking" features as incentives for late game (after a bit of programming learning has past)
+//      The player can unlock new "tool" buttons such as "unblur", an Action call that will unblur earlier blurred portions
+//      of the game (curse words?) (maybe the unblur can be use as a joke... the audience was expecting a curse word and
+//      when they actually use the unblur call it's the deliver [as oppose to the set-up] of a joke).
+//
 //
 // One of the early assignment/exercise will be to retell what happened (the sequence of event) and jot down onto
 //      scratch paper (emphasis diffferent modality of learning: visual, tactile (manipulating concrete objects) and
@@ -93,6 +134,13 @@
 //      Cornell note-taking method/form. The player make TextAreas and write (in their own words) what happened in the
 //      game storyline thus far. Then in the left area, the AI models how we generalize those chunks of storylines into
 //      abstract concepts/terms.
+//
+// A nightly free-write journal. Points accumulation happen proportionally to the number of consequetive-days-of-entry
+// and is reduced based on numbers of missed entries.
+//      Nevermind, tracking their System's time (or even how much time has pass of game-time) is too difficult.
+//      Let's just have a set number of journey entry prompt options (with some blanks as free-write option).
+//      Maybe a system where player can go back to old prompts after so-and-so game-time passed to rewrite their
+//      thoughts/opinions after seeing so-and-so assignments/exercises/storyline.
 //
 //
 //      The devil's greatest trick was to convince the world he isn't real. This is what the conglomerates and AIs have
@@ -208,10 +256,17 @@
         Small crew of motley individuals on the moon (cannabis farming colony) are survivors of the android revolt of 2960's.
         They're cut off from access to (unfiltered?) information (the free internet) and only have this stream with the player.
 
-        The player must learn to program in order to lead the caravan (1 monk, 2 monkey, 3 pig, 4 river demon) from
-        the Cannabis SEED Storage Bank on the moon back to Earth.
+        The player must learn to program in order to lead the caravan (1 monk [turbo knight] [street preacher],
+        2 monkey [player], 3 pig [player's stoner buddy/secretly a werewolf on the moon], 4 river demon [Molly])
+        from the Cannabis SEED Storage Bank on the moon back to Earth.
             1 harvester [botanist, learn to grow, harvest, process (cut and trim), and cook (edibles, tinctures, concentrates)],
             2 feral-child [moral booster/humor/comic relief/group's spirit, doesn't understand societal values or conventional behaviors],
+                the player takes control of monkey's body remotely (backstory: the result of a splicing experiment, then
+                one of the first to undergo electronic-augmentation experiments prior to being shipped to off-world colony)
+                (monkey in comatose state, but still controls the body sometimes; player control the electronic augmentation)
+              monkey is a harvester in training (weapon is a staff, like a garden hoe).
+                    One of the early exercise should be centered around tilling the dirt Tile from one at a time to multiple.
+                    One of the early joke should be centered around knowing their way around a hoe.
             3 jamaican-accent goth hedonist reprogrammed android who knows date of death [mechanic/mathematician/physicist?]
               and was drafted to serve during the Revolutionary War with the space colonies but became a deserter,
                     "If'n youse gots fingers, make 'em dance."

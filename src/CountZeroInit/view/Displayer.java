@@ -6,6 +6,8 @@ import CountZeroInit.model.map.Map;
 import javax.swing.*;
 import javax.swing.text.DefaultEditorKit;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 
 public class Displayer extends JFrame {
@@ -70,7 +72,6 @@ public class Displayer extends JFrame {
 
         this.setContentPane(currentPanel);
         this.setVisible(true);
-
     }
 
     public void setCurrentPanel(String currentState) {
