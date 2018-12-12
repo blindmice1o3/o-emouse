@@ -33,7 +33,7 @@ public class IntroPanel extends JPanel
     Image cursorIconMonkey, cursorIconPig;
     Cursor cursorMonkey, cursorPig;
 
-    int timerCounter = 0;
+    double timerCounter = 0f;
     JLabel timerDisplay;
     Timer timer;
 
@@ -61,7 +61,7 @@ public class IntroPanel extends JPanel
     }
 
     public void startTimer() {
-        timer = new Timer(1000, this);
+        timer = new Timer(10, this);    // timer fires an ActionEvent every 0.01 second
         timer.start();
     }
 
@@ -84,10 +84,11 @@ public class IntroPanel extends JPanel
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == timer) {
-            timerDisplay.setText("" + timerCounter++);
+            //timerCounter++;
+            timerDisplay.setText(String.format("%10.2f", timerCounter=timerCounter+0.01f));
 
-            if (timerCounter == 3600) {
-                timer.removeActionListener(this);
+            if (timerCounter == 59.99f) {           // counter is stopped just before 60 seconds (bug: it runs to 60 min,
+                timer.removeActionListener(this);   // instead of changing the place value to 01 hour and 00 minutes
             }
         }
         else if (e.getSource() == textInput) {
@@ -165,8 +166,9 @@ public class IntroPanel extends JPanel
         mainDisplayPanel.add(somethingText);
 
         timerDisplay = new JLabel("" + timerCounter);
-        timerDisplay.setFont( new Font("san-serif", Font.BOLD, 8) );
+        timerDisplay.setFont( new Font("san-serif", Font.BOLD, 10) );
         timerDisplay.setForeground(Color.YELLOW);
+        timerDisplay.setBorder(BorderFactory.createRaisedBevelBorder());
         timerDisplay.setSize(50, 15);
         timerDisplay.setLocation(10, 10);
         mainDisplayPanel.add(timerDisplay);
