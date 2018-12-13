@@ -169,7 +169,7 @@ public class IntroPanel extends JPanel
         timerDisplay.setFont( new Font("san-serif", Font.BOLD, 10) );
         timerDisplay.setForeground(Color.YELLOW);
         timerDisplay.setBorder(BorderFactory.createRaisedBevelBorder());
-        timerDisplay.setSize(50, 15);
+        timerDisplay.setSize(45, 20);
         timerDisplay.setLocation(10, 10);
         mainDisplayPanel.add(timerDisplay);
 
