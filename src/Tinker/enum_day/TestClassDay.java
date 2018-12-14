@@ -1,9 +1,9 @@
-package Tinker.enum_tinker;
+package Tinker.enum_day;
 
-public class EnumerationTinker {
+public class TestClassDay {
     Day day;
 
-    public EnumerationTinker(Day day) {
+    public TestClassDay(Day day) {
         this.day = day;
     }
 
@@ -28,21 +28,7 @@ public class EnumerationTinker {
         }
     }
 
-
     public static void main(String[] args) {
-        // displays each value of the ChessToken enum on one row with a ", " separator inbetween the values unless it's
-        // the last value of the ChessToken enum (in which case, it inserts a new line).
-        int count0 = 0;
-        int lengthChessTokenEnum = ChessToken.values().length;
-        for (ChessToken token: ChessToken.values()) {
-            count0++;
-            System.out.print(token);
-            if (count0 != lengthChessTokenEnum) {
-                System.out.print(", ");
-            } else {
-                System.out.println("\n");
-            }
-        }
 
         // displays each value of the Day enum on one row with a ", " separator inbetween the values unless it's the
         // last value of the Day enum (in which case, it inserts a new line).
@@ -59,21 +45,21 @@ public class EnumerationTinker {
         }
 
         // practice using the Day enum.
-        EnumerationTinker firstDay = new EnumerationTinker(Day.MONDAY);
+        TestClassDay firstDay = new TestClassDay(Day.MONDAY);
         firstDay.tellItLikeItIs();
 
-        EnumerationTinker thirdDay = new EnumerationTinker(Day.WEDNESDAY);
+        TestClassDay thirdDay = new TestClassDay(Day.WEDNESDAY);
         thirdDay.tellItLikeItIs();
 
-        EnumerationTinker fifthDay = new EnumerationTinker(Day.FRIDAY);
+        TestClassDay fifthDay = new TestClassDay(Day.FRIDAY);
         fifthDay.tellItLikeItIs();
 
-        EnumerationTinker sixthDay = new EnumerationTinker(Day.SATURDAY);
+        TestClassDay sixthDay = new TestClassDay(Day.SATURDAY);
         sixthDay.tellItLikeItIs();
 
-        EnumerationTinker seventhDay = new EnumerationTinker(Day.SUNDAY);
+        TestClassDay seventhDay = new TestClassDay(Day.SUNDAY);
         seventhDay.tellItLikeItIs();
 
-    }
+    } // end main()
 
-}
+} // end TestClassDay class

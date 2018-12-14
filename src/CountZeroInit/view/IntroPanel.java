@@ -104,10 +104,10 @@ public class IntroPanel extends JPanel
                 this.remove(mainDisplayPanel);
                 mainDisplayPanel = countZeroInit.getDisplayer().getGamePanel();
                 this.add(mainDisplayPanel, BorderLayout.CENTER);
+                mainDisplayPanel.repaint();
                 mainDisplayPanel.setRequestFocusEnabled(true);
                 mainDisplayPanel.grabFocus();
                 this.revalidate();
-
                 //mainDisplayPanel.setSize( new Dimension(50,350) );
                 //this.phaseNow = this.phase2;
             } else if (prevRequest.equals("eggsAreNotSupposeToBeGreen();")) {
