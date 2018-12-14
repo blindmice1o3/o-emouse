@@ -1,4 +1,4 @@
-package CountZeroInit.view.guipractice;
+package Tinker.guipractice;
 
 import javax.swing.*;
 import java.awt.*;

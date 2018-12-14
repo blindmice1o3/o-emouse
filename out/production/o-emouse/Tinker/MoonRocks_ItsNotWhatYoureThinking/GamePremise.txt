@@ -16,6 +16,16 @@
 //        "We need you." *.HAKUNA_MATATA
 
 
+//
+// One of the party/crew/group member is unknowingly a werewolf (early day military genetically enhanced soliders), on the moon.
+// Werewolf transformation is dependent on lunar cycle relative to Earth (normally the werewolf's location).
+// Is the werewolf on the moon's transformation activation now dependent on the Earth's position relative to the moon?
+//  In other words, the Earth's gravitation pull... nm that's tides...
+//  Is lunar cycle dependent on gravitation pull of earth+sun? no... that's tidal cycles
+//  So lunar cycle is dependent on position of earth and sun relative to moon? probably.
+//
+
+
 ////////////////////////
 // The future of education is personal learning devices where parents configure settings of the AI construct for their
 // child to learn WITH (versus from). A child can be raise in isolation (with the basic necessity to maintain its

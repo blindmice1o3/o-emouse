@@ -45,6 +45,8 @@ public class AnimationPracticePanel extends JPanel
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
 
+        this.setDoubleBuffered(true);
+
         drawImage(g);
     }
 
