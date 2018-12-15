@@ -51,6 +51,11 @@ public class Tinker {
         framePanel.setLayout(null);
         System.out.println("framePanel width&height: " + framePanel.getWidth() + ", " + framePanel.getHeight());
 
+/*
+        char snail = 'l';
+        System.out.println("hello, " + snail + "!");
+*/
+
         displayPanel = new DisplayPanel();
         displayPanel.setSize((int)(framePanel.getWidth()*(0.85)), (int)(framePanel.getHeight()*(0.75)));
         displayPanel.setLayout(null);

@@ -11,6 +11,9 @@ public class ChessGame extends JPanel {
         PLAYER1, PLAYER2;
     }
 
+    Player whoseTurn = Player.PLAYER1;
+    boolean gameOver = false;
+
     String imageAddressChessTokens = "src/CountZeroInit/model/icons/chess_tokens.png";
     ImageIcon iiChessTokens;
     Image imageChessTokens;
@@ -90,6 +93,22 @@ public class ChessGame extends JPanel {
         drawChessTokenPlayer1(g);
 
         drawChessTokenPlayer2(g);
+
+        ImageIcon imageIconWolfman = new ImageIcon("src/CountZeroInit/model/icons/wolfman.png");
+        Image imageWolfman = imageIconWolfman.getImage();
+        g.drawImage(imageWolfman, 280, 350, 350, 420, 0, 0, 256, 256, null);
+
+        ImageIcon imageIconFishmonk = new ImageIcon("src/CountZeroInit/model/icons/3fish_blue_spirit.png");
+        Image imageFishmonk = imageIconFishmonk.getImage();
+        g.drawImage(imageFishmonk, 350, 350, 420, 420, 0, 0, 256, 256, null);
+
+        ImageIcon imageIconRobot = new ImageIcon("src/CountZeroInit/model/icons/robot_flat_head.png");
+        Image imageRobot = imageIconRobot.getImage();
+        g.drawImage(imageRobot, 280, 280, 350, 350, 0, 0, 256, 256, null);
+
+        ImageIcon imageIconMonkey = new ImageIcon("src/CountZeroInit/model/icons/5monkey.jpg");
+        Image imageMonkey = imageIconMonkey.getImage();
+        g.drawImage(imageMonkey, 350, 280, 420, 350, 0, 0, 256, 256, null);
 
     }
 
