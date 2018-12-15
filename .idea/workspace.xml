@@ -2,28 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4264d6a-6746-43ef-b695-128d92c400ed" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Tinker/chess_game/model/Tile.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Tinker/chess_game/model/token/Rook.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Tinker/chess_game/view_controller/ChessGame.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/view/guipractice/AButtonListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/view/guipractice/BButtonListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/view/guipractice/GUIPractice.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/Tinker/chess_game/token/ChessToken.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/Tinker/chess_game/token/Pawn.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Tinker/chess_game/ChessBoard.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CountZeroInit/view/guipractice/GUIPractice.java" afterPath="$PROJECT_DIR$/src/Tinker/guipractice/GUIPractice.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Tinker/chess_game/token/ChessToken.java" afterPath="$PROJECT_DIR$/src/Tinker/chess_game/model/token/ChessToken.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Tinker/chess_game/token/Pawn.java" afterPath="$PROJECT_DIR$/src/Tinker/chess_game/model/token/Pawn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/view/AnimationPracticePanel.class" afterPath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/view/AnimationPracticePanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/view/IntroPanel.class" afterPath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/view/IntroPanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/o-emouse/Tinker/chess_game/ChessBoard.class" afterPath="$PROJECT_DIR$/out/production/o-emouse/Tinker/chess_game/ChessBoard.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Tinker/chess_game/model/token/Bishop.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Tinker/chess_game/model/token/King.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Tinker/chess_game/model/token/Knight.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Tinker/chess_game/model/token/Queen.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/Tinker/chess_game/ChessBoard.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/o-emouse/Tinker/chess_game/TestClassChess.class" afterPath="$PROJECT_DIR$/out/production/o-emouse/Tinker/chess_game/TestClassChess.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/o-emouse/Tinker/chess_game/model/token/ChessToken.class" afterPath="$PROJECT_DIR$/out/production/o-emouse/Tinker/chess_game/model/token/ChessToken.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/o-emouse/Tinker/chess_game/model/token/Pawn.class" afterPath="$PROJECT_DIR$/out/production/o-emouse/Tinker/chess_game/model/token/Pawn.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/o-emouse/Tinker/chess_game/model/token/Rook.class" afterPath="$PROJECT_DIR$/out/production/o-emouse/Tinker/chess_game/model/token/Rook.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/o-emouse/Tinker/chess_game/view_controller/ChessGame.class" afterPath="$PROJECT_DIR$/out/production/o-emouse/Tinker/chess_game/view_controller/ChessGame.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/o-emouse/Tinker/MoonRocks_ItsNotWhatYoureThinking/GamePremise.txt" afterPath="$PROJECT_DIR$/out/production/o-emouse/Tinker/MoonRocks_ItsNotWhatYoureThinking/GamePremise.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CountZeroInit/view/AnimationPracticePanel.java" afterPath="$PROJECT_DIR$/src/CountZeroInit/view/AnimationPracticePanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CountZeroInit/view/IntroPanel.java" afterPath="$PROJECT_DIR$/src/CountZeroInit/view/IntroPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tinker/MoonRocks_ItsNotWhatYoureThinking/GamePremise.txt" afterPath="$PROJECT_DIR$/src/Tinker/MoonRocks_ItsNotWhatYoureThinking/GamePremise.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tinker/chess_game/TestClassChess.java" afterPath="$PROJECT_DIR$/src/Tinker/chess_game/TestClassChess.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tinker/chess_game/model/token/ChessToken.java" afterPath="$PROJECT_DIR$/src/Tinker/chess_game/model/token/ChessToken.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tinker/chess_game/model/token/Pawn.java" afterPath="$PROJECT_DIR$/src/Tinker/chess_game/model/token/Pawn.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tinker/chess_game/model/token/Rook.java" afterPath="$PROJECT_DIR$/src/Tinker/chess_game/model/token/Rook.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tinker/chess_game/view_controller/ChessGame.java" afterPath="$PROJECT_DIR$/src/Tinker/chess_game/view_controller/ChessGame.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,13 +31,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ChessGame.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ChessGame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/view_controller/ChessGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="class#Player#0;class#ChessGame#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -53,8 +47,8 @@
       <file leaf-file-name="Tile.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/model/Tile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="25" lean-forward="false" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="e#457#458#0" expanded="true" />
                 <element signature="e#493#494#0" expanded="true" />
@@ -70,22 +64,19 @@
       <file leaf-file-name="ChessToken.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/model/token/ChessToken.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="39" column="17" lean-forward="false" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+            <state relative-caret-position="255">
+              <caret line="15" column="35" lean-forward="false" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#773#774#0" expanded="true" />
-                <element signature="e#812#813#0" expanded="true" />
-                <element signature="e#837#838#0" expanded="true" />
-                <element signature="e#861#862#0" expanded="true" />
-                <element signature="e#886#887#0" expanded="true" />
-                <element signature="e#910#911#0" expanded="true" />
+                <element signature="e#395#396#0" expanded="true" />
+                <element signature="e#419#420#0" expanded="true" />
+                <element signature="e#444#445#0" expanded="true" />
+                <element signature="e#468#469#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestClassChess.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestClassChess.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/TestClassChess.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
@@ -125,10 +116,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/CaveOfProgramming/JavaForCompleteBeginners/ProgrammingCoreJava/SerializationSavingObjectsToFiles/transientKeywordAndMoreSerialization/ReadObjects.java" />
-        <option value="$PROJECT_DIR$/src/CaveOfProgramming/JavaForCompleteBeginners/ProgrammingCoreJava/SerializationSavingObjectsToFiles/transientKeywordAndMoreSerialization/WriteObjects.java" />
-        <option value="$PROJECT_DIR$/src/CaveOfProgramming/JavaForCompleteBeginners/ProgrammingCoreJava/transientKeywordAndMoreSerialization/Person.java" />
-        <option value="$PROJECT_DIR$/src/CaveOfProgramming/JavaForCompleteBeginners/ProgrammingCoreJava/TransientKeywordAndMoreSerialization/ReadObjects.java" />
         <option value="$PROJECT_DIR$/src/CaveOfProgramming/JavaForCompleteBeginners/ProgrammingCoreJava/TransientKeywordAndMoreSerialization/WriteObjects.java" />
         <option value="$PROJECT_DIR$/src/CaveOfProgramming/JavaForCompleteBeginners/ProgrammingCoreJava/TransientKeywordAndMoreSerialization/gui0.java" />
         <option value="$PROJECT_DIR$/src/CaveOfProgramming/JavaForCompleteBeginners/ProgrammingCoreJava/TransientKeywordAndMoreSerialization/gui0.form" />
@@ -171,11 +158,15 @@
         <option value="$PROJECT_DIR$/src/Tinker/MoonRocks_ItsNotWhatYoureThinking/GamePremise.txt" />
         <option value="$PROJECT_DIR$/src/Tinker/chess_game/model/token/Tile.java" />
         <option value="$PROJECT_DIR$/src/Tinker/chess_game/model/Tile.java" />
+        <option value="$PROJECT_DIR$/src/Tinker/chess_game/TestClassChess.java" />
         <option value="$PROJECT_DIR$/src/Tinker/chess_game/model/token/ChessToken.java" />
         <option value="$PROJECT_DIR$/src/Tinker/chess_game/model/token/Pawn.java" />
         <option value="$PROJECT_DIR$/src/Tinker/chess_game/model/token/Rook.java" />
+        <option value="$PROJECT_DIR$/src/Tinker/chess_game/model/token/Knight.java" />
+        <option value="$PROJECT_DIR$/src/Tinker/chess_game/model/token/Bishop.java" />
+        <option value="$PROJECT_DIR$/src/Tinker/chess_game/model/token/Queen.java" />
+        <option value="$PROJECT_DIR$/src/Tinker/chess_game/model/token/King.java" />
         <option value="$PROJECT_DIR$/src/Tinker/chess_game/view_controller/ChessGame.java" />
-        <option value="$PROJECT_DIR$/src/Tinker/chess_game/TestClassChess.java" />
       </list>
     </option>
   </component>
@@ -257,15 +248,6 @@
               <item name="Tinker" type="462c0819:PsiDirectoryNode" />
               <item name="chess_game" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="o-emouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="o-emouse" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Tinker" type="462c0819:PsiDirectoryNode" />
-              <item name="chess_game" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="token" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="o-emouse" type="b2602c69:ProjectViewProjectNode" />
@@ -583,7 +565,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.71895427" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2397882" sideWeight="0.49346405" order="0" side_tool="false" content_ui="combo" x="1072" y="100" width="256" height="583" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2397882" sideWeight="0.49346405" order="0" side_tool="false" content_ui="combo" x="1072" y="100" width="256" height="583" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7058824" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19440243" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="1047" y="99" width="279" height="560" />
@@ -629,7 +611,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -638,36 +620,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/src.zip!/java/awt/Component.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48977">
-          <caret line="3126" column="16" lean-forward="false" selection-start-line="3126" selection-start-column="16" selection-end-line="3126" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/controller/state/IntroState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/view/BattlePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/src.zip!/javax/swing/text/JTextComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="1624" column="19" lean-forward="true" selection-start-line="1624" selection-start-column="19" selection-end-line="1624" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Tinker/MoonRocks_ItsNotWhatYoureThinking/Dirt.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -991,45 +943,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/model/token/ChessToken.java">
+    <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/ChessBoard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="39" column="17" lean-forward="false" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#773#774#0" expanded="true" />
-            <element signature="e#812#813#0" expanded="true" />
-            <element signature="e#837#838#0" expanded="true" />
-            <element signature="e#861#862#0" expanded="true" />
-            <element signature="e#886#887#0" expanded="true" />
-            <element signature="e#910#911#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/model/token/Pawn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="170">
+          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/model/token/Rook.java">
+    <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/TestClassChess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        <state relative-caret-position="408">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
-            <element signature="e#285#286#0" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/model/Tile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="25" lean-forward="false" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#457#458#0" expanded="true" />
             <element signature="e#493#494#0" expanded="true" />
@@ -1041,30 +976,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/ChessBoard.java">
+    <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/model/token/King.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/model/token/Bishop.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/model/token/Knight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/model/token/Rook.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding>
+            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/model/token/Queen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/model/token/Pawn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding>
+            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/model/token/ChessToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="35" lean-forward="false" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+          <folding>
+            <element signature="e#395#396#0" expanded="true" />
+            <element signature="e#419#420#0" expanded="true" />
+            <element signature="e#444#445#0" expanded="true" />
+            <element signature="e#468#469#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/view_controller/ChessGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/TestClassChess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="class#Player#0;class#ChessGame#0" expanded="false" />
           </folding>
         </state>
       </provider>

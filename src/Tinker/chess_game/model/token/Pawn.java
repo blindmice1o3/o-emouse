@@ -9,7 +9,7 @@ public class Pawn extends ChessToken {
 
     }
 
-    public boolean isValueMove(int futureCol, int futureRow) {
+    public boolean isValidMove(int futureCol, int futureRow) {
         return false;
     }
 
