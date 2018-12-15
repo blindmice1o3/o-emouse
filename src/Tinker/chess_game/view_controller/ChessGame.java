@@ -1,5 +1,6 @@
 package Tinker.chess_game.view_controller;
 
+import Tinker.chess_game.model.Chessboard;
 import Tinker.chess_game.model.token.*;
 
 import javax.swing.*;
@@ -10,6 +11,7 @@ public class ChessGame extends JPanel {
     public enum Player {
         PLAYER1, PLAYER2;
     }
+    Chessboard board;
 
     Player whoseTurn = Player.PLAYER1;
     boolean gameOver = false;
@@ -26,6 +28,8 @@ public class ChessGame extends JPanel {
     public ChessGame() {
         this.setFocusable(true);
         this.requestFocus();
+
+        board = new Chessboard();
 
         initImageChessTokens();
 

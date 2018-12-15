@@ -3,20 +3,18 @@ package Tinker.chess_game.model;
 import Tinker.chess_game.model.token.ChessToken;
 
 public class Tile {
-    int x, y;
-    int width, height;
+    public static final int width = 70;
+    public static final int height = 70;
 
-    String file, rank;
+    private String rankAndFile;
+    private int x, y;
 
-    ChessToken token;
+    private ChessToken token;
 
-    public Tile(int x, int y, int width, int height, String file, String rank) {
+    public Tile(String rankAndFile, int x, int y) {
+        this.rankAndFile = rankAndFile;
         this.x = x;
         this.y = y;
-        this.width = width;
-        this.height = height;
-        this.file = file;
-        this.rank = rank;
     }
 
     public boolean hasToken() {
@@ -29,5 +27,17 @@ public class Tile {
 
     public ChessToken getToken() {
         return token;
+    }
+
+    public String getRankAndFile() {
+        return rankAndFile;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
     }
 }

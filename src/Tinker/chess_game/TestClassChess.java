@@ -1,7 +1,5 @@
 package Tinker.chess_game;
 
-
-import Tinker.chess_game.model.Chessboard;
 import Tinker.chess_game.view_controller.ChessGame;
 
 import javax.swing.*;
@@ -22,10 +20,6 @@ public class TestClassChess {
 
         displayer.setContentPane(new ChessGame());
         displayer.setVisible(true);
-
-
-
-        Chessboard board = new Chessboard();
 
     } // end main()
 
