@@ -16,17 +16,16 @@ public class Chessboard {
     }
 
     public void initChessboard() {
-        // Variables to feed the Tile's constructor... each Tile's rankAndFile (String) and its location (int x, int y).
+    // Variables to feed the Tile's constructor... each Tile's rankAndFile (String) and its location (int x, int y).
 
-        // First Tile's rank is 8.
+        // First Tile's rank is "8".
         int rankInt = 8;
-        String rank = Integer.toString(rankInt);
+        String rank = makeStringRank(rankInt);
 
-        // First Tile's file is "A" (determined by and int that is casted to a char that is supplied to find its
+        // First Tile's file is "A" (determined by an int that is casted to a char that is supplied to find its
         // corresponding String.
         int fileInt = 65;
-        char fileChar = (char)fileInt;
-        String file = Character.toString(fileChar);
+        String file = makeStringFile(fileInt);
 
         // First Tile's location (x, y).
         int x = 0;
@@ -42,22 +41,29 @@ public class Chessboard {
 
                 x += Tile.width;
                 fileInt++;
-                fileChar = (char)fileInt;
-                file = Character.toString(fileChar);
+                file = makeStringFile(fileInt);
             }
 
             x = 0;
             y += Tile.height;
             rankInt--;
-            rank = Integer.toString(rankInt);
+            rank = makeStringRank(rankInt);
             fileInt = 65;
-            fileChar = (char)fileInt;
-            file = Character.toString(fileChar);
+            file = makeStringFile(fileInt);
 
         }
 
         for(Tile tile1: board.values()) {
             System.out.println(tile1.getRankAndFile() + ", " + tile1.getX() + ", " + tile1.getY());
         }
+    }
+
+    private String makeStringRank(int rankInt) {
+        return Integer.toString(rankInt);
+    }
+
+    private String makeStringFile(int fileInt) {
+        char fileChar = (char)fileInt;
+        return Character.toString(fileChar);
     }
 }
