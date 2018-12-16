@@ -1,5 +1,6 @@
 package Tinker.chess_game.model;
 
+import java.awt.*;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -33,18 +34,40 @@ public class ChessBoard {
         int x = 0;
         int y = 0;
 
+        Color color = Color.YELLOW;
         // Local variable to store the Tile object that's to be instantiated inside the nested for-loop.
         Tile tile;
 
         // TODO: Write the comment to explain how this nested for-loop instantiates 64 Tile objects and put() them into the HashMap referred to as board.
         for (int i = 0; i < 8; i++) {
-            for (int j = 0; j < 8; j++) {
-                tile = new Tile(rank + file, x, y);
-                board.put(tile.getRankAndFile(), tile);
+            if (rankInt % 2 == 0) {             // light color then dark color
+                for (int j = 0; j < 8; j++) {
+                    if (fileInt % 2 == 1) {             // if fileInt is odd... light color
+                        color = Color.YELLOW;
+                    } else {                            // else fileInt is even... dark color
+                        color = Color.BLUE;
+                    }
+                    tile = new Tile(rank + file, x, y, color);
+                    board.put(tile.getRankAndFile(), tile);
 
-                x += Tile.width;
-                fileInt++;
-                file = makeStringFile(fileInt);
+                    x += Tile.width;
+                    fileInt++;
+                    file = makeStringFile(fileInt);
+                }
+            } else {                            // dark color then light color
+                for (int j = 0; j < 8; j++) {
+                    if (fileInt % 2 == 1) {             // if fileInt is odd... dark color
+                        color = Color.BLUE;
+                    } else {
+                        color = Color.YELLOW;
+                    }
+                    tile = new Tile(rank + file, x, y, color);
+                    board.put(tile.getRankAndFile(), tile);
+
+                    x += Tile.width;
+                    fileInt++;
+                    file = makeStringFile(fileInt);
+                }
             }
 
             x = 0;
@@ -60,6 +83,10 @@ public class ChessBoard {
         for(Tile tile1: board.values()) {
             System.out.println(tile1.getRankAndFile() + ", " + tile1.getX() + ", " + tile1.getY());
         }
+    }
+
+    public Map<String, Tile> getBoard() {
+        return board;
     }
 
     // Private helper method used to keep ChessBoard's implementation code more tidy and readable.

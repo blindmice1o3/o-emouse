@@ -2,10 +2,12 @@ package Tinker.chess_game.view_controller;
 
 import Tinker.chess_game.model.ChessBoard;
 import Tinker.chess_game.model.ChessSet;
+import Tinker.chess_game.model.Tile;
 import Tinker.chess_game.model.token.*;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.List;
 
 public class ChessGame extends JPanel {
 
@@ -17,6 +19,8 @@ public class ChessGame extends JPanel {
     boolean gameOver = false;
 
     ChessSet chessSet;
+    List<ChessToken> player1ChessTokenSet;
+    List<ChessToken> player2ChessTokenSet;
 
     //ChessBoard board;
 
@@ -36,6 +40,8 @@ public class ChessGame extends JPanel {
         this.requestFocus();
 
         chessSet = new ChessSet(Player.PLAYER1, Player.PLAYER2);
+        player1ChessTokenSet = chessSet.getChessTokenSetPlayer1().getTokenSet();
+        player2ChessTokenSet = chessSet.getChessTokenSetPlayer2().getTokenSet();
         //board = new ChessBoard();
 
         //initImageChessTokens();
@@ -101,9 +107,9 @@ public class ChessGame extends JPanel {
         // Draws chessboard with light (yellow) and dark (blue) squares.
         drawChessBoard(g);
 
-        //drawChessTokenPlayer1(g);
+        drawChessTokenPlayer1(g);
 
-        //drawChessTokenPlayer2(g);
+        drawChessTokenPlayer2(g);
 
         ImageIcon imageIconWolfman = new ImageIcon("src/CountZeroInit/model/icons/wolfman.png");
         Image imageWolfman = imageIconWolfman.getImage();
@@ -122,8 +128,19 @@ public class ChessGame extends JPanel {
         g.drawImage(imageMonkey, 350, 280, 420, 350, 0, 0, 256, 256, null);
 
     }
-/*
+
     public void drawChessTokenPlayer1(Graphics g) {
+        //int x1 = 0;
+        //int y1 = 0;
+        //int x2 = 0;
+        //int y2 = 0;
+        //Image imageChessTokens = player1ChessTokenSet.get(0).getImageChessTokens();
+
+        //for(ChessToken chessToken: player1ChessTokenSet) {
+
+        //    g.drawImage(imageChessTokens, )
+        //}
+/*
         // Draws PLAYER1's Pawn tokens.
         g.drawImage(imageChessTokens, pawn1a.getX()+6, pawn1a.getY()+6, pawn1a.getX()+62, pawn1a.getY()+62,
                 60, 60, 120, 140, null);
@@ -182,10 +199,12 @@ public class ChessGame extends JPanel {
         // Draws PLAYER1's King token.
         g.drawImage(imageChessTokens, king1a.getX()+6, king1a.getY()+6, king1a.getX()+62, king1a.getY()+62,
                 1080, 65, 1135, 135, null);
-
+*/
     }
 
     public void drawChessTokenPlayer2(Graphics g) {
+
+/*
         // Draws PLAYER2's Pawn tokens.
         g.drawImage(imageChessTokens, pawn1b.getX()+6, pawn1b.getY()+6, pawn1b.getX()+62, pawn1b.getY()+62,
                 60, 265, 120, 340, null);
@@ -244,11 +263,18 @@ public class ChessGame extends JPanel {
         // Draws PLAYER2's King token.
         g.drawImage(imageChessTokens, king1b.getX()+6, king1b.getY()+6, king1b.getX()+62, king1b.getY()+62,
                 1080, 265, 1135, 335, null);
-
-    }
 */
-    public void drawChessBoard(Graphics g) {
+    }
 
+    public void drawChessBoard(Graphics g) {
+        ChessBoard chessBoard = chessSet.getChessBoard();
+
+
+        for(Tile tile: chessBoard.getBoard().values()) {
+            g.setColor(tile.getColor());
+            g.fillRect(tile.getX(), tile.getY(), Tile.width, Tile.height);
+        }
+/*
         // Create a border around the board.
         g.setColor(Color.BLACK);
         g.fillRect(68, 68, 564, 564);
@@ -274,7 +300,7 @@ public class ChessGame extends JPanel {
             g.fillRect(xLightSquare, yLightSquare, 70, 70);
             xLightSquare = xLightSquare + 140;
         }
-
+*/
     } // end drawChessBoard(Graphics)
 /*
     public void initImageChessTokens() {
