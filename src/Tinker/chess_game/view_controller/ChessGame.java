@@ -30,7 +30,7 @@ public class ChessGame extends JPanel {
         this.requestFocus();
 
         this.setSize( new Dimension(560, 560) );
-        this.setLocation( new Point( ((700/2)-(560/2)), ((700/2)-(560/2)) ) );
+        this.setLocation( new Point( ((700-560) /2) , ((700-560)/2) ));
         this.setBorder( BorderFactory.createLineBorder(Color.RED, 3, false) );
 
 
