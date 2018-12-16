@@ -1,6 +1,7 @@
 package Tinker.chess_game.view_controller;
 
 import Tinker.chess_game.model.ChessBoard;
+import Tinker.chess_game.model.ChessSet;
 import Tinker.chess_game.model.token.*;
 
 import javax.swing.*;
@@ -11,32 +12,38 @@ public class ChessGame extends JPanel {
     public enum Player {
         PLAYER1, PLAYER2;
     }
-    ChessBoard board;
 
     Player whoseTurn = Player.PLAYER1;
     boolean gameOver = false;
 
-    String imageAddressChessTokens = "src/CountZeroInit/model/icons/chess_tokens.png";
-    ImageIcon iiChessTokens;
-    Image imageChessTokens;
+    ChessSet chessSet;
 
+    //ChessBoard board;
+
+    //String imageAddressChessTokens = "src/CountZeroInit/model/icons/chess_tokens.png";
+    //ImageIcon iiChessTokens;
+    //Image imageChessTokens;
+
+    /*
     ChessToken pawn1a, pawn2a, pawn3a, pawn4a, pawn5a, pawn6a, pawn7a, pawn8a,
             rook1a, rook2a, knight1a, knight2a, bishop1a, bishop2a, queen1a, king1a;
     ChessToken pawn1b, pawn2b, pawn3b, pawn4b, pawn5b, pawn6b, pawn7b, pawn8b,
             rook1b, rook2b, knight1b, knight2b, bishop1b, bishop2b, queen1b, king1b;
+    */
 
     public ChessGame() {
         this.setFocusable(true);
         this.requestFocus();
 
-        board = new ChessBoard();
+        chessSet = new ChessSet(Player.PLAYER1, Player.PLAYER2);
+        //board = new ChessBoard();
 
-        initImageChessTokens();
+        //initImageChessTokens();
 
-        initChessTokenPlayer1();
-        initChessTokenPlayer2();
+        //initChessTokenPlayer1();
+        //initChessTokenPlayer2();
     }
-
+/*
     public void initChessTokenPlayer1() {
         pawn1a = new Pawn(Player.PLAYER1, 70, 490);
         pawn2a = new Pawn(Player.PLAYER1, 140, 490);
@@ -84,7 +91,7 @@ public class ChessGame extends JPanel {
         king1b = new King(Player.PLAYER2, 350, 70);
 
     }
-
+*/
     @Override
     public void paintComponent(Graphics g) {
 
@@ -94,9 +101,9 @@ public class ChessGame extends JPanel {
         // Draws chessboard with light (yellow) and dark (blue) squares.
         drawChessBoard(g);
 
-        drawChessTokenPlayer1(g);
+        //drawChessTokenPlayer1(g);
 
-        drawChessTokenPlayer2(g);
+        //drawChessTokenPlayer2(g);
 
         ImageIcon imageIconWolfman = new ImageIcon("src/CountZeroInit/model/icons/wolfman.png");
         Image imageWolfman = imageIconWolfman.getImage();
@@ -115,7 +122,7 @@ public class ChessGame extends JPanel {
         g.drawImage(imageMonkey, 350, 280, 420, 350, 0, 0, 256, 256, null);
 
     }
-
+/*
     public void drawChessTokenPlayer1(Graphics g) {
         // Draws PLAYER1's Pawn tokens.
         g.drawImage(imageChessTokens, pawn1a.getX()+6, pawn1a.getY()+6, pawn1a.getX()+62, pawn1a.getY()+62,
@@ -239,7 +246,7 @@ public class ChessGame extends JPanel {
                 1080, 265, 1135, 335, null);
 
     }
-
+*/
     public void drawChessBoard(Graphics g) {
 
         // Create a border around the board.
@@ -269,10 +276,10 @@ public class ChessGame extends JPanel {
         }
 
     } // end drawChessBoard(Graphics)
-
+/*
     public void initImageChessTokens() {
         iiChessTokens = new ImageIcon(imageAddressChessTokens);
         imageChessTokens = iiChessTokens.getImage();
     } // end initImageChessTokens()
-
+*/
 } // end ChessGame class
