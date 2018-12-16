@@ -11,14 +11,15 @@ public class TestClassChess {
         JFrame displayer = new JFrame();
         displayer.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        int gameWidth = 725;
-        int gameHeight = 725;
+        int gameWidth = 700;
+        int gameHeight = 700;
 
         displayer.setSize(gameWidth, gameHeight);
-        displayer.setLocationRelativeTo(null);
+        displayer.setLocationRelativeTo(null);          // Centers the frame onto the client's screen.
         displayer.setTitle("Chess");
-
-        displayer.setContentPane(new ChessGame());
+        displayer.setLayout( null );
+        displayer.add( new ChessGame() );
+        //displayer.setContentPane(new ChessGame());
         displayer.setVisible(true);
 
     } // end main()
