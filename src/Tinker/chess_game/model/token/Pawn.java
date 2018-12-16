@@ -3,20 +3,18 @@ package Tinker.chess_game.model.token;
 import Tinker.chess_game.view_controller.ChessGame.Player;
 
 public class Pawn extends ChessToken {
-    int[] pawnPlayer1ImageCoordinate = { 60, 60, 120, 140 };
-    int[] pawnPlayer2ImageCoordinate = { 60, 265, 120, 340 };
-
     public Pawn(Player player, int x, int y) {
         super(player, x, y);
 
-    }
+        player1ImageCoordinate[0] = 60;
+        player1ImageCoordinate[1] = 60;
+        player1ImageCoordinate[2] = 120;
+        player1ImageCoordinate[3] = 140;
 
-    public int[] getTokenImageCoordinate(Player player) {
-        if (player == Player.PLAYER1) {
-            return pawnPlayer1ImageCoordinate;
-        } else {
-            return pawnPlayer2ImageCoordinate;
-        }
+        player2ImageCoordinate[0] = 60;
+        player2ImageCoordinate[1] = 265;
+        player2ImageCoordinate[2] = 120;
+        player2ImageCoordinate[3] = 340;
     }
 
     public boolean isValidMove(int futureCol, int futureRow) {

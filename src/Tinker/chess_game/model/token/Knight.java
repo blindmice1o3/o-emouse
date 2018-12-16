@@ -3,23 +3,22 @@ package Tinker.chess_game.model.token;
 import Tinker.chess_game.view_controller.ChessGame.Player;
 
 public class Knight extends ChessToken {
-    int[] knightPlayer1ImageCoordinate = { 465, 65, 525, 135 };
-    int[] knightPlayer2ImageCoordinate = { 465, 265, 525, 335 };
-
     public Knight(Player player, int x, int y) {
         super(player, x, y);
 
-    }
+        player1ImageCoordinate[0] = 465;
+        player1ImageCoordinate[1] = 65;
+        player1ImageCoordinate[2] = 525;
+        player1ImageCoordinate[3] = 135;
 
-    public int[] getTokenImageCoordinate(Player player) {
-        if (player == Player.PLAYER1) {
-            return knightPlayer1ImageCoordinate;
-        } else {
-            return knightPlayer2ImageCoordinate;
-        }
+        player2ImageCoordinate[0] = 465;
+        player2ImageCoordinate[1] = 265;
+        player2ImageCoordinate[2] = 525;
+        player2ImageCoordinate[3] = 335;
     }
 
     public boolean isValidMove(int futureCol, int futureRow) {
         return false;
     }
+
 }

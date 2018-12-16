@@ -9,6 +9,9 @@ public abstract class ChessToken {
     public static final int width = 70;
     public static final int height = 70;
 
+    int[] player1ImageCoordinate;
+    int[] player2ImageCoordinate;
+
     private String imageAddressChessTokens = "src/CountZeroInit/model/icons/chess_tokens.png";
     private ImageIcon iiChessTokens;
     private Image imageChessTokens;
@@ -23,13 +26,21 @@ public abstract class ChessToken {
 
         iiChessTokens = new ImageIcon(imageAddressChessTokens);
         imageChessTokens = iiChessTokens.getImage();
+        player1ImageCoordinate = new int[4];
+        player2ImageCoordinate = new int[4];
+    }
+
+    public int[] getTokenImageCoordinate(Player player) {
+        if (player == Player.PLAYER1) {
+            return player1ImageCoordinate;
+        } else {
+            return player2ImageCoordinate;
+        }
     }
 
     public Image getImageChessTokens() {
         return imageChessTokens;
     }
-
-    public abstract int[] getTokenImageCoordinate(Player player);
 
     public abstract boolean isValidMove(int futureCol, int futureRow);
 
