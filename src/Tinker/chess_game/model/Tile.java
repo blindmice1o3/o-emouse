@@ -33,6 +33,8 @@ public class Tile {
         return token;
     }
 
+    public void setTokenNull() { token = null; }
+
     public String getRankAndFile() {
         return rankAndFile;
     }

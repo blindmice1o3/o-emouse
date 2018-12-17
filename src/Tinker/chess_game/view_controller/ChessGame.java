@@ -11,7 +11,10 @@ import java.awt.event.MouseListener;
 import java.util.List;
 import java.util.Map;
 
-public class ChessGame extends JPanel {
+public class ChessGame extends JPanel
+        implements MouseListener {
+
+
 
     public enum Player {
         PLAYER1, PLAYER2;
@@ -27,13 +30,16 @@ public class ChessGame extends JPanel {
 
     Image imageChessTokens;
 
+    String rankMouseClicked;
+    String fileMouseClicked;
+
     public ChessGame() {
         this.setFocusable(true);
         this.requestFocus();
 
-        this.setSize( new Dimension(560, 560) );
-        this.setLocation( new Point( ((700-560) /2) , ((700-560)/2) ));
-        this.setBorder( BorderFactory.createLineBorder(Color.RED, 3, false) );
+        this.setSize(new Dimension(560, 560));
+        this.setLocation(new Point(((700 - 560) / 2), ((700 - 560) / 2)));
+        this.setBorder(BorderFactory.createLineBorder(Color.RED, 3, false));
 
 
         chessSet = new ChessSet(Player.PLAYER1, Player.PLAYER2);
@@ -43,9 +49,12 @@ public class ChessGame extends JPanel {
 
         imageChessTokens = player1ChessTokenSet.get(0).getImageChessTokens();
 
+        rankMouseClicked = "";
+        fileMouseClicked = "";
+
         setChessTokenOnChessBoard();
 
-        this.addMouseListener( new ChessBoardMouseListener() );
+        this.addMouseListener(this);
         //startGame();
     }
 
@@ -76,20 +85,68 @@ public class ChessGame extends JPanel {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         ImageIcon imageIconWolfman = new ImageIcon("src/CountZeroInit/model/icons/wolfman.png");
         Image imageWolfman = imageIconWolfman.getImage();
-        g.drawImage(imageWolfman, 210+5, 280+5, 280-5, 350-5, 0, 0, 256, 256, null);
+        g.drawImage(imageWolfman, 210 + 5, 280 + 5, 280 - 5, 350 - 5, 0, 0, 256, 256, null);
 
         ImageIcon imageIconFishmonk = new ImageIcon("src/CountZeroInit/model/icons/3fish_blue_spirit.png");
         Image imageFishmonk = imageIconFishmonk.getImage();
-        g.drawImage(imageFishmonk, 280+5, 280+5, 350-5, 350-5, 0, 0, 256, 256, null);
+        g.drawImage(imageFishmonk, 280 + 5, 280 + 5, 350 - 5, 350 - 5, 0, 0, 256, 256, null);
 
         ImageIcon imageIconRobot = new ImageIcon("src/CountZeroInit/model/icons/robot_flat_head.png");
         Image imageRobot = imageIconRobot.getImage();
-        g.drawImage(imageRobot, 210+5, 210+5, 280-5, 280-5, 0, 0, 256, 256, null);
+        g.drawImage(imageRobot, 210 + 5, 210 + 5, 280 - 5, 280 - 5, 0, 0, 256, 256, null);
 
         ImageIcon imageIconMonkey = new ImageIcon("src/CountZeroInit/model/icons/5monkey.jpg");
         Image imageMonkey = imageIconMonkey.getImage();
-        g.drawImage(imageMonkey, 280+5, 210+5, 350-5, 280-5, 0, 0, 256, 256, null);
+        g.drawImage(imageMonkey, 280 + 5, 210 + 5, 350 - 5, 280 - 5, 0, 0, 256, 256, null);
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    }
+
+    public String translateMouseClickToFile(MouseEvent e) {
+        int xMouseClick = e.getX();
+
+        if ((xMouseClick >= 0) && (xMouseClick < 70)) {
+            return "A";
+        } else if ((xMouseClick >= 70) && (xMouseClick < 140)) {
+            return "B";
+        } else if ((xMouseClick >= 140) && (xMouseClick < 210)) {
+            return "C";
+        } else if ((xMouseClick >= 210) && (xMouseClick < 280)) {
+            return "D";
+        } else if ((xMouseClick >= 280) && (xMouseClick < 350)) {
+            return "E";
+        } else if ((xMouseClick >= 350) && (xMouseClick < 420)) {
+            return "F";
+        } else if ((xMouseClick >= 420) && (xMouseClick < 490)) {
+            return "G";
+        } else if ((xMouseClick >= 490) && (xMouseClick < 560)) {
+            return "H";
+        } else {
+            return "";
+        }
+    }
+
+    public String translateMouseClickToRank(MouseEvent e) {
+        int yMouseClick = e.getY();
+
+        if ((yMouseClick >= 0) && (yMouseClick < 70)) {
+            return "8";
+        } else if ((yMouseClick >= 70) && (yMouseClick < 140)) {
+            return "7";
+        } else if ((yMouseClick >= 140) && (yMouseClick < 210)) {
+            return "6";
+        } else if ((yMouseClick >= 210) && (yMouseClick < 280)) {
+            return "5";
+        } else if ((yMouseClick >= 280) && (yMouseClick < 350)) {
+            return "4";
+        } else if ((yMouseClick >= 350) && (yMouseClick < 420)) {
+            return "3";
+        } else if ((yMouseClick >= 420) && (yMouseClick < 490)) {
+            return "2";
+        } else if ((yMouseClick >= 490) && (yMouseClick < 560)) {
+            return "1";
+        } else {
+            return "";
+        }
     }
 
     public void setChessTokenOnChessBoard() {
@@ -139,7 +196,7 @@ public class ChessGame extends JPanel {
         int x2 = 0;
         int y2 = 0;
 
-        for(Tile tile: board.values()) {
+        for (Tile tile : board.values()) {
             g.setColor(tile.getColor());
             g.fillRect(tile.getX(), tile.getY(), Tile.width, Tile.height);
 
@@ -150,97 +207,68 @@ public class ChessGame extends JPanel {
                 x2 = imageCoor[2];
                 y2 = imageCoor[3];
 
-                g.drawImage(imageChessTokens, tile.getX()+5, tile.getY()+5,
-                        (tile.getX() + Tile.width)-5, (tile.getY() + Tile.height)-5,
+                g.drawImage(imageChessTokens, tile.getX() + 5, tile.getY() + 5,
+                        (tile.getX() + Tile.width) - 5, (tile.getY() + Tile.height) - 5,
                         x1, y1, x2, y2, null);
             }
         }
 
     } // end drawChessBoard(Graphics)
 
-} // end ChessGame class
+    //ChessToken token = null;
+    //boolean notSelected = true;
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-class ChessBoardMouseListener implements MouseListener {
-
-    String rankMouseClicked;
-    String fileMouseClicked;
-
-    public ChessBoardMouseListener() {
-        rankMouseClicked = "";
-        fileMouseClicked = "";
+    public enum Click {
+        FIRST, SECOND;
     }
+    Click selection = Click.FIRST;
+    ChessToken selectedToken = null;
 
     @Override
     public void mouseClicked(MouseEvent e) {
-        System.out.println( "Mouse clicked: (" + e.getX() + ", " + e.getY() + "),\n" +
+        System.out.println("Mouse clicked: (" + e.getX() + ", " + e.getY() + "),\n" +
                 "Rank/File: (" + translateMouseClickToRank(e) + "/" + translateMouseClickToFile(e) + ")\n" +
                 "MouseEvent source => " + e.getSource().getClass());
-    }
 
-    public String translateMouseClickToFile(MouseEvent e) {
-        int xMouseClick = e.getX();
+            ////////////////////////////////////////////////////////////////////////////
 
-        if ( (xMouseClick >= 0) && (xMouseClick < 70) ) {
-            return "A";
-        }
-        else if ( (xMouseClick >= 70) && (xMouseClick < 140) ) {
-            return "B";
-        }
-        else if ( (xMouseClick >= 140) && (xMouseClick < 210) ) {
-            return "C";
-        }
-        else if ( (xMouseClick >= 210) && (xMouseClick < 280) ) {
-            return "D";
-        }
-        else if ( (xMouseClick >= 280) && (xMouseClick < 350) ) {
-            return "E";
-        }
-        else if ( (xMouseClick >= 350) && (xMouseClick < 420) ) {
-            return "F";
-        }
-        else if ( (xMouseClick >= 420) && (xMouseClick < 490) ) {
-            return "G";
-        }
-        else if ( (xMouseClick >= 490) && (xMouseClick < 560) ) {
-            return "H";
-        }
-        else {
-            return "";
-        }
-    }
+        Tile selectedTile = board.get( translateMouseClickToRank(e) + translateMouseClickToFile(e) );
 
-    public String translateMouseClickToRank(MouseEvent e) {
-        int yMouseClick = e.getY();
+        // If client is selecting a token to move and has selected a Tile that actually has a Token on it... see who it belong to.
+        if ( (selection == Click.FIRST) && (selectedTile.hasToken()) && (selectedTile.getToken().getPlayer() == whoseTurn)) {
+            // store this selected token and let the else statement take care of which Tile to place the token.
+            selectedToken = selectedTile.getToken();
+            selectedTile.setToken(null);
 
-        if ( (yMouseClick >= 0) && (yMouseClick < 70) ) {
-            return "8";
+            System.out.println("First click - inside if clause");
+            this.repaint();
+
+            selection = Click.SECOND;
         }
-        else if ( (yMouseClick >= 70) && (yMouseClick < 140) ) {
-            return "7";
+        // Else client is selecting a position to place the selectedToken.
+        else if ( (selection == Click.SECOND) && (!selectedTile.hasToken()) ) {
+            selectedTile.setToken(selectedToken);
+            selectedToken = null;
+
+            System.out.println("Second click - inside else clause");
+            this.repaint();
+
+            selection = Click.FIRST;
         }
-        else if ( (yMouseClick >= 140) && (yMouseClick < 210) ) {
-            return "6";
+        /*
+        Tile tile = board.get(translateMouseClickToRank(e) + translateMouseClickToFile(e));
+
+        if (tile.hasToken() && notSelected) {
+            token = tile.getToken();
+            tile.setTokenNull();
+            notSelected = false;
         }
-        else if ( (yMouseClick >= 210) && (yMouseClick < 280) ) {
-            return "5";
+        if (!tile.hasToken() && !notSelected) {
+            tile.setToken(token);
+            notSelected = true;
         }
-        else if ( (yMouseClick >= 280) && (yMouseClick < 350) ) {
-            return "4";
-        }
-        else if ( (yMouseClick >= 350) && (yMouseClick < 420) ) {
-            return "3";
-        }
-        else if ( (yMouseClick >= 420) && (yMouseClick < 490) ) {
-            return "2";
-        }
-        else if ( (yMouseClick >= 490) && (yMouseClick < 560) ) {
-            return "1";
-        }
-        else {
-            return "";
-        }
+        this.repaint();
+        */
     }
 
     @Override
@@ -262,4 +290,4 @@ class ChessBoardMouseListener implements MouseListener {
     public void mouseExited(MouseEvent e) {
 
     }
-}
+} // end ChessGame class

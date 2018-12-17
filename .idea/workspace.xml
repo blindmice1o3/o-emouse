@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4264d6a-6746-43ef-b695-128d92c400ed" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Tinker/chess_game/view_controller/ChessBoardMouseListener.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/o-emouse/Tinker/chess_game/view_controller/ChessBoardMouseListener.class" afterPath="$PROJECT_DIR$/out/production/o-emouse/Tinker/chess_game/view_controller/ChessBoardMouseListener.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/Tinker/chess_game/view_controller/ChessBoardMouseListener.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/o-emouse/Tinker/chess_game/model/Tile.class" afterPath="$PROJECT_DIR$/out/production/o-emouse/Tinker/chess_game/model/Tile.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/o-emouse/Tinker/chess_game/view_controller/ChessGame$Player.class" afterPath="$PROJECT_DIR$/out/production/o-emouse/Tinker/chess_game/view_controller/ChessGame$Player.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/o-emouse/Tinker/chess_game/view_controller/ChessGame.class" afterPath="$PROJECT_DIR$/out/production/o-emouse/Tinker/chess_game/view_controller/ChessGame.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tinker/chess_game/model/Tile.java" afterPath="$PROJECT_DIR$/src/Tinker/chess_game/model/Tile.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tinker/chess_game/view_controller/ChessGame.java" afterPath="$PROJECT_DIR$/src/Tinker/chess_game/view_controller/ChessGame.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,8 +26,8 @@
       <file leaf-file-name="ChessGame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/view_controller/ChessGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="56" column="36" lean-forward="false" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
+            <state relative-caret-position="204">
+              <caret line="243" column="12" lean-forward="false" selection-start-line="243" selection-start-column="12" selection-end-line="243" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,8 +48,8 @@
       <file leaf-file-name="Tile.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/model/Tile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="24" column="22" lean-forward="false" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+            <state relative-caret-position="476">
+              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -71,8 +72,8 @@
       <file leaf-file-name="ChessToken.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/model/token/ChessToken.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="32" column="25" lean-forward="false" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+            <state relative-caret-position="17">
+              <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -169,7 +170,6 @@
         <option value="$PROJECT_DIR$/src/Tinker/chess_game/model/ChessTokenSetPlayer1.java" />
         <option value="$PROJECT_DIR$/src/Tinker/chess_game/model/ChessTokenSetPlayer2.java" />
         <option value="$PROJECT_DIR$/src/Tinker/chess_game/model/ChessSet.java" />
-        <option value="$PROJECT_DIR$/src/Tinker/chess_game/model/Tile.java" />
         <option value="$PROJECT_DIR$/src/Tinker/chess_game/model/ChessBoard.java" />
         <option value="$PROJECT_DIR$/src/Tinker/chess_game/model/token/Pawn.java" />
         <option value="$PROJECT_DIR$/src/Tinker/chess_game/model/token/Rook.java" />
@@ -180,6 +180,7 @@
         <option value="$PROJECT_DIR$/src/Tinker/chess_game/model/token/ChessToken.java" />
         <option value="$PROJECT_DIR$/src/Tinker/chess_game/TestClassChess.java" />
         <option value="$PROJECT_DIR$/src/Tinker/chess_game/view_controller/ChessBoardMouseListener.java" />
+        <option value="$PROJECT_DIR$/src/Tinker/chess_game/model/Tile.java" />
         <option value="$PROJECT_DIR$/src/Tinker/chess_game/view_controller/ChessGame.java" />
       </list>
     </option>
@@ -228,6 +229,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -239,19 +242,6 @@
               <item name="o-emouse" type="b2602c69:ProjectViewProjectNode" />
               <item name="o-emouse" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="o-emouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="o-emouse" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="CountZeroInit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="o-emouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="o-emouse" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="CountZeroInit" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="o-emouse" type="b2602c69:ProjectViewProjectNode" />
@@ -282,21 +272,10 @@
               <item name="chess_game" type="462c0819:PsiDirectoryNode" />
               <item name="view_controller" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="o-emouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="o-emouse" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Tinker" type="462c0819:PsiDirectoryNode" />
-              <item name="chess_game" type="462c0819:PsiDirectoryNode" />
-              <item name="view_controller" type="462c0819:PsiDirectoryNode" />
-              <item name="ChessGame.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -561,6 +540,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.108169444" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="611" y="58" width="143" height="612" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -568,38 +548,22 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.71895427" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6094771" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5604575" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2549168" sideWeight="0.49346405" order="0" side_tool="false" content_ui="combo" x="1072" y="100" width="256" height="583" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25113463" sideWeight="0.49346405" order="0" side_tool="false" content_ui="combo" x="1072" y="100" width="256" height="583" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19440243" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="1047" y="99" width="279" height="560" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39869282" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24508321" sideWeight="0.50653595" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.108169444" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="611" y="58" width="143" height="612" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3251634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6094771" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5604575" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2473525" sideWeight="0.49346405" order="0" side_tool="false" content_ui="combo" x="1072" y="100" width="256" height="583" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7058824" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19440243" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="1047" y="99" width="279" height="560" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39869282" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24508321" sideWeight="0.50653595" order="3" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.108169444" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="611" y="58" width="143" height="612" />
@@ -955,16 +919,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/model/Tile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="24" column="22" lean-forward="false" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/model/token/Knight.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -978,16 +932,6 @@
         <state relative-caret-position="119">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/model/token/ChessToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="32" column="25" lean-forward="false" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1011,18 +955,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/view_controller/ChessBoardMouseListener.java">
+    <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/view_controller/ChessBoardMouseListener.java" />
+    <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/model/Tile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="19" column="78" lean-forward="true" selection-start-line="19" selection-start-column="78" selection-end-line="19" selection-end-column="78" />
-          <folding />
+        <state relative-caret-position="476">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/model/token/ChessToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/view_controller/ChessGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="56" column="36" lean-forward="false" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
+        <state relative-caret-position="204">
+          <caret line="243" column="12" lean-forward="false" selection-start-line="243" selection-start-column="12" selection-end-line="243" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
