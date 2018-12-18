@@ -14,8 +14,6 @@ import java.util.Map;
 public class ChessGame extends JPanel
         implements MouseListener {
 
-
-
     public enum Player {
         PLAYER1, PLAYER2;
     }
@@ -34,8 +32,6 @@ public class ChessGame extends JPanel
     String fileMouseClicked;
 
     public ChessGame() {
-        this.setFocusable(true);
-        this.requestFocus();
 
         this.setSize(new Dimension(560, 560));
         this.setLocation(new Point(((700 - 560) / 2), ((700 - 560) / 2)));
@@ -55,10 +51,16 @@ public class ChessGame extends JPanel
         setChessTokenOnChessBoard();
 
         this.addMouseListener(this);
-        //startGame();
-    }
+        this.setFocusable(true);
+        this.requestFocus();
 
- /* public void startGame() {
+        //startGame();
+
+    } // **** end ChessGame() constructor ****
+
+    /*
+    public void startGame() {
+
         while(!gameOver) {
           if (whoseTurn == Player.PLAYER1) {        // if it's player1's turn
               getMouseSelection(whoseTurn);             // get player1's token selection (to be moved)
@@ -71,7 +73,9 @@ public class ChessGame extends JPanel
                checkMouseSelection(                     //     it's page_top to page_bottom)
           }
         }
-    } */
+
+    } // **** end startGame() ****
+    */
 
     @Override
     public void paintComponent(Graphics g) {
@@ -99,9 +103,11 @@ public class ChessGame extends JPanel
         Image imageMonkey = imageIconMonkey.getImage();
         g.drawImage(imageMonkey, 280 + 5, 210 + 5, 350 - 5, 280 - 5, 0, 0, 256, 256, null);
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    }
+
+    } // **** end paintComponent(Graphics) ****
 
     public String translateMouseClickToFile(MouseEvent e) {
+
         int xMouseClick = e.getX();
 
         if ((xMouseClick >= 0) && (xMouseClick < 70)) {
@@ -123,9 +129,11 @@ public class ChessGame extends JPanel
         } else {
             return "";
         }
-    }
+
+    } // **** end translateMouseClickToFile(MouseEvent) ****
 
     public String translateMouseClickToRank(MouseEvent e) {
+
         int yMouseClick = e.getY();
 
         if ((yMouseClick >= 0) && (yMouseClick < 70)) {
@@ -147,9 +155,11 @@ public class ChessGame extends JPanel
         } else {
             return "";
         }
-    }
+
+    } // **** end translateMouseClickToRank(MouseEvent) ****
 
     public void setChessTokenOnChessBoard() {
+
         board.get("2A").setToken(player1ChessTokenSet.get(0));
         board.get("2B").setToken(player1ChessTokenSet.get(1));
         board.get("2C").setToken(player1ChessTokenSet.get(2));
@@ -185,7 +195,8 @@ public class ChessGame extends JPanel
         board.get("8F").setToken(player2ChessTokenSet.get(13));
         board.get("8G").setToken(player2ChessTokenSet.get(11));
         board.get("8H").setToken(player2ChessTokenSet.get(9));
-    }
+
+    } // **** end setChessTokenOnChessBoard() ****
 
     public void drawChessBoard(Graphics g) {
 
@@ -213,19 +224,18 @@ public class ChessGame extends JPanel
             }
         }
 
-    } // end drawChessBoard(Graphics)
-
-    //ChessToken token = null;
-    //boolean notSelected = true;
+    } // **** end drawChessBoard(Graphics) ****
 
     public enum Click {
         FIRST, SECOND;
     }
+    boolean successfulTokenMove = false;
     Click selection = Click.FIRST;
     ChessToken selectedToken = null;
 
     @Override
     public void mouseClicked(MouseEvent e) {
+
         System.out.println("Mouse clicked: (" + e.getX() + ", " + e.getY() + "),\n" +
                 "Rank/File: (" + translateMouseClickToRank(e) + "/" + translateMouseClickToFile(e) + ")\n" +
                 "MouseEvent source => " + e.getSource().getClass());
@@ -240,7 +250,7 @@ public class ChessGame extends JPanel
             selectedToken = selectedTile.getToken();
             selectedTile.setToken(null);
 
-            System.out.println("First click - inside if clause");
+            System.out.println("First click - inside if clause. WHOSETURN---------->" + whoseTurn);
             this.repaint();
 
             selection = Click.SECOND;
@@ -249,27 +259,26 @@ public class ChessGame extends JPanel
         else if ( (selection == Click.SECOND) && (!selectedTile.hasToken()) ) {
             selectedTile.setToken(selectedToken);
             selectedToken = null;
+            successfulTokenMove = true;
 
-            System.out.println("Second click - inside else clause");
+            System.out.println("Second click - inside else clause. WHOSETURN---------->" + whoseTurn);
             this.repaint();
 
             selection = Click.FIRST;
         }
-        /*
-        Tile tile = board.get(translateMouseClickToRank(e) + translateMouseClickToFile(e));
 
-        if (tile.hasToken() && notSelected) {
-            token = tile.getToken();
-            tile.setTokenNull();
-            notSelected = false;
+            ////////////////////////////////////////////////////////////////////////////
+
+        if (successfulTokenMove && whoseTurn == Player.PLAYER1) {
+            whoseTurn = Player.PLAYER2;
+            successfulTokenMove = false;
         }
-        if (!tile.hasToken() && !notSelected) {
-            tile.setToken(token);
-            notSelected = true;
+        else if (successfulTokenMove && whoseTurn == Player.PLAYER2) {
+            whoseTurn = Player.PLAYER1;
+            successfulTokenMove = false;
         }
-        this.repaint();
-        */
-    }
+
+    } // **** end mouseClicked(MouseEvent) ****
 
     @Override
     public void mousePressed(MouseEvent e) {
@@ -290,4 +299,5 @@ public class ChessGame extends JPanel
     public void mouseExited(MouseEvent e) {
 
     }
-} // end ChessGame class
+
+} // **** end ChessGame class ****
