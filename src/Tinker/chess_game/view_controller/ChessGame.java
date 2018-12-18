@@ -224,6 +224,9 @@ public class ChessGame extends JPanel
             }
         }
 
+        g.setColor(Color.RED);
+        g.drawString(whoseTurn.toString(), 50, 50);
+
     } // **** end drawChessBoard(Graphics) ****
 
     public enum Click {
@@ -249,6 +252,8 @@ public class ChessGame extends JPanel
             // store this selected token and let the else statement take care of which Tile to place the token.
             selectedToken = selectedTile.getToken();
             selectedTile.setToken(null);
+
+            //selectedTile draw square around itself with YELLOW color.
 
             System.out.println("First click - inside if clause. WHOSETURN---------->" + whoseTurn);
             this.repaint();
