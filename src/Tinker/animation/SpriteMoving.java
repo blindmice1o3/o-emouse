@@ -5,20 +5,22 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class BackgroundMoving extends JPanel
+public class SpriteMoving extends JPanel
         implements ActionListener {
 
-    String imageAddress = "src/CountZeroInit/model/icons/initBackground.png";
-    private final int IMAGEPIXELLENGTH = 2400;
-    private final int DELAY = 30;
+    String imageAddress = "src/CountZeroInit/model/icons/player.gif";
+
+    private final int DELAY = 300;
     Timer timer;
 
     ImageIcon ii;
     Image image;
     int dx1, dy1, dx2, dy2;
-    int sx1, sy1, sx2, sy2;
 
-    public BackgroundMoving() {
+    int sx1, sy1, sx2, sy2;
+    int oneTwo = 1;
+
+    public SpriteMoving() {
 
         this.setSize(600, 400);
 
@@ -27,13 +29,13 @@ public class BackgroundMoving extends JPanel
 
         dx1 = 0;
         dy1 = 0;
-        dx2 = 600;
-        dy2 = 400;
+        dx2 = 48;
+        dy2 = 48;
 
         sx1 = 0;
         sy1 = 0;
-        sx2 = 600;
-        sy2 = 400;
+        sx2 = 16;
+        sy2 = 16;
 
         timer = new Timer(DELAY, this);
 
@@ -46,27 +48,28 @@ public class BackgroundMoving extends JPanel
 
         this.setDoubleBuffered(true);
 
-        drawImage(g);
-
-    }
-
-    public void drawImage(Graphics g) {
-
         g.drawImage(image, dx1, dy1, dx2, dy2, sx1, sy1, sx2, sy2, null);
-        //Toolkit.getDefaultToolkit().sync();
 
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
 
-        if (sx2 < IMAGEPIXELLENGTH) {
-            sx1++;
-            sx2++;
+        if (oneTwo == 1) {
+            sx1 = 0;
+            sy1 = 0;
+            sx2 = 16;
+            sy2 = 16;
+
+            oneTwo = 2;
         }
-        else {
-            sx1 = (IMAGEPIXELLENGTH/2)-600;
-            sx2 = (IMAGEPIXELLENGTH/2);
+        else if (oneTwo == 2) {
+            sx1 = 16;
+            sy1 = 0;
+            sx2 = 32;
+            sy2 = 16;
+
+            oneTwo = 1;
         }
 
         repaint();
