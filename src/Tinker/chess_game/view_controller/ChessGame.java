@@ -208,8 +208,11 @@ public class ChessGame extends JPanel
         int y2 = 0;
 
         for (Tile tile : board.values()) {
-            g.setColor(tile.getColor());
-            g.fillRect(tile.getX(), tile.getY(), Tile.width, Tile.height);
+            g.setColor(tile.getColorBorder());
+            g.fillRect(tile.getXBorder(), tile.getYBorder(), Tile.WIDTHBORDER, Tile.HEIGHTBORDER);
+
+            g.setColor(tile.getColorTile());
+            g.fillRect(tile.getXTile(), tile.getYTile(), Tile.WIDTHTILE, Tile.HEIGHTTILE);
 
             if (tile.hasToken()) {
                 imageCoor = tile.getToken().getTokenImageCoordinate(tile.getToken().getPlayer());
@@ -218,8 +221,8 @@ public class ChessGame extends JPanel
                 x2 = imageCoor[2];
                 y2 = imageCoor[3];
 
-                g.drawImage(imageChessTokens, tile.getX() + 5, tile.getY() + 5,
-                        (tile.getX() + Tile.width) - 5, (tile.getY() + Tile.height) - 5,
+                g.drawImage(imageChessTokens, tile.getXTile(), tile.getYTile(),
+                        (tile.getXTile() + Tile.WIDTHTILE), (tile.getYTile() + Tile.HEIGHTTILE),
                         x1, y1, x2, y2, null);
             }
         }
@@ -232,10 +235,11 @@ public class ChessGame extends JPanel
     public enum Click {
         FIRST, SECOND;
     }
-    boolean successfulTokenMove = false;
     Click selection = Click.FIRST;
+    Tile firstSelectedTile = null;
     ChessToken selectedToken = null;
-
+    Tile secondSelectedTile = null;
+    boolean successfulTokenMove = false;
     @Override
     public void mouseClicked(MouseEvent e) {
 
@@ -245,15 +249,19 @@ public class ChessGame extends JPanel
 
             ////////////////////////////////////////////////////////////////////////////
 
-        Tile selectedTile = board.get( translateMouseClickToRank(e) + translateMouseClickToFile(e) );
+        if (selection == Click.FIRST) {
+            firstSelectedTile = board.get( translateMouseClickToRank(e) + translateMouseClickToFile(e) );
+        }
+        else if (selection == Click.SECOND) {
+            secondSelectedTile = board.get( translateMouseClickToRank(e) + translateMouseClickToFile(e) );
+        }
 
         // If client is selecting a token to move and has selected a Tile that actually has a Token on it... see who it belong to.
-        if ( (selection == Click.FIRST) && (selectedTile.hasToken()) && (selectedTile.getToken().getPlayer() == whoseTurn)) {
+        if ( (selection == Click.FIRST) && (firstSelectedTile.hasToken()) && (firstSelectedTile.getToken().getPlayer() == whoseTurn)) {
             // store this selected token and let the else statement take care of which Tile to place the token.
-            selectedToken = selectedTile.getToken();
-            selectedTile.setToken(null);
-
-            //selectedTile draw square around itself with YELLOW color.
+            selectedToken = firstSelectedTile.getToken();
+            firstSelectedTile.setToken(null);
+            firstSelectedTile.setColorBorder(Color.RED);
 
             System.out.println("First click - inside if clause. WHOSETURN---------->" + whoseTurn);
             this.repaint();
@@ -261,9 +269,12 @@ public class ChessGame extends JPanel
             selection = Click.SECOND;
         }
         // Else client is selecting a position to place the selectedToken.
-        else if ( (selection == Click.SECOND) && (!selectedTile.hasToken()) ) {
-            selectedTile.setToken(selectedToken);
+        else if ( (selection == Click.SECOND) && (!secondSelectedTile.hasToken()) ) {
+            secondSelectedTile.setToken(selectedToken);
             selectedToken = null;
+            firstSelectedTile.setColorBorder(firstSelectedTile.getColorTile());
+            firstSelectedTile = null;
+            secondSelectedTile = null;
             successfulTokenMove = true;
 
             System.out.println("Second click - inside else clause. WHOSETURN---------->" + whoseTurn);

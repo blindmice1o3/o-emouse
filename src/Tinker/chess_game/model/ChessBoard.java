@@ -50,7 +50,7 @@ public class ChessBoard {
                     tile = new Tile(rank + file, x, y, color);
                     board.put(tile.getRankAndFile(), tile);
 
-                    x += Tile.width;
+                    x += Tile.WIDTHBORDER;
                     fileInt++;
                     file = makeStringFile(fileInt);
                 }
@@ -64,14 +64,14 @@ public class ChessBoard {
                     tile = new Tile(rank + file, x, y, color);
                     board.put(tile.getRankAndFile(), tile);
 
-                    x += Tile.width;
+                    x += Tile.WIDTHBORDER;
                     fileInt++;
                     file = makeStringFile(fileInt);
                 }
             }
 
             x = 0;
-            y += Tile.height;
+            y += Tile.HEIGHTBORDER;
             rankInt--;
             rank = makeStringRank(rankInt);
             fileInt = 65;
@@ -81,7 +81,7 @@ public class ChessBoard {
 
         // This console output is just to verify that the 64 Tile objects were instantiated and put() into the HashMap board.
         for(Tile tile1: board.values()) {
-            System.out.println(tile1.getRankAndFile() + ", " + tile1.getX() + ", " + tile1.getY());
+            System.out.println(tile1.getRankAndFile() + ", " + tile1.getXBorder() + ", " + tile1.getYBorder());
         }
     }
 

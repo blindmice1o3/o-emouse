@@ -28,7 +28,7 @@ public class ChessTokenSetPlayer2 {
             chessToken = new Pawn(player, x, y);
             tokenSet.add(chessToken);
 
-            x += Tile.width;
+            x += Tile.WIDTHBORDER;
         }
 
         // Instantiate 2 Rook objects using the player it belongs to and its coordinate point, then store in tokenSet.

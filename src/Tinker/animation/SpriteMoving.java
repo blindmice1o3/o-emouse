@@ -13,8 +13,9 @@ public class SpriteMoving extends JPanel
     private final int DELAY = 300;
     Timer timer;
 
+
     ImageIcon ii;
-    Image image;
+    Image imageSpriteSouth;
     int dx1, dy1, dx2, dy2;
 
     int sx1, sy1, sx2, sy2;
@@ -25,7 +26,7 @@ public class SpriteMoving extends JPanel
         this.setSize(600, 400);
 
         ii = new ImageIcon(imageAddress);
-        image = ii.getImage();
+        imageSpriteSouth = ii.getImage();
 
         dx1 = 0;
         dy1 = 0;
@@ -48,7 +49,7 @@ public class SpriteMoving extends JPanel
 
         this.setDoubleBuffered(true);
 
-        g.drawImage(image, dx1, dy1, dx2, dy2, sx1, sy1, sx2, sy2, null);
+        g.drawImage(imageSpriteSouth, dx1, dy1, dx2, dy2, sx1, sy1, sx2, sy2, null);
 
     }
 
