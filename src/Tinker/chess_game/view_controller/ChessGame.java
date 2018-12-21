@@ -32,11 +32,9 @@ public class ChessGame extends JPanel
     String fileMouseClicked;
 
     public ChessGame() {
-
-        this.setSize(new Dimension(560, 560));
-        this.setLocation(new Point(((700 - 560) / 2), ((700 - 560) / 2)));
-        this.setBorder(BorderFactory.createLineBorder(Color.RED, 3, false));
-
+        this.setSize( new Dimension(560, 560) );
+        this.setLocation( new Point( ((700 - 560) / 2), ((700 - 560) / 2) ) );
+        this.setBorder( BorderFactory.createLineBorder( Color.RED, 3, false ) );
 
         chessSet = new ChessSet(Player.PLAYER1, Player.PLAYER2);
         player1ChessTokenSet = chessSet.getChessTokenSetPlayer1().getTokenSet();
@@ -200,7 +198,6 @@ public class ChessGame extends JPanel
 
     public void drawChessBoard(Graphics g) {
 
-        ChessToken token = player1ChessTokenSet.get(0);
         int[] imageCoor = new int[4];
         int x1 = 0;
         int y1 = 0;
@@ -250,14 +247,20 @@ public class ChessGame extends JPanel
             ////////////////////////////////////////////////////////////////////////////
 
         if (selection == Click.FIRST) {
+
             firstSelectedTile = board.get( translateMouseClickToRank(e) + translateMouseClickToFile(e) );
+
         }
         else if (selection == Click.SECOND) {
+
             secondSelectedTile = board.get( translateMouseClickToRank(e) + translateMouseClickToFile(e) );
+
         }
 
         // If client is selecting a token to move and has selected a Tile that actually has a Token on it... see who it belong to.
-        if ( (selection == Click.FIRST) && (firstSelectedTile.hasToken()) && (firstSelectedTile.getToken().getPlayer() == whoseTurn)) {
+        if ( (selection == Click.FIRST) && (firstSelectedTile.hasToken())
+                && (firstSelectedTile.getToken().getPlayer() == whoseTurn) ) {
+
             // store this selected token and let the else statement take care of which Tile to place the token.
             selectedToken = firstSelectedTile.getToken();
             firstSelectedTile.setToken(null);
@@ -267,9 +270,11 @@ public class ChessGame extends JPanel
             this.repaint();
 
             selection = Click.SECOND;
+
         }
         // Else client is selecting a position to place the selectedToken.
-        else if ( (selection == Click.SECOND) && (!secondSelectedTile.hasToken()) ) {
+        else if ( (selection == Click.SECOND) && (!secondSelectedTile.hasToken()) ) {   // It's second selection.
+                                                                                        // No Token on Tile.
             secondSelectedTile.setToken(selectedToken);
             selectedToken = null;
             firstSelectedTile.setColorBorder(firstSelectedTile.getColorTile());
@@ -277,21 +282,31 @@ public class ChessGame extends JPanel
             secondSelectedTile = null;
             successfulTokenMove = true;
 
-            System.out.println("Second click - inside else clause. WHOSETURN---------->" + whoseTurn);
+            System.out.println("Second click - Tile does NOT have Token. WHOSETURN---------->" + whoseTurn);
             this.repaint();
 
             selection = Click.FIRST;
+
+        }
+        else {                                                                              // It's second selection.
+                                                                                            // Yes Token on Tile.
+            System.out.println("Second click - Tile has Token. WHOSETURN-------->" + whoseTurn);
+
         }
 
-            ////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////       // Switch turn if successful move.
 
         if (successfulTokenMove && whoseTurn == Player.PLAYER1) {
+
             whoseTurn = Player.PLAYER2;
             successfulTokenMove = false;
+
         }
         else if (successfulTokenMove && whoseTurn == Player.PLAYER2) {
+
             whoseTurn = Player.PLAYER1;
             successfulTokenMove = false;
+
         }
 
     } // **** end mouseClicked(MouseEvent) ****
