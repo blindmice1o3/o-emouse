@@ -2,6 +2,157 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4264d6a-6746-43ef-b695-128d92c400ed" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Tinker/mit_opencourseware6_092/GravityCalculator.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch01StrategyPattern/DecoyWoodenDuck.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch01StrategyPattern/Duck.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch01StrategyPattern/FlyBehavior.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch01StrategyPattern/FlyNoWay.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch01StrategyPattern/FlyRocketPowered.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch01StrategyPattern/FlyWithWings.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch01StrategyPattern/MallardDuck.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch01StrategyPattern/ModelDuck.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch01StrategyPattern/MuteQuack.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch01StrategyPattern/Quack.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch01StrategyPattern/QuackBehavior.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch01StrategyPattern/RubberDuck.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch01StrategyPattern/Squeak.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch01StrategyPattern/TestClassDuck.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch02ObserverPattern/ObserverJavaBuiltInPattern/CurrentConditionsDisplay.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch02ObserverPattern/ObserverJavaBuiltInPattern/DisplayElement.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch02ObserverPattern/ObserverJavaBuiltInPattern/TestClassWeatherStation.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch02ObserverPattern/ObserverJavaBuiltInPattern/WeatherData.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch02ObserverPattern/ObserverOurs/CurrentConditionsDisplay.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch02ObserverPattern/ObserverOurs/DisplayElement.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch02ObserverPattern/ObserverOurs/ForecastDisplay.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch02ObserverPattern/ObserverOurs/HeatIndexDisplay.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch02ObserverPattern/ObserverOurs/Observer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch02ObserverPattern/ObserverOurs/StatisticsDisplay.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch02ObserverPattern/ObserverOurs/Subject.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch02ObserverPattern/ObserverOurs/TestClassWeatherStation.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch02ObserverPattern/ObserverOurs/WeatherData.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch02ObserverPattern/ObserverSwingExample/SwingObserverExample$AngelListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch02ObserverPattern/ObserverSwingExample/SwingObserverExample$DevilListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch02ObserverPattern/ObserverSwingExample/SwingObserverExample.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch03DecoratorPattern/DecoratorIOExample/LowerCaseInputStream.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch03DecoratorPattern/DecoratorIOExample/TestClassInputTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch03DecoratorPattern/DecoratorIOExample/test.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch03DecoratorPattern/DecoratorOurs/Beverage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch03DecoratorPattern/DecoratorOurs/CondimentDecorator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch03DecoratorPattern/DecoratorOurs/CondimentPrettyPrint.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch03DecoratorPattern/DecoratorOurs/ExtendedExercise(CondimentPrettyPrintDecorator)" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch03DecoratorPattern/DecoratorOurs/HouseBlend.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch03DecoratorPattern/DecoratorOurs/Mocha.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch03DecoratorPattern/DecoratorOurs/TestClassStarbuzzCoffee.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch04FactoryPattern/BlackOlives.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch04FactoryPattern/Cheese.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch04FactoryPattern/CheesePizza.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch04FactoryPattern/ChicagoPizzaIngredientFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch04FactoryPattern/ChicagoPizzaStore.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch04FactoryPattern/ChicagoStyleCheesePizza.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch04FactoryPattern/ClamPizza.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch04FactoryPattern/Clams.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch04FactoryPattern/Dough.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch04FactoryPattern/EggPlant.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch04FactoryPattern/FreshClams.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch04FactoryPattern/FrozenClams.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch04FactoryPattern/Garlic.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch04FactoryPattern/MarinaraSauce.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch04FactoryPattern/Mozzarella.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch04FactoryPattern/Mushroom.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch04FactoryPattern/NYPizzaIngredientFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch04FactoryPattern/NYPizzaStore.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch04FactoryPattern/NYStyleCheesePizza.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch04FactoryPattern/Onion.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch04FactoryPattern/Pepperoni.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch04FactoryPattern/Pizza.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch04FactoryPattern/PizzaIngredientFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch04FactoryPattern/PizzaStore.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch04FactoryPattern/PlumTomatoSauce.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch04FactoryPattern/RedPepper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch04FactoryPattern/ReggianoCheese.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch04FactoryPattern/Sauce.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch04FactoryPattern/SlicedPepperoni.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch04FactoryPattern/Spinach.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch04FactoryPattern/TestClassPizza.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch04FactoryPattern/ThickCrustDough.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch04FactoryPattern/ThinCrustDough.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch04FactoryPattern/Veggies.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch05SingletonPattern/TestClassChocolateBoiler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch06CommandPattern/CeilingFan.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch06CommandPattern/CeilingFanHighCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch06CommandPattern/CeilingFanMediumCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch06CommandPattern/CeilingFanOffCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch06CommandPattern/Command.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch06CommandPattern/GarageDoor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch06CommandPattern/GarageDoorCloseCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch06CommandPattern/GarageDoorOpenCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch06CommandPattern/Light.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch06CommandPattern/LightOffCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch06CommandPattern/LightOnCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch06CommandPattern/MacroCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch06CommandPattern/NoCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch06CommandPattern/RemoteControl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch06CommandPattern/SimpleRemoteControl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch06CommandPattern/Stereo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch06CommandPattern/StereoOffCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch06CommandPattern/StereoOnWithCDCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch06CommandPattern/TestClassRemoteLoader.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch06CommandPattern/TestClassSimpleRemoteControl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch07AdapterPattern/Car.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch07AdapterPattern/Duck.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch07AdapterPattern/EnumerationIterator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch07AdapterPattern/HomeTheaterFacade.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch07AdapterPattern/MallardDuck.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch07AdapterPattern/TestClassAdapterAndFacade.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch07AdapterPattern/TestClassHomeTheater.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch07AdapterPattern/Turkey.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch07AdapterPattern/TurkeyAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch07AdapterPattern/WildTurkey.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch08TemplatePattern/CaffeineBeverageWithHook.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch08TemplatePattern/CoffeeWithHook.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch08TemplatePattern/Duck.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch08TemplatePattern/MyApplet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch08TemplatePattern/MyFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch08TemplatePattern/TeaWithHook.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch08TemplatePattern/TestClassBeverage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch08TemplatePattern/TestClassDuckSort.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/CafeMenu.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/CompositePatternMenuComponent/CompositeIterator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/CompositePatternMenuComponent/Menu.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/CompositePatternMenuComponent/MenuComponent.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/CompositePatternMenuComponent/MenuItem.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/CompositePatternMenuComponent/NullIterator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/CompositePatternMenuComponent/TestClassMenuCompositePattern.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/CompositePatternMenuComponent/Waitress.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/DinerMenu.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/DinerMenuIterator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/Iterator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/Menu.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/MenuItem.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/PancakeHouseIterator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/PancakeHouseMenu.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/TestClassMenu.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/Waitress.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch10StatePattern/GumballMachine.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch10StatePattern/HasQuarterState.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch10StatePattern/NoQuarterState.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch10StatePattern/SoldOutState.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch10StatePattern/SoldState.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch10StatePattern/State.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch10StatePattern/TestClassGumballMachine.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch10StatePattern/WinnerState.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch11ProxyPattern/GumballMachine.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch11ProxyPattern/GumballMonitor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch11ProxyPattern/NoQuarterState.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch11ProxyPattern/State.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/DesignPatterns/Ch11ProxyPattern/TestClassGumballMonitor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/OOAD/Ch01WellDesignedAppsRock/Guitar.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/OOAD/Ch01WellDesignedAppsRock/Inventory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/OOAD/Ch01WellDesignedAppsRock/TestClassCh01.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/OOAD/Ch02GatheringRequirements/TestClassCh02.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/OOAD/Ch03RequirementsChange/TestClassCh03.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/OOAD/Ch04Analysis/TestClassCh04.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/o-emouse/HeadFirst/OOAD/Ch05GoodDesign/TestClassCh05.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -17,51 +168,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Guitar.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/HeadFirst/OOAD/Ch01WellDesignedAppsRock/Guitar.java">
+      <file leaf-file-name="ChessGame.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/view_controller/ChessGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestClassCh02.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/HeadFirst/OOAD/Ch02GatheringRequirements/TestClassCh02.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestClassCh03.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/HeadFirst/OOAD/Ch03RequirementsChange/TestClassCh03.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestClassCh04.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/HeadFirst/OOAD/Ch04Analysis/TestClassCh04.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestClassCh05.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/HeadFirst/OOAD/Ch05GoodDesign/TestClassCh05.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="1" />
+            <state relative-caret-position="306">
+              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -95,8 +206,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Tinker/GameTemplate/Tinker.java" />
-        <option value="$PROJECT_DIR$/src/Tinker/GameTemplate/mouseadapter/TinkerMouseAdapterBackground.java" />
         <option value="$PROJECT_DIR$/src/Tinker/mouseadapter/TinkerMouseAdapter.java" />
         <option value="$PROJECT_DIR$/src/Tinker/GameTemplate/MouseClickPaintRedSquare.java" />
         <option value="$PROJECT_DIR$/src/Tinker/layout_manager/LayoutManagerCardLayout.java" />
@@ -146,6 +255,8 @@
         <option value="$PROJECT_DIR$/src/Tinker/chess_game/model/ChessTokenSetPlayer2.java" />
         <option value="$PROJECT_DIR$/src/Tinker/chess_game/model/Tile.java" />
         <option value="$PROJECT_DIR$/src/Tinker/chess_game/view_controller/ChessGame.java" />
+        <option value="$PROJECT_DIR$/src/Tinker/DoMath2.java" />
+        <option value="$PROJECT_DIR$/src/Tinker/mit_opencourseware6_092/GravityCalculator.java" />
       </list>
     </option>
   </component>
@@ -194,7 +305,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -212,59 +322,50 @@
               <item name="o-emouse" type="b2602c69:ProjectViewProjectNode" />
               <item name="o-emouse" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="HeadFirst" type="462c0819:PsiDirectoryNode" />
+              <item name="Tinker" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="o-emouse" type="b2602c69:ProjectViewProjectNode" />
               <item name="o-emouse" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="HeadFirst" type="462c0819:PsiDirectoryNode" />
-              <item name="OOAD" type="462c0819:PsiDirectoryNode" />
+              <item name="Tinker" type="462c0819:PsiDirectoryNode" />
+              <item name="animation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="o-emouse" type="b2602c69:ProjectViewProjectNode" />
               <item name="o-emouse" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="HeadFirst" type="462c0819:PsiDirectoryNode" />
-              <item name="OOAD" type="462c0819:PsiDirectoryNode" />
-              <item name="Ch01WellDesignedAppsRock" type="462c0819:PsiDirectoryNode" />
+              <item name="Tinker" type="462c0819:PsiDirectoryNode" />
+              <item name="chess_game" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="o-emouse" type="b2602c69:ProjectViewProjectNode" />
               <item name="o-emouse" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="HeadFirst" type="462c0819:PsiDirectoryNode" />
-              <item name="OOAD" type="462c0819:PsiDirectoryNode" />
-              <item name="Ch02GatheringRequirements" type="462c0819:PsiDirectoryNode" />
+              <item name="Tinker" type="462c0819:PsiDirectoryNode" />
+              <item name="chess_game" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="o-emouse" type="b2602c69:ProjectViewProjectNode" />
               <item name="o-emouse" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="HeadFirst" type="462c0819:PsiDirectoryNode" />
-              <item name="OOAD" type="462c0819:PsiDirectoryNode" />
-              <item name="Ch03RequirementsChange" type="462c0819:PsiDirectoryNode" />
+              <item name="Tinker" type="462c0819:PsiDirectoryNode" />
+              <item name="chess_game" type="462c0819:PsiDirectoryNode" />
+              <item name="view_controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="o-emouse" type="b2602c69:ProjectViewProjectNode" />
               <item name="o-emouse" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="HeadFirst" type="462c0819:PsiDirectoryNode" />
-              <item name="OOAD" type="462c0819:PsiDirectoryNode" />
-              <item name="Ch04Analysis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="o-emouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="o-emouse" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="HeadFirst" type="462c0819:PsiDirectoryNode" />
-              <item name="OOAD" type="462c0819:PsiDirectoryNode" />
-              <item name="Ch05GoodDesign" type="462c0819:PsiDirectoryNode" />
+              <item name="Tinker" type="462c0819:PsiDirectoryNode" />
+              <item name="mit_opencourseware6_092" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -309,14 +410,14 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.TestClassChess">
-    <configuration name="BackgroundMovingJFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="DoMath2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="Tinker.animation.*" />
+          <option name="PATTERN" value="Tinker.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="Tinker.animation.BackgroundMovingJFrame" />
+      <option name="MAIN_CLASS_NAME" value="Tinker.DoMath2" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -328,14 +429,14 @@
       <module name="o-emouse" />
       <envs />
     </configuration>
-    <configuration name="CardTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="GameboyColor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="Tinker.deck_of_cards.*" />
+          <option name="PATTERN" value="CountZeroInit.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="Tinker.deck_of_cards.CardTest" />
+      <option name="MAIN_CLASS_NAME" value="CountZeroInit.controller.GameboyColor" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -347,14 +448,14 @@
       <module name="o-emouse" />
       <envs />
     </configuration>
-    <configuration name="DeckOfCards" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="GravityCalculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="Tinker.deck_of_cards.*" />
+          <option name="PATTERN" value="Tinker.mit_opencourseware6_092.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="Tinker.deck_of_cards.DeckOfCards" />
+      <option name="MAIN_CLASS_NAME" value="Tinker.mit_opencourseware6_092.GravityCalculator" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -486,18 +587,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.TestClassChess" />
-      <item index="1" class="java.lang.String" itemvalue="Application.CardTest" />
-      <item index="2" class="java.lang.String" itemvalue="Application.DeckOfCards" />
-      <item index="3" class="java.lang.String" itemvalue="Application.BackgroundMovingJFrame" />
-      <item index="4" class="java.lang.String" itemvalue="Application.SpriteMovingJFrame" />
+      <item index="1" class="java.lang.String" itemvalue="Application.SpriteMovingJFrame" />
+      <item index="2" class="java.lang.String" itemvalue="Application.GameboyColor" />
+      <item index="3" class="java.lang.String" itemvalue="Application.DoMath2" />
+      <item index="4" class="java.lang.String" itemvalue="Application.GravityCalculator" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.TestClassChess" />
-        <item index="1" class="java.lang.String" itemvalue="Application.SpriteMovingJFrame" />
-        <item index="2" class="java.lang.String" itemvalue="Application.BackgroundMovingJFrame" />
-        <item index="3" class="java.lang.String" itemvalue="Application.DeckOfCards" />
-        <item index="4" class="java.lang.String" itemvalue="Application.CardTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.GravityCalculator" />
+        <item index="2" class="java.lang.String" itemvalue="Application.DoMath2" />
+        <item index="3" class="java.lang.String" itemvalue="Application.GameboyColor" />
+        <item index="4" class="java.lang.String" itemvalue="Application.SpriteMovingJFrame" />
       </list>
     </recent_temporary>
   </component>
@@ -528,24 +629,25 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.108169444" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="611" y="58" width="143" height="612" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3251634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6094771" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40849674" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5604575" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31467474" sideWeight="0.49346405" order="0" side_tool="false" content_ui="combo" x="1072" y="100" width="256" height="583" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980332" sideWeight="0.49346405" order="0" side_tool="false" content_ui="combo" x="1072" y="100" width="256" height="583" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19440243" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="1047" y="99" width="279" height="560" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39869282" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24508321" sideWeight="0.50653595" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39869282" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3251634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -622,364 +724,88 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch07AdapterPattern/TestClassHomeTheater.java">
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch07AdapterPattern/WildTurkey.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch08TemplatePattern/CaffeineBeverageWithHook.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch08TemplatePattern/CoffeeWithHook.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch08TemplatePattern/Duck.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch08TemplatePattern/MyApplet.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch08TemplatePattern/MyFrame.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch08TemplatePattern/TeaWithHook.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch08TemplatePattern/TestClassBeverage.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch08TemplatePattern/TestClassDuckSort.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/Menu.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/PancakeHouseMenu.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/TestClassMenu.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/CompositePatternMenuComponent/CompositeIterator.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/CompositePatternMenuComponent/Menu.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/CompositePatternMenuComponent/MenuComponent.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/CompositePatternMenuComponent/MenuItem.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/CafeMenu.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/DinerMenuIterator.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/Iterator.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/CompositePatternMenuComponent/NullIterator.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/CompositePatternMenuComponent/TestClassMenuCompositePattern.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/Waitress.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/MenuItem.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/PancakeHouseIterator.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/CompositePatternMenuComponent/Waitress.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/DinerMenu.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch10StatePattern/HasQuarterState.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch10StatePattern/GumballMachine.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch10StatePattern/NoQuarterState.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch10StatePattern/SoldOutState.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch10StatePattern/SoldState.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch10StatePattern/TestClassGumballMachine.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch10StatePattern/WinnerState.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch10StatePattern/State.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch11ProxyPattern/GumballMachine.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch11ProxyPattern/GumballMonitor.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch11ProxyPattern/NoQuarterState.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch11ProxyPattern/TestClassGumballMonitor.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch11ProxyPattern/State.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/OOAD/Ch01WellDesignedAppsRock/TestClassCh01.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/OOAD/Ch01WellDesignedAppsRock/Inventory.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/OOAD/Ch01WellDesignedAppsRock/Guitar.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/OOAD/Ch02GatheringRequirements/TestClassCh02.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/OOAD/Ch03RequirementsChange/TestClassCh03.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/OOAD/Ch04Analysis/TestClassCh04.java" />
+    <entry file="file://$PROJECT_DIR$/src/HeadFirst/OOAD/Ch05GoodDesign/TestClassCh05.java" />
+    <entry file="file://$PROJECT_DIR$/src/Tinker/animation/SpriteMoving.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch07AdapterPattern/Turkey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch07AdapterPattern/HomeTheaterFacade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch07AdapterPattern/Duck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch07AdapterPattern/TurkeyAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch07AdapterPattern/WildTurkey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch08TemplatePattern/CaffeineBeverageWithHook.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch08TemplatePattern/CoffeeWithHook.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch08TemplatePattern/Duck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch08TemplatePattern/MyApplet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch08TemplatePattern/MyFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch08TemplatePattern/TeaWithHook.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch08TemplatePattern/TestClassBeverage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch08TemplatePattern/TestClassDuckSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/PancakeHouseMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/TestClassMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/CompositePatternMenuComponent/CompositeIterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/CompositePatternMenuComponent/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
+        <state relative-caret-position="68">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/CompositePatternMenuComponent/MenuComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/CompositePatternMenuComponent/MenuItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/CafeMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="39" column="14" lean-forward="false" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/DinerMenuIterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/Iterator.java">
+    <entry file="file://$PROJECT_DIR$/src/Tinker/DoMath2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/CompositePatternMenuComponent/NullIterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/CompositePatternMenuComponent/TestClassMenuCompositePattern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/Waitress.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/MenuItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/PancakeHouseIterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/CompositePatternMenuComponent/Waitress.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/DinerMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch10StatePattern/HasQuarterState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch10StatePattern/GumballMachine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch10StatePattern/NoQuarterState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch10StatePattern/SoldOutState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch10StatePattern/SoldState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch10StatePattern/TestClassGumballMachine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch10StatePattern/WinnerState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch10StatePattern/State.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch11ProxyPattern/GumballMachine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch11ProxyPattern/GumballMonitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch11ProxyPattern/NoQuarterState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch11ProxyPattern/TestClassGumballMonitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch11ProxyPattern/State.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/OOAD/Ch01WellDesignedAppsRock/TestClassCh01.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="31" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="31" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/OOAD/Ch01WellDesignedAppsRock/Inventory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/OOAD/Ch01WellDesignedAppsRock/Guitar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="3" column="38" lean-forward="false" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/OOAD/Ch02GatheringRequirements/TestClassCh02.java">
+    <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/TestClassChess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="374">
+          <caret line="24" column="19" lean-forward="false" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/OOAD/Ch03RequirementsChange/TestClassCh03.java">
+    <entry file="file://$PROJECT_DIR$/src/Tinker/mit_opencourseware6_092/GravityCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="1" />
+        <state relative-caret-position="187">
+          <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/OOAD/Ch04Analysis/TestClassCh04.java">
+    <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/view_controller/ChessGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/OOAD/Ch05GoodDesign/TestClassCh05.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="1" />
+        <state relative-caret-position="306">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
       </provider>
