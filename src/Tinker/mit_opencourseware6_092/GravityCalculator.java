@@ -1,5 +1,7 @@
 package Tinker.mit_opencourseware6_092;
 
+import java.util.Scanner;
+
 public class GravityCalculator {
 
     public static void main(String[] args) {
