@@ -1,5 +1,6 @@
 package Tinker.chess_game.view_controller;
 
+import Tinker.chess_game.TestClassChess;
 import Tinker.chess_game.model.ChessSet;
 import Tinker.chess_game.model.Tile;
 import Tinker.chess_game.model.token.*;
@@ -18,8 +19,11 @@ public class ChessGame extends JPanel
         PLAYER1, PLAYER2;
     }
 
+    public static final int BOARD_WIDTH = 560;
+    public static final int BOARD_HEIGHT = 560;
+
     ChessSet chessSet;
-    Player whoseTurn = Player.PLAYER1;
+    public Player whoseTurn = Player.PLAYER1;
     boolean gameOver = false;
 
     Map<String, Tile> board;
@@ -33,8 +37,10 @@ public class ChessGame extends JPanel
 
     public ChessGame() {
 
-        this.setSize( new Dimension(560, 560) );
-        this.setLocation( new Point( ((700 - 560) / 2), ((700 - 560) / 2) ) );
+        this.setSize( new Dimension(BOARD_WIDTH, BOARD_HEIGHT) );
+        this.setLocation( new Point( ((TestClassChess.FRAME_WIDTH - BOARD_WIDTH) / 2),
+                                     ((TestClassChess.FRAME_HEIGHT - BOARD_HEIGHT) / 2) ) );
+
         this.setBorder( BorderFactory.createLineBorder( Color.RED, 3, false ) );
 
         chessSet = new ChessSet(Player.PLAYER1, Player.PLAYER2);
@@ -283,7 +289,7 @@ public class ChessGame extends JPanel
             secondSelectedTile = null;
             successfulTokenMove = true;
 
-            System.out.println("Second click - Tile does NOT have Token. WHOSETURN---------->" + whoseTurn);
+            System.out.println("Second click - Tile does NOT have Token. WHOSETURN just ended---------->" + whoseTurn);
             this.repaint();
 
             selection = Click.FIRST;
@@ -291,7 +297,7 @@ public class ChessGame extends JPanel
         }
         else if ( (selection == Click.SECOND) && (secondSelectedTile.hasToken()) ) {                                                                              // It's second selection.
                                                                                             // Yes Token on Tile.
-            System.out.println("Second click - Tile has Token. WHOSETURN-------->" + whoseTurn);
+            System.out.println("Second click - Tile has Token. WHOSETURN still-------->" + whoseTurn);
 
         }
 
