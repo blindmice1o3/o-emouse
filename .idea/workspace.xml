@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4264d6a-6746-43ef-b695-128d92c400ed" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/o-emouse/Tinker/chess_game/view_controller/ChessGameBorder.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/o-emouse/CountZeroInit/model/files/2018_12_28_word_bank_(tales_from_watership_down).txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Tinker/chess_game/view_controller/ChessGameBorder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/o-emouse/Tinker/chess_game/TestClassChess.class" afterPath="$PROJECT_DIR$/out/production/o-emouse/Tinker/chess_game/TestClassChess.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/o-emouse/Tinker/chess_game/view_controller/ChessGame$Click.class" afterPath="$PROJECT_DIR$/out/production/o-emouse/Tinker/chess_game/view_controller/ChessGame$Click.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/o-emouse/Tinker/chess_game/view_controller/ChessGame.class" afterPath="$PROJECT_DIR$/out/production/o-emouse/Tinker/chess_game/view_controller/ChessGame.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CountZeroInit/model/files/2018_12_28_word_bank_(tales_from_watership_down).txt" afterPath="$PROJECT_DIR$/src/CountZeroInit/model/files/2018_12_28_word_bank_(tales_from_watership_down).txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tinker/chess_game/TestClassChess.java" afterPath="$PROJECT_DIR$/src/Tinker/chess_game/TestClassChess.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tinker/chess_game/view_controller/ChessGame.java" afterPath="$PROJECT_DIR$/src/Tinker/chess_game/view_controller/ChessGame.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,12 +26,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ChessGame.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ChessGame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/view_controller/ChessGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="65" column="33" lean-forward="false" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
+            <state relative-caret-position="153">
+              <caret line="269" column="91" lean-forward="false" selection-start-line="269" selection-start-column="91" selection-end-line="269" selection-end-column="91" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2018_12_28_word_bank_(tales_from_watership_down).txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/files/2018_12_28_word_bank_(tales_from_watership_down).txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="482">
+              <caret line="1103" column="5" lean-forward="true" selection-start-line="1103" selection-start-column="5" selection-end-line="1103" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestClassChess.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/TestClassChess.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChessGameBorder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/view_controller/ChessGameBorder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -55,8 +96,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Tinker/layout_manager/BoxLayout.java" />
-        <option value="$PROJECT_DIR$/src/Tinker/layout_manager/MainMenu.java" />
         <option value="$PROJECT_DIR$/src/Tinker/MoonRocks_ItsNotWhatYoureThinking/FarmingSymbiosis.txt" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/view/Displayer.java" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/controller/GameboyColor.java" />
@@ -88,7 +127,6 @@
         <option value="$PROJECT_DIR$/src/Tinker/chess_game/model/token/King.java" />
         <option value="$PROJECT_DIR$/src/Tinker/chess_game/model/token/Knight.java" />
         <option value="$PROJECT_DIR$/src/Tinker/chess_game/model/token/ChessToken.java" />
-        <option value="$PROJECT_DIR$/src/Tinker/chess_game/TestClassChess.java" />
         <option value="$PROJECT_DIR$/src/Tinker/chess_game/view_controller/ChessBoardMouseListener.java" />
         <option value="$PROJECT_DIR$/src/Tinker/animation/BackgroundMoving.java" />
         <option value="$PROJECT_DIR$/src/Tinker/animation/SpriteMovingJFrame.java" />
@@ -99,13 +137,16 @@
         <option value="$PROJECT_DIR$/src/Tinker/chess_game/model/ChessTokenSetPlayer1.java" />
         <option value="$PROJECT_DIR$/src/Tinker/chess_game/model/ChessTokenSetPlayer2.java" />
         <option value="$PROJECT_DIR$/src/Tinker/chess_game/model/Tile.java" />
-        <option value="$PROJECT_DIR$/src/Tinker/chess_game/view_controller/ChessGame.java" />
         <option value="$PROJECT_DIR$/src/Tinker/DoMath2.java" />
         <option value="$PROJECT_DIR$/src/Tinker/MoonRocks_ItsNotWhatYoureThinking/GamePremise.txt" />
         <option value="$PROJECT_DIR$/src/CountZeroInit/model/items/EmeraldNugget.java" />
         <option value="$PROJECT_DIR$/src/Tinker/NameReversal.java" />
         <option value="$PROJECT_DIR$/src/Tinker/mit_opencourseware6_092/GravityCalculator.java" />
         <option value="$PROJECT_DIR$/src/Tinker/bpj_textbooksample_blue_pelican_java/NameReversal.java" />
+        <option value="$PROJECT_DIR$/src/Tinker/chess_game/TestClassChess.java" />
+        <option value="$PROJECT_DIR$/src/Tinker/chess_game/view_controller/ChessGameBorder.java" />
+        <option value="$PROJECT_DIR$/src/Tinker/chess_game/view_controller/ChessGame.java" />
+        <option value="$PROJECT_DIR$/src/CountZeroInit/model/files/2018_12_28_word_bank_(tales_from_watership_down).txt" />
       </list>
     </option>
   </component>
@@ -164,6 +205,27 @@
               <item name="o-emouse" type="b2602c69:ProjectViewProjectNode" />
               <item name="o-emouse" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="o-emouse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="o-emouse" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="CountZeroInit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="o-emouse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="o-emouse" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="CountZeroInit" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="o-emouse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="o-emouse" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="CountZeroInit" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="o-emouse" type="b2602c69:ProjectViewProjectNode" />
@@ -490,6 +552,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.108169444" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="611" y="58" width="143" height="612" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3251634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -504,7 +567,6 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39869282" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24508321" sideWeight="0.50653595" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3251634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -581,8 +643,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch08TemplatePattern/MyFrame.java" />
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch08TemplatePattern/TeaWithHook.java" />
     <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch08TemplatePattern/TestClassBeverage.java" />
     <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch08TemplatePattern/TestClassDuckSort.java" />
     <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch09IteratorAndCompositePattern/Menu.java" />
@@ -623,13 +683,6 @@
     <entry file="file://$PROJECT_DIR$/src/HeadFirst/OOAD/Ch04Analysis/TestClassCh04.java" />
     <entry file="file://$PROJECT_DIR$/src/HeadFirst/OOAD/Ch05GoodDesign/TestClassCh05.java" />
     <entry file="file://$PROJECT_DIR$/src/Tinker/DoMath2.java" />
-    <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/TestClassChess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="24" column="19" lean-forward="false" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/items/EmeraldNugget.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -659,14 +712,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/files/2018_12_28_word_bank_(tales_from_watership_down).txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13339">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Tinker/animation/SpriteMoving.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -675,10 +720,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/model/ChessBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/TestClassChess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/view_controller/ChessGameBorder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Tinker/chess_game/view_controller/ChessGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="65" column="33" lean-forward="false" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
+        <state relative-caret-position="153">
+          <caret line="269" column="91" lean-forward="false" selection-start-line="269" selection-start-column="91" selection-end-line="269" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CountZeroInit/model/files/2018_12_28_word_bank_(tales_from_watership_down).txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="1103" column="5" lean-forward="true" selection-start-line="1103" selection-start-column="5" selection-end-line="1103" selection-end-column="5" />
           <folding />
         </state>
       </provider>

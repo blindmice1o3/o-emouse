@@ -32,6 +32,7 @@ public class ChessGame extends JPanel
     String fileMouseClicked;
 
     public ChessGame() {
+
         this.setSize( new Dimension(560, 560) );
         this.setLocation( new Point( ((700 - 560) / 2), ((700 - 560) / 2) ) );
         this.setBorder( BorderFactory.createLineBorder( Color.RED, 3, false ) );
@@ -242,7 +243,7 @@ public class ChessGame extends JPanel
 
         System.out.println("Mouse clicked: (" + e.getX() + ", " + e.getY() + "),\n" +
                 "Rank/File: (" + translateMouseClickToRank(e) + "/" + translateMouseClickToFile(e) + ")\n" +
-                "MouseEvent source => " + e.getSource().getClass());
+                "WHOSETURN---------->" + whoseTurn );
 
             ////////////////////////////////////////////////////////////////////////////
 
@@ -266,7 +267,7 @@ public class ChessGame extends JPanel
             firstSelectedTile.setToken(null);
             firstSelectedTile.setColorBorder(Color.RED);
 
-            System.out.println("First click - inside if clause. WHOSETURN---------->" + whoseTurn);
+            System.out.println("First click - Tile has Token and Token belongs to whoseTurn. WHOSETURN---------->" + whoseTurn);
             this.repaint();
 
             selection = Click.SECOND;
@@ -288,7 +289,7 @@ public class ChessGame extends JPanel
             selection = Click.FIRST;
 
         }
-        else {                                                                              // It's second selection.
+        else if ( (selection == Click.SECOND) && (secondSelectedTile.hasToken()) ) {                                                                              // It's second selection.
                                                                                             // Yes Token on Tile.
             System.out.println("Second click - Tile has Token. WHOSETURN-------->" + whoseTurn);
 

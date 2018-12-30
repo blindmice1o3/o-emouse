@@ -1,6 +1,7 @@
 package Tinker.chess_game;
 
 import Tinker.chess_game.view_controller.ChessGame;
+import Tinker.chess_game.view_controller.ChessGameBorder;
 
 import javax.swing.*;
 
@@ -17,9 +18,9 @@ public class TestClassChess {
         displayer.setSize(gameWidth, gameHeight);
         displayer.setLocationRelativeTo(null);          // Centers the frame onto the client's screen.
         displayer.setTitle("Chess");
-        displayer.setLayout( null );
-        displayer.add( new ChessGame() );
-        //displayer.setContentPane(new ChessGame());
+        //displayer.setLayout( null );
+        //displayer.add( new ChessGame() );
+        displayer.setContentPane(new ChessGameBorder());
         displayer.setVisible(true);
 
     } // end main()
