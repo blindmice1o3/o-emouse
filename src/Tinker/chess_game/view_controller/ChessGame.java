@@ -273,7 +273,7 @@ public class ChessGame extends JPanel
             firstSelectedTile.setToken(null);
             firstSelectedTile.setColorBorder(Color.RED);
 
-            System.out.println("First click - Tile has Token and Token belongs to whoseTurn. WHOSETURN---------->" + whoseTurn);
+            System.out.println("First click - Tile has Token and Token belongs to whoseTurn. WHOSETURN----------> " + whoseTurn);
             this.repaint();
 
             selection = Click.SECOND;
@@ -289,7 +289,7 @@ public class ChessGame extends JPanel
             secondSelectedTile = null;
             successfulTokenMove = true;
 
-            System.out.println("Second click - Tile does NOT have Token. WHOSETURN just ended---------->" + whoseTurn);
+            System.out.println("Second click - Tile does NOT have Token. WHOSETURN just ended----------> " + whoseTurn);
             this.repaint();
 
             selection = Click.FIRST;
@@ -297,7 +297,7 @@ public class ChessGame extends JPanel
         }
         else if ( (selection == Click.SECOND) && (secondSelectedTile.hasToken()) ) {                                                                              // It's second selection.
                                                                                             // Yes Token on Tile.
-            System.out.println("Second click - Tile has Token. WHOSETURN still-------->" + whoseTurn);
+            System.out.println("Second click - Tile has Token. WHOSETURN still--------> " + whoseTurn);
 
         }
 
