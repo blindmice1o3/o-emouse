@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4264d6a-6746-43ef-b695-128d92c400ed" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tinker/paint_with_off_screen_canvas/PaintWithOffScreenCanvas.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tinker/paint_with_off_screen_canvas/PaintWithOffScreenCanvas.java" afterPath="$PROJECT_DIR$/src/tinker/paint_with_off_screen_canvas/PaintWithOffScreenCanvas.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,8 +35,8 @@
       <file leaf-file-name="PaintWithOffScreenCanvas.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/tinker/paint_with_off_screen_canvas/PaintWithOffScreenCanvas.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="79" column="60" lean-forward="false" selection-start-line="79" selection-start-column="60" selection-end-line="79" selection-end-column="60" />
+            <state relative-caret-position="289">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -284,26 +283,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestClassChess">
-    <configuration name="CardTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="tinker.enum_practice.deck_of_cards.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="tinker.enum_practice.deck_of_cards.CardTest" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="o-emouse" />
-      <envs />
-    </configuration>
+  <component name="RunManager" selected="Application.PaintWithOffScreenCanvas">
     <configuration name="DeckOfCards" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -331,6 +311,25 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="count_zero_init.controller.GameboyColor" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="o-emouse" />
+      <envs />
+    </configuration>
+    <configuration name="PaintWithOffScreenCanvas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="tinker.paint_with_off_screen_canvas.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="tinker.paint_with_off_screen_canvas.PaintWithOffScreenCanvas" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -461,19 +460,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.CardTest" />
-      <item index="1" class="java.lang.String" itemvalue="Application.DeckOfCards" />
-      <item index="2" class="java.lang.String" itemvalue="Application.TestClassChess" />
-      <item index="3" class="java.lang.String" itemvalue="Application.GameboyColor" />
-      <item index="4" class="java.lang.String" itemvalue="Application.SubKiller" />
+      <item index="0" class="java.lang.String" itemvalue="Application.DeckOfCards" />
+      <item index="1" class="java.lang.String" itemvalue="Application.TestClassChess" />
+      <item index="2" class="java.lang.String" itemvalue="Application.GameboyColor" />
+      <item index="3" class="java.lang.String" itemvalue="Application.SubKiller" />
+      <item index="4" class="java.lang.String" itemvalue="Application.PaintWithOffScreenCanvas" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.TestClassChess" />
-        <item index="1" class="java.lang.String" itemvalue="Application.SubKiller" />
-        <item index="2" class="java.lang.String" itemvalue="Application.GameboyColor" />
-        <item index="3" class="java.lang.String" itemvalue="Application.DeckOfCards" />
-        <item index="4" class="java.lang.String" itemvalue="Application.CardTest" />
+        <item index="0" class="java.lang.String" itemvalue="Application.PaintWithOffScreenCanvas" />
+        <item index="1" class="java.lang.String" itemvalue="Application.TestClassChess" />
+        <item index="2" class="java.lang.String" itemvalue="Application.SubKiller" />
+        <item index="3" class="java.lang.String" itemvalue="Application.GameboyColor" />
+        <item index="4" class="java.lang.String" itemvalue="Application.DeckOfCards" />
       </list>
     </recent_temporary>
   </component>
@@ -842,8 +841,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tinker/paint_with_off_screen_canvas/PaintWithOffScreenCanvas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="79" column="60" lean-forward="false" selection-start-line="79" selection-start-column="60" selection-end-line="79" selection-end-column="60" />
+        <state relative-caret-position="289">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
