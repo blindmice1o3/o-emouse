@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4264d6a-6746-43ef-b695-128d92c400ed" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tinker/paint_with_off_screen_canvas/PaintWithOffScreenCanvas.java" afterPath="$PROJECT_DIR$/src/tinker/paint_with_off_screen_canvas/PaintWithOffScreenCanvas.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/count_zero_init/model/files/2019_01_21_word_bank_(neuromancer)" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tinker/TestCallingMainMethod.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,21 +27,31 @@
       <file leaf-file-name="ChessGame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tinker/chess_game/view_controller/ChessGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="459">
+              <caret line="37" column="24" lean-forward="false" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PaintWithOffScreenCanvas.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PaintWithOffScreenCanvas.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tinker/paint_with_off_screen_canvas/PaintWithOffScreenCanvas.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="17">
+              <caret line="25" column="27" lean-forward="false" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2019_01_21_word_bank_(neuromancer)" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/count_zero_init/model/files/2019_01_21_word_bank_(neuromancer)">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="482">
+              <caret line="89" column="4" lean-forward="false" selection-start-line="89" selection-start-column="4" selection-end-line="89" selection-end-column="4" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -94,9 +106,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Tinker/bicycle/Bicycle.java" />
-        <option value="$PROJECT_DIR$/src/Tinker/deck_of_cards/Card.java" />
-        <option value="$PROJECT_DIR$/src/Tinker/deck_of_cards/CardTest.java" />
         <option value="$PROJECT_DIR$/src/Tinker/deck_of_cards/Rank.java" />
         <option value="$PROJECT_DIR$/src/Tinker/deck_of_cards/Suit.java" />
         <option value="$PROJECT_DIR$/src/Tinker/enum_tinker/EnumerationTinker.java" />
@@ -145,6 +154,9 @@
         <option value="$PROJECT_DIR$/src/tinker/subkiller_game/SubKiller.java" />
         <option value="$PROJECT_DIR$/src/tinker/chess_game/view_controller/ChessGame.java" />
         <option value="$PROJECT_DIR$/src/tinker/paint_with_off_screen_canvas/PaintWithOffScreenCanvas.java" />
+        <option value="$PROJECT_DIR$/src/tinker/TestMainMethod.java" />
+        <option value="$PROJECT_DIR$/src/tinker/TestCallingMainMethod.java" />
+        <option value="$PROJECT_DIR$/src/count_zero_init/model/files/2019_01_21_word_bank_(neuromancer)" />
       </list>
     </option>
   </component>
@@ -192,8 +204,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -205,6 +216,27 @@
               <item name="o-emouse" type="b2602c69:ProjectViewProjectNode" />
               <item name="o-emouse" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="o-emouse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="o-emouse" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="count_zero_init" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="o-emouse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="o-emouse" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="count_zero_init" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="o-emouse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="o-emouse" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="count_zero_init" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="o-emouse" type="b2602c69:ProjectViewProjectNode" />
@@ -238,7 +270,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -283,45 +316,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.PaintWithOffScreenCanvas">
-    <configuration name="DeckOfCards" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="tinker.enum_practice.deck_of_cards.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="tinker.enum_practice.deck_of_cards.DeckOfCards" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="o-emouse" />
-      <envs />
-    </configuration>
-    <configuration name="GameboyColor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="count_zero_init.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="count_zero_init.controller.GameboyColor" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="o-emouse" />
-      <envs />
-    </configuration>
+  <component name="RunManager" selected="Application.TestCallingMainMethod">
     <configuration name="PaintWithOffScreenCanvas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -360,6 +355,25 @@
       <module name="o-emouse" />
       <envs />
     </configuration>
+    <configuration name="TestCallingMainMethod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="tinker.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="tinker.TestCallingMainMethod" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="o-emouse" />
+      <envs />
+    </configuration>
     <configuration name="TestClassChess" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -368,6 +382,25 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="tinker.chess_game.TestClassChess" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="o-emouse" />
+      <envs />
+    </configuration>
+    <configuration name="TestMainMethod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="tinker.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="tinker.TestMainMethod" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -460,19 +493,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.DeckOfCards" />
-      <item index="1" class="java.lang.String" itemvalue="Application.TestClassChess" />
-      <item index="2" class="java.lang.String" itemvalue="Application.GameboyColor" />
-      <item index="3" class="java.lang.String" itemvalue="Application.SubKiller" />
-      <item index="4" class="java.lang.String" itemvalue="Application.PaintWithOffScreenCanvas" />
+      <item index="0" class="java.lang.String" itemvalue="Application.TestClassChess" />
+      <item index="1" class="java.lang.String" itemvalue="Application.SubKiller" />
+      <item index="2" class="java.lang.String" itemvalue="Application.PaintWithOffScreenCanvas" />
+      <item index="3" class="java.lang.String" itemvalue="Application.TestMainMethod" />
+      <item index="4" class="java.lang.String" itemvalue="Application.TestCallingMainMethod" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.PaintWithOffScreenCanvas" />
-        <item index="1" class="java.lang.String" itemvalue="Application.TestClassChess" />
-        <item index="2" class="java.lang.String" itemvalue="Application.SubKiller" />
-        <item index="3" class="java.lang.String" itemvalue="Application.GameboyColor" />
-        <item index="4" class="java.lang.String" itemvalue="Application.DeckOfCards" />
+        <item index="0" class="java.lang.String" itemvalue="Application.TestCallingMainMethod" />
+        <item index="1" class="java.lang.String" itemvalue="Application.TestMainMethod" />
+        <item index="2" class="java.lang.String" itemvalue="Application.PaintWithOffScreenCanvas" />
+        <item index="3" class="java.lang.String" itemvalue="Application.TestClassChess" />
+        <item index="4" class="java.lang.String" itemvalue="Application.SubKiller" />
       </list>
     </recent_temporary>
   </component>
@@ -507,27 +540,28 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.108169444" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="611" y="58" width="143" height="612" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3251634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48856208" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35620916" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5604575" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19742814" sideWeight="0.49346405" order="0" side_tool="false" content_ui="combo" x="1072" y="100" width="256" height="583" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20347957" sideWeight="0.49346405" order="0" side_tool="false" content_ui="combo" x="1072" y="100" width="256" height="583" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19440243" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="1047" y="99" width="279" height="560" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39869282" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24508321" sideWeight="0.50653595" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3251634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7058824" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.108169444" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="611" y="58" width="143" height="612" />
@@ -599,8 +633,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch10StatePattern/State.java" />
-    <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch11ProxyPattern/GumballMachine.java" />
     <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch11ProxyPattern/GumballMonitor.java" />
     <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch11ProxyPattern/NoQuarterState.java" />
     <entry file="file://$PROJECT_DIR$/src/HeadFirst/DesignPatterns/Ch11ProxyPattern/TestClassGumballMonitor.java" />
@@ -805,11 +837,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="342" column="13" lean-forward="true" selection-start-line="342" selection-start-column="13" selection-end-line="342" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#5339#6816#0" expanded="false" />
-            <element signature="e#6815#6816#0" expanded="false" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tinker/chess_game/view_controller/ChessGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="37" column="24" lean-forward="false" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -831,21 +866,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tinker/chess_game/view_controller/ChessGame.java">
+    <entry file="file://$PROJECT_DIR$/src/tinker/TestCallingMainMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="289">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tinker/paint_with_off_screen_canvas/PaintWithOffScreenCanvas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="17">
+          <caret line="25" column="27" lean-forward="false" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/count_zero_init/model/files/2019_01_21_word_bank_(neuromancer)">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="89" column="4" lean-forward="false" selection-start-line="89" selection-start-column="4" selection-end-line="89" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
