@@ -12,7 +12,7 @@ public class GameScreenPanel extends JPanel
     public static final int GAME_SCREEN_PANEL_HEIGHT = 320;
     public static final int X_START = 960;
     public static final int Y_START = 3168;
-    public static final int PIXEL_PER_KEY_PRESS = 5;
+    public static final int PIXEL_PER_KEY_PRESS = 8;
 
     private int gameFrameBorderOffsetWidth = 80;
     private int gameFrameBorderOffsetHeight = 40;
@@ -22,6 +22,8 @@ public class GameScreenPanel extends JPanel
     private int xCurrent;
     private int yCurrent;
 
+    Image playerImage;
+    String playerImageAddress = "src/count_zero_init/model/icons/player.gif";
     Image mapImage;
     String mapImageAddress = "src/count_zero_init/model/icons/pokemon-gsc-kanto.png";
 
@@ -38,6 +40,8 @@ public class GameScreenPanel extends JPanel
 
         xCurrent = X_START;
         yCurrent = Y_START;
+        ImageIcon playerImageIcon = new ImageIcon(playerImageAddress);
+        playerImage = playerImageIcon.getImage();
         ImageIcon mapImageIcon = new ImageIcon(mapImageAddress);
         mapImage = mapImageIcon.getImage();
 
@@ -101,6 +105,9 @@ public class GameScreenPanel extends JPanel
                 gameFrameBorderOffsetWidth+GAME_SCREEN_PANEL_WIDTH, gameFrameBorderOffsetHeight+GAME_SCREEN_PANEL_HEIGHT,
                 xCurrent, yCurrent, xCurrent+GAME_SCREEN_PANEL_WIDTH, yCurrent+GAME_SCREEN_PANEL_HEIGHT,
                 null);
+        g.drawImage(playerImage, gameFrameBorderOffsetWidth+((GAME_SCREEN_PANEL_WIDTH/2)-8), gameFrameBorderOffsetHeight+((GAME_SCREEN_PANEL_HEIGHT/2)-8),
+                gameFrameBorderOffsetWidth+((GAME_SCREEN_PANEL_WIDTH/2)+8), gameFrameBorderOffsetHeight+((GAME_SCREEN_PANEL_HEIGHT/2)+8),
+                0, 0, 16, 16, null);
 
     } // **** end paintComponent(Graphics) ****
 
