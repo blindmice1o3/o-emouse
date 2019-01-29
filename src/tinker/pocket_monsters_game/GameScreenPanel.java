@@ -10,9 +10,9 @@ public class GameScreenPanel extends JPanel
 
     public static final int GAME_SCREEN_PANEL_WIDTH = 320;
     public static final int GAME_SCREEN_PANEL_HEIGHT = 320;
-    public static final int X_START = 960;
-    public static final int Y_START = 3168;
-    public static final int PIXEL_PER_KEY_PRESS = 8;
+    public static final int X_START = 954;
+    public static final int Y_START = 3160;
+    public static final int PIXEL_PER_KEY_PRESS = 16;
 
     private int gameFrameBorderOffsetWidth = 80;
     private int gameFrameBorderOffsetHeight = 40;
