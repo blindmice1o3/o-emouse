@@ -19,7 +19,7 @@ public class MiniMusicCmdLine {
             mini.play(instrument, note);
         }
 
-    } // **** end main(String[]) ****
+    } // **** end main(\String[]) ****
 
     public void play(int instrument, int note) {
 
