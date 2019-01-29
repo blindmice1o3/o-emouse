@@ -3,7 +3,7 @@ package tinker.music_app;
 import javax.sound.midi.*;
 
 /**
- * Version 3-2: uses a static utility method that makes a message and returns a MidiEvent.
+ * Version 3-2: uses a utility method that makes a message and returns a MidiEvent (no longer static in this version).
  *
  *              Also, register and listen for the events (but without graphics).
  *              Prints a message at the command-line with each beat.
