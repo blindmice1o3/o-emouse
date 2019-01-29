@@ -3,7 +3,7 @@ package tinker.music_app;
 import javax.sound.midi.*;
 
 /**
- * Version 3: uses a static utility method that makes a message and returns a MidiEvent
+ * Version 3-1: uses a static utility method that makes a message and returns a MidiEvent
  */
 public class MiniMusicPlayer1 {
 
