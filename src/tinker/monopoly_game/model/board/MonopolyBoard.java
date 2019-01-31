@@ -66,6 +66,13 @@ public class MonopolyBoard {
         map.put("rent", rent);
         addPropertyCard( 3, ItemType.PROPERTY, new MapOfSpecs(map) );
 
+        // ==== RAILROAD ====
+        map.remove("color");
+        map.put("name", "Reading Railroad");
+        map.put("price", 200);
+        map.remove("rent");
+        addPropertyCard(5, ItemType.PROPERTY, new MapOfSpecs(map) );
+
         // ==== LIGHT_BLUE ====
         map.put("color", Color.LIGHT_BLUE);
         map.put("name", "Oriental Avenue");
@@ -113,9 +120,14 @@ public class MonopolyBoard {
         map.put("name", "Community Chest");
         addTile( 2, ItemType.COMMUNITY_CHEST, new MapOfSpecs(map) );
 
+        map.put("name", "Chance");
+        addTile(7, ItemType.CHANCE, new MapOfSpecs(map) );
+
         map.put("name", "Income Tax: Pay 10% or $200");
         addTile( 4, ItemType.OTHER, new MapOfSpecs(map) );
 
+        map.put("name", "In Jail/Just Visiting");
+        addTile(10, ItemType.OTHER, new MapOfSpecs(map) );
 
         //3333333333333333333333333333333333333333333333333333333
         for (Tile tile: board) {
@@ -124,6 +136,10 @@ public class MonopolyBoard {
         //333333333333333333333333333333333333333333333333333333333
 
     } // **** end initializeBoard() ****
+
+    public List<Tile> getBoard() {
+        return board;
+    }
 
     private void addTile(int boardPosition, ItemType type, MapOfSpecs mapOfSpecs) {
 

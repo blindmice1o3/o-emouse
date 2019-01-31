@@ -14,6 +14,10 @@ public class Tile {
         this.mapOfSpecs = mapOfSpecs;
     } // **** end Tile(int, ItemType, MapOfSpecs) constructor ****
 
+    public int getBoardPosition() {
+        return boardPosition;
+    }
+
     public String toString() {
         return "\n(boardPosition: " + boardPosition + ")"
                 + "\n(type: " + type + ")"
