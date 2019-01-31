@@ -1,15 +1,23 @@
 package tinker.monopoly_game.model.board;
 
+import java.util.HashMap;
+
 public class Tile {
 
     private int boardPosition;
-    private TileType type;
-    private TileSpec spec;
+    private ItemType type;
+    private MapOfSpecs mapOfSpecs;
 
-    public Tile(int boardPosition, TileType type, TileSpec spec) {
+    public Tile(int boardPosition, ItemType type, MapOfSpecs mapOfSpecs) {
         this.boardPosition = boardPosition;
         this.type = type;
-        this.spec = spec;
-    } // **** end Tile(int, TileType, TileSpec) constructor ****
+        this.mapOfSpecs = mapOfSpecs;
+    } // **** end Tile(int, ItemType, MapOfSpecs) constructor ****
+
+    public String toString() {
+        return "\n(boardPosition: " + boardPosition + ")"
+                + "\n(type: " + type + ")"
+                + "\n(mapOfSpecs: " + mapOfSpecs + ")";
+    }
 
 } // **** end Tile class ****
