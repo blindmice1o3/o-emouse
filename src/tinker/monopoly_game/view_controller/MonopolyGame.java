@@ -28,12 +28,9 @@ public class MonopolyGame extends JFrame {
 
     public MonopolyGame() {
 
-
         initMonopolyGame();
 
-
         //monopolyLayeredPane.moveToFront(listOfBorder.get(9));
-
 
 
     } // **** end MonopolyGame() constructor ****
@@ -71,21 +68,31 @@ public class MonopolyGame extends JFrame {
         System.out.println("board's size: " + board.size());
         System.out.println("listOfBorder's size: " + listOfBorder.size());
 
+        // Creating JLabels to represent the red border (with position and size) for each Tile.
+        // Then store those JLabels (red borders) in an ArrayList<JLabel>.
         for (int i = 0; i < 11; i++) {
             for (Tile tile: board) {
 
                 if (i == tile.getBoardPosition()) {
 
                     if (tile.getBoardPosition() == 0 || tile.getBoardPosition() == 10) {
+                        ////////////////////////////////////////////////////////
                         listOfBorder.add(tile.getBoardPosition(), null);
+                        ////////////////////////////////////////////////////////
                     } else {
                         JLabel label;
 
                         origin.x = origin.x - (offsetX * tile.getBoardPosition());
+
+                        ////////////////////////////////////////
                         label = createColoredTileBorder(origin);
+                        ////////////////////////////////////////
+
                         origin.x = 1169;
 
+                        /////////////////////////////////////////////////
                         listOfBorder.add(tile.getBoardPosition(), label);
+                        /////////////////////////////////////////////////
                     }
 
                 }
@@ -96,6 +103,9 @@ public class MonopolyGame extends JFrame {
         System.out.println("board's size: " + board.size());
         System.out.println("listOfBorder's size: " + listOfBorder.size());
 
+        // Add the JLabel (red borders) representing each Tile's border onto the same z-level of JLayeredPane as the
+        // JPanel that represent the Image of the board, but the red borders' position on that z-level is behind the
+        // board (the third argument [the index] is larger for border than board).
         for (JLabel label: listOfBorder) {
             if (label != null) {
                 monopolyLayeredPane.add(label, new Integer(0), 2);
@@ -104,17 +114,29 @@ public class MonopolyGame extends JFrame {
 
 
         PairOfDicesGUI pairOfDicesGUI = new PairOfDicesGUI();
+
         JButton diceButton = new JButton("roll pairOfDices");
         diceButton.setLocation( 1169-333+55, 320 );
         diceButton.setSize(125, 20);
 
         diceButton.addActionListener(pairOfDicesGUI);
 
+
         monopolyLayeredPane.add(pairOfDicesGUI, new Integer(1));
         monopolyLayeredPane.add(diceButton, new Integer(1));
 
         setVisible(true);
-    }
+
+    } // **** end MonopolyGame.initMonopolyGame() ****
+
+    private JLabel createColoredTileBorder(Point origin) {
+
+        JLabel label = new JLabel();
+        label.setBorder( BorderFactory.createLineBorder(Color.RED, 3) );
+        label.setBounds(origin.x, origin.y, 111, 300);
+        return label;
+
+    } // **** end MonopolyGame.createColoredTileBorder(Point) ****
 
     class PairOfDicesGUI extends JLabel implements ActionListener {
 
@@ -133,6 +155,7 @@ public class MonopolyGame extends JFrame {
 
         @Override
         public void actionPerformed(ActionEvent e) {
+
             if (player1.getCurrentBoardPosition() != 0 && player1.getCurrentBoardPosition() != 10) {
                 monopolyLayeredPane.moveToBack(listOfBorder.get(player1.getCurrentBoardPosition()));
             }
@@ -147,33 +170,27 @@ public class MonopolyGame extends JFrame {
             if (player1.getCurrentBoardPosition() != 0 && player1.getCurrentBoardPosition() != 10) {
                 monopolyLayeredPane.moveToFront(listOfBorder.get(player1.getCurrentBoardPosition()));
             }
-        }
-    }
 
+        } // **** end PairOfDicesGUI.actionPerformed(ActionEvent) ****
 
-    public static void main(String[] args) {
-        new MonopolyGame();
-    } // **** end main(String[]) ****
-
-    private JLabel createColoredTileBorder(Point origin) {
-        JLabel label = new JLabel();
-        label.setBorder( BorderFactory.createLineBorder(Color.RED, 3) );
-        label.setBounds(origin.x, origin.y, 111, 300);
-        return label;
-    }
+    } // **** end PairOfDicesGUI inner-class ****
 
     class MonopolyFuturamaPanel extends JPanel {
+
         Image futuramaBoardImage;
         String futuramaBoardImageAddress;
 
         public MonopolyFuturamaPanel() {
+
             futuramaBoardImageAddress = "src/tinker/monopoly_game/view_controller/monopoly_board-futurama_edition_(1600x1600).jpg";
             futuramaBoardImage = new ImageIcon(futuramaBoardImageAddress).getImage();
             this.setSize( new Dimension(1340, 330) );
+
         } // **** end MonopolyFuturamaPanel() constructor ****
 
         @Override
         public void paintComponent(Graphics g) {
+
             g.drawImage(futuramaBoardImage, 2, 15, 1340, 315,
                                             0, 1400, 1600, 1600, null);
 
@@ -181,7 +198,13 @@ public class MonopolyGame extends JFrame {
             g.drawImage(player1Image, 1169 - (111*player1.getCurrentBoardPosition()) + 20, 145,
                                     1169 - (111*player1.getCurrentBoardPosition()) + 70, 195,
                                         0, 0, 225, 225, null);
-        } // **** end paintComponent(Graphics) ****
+
+        } // **** end MonopolyFuturamaPanel.paintComponent(Graphics) ****
+
     } // **** end MonopolyFuturamaPanel inner-class ****
+
+    public static void main(String[] args) {
+        new MonopolyGame();
+    } // **** end main(String[]) ****
 
 } // **** end MonopolyGame class ****
