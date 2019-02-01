@@ -1,5 +1,6 @@
 package tinker.monopoly_game.view_controller;
 
+import tinker.monopoly_game.model.PlayerOfMonopoly;
 import tinker.monopoly_game.model.board.MonopolyBoard;
 import tinker.monopoly_game.model.board.Tile;
 
@@ -11,9 +12,11 @@ import java.util.List;
 public class MonopolyGame extends JFrame {
 
     private MonopolyBoard monopolyBoard;
-    List<Tile> board;
-    List<JLabel> listOfBorder;
-    private int player1BoardPosition = 0;
+    private List<Tile> board;
+    private List<JLabel> listOfBorder;
+
+    private PlayerOfMonopoly player1;
+    private Image player1Image;
 
     private JLayeredPane monopolyLayeredPane;
     private MonopolyFuturamaPanel monopolyFuturamaPanel;
@@ -24,19 +27,21 @@ public class MonopolyGame extends JFrame {
         setTitle("Monopoly - Futurama Edition");
         setLocationRelativeTo(null);
 
-
         monopolyBoard = new MonopolyBoard();
         board = monopolyBoard.getBoard();
+
+        player1 = new PlayerOfMonopoly();
+        player1Image = new ImageIcon(player1.getImageAddress()).getImage();
+
 
         monopolyLayeredPane = new JLayeredPane();
         monopolyLayeredPane.setPreferredSize( new Dimension(1360, 400) );
         monopolyLayeredPane.setBorder( BorderFactory.createTitledBorder("+++ Using JLayeredPane +++") );
         setContentPane(monopolyLayeredPane);
 
+
         monopolyFuturamaPanel = new MonopolyFuturamaPanel();
-
         monopolyLayeredPane.add(monopolyFuturamaPanel, new Integer(0), 1);
-
 
 
         listOfBorder = new ArrayList<JLabel>(11);
@@ -73,7 +78,7 @@ public class MonopolyGame extends JFrame {
 
         for (JLabel label: listOfBorder) {
             if (label != null) {
-                monopolyLayeredPane.add(label, new Integer(0), 0);
+                monopolyLayeredPane.add(label, new Integer(0), 3);
             }
         }
 
@@ -92,6 +97,21 @@ public class MonopolyGame extends JFrame {
         //monopolyLayeredPane.moveToBack(listOfBorder.get(10));
 
 
+        monopolyLayeredPane.setPosition(listOfBorder.get(1), 0);
+        monopolyLayeredPane.setPosition(listOfBorder.get(1), 3);
+        monopolyLayeredPane.setPosition(listOfBorder.get(1), 0);
+        monopolyLayeredPane.setPosition(listOfBorder.get(3), 0);
+        monopolyLayeredPane.moveToFront(listOfBorder.get(5));
+        monopolyLayeredPane.moveToFront(listOfBorder.get(7));
+        monopolyLayeredPane.moveToFront(listOfBorder.get(9));
+
+
+
+        player1.setCurrentBoardPosition( player1.getCurrentBoardPosition() + 3 );
+
+        player1.setCurrentBoardPosition( player1.getCurrentBoardPosition() + 5 );
+
+
         setVisible(true);
     } // **** end MonopolyGame() constructor ****
 
@@ -101,7 +121,7 @@ public class MonopolyGame extends JFrame {
 
     private JLabel createColoredTileBorder(Point origin) {
         JLabel label = new JLabel();
-        label.setBorder( BorderFactory.createLineBorder(Color.YELLOW, 3) );
+        label.setBorder( BorderFactory.createLineBorder(Color.RED, 3) );
         label.setBounds(origin.x, origin.y, 111, 300);
         return label;
     }
@@ -121,6 +141,10 @@ public class MonopolyGame extends JFrame {
             g.drawImage(futuramaBoardImage, 2, 30, 1340, 330,
                                             0, 1400, 1600, 1600, null);
 
+
+            g.drawImage(player1Image, 1169 - (111*player1.getCurrentBoardPosition()) + 20, 160,
+                                    1169 - (111*player1.getCurrentBoardPosition()) + 70, 210,
+                                        0, 0, 225, 225, null);
         } // **** end paintComponent(Graphics) ****
     } // **** end MonopolyFuturamaPanel inner-class ****
 
