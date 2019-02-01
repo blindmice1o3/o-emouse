@@ -16,7 +16,7 @@ public class MonopolyBoard {
     private List<ChanceCard> deckOfChanceCard;
     private List<CommunityChestCard> deckOfComunityChestCard;
     private List<Tile> board;
-    private PairOfDices pairOfDices;
+
 
     public static void main(String[] args) {
         new MonopolyBoard();
@@ -30,18 +30,6 @@ public class MonopolyBoard {
 
         initializeBoard();
 
-
-
-        pairOfDices = new PairOfDices();
-
-        pairOfDices.rollPairOfDices();
-        pairOfDices.rollPairOfDices();
-        pairOfDices.rollPairOfDices();
-        pairOfDices.rollPairOfDices();
-        pairOfDices.rollPairOfDices();
-        pairOfDices.rollPairOfDices();
-        pairOfDices.rollPairOfDices();
-        pairOfDices.rollPairOfDices();
     }
 
 

@@ -1,11 +1,14 @@
 package tinker.monopoly_game.view_controller;
 
+import tinker.monopoly_game.model.PairOfDices;
 import tinker.monopoly_game.model.PlayerOfMonopoly;
 import tinker.monopoly_game.model.board.MonopolyBoard;
 import tinker.monopoly_game.model.board.Tile;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,6 +18,8 @@ public class MonopolyGame extends JFrame {
     private List<Tile> board;
     private List<JLabel> listOfBorder;
 
+    private PairOfDices pairOfDices;
+
     private PlayerOfMonopoly player1;
     private Image player1Image;
 
@@ -22,6 +27,19 @@ public class MonopolyGame extends JFrame {
     private MonopolyFuturamaPanel monopolyFuturamaPanel;
 
     public MonopolyGame() {
+
+
+        initMonopolyGame();
+
+
+        //monopolyLayeredPane.moveToFront(listOfBorder.get(9));
+
+
+
+    } // **** end MonopolyGame() constructor ****
+
+    private void initMonopolyGame() {
+
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(1360, 400);
         setTitle("Monopoly - Futurama Edition");
@@ -29,6 +47,8 @@ public class MonopolyGame extends JFrame {
 
         monopolyBoard = new MonopolyBoard();
         board = monopolyBoard.getBoard();
+
+        pairOfDices = new PairOfDices();
 
         player1 = new PlayerOfMonopoly();
         player1Image = new ImageIcon(player1.getImageAddress()).getImage();
@@ -45,7 +65,7 @@ public class MonopolyGame extends JFrame {
 
 
         listOfBorder = new ArrayList<JLabel>(11);
-        Point origin = new Point(1169, 30);
+        Point origin = new Point(1169, 15);
         int offsetX = 111;
 
         System.out.println("board's size: " + board.size());
@@ -78,42 +98,58 @@ public class MonopolyGame extends JFrame {
 
         for (JLabel label: listOfBorder) {
             if (label != null) {
-                monopolyLayeredPane.add(label, new Integer(0), 3);
+                monopolyLayeredPane.add(label, new Integer(0), 2);
             }
         }
 
-        //monopolyLayeredPane.moveToBack(listOfBorder.get(0));
 
-        //monopolyLayeredPane.moveToBack(listOfBorder.get(1));
-        monopolyLayeredPane.moveToBack(listOfBorder.get(2));
-        //monopolyLayeredPane.moveToBack(listOfBorder.get(3));
-        //monopolyLayeredPane.moveToBack(listOfBorder.get(4));
-        monopolyLayeredPane.moveToBack(listOfBorder.get(5));
-        //monopolyLayeredPane.moveToBack(listOfBorder.get(6));
-        //monopolyLayeredPane.moveToBack(listOfBorder.get(7));
-        monopolyLayeredPane.moveToBack(listOfBorder.get(8));
-        //monopolyLayeredPane.moveToBack(listOfBorder.get(9));
+        PairOfDicesGUI pairOfDicesGUI = new PairOfDicesGUI();
+        JButton diceButton = new JButton("roll pairOfDices");
+        diceButton.setLocation( 1169-333+55, 320 );
+        diceButton.setSize(125, 20);
 
-        //monopolyLayeredPane.moveToBack(listOfBorder.get(10));
+        diceButton.addActionListener(pairOfDicesGUI);
 
-
-        monopolyLayeredPane.setPosition(listOfBorder.get(1), 0);
-        monopolyLayeredPane.setPosition(listOfBorder.get(1), 3);
-        monopolyLayeredPane.setPosition(listOfBorder.get(1), 0);
-        monopolyLayeredPane.setPosition(listOfBorder.get(3), 0);
-        monopolyLayeredPane.moveToFront(listOfBorder.get(5));
-        monopolyLayeredPane.moveToFront(listOfBorder.get(7));
-        monopolyLayeredPane.moveToFront(listOfBorder.get(9));
-
-
-
-        player1.setCurrentBoardPosition( player1.getCurrentBoardPosition() + 3 );
-
-        player1.setCurrentBoardPosition( player1.getCurrentBoardPosition() + 5 );
-
+        monopolyLayeredPane.add(pairOfDicesGUI, new Integer(1));
+        monopolyLayeredPane.add(diceButton, new Integer(1));
 
         setVisible(true);
-    } // **** end MonopolyGame() constructor ****
+    }
+
+    class PairOfDicesGUI extends JLabel implements ActionListener {
+
+        public PairOfDicesGUI() {
+
+            setLocation(1169-111, 315);
+            setSize(281, 30);
+            setOpaque(true);
+            setBackground(Color.BLUE);
+            setForeground(Color.YELLOW);
+            setHorizontalAlignment(JLabel.CENTER);
+            setVerticalAlignment(JLabel.CENTER);
+            setBorder(BorderFactory.createLineBorder(Color.RED, 2));
+
+        } // **** end PairOfDicesGUI() constructor ***
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            if (player1.getCurrentBoardPosition() != 0 && player1.getCurrentBoardPosition() != 10) {
+                monopolyLayeredPane.moveToBack(listOfBorder.get(player1.getCurrentBoardPosition()));
+            }
+
+            int newRollOfDices = pairOfDices.rollPairOfDices();
+            player1.setCurrentBoardPosition( player1.getCurrentBoardPosition() + newRollOfDices );
+            setText( "[" + pairOfDices.getDice1() + "] and [" + pairOfDices.getDice2() + "]" +
+                    " => pair: " + pairOfDices.getIsPair() );
+
+            monopolyFuturamaPanel.repaint();
+
+            if (player1.getCurrentBoardPosition() != 0 && player1.getCurrentBoardPosition() != 10) {
+                monopolyLayeredPane.moveToFront(listOfBorder.get(player1.getCurrentBoardPosition()));
+            }
+        }
+    }
+
 
     public static void main(String[] args) {
         new MonopolyGame();
@@ -138,12 +174,12 @@ public class MonopolyGame extends JFrame {
 
         @Override
         public void paintComponent(Graphics g) {
-            g.drawImage(futuramaBoardImage, 2, 30, 1340, 330,
+            g.drawImage(futuramaBoardImage, 2, 15, 1340, 315,
                                             0, 1400, 1600, 1600, null);
 
 
-            g.drawImage(player1Image, 1169 - (111*player1.getCurrentBoardPosition()) + 20, 160,
-                                    1169 - (111*player1.getCurrentBoardPosition()) + 70, 210,
+            g.drawImage(player1Image, 1169 - (111*player1.getCurrentBoardPosition()) + 20, 145,
+                                    1169 - (111*player1.getCurrentBoardPosition()) + 70, 195,
                                         0, 0, 225, 225, null);
         } // **** end paintComponent(Graphics) ****
     } // **** end MonopolyFuturamaPanel inner-class ****

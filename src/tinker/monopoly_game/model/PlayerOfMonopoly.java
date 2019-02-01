@@ -23,6 +23,9 @@ public class PlayerOfMonopoly {
     }
 
     public void setCurrentBoardPosition(int newPosition) {
+        if (newPosition > 10) {
+            newPosition = newPosition - 11;
+        }
         currentBoardPosition = newPosition;
     }
 
