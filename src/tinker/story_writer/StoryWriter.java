@@ -1,8 +1,6 @@
 package tinker.story_writer;
 
 import javax.swing.*;
-import javax.swing.event.MenuKeyEvent;
-import javax.swing.event.MenuKeyListener;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -56,7 +54,7 @@ public class StoryWriter extends JFrame {
     } // **** end init() ****
 
     class saveMenuItemActionListener implements ActionListener {
-        String defaultFileName= "keyboardjediknight.bin";
+        String defaultFileName= "keyboardjediknight6000.bin";
 
         @Override
         public void actionPerformed(ActionEvent e) {
@@ -64,7 +62,6 @@ public class StoryWriter extends JFrame {
                 ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
 
                 objectOutputStream.writeObject( myWritingPanel.getTextAreaMyWriting() );
-                //objectOutputStream.writeChars( myWritingPanel.getTextAreaMyWriting().getText() );
                 objectOutputStream.close();
 
                 System.out.println("textAreaMyWriting from MyWritingPanel has been serialized as: \"" + defaultFileName + "\"");
@@ -102,6 +99,7 @@ public class StoryWriter extends JFrame {
 
         } // **** end MyWritingPanel() constructor ****
 
+
         public MyTextAreaMyWriting getTextAreaMyWriting() {
             return textAreaMyWriting;
         }
@@ -117,6 +115,7 @@ public class StoryWriter extends JFrame {
         } // **** end MyWritingPanel.MyTextAreaMyWriting inner-class (an inner class of an inner class) ****
 
     } // **** end MyWritingPanel inner-class ****
+
 
     class MyWordSuggestionPanel extends JPanel
             implements ActionListener {
