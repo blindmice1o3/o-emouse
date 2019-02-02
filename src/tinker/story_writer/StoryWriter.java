@@ -1,9 +1,12 @@
 package tinker.story_writer;
 
 import javax.swing.*;
+import javax.swing.event.MenuKeyEvent;
+import javax.swing.event.MenuKeyListener;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.*;
 
 public class StoryWriter extends JFrame {
 
@@ -39,6 +42,10 @@ public class StoryWriter extends JFrame {
         saveMenuItem = new JMenuItem("Save Your Writing");
         loadMenuItem = new JMenuItem("Load Text File");
 
+        ///////
+        saveMenuItem.addActionListener( new saveMenuItemActionListener() );
+        //////
+
         saveAndLoadMenu.add(saveMenuItem);
         saveAndLoadMenu.add(loadMenuItem);
         menuBar.add(saveAndLoadMenu);
@@ -48,6 +55,27 @@ public class StoryWriter extends JFrame {
 
     } // **** end init() ****
 
+    class saveMenuItemActionListener implements ActionListener {
+        String defaultFileName= "keyboardjediknight.bin";
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            try (FileOutputStream fileOutputStream = new FileOutputStream(defaultFileName)) {
+                ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
+
+                objectOutputStream.writeObject( myWritingPanel.getTextAreaMyWriting() );
+                //objectOutputStream.writeChars( myWritingPanel.getTextAreaMyWriting().getText() );
+                objectOutputStream.close();
+
+                System.out.println("textAreaMyWriting from MyWritingPanel has been serialized as: \"" + defaultFileName + "\"");
+            } catch (FileNotFoundException ex) {
+                ex.printStackTrace();
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+        }
+    }
+
     public static void main(String[] args) {
         StoryWriter app = new StoryWriter();
         app.init();
@@ -55,14 +83,14 @@ public class StoryWriter extends JFrame {
 
     class MyWritingPanel extends JPanel {
 
-        JTextArea textAreaMyWriting;
+        MyTextAreaMyWriting textAreaMyWriting;
         JScrollPane scrollerMyWriting;
 
         public MyWritingPanel() {
 
             this.setLayout( new BorderLayout() );
 
-            textAreaMyWriting = new JTextArea(40, 60);
+            textAreaMyWriting = new MyTextAreaMyWriting(40, 60);
             textAreaMyWriting.setLineWrap(true);
             textAreaMyWriting.setFocusable(true);
 
@@ -73,6 +101,20 @@ public class StoryWriter extends JFrame {
             this.add(scrollerMyWriting, BorderLayout.CENTER);
 
         } // **** end MyWritingPanel() constructor ****
+
+        public MyTextAreaMyWriting getTextAreaMyWriting() {
+            return textAreaMyWriting;
+        }
+
+        // Trying out serialization/deserialization.
+        class MyTextAreaMyWriting extends JTextArea
+        // ******************************* //
+                implements Serializable {
+        // ******************************* //
+            public MyTextAreaMyWriting(int rows, int columns) {
+                super(rows, columns);
+            }
+        } // **** end MyWritingPanel.MyTextAreaMyWriting inner-class (an inner class of an inner class) ****
 
     } // **** end MyWritingPanel inner-class ****
 
