@@ -42,6 +42,7 @@ public class StoryWriter extends JFrame {
 
         ///////
         saveMenuItem.addActionListener( new saveMenuItemActionListener() );
+        loadMenuItem.addActionListener( new loadMenuItemActionListener() );
         //////
 
         saveAndLoadMenu.add(saveMenuItem);
@@ -54,20 +55,37 @@ public class StoryWriter extends JFrame {
     } // **** end init() ****
 
     class saveMenuItemActionListener implements ActionListener {
-        String defaultFileName= "keyboardjediknight6000.bin";
-
         @Override
         public void actionPerformed(ActionEvent e) {
-            try (FileOutputStream fileOutputStream = new FileOutputStream(defaultFileName)) {
+            try ( FileOutputStream fileOutputStream = new FileOutputStream("keyboardjediknight.bin") ) {
                 ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
 
                 objectOutputStream.writeObject( myWritingPanel.getTextAreaMyWriting() );
+
                 objectOutputStream.close();
 
-                System.out.println("textAreaMyWriting from MyWritingPanel has been serialized as: \"" + defaultFileName + "\"");
+                System.out.println("textAreaMyWriting from MyWritingPanel has been serialized to file: \"keyboardjediknight.bin\"");
             } catch (FileNotFoundException ex) {
                 ex.printStackTrace();
             } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+        }
+    }
+    class loadMenuItemActionListener implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            try ( FileInputStream fileInputStream = new FileInputStream("keyboardjediknight.bin") ) {
+                ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
+
+                myWritingPanel.setTextAreaMyWriting( (MyWritingPanel.MyTextAreaMyWriting)objectInputStream.readObject() );
+
+                objectInputStream.close();
+
+                System.out.println("textAreaMyWriting from MyWritingPanel has been deserialized!");
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            } catch (ClassNotFoundException ex) {
                 ex.printStackTrace();
             }
         }
@@ -102,6 +120,9 @@ public class StoryWriter extends JFrame {
 
         public MyTextAreaMyWriting getTextAreaMyWriting() {
             return textAreaMyWriting;
+        }
+        public void setTextAreaMyWriting(MyTextAreaMyWriting fromSavedFile) {
+            textAreaMyWriting = fromSavedFile;
         }
 
         // Trying out serialization/deserialization.
