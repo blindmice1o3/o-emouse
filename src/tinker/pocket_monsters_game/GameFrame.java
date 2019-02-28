@@ -15,6 +15,7 @@ public class GameFrame extends JFrame {
         setTitle("Off-brand Pocket Monsters");
 
         setSize(GAME_FRAME_WIDTH, GAME_FRAME_HEIGHT);
+        setLocationRelativeTo(null);
 
         gameScreenPanel = new GameScreenPanel(GAME_FRAME_WIDTH, GAME_FRAME_HEIGHT);
         setContentPane( gameScreenPanel );
@@ -25,8 +26,7 @@ public class GameFrame extends JFrame {
 
     public static void main(String[] args) {
 
-        GameFrame gameFrame = new GameFrame();
-        gameFrame.setLocationRelativeTo(null);
+        new GameFrame();
 
     } // **** end main(String[]) ****
 

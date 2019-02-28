@@ -78,7 +78,8 @@ public class StoryWriter extends JFrame {
             try ( FileInputStream fileInputStream = new FileInputStream("keyboardjediknight.bin") ) {
                 ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
 
-                myWritingPanel.setTextAreaMyWriting( (MyWritingPanel.MyTextAreaMyWriting)objectInputStream.readObject() );
+                MyWritingPanel.MyTextAreaMyWriting temp = (MyWritingPanel.MyTextAreaMyWriting)objectInputStream.readObject();
+                myWritingPanel.setTextAreaMyWriting(temp);
 
                 objectInputStream.close();
 
