@@ -1,1 +1,3 @@
 advent
+aphelion
+apsis
